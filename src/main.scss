@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//HELPERS
+@import './sass/helpers/_variables.scss';
+
+//VENDORS
+@import './sass/vendors/_normalize.scss';
+
+//BASE
+@import './sass/base/_base.scss';
+@import './sass/base/_typography.scss';
+
+//LAYOUT
+@import './sass/layout/_footer.scss';
+@import './sass/layout/_jsoncontact.scss';
+@import './sass/layout/_navmenu.scss';
+@import './sass/layout/_sidebar.scss';
+
+//COMPONENTS
+@import './sass/components/_ball.scss';
+@import './sass/components/_button.scss';
+@import './sass/components/_input.scss';
+@import './sass/components/_miniball.scss';
+
+//PAGES
+@import './sass/pages/_home.scss';
+// @import './sass/themes/';
+
