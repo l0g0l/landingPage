@@ -40,16 +40,16 @@ const NavMenu = () => {
 
 
                 <div>
-                    <ul className="social">
-                        <li className="github icon">
+                    <ul className="menu">
+                        <li >
                             <Link to="#"> Home</Link>
                         </li>
 
-                        <li className="linkedin icon">
+                        <li>
                             <Link to="#">About</Link>
                         </li>
 
-                        <li className="blog icon">
+                        <li>
                             <Link to="#">Skills</Link>
                         </li>
                     </ul>
