@@ -5,11 +5,9 @@ import '../sass/pages/_home.scss'
 
 const Home = () => {
     return (
-        <div>
-            <Layout>
-          
-
-            </Layout>
+        <div className="container-home">
+            <Layout />
+     
         </div>
     )
 }

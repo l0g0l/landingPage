@@ -5,7 +5,7 @@ import '../../../sass/layout/_navmenu.scss'
 
 const NavMenu = () => {
     return (
-        <div>
+        <div className="container-nav">
             <nav>
                 <div>
                     <ul className="social">
