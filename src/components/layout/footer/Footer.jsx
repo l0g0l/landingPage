@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../../sass/layout/_footer.scss'
+// import '../../../sass/layout/_footer.scss'
 
 
 const Footer = () => {

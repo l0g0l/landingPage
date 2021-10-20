@@ -3,7 +3,7 @@ import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
 import Header from '../header/Header'
 
-import '../../sass/layout/_layout.scss'
+// import '../../sass/layout/_layout.scss'
 
 
 const Layout = ({ children }) => {
