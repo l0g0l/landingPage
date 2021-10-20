@@ -56,7 +56,6 @@ const NavMenu = () => {
                 </div>
 
             </nav>
-            <span>&#123; contacto: luciag@gmail.com &#125;</span>
         </div>
     )
 }

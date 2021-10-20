@@ -1,5 +1,32 @@
 .container-layout {
     display: grid;
-    grid-template-columns: 50px auto;
-    background-color: indigo;
+    grid-template-columns: 80px auto;
+}
+.contact {
+    text-align: right;
+    margin-right: 30px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.introduceMe-img{
+    width: 20%;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 207px;
+    border-radius: 100px;
+}
+.myName {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 218px;
+    right:30px;
+    font-size: 60px;
+    text-align: right;
+    margin: 0;
+}
+.myName span:first-child {
+    font-size: 90px;
 }
