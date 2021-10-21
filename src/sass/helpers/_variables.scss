@@ -7,12 +7,21 @@
 }
 
 $mainFont:monospace; 
+$fontmenunav: 30px;
+$fontweightnav: 300;
+$fontoverlay: 15px;
+$fontnamefirst:85px;
+$fontname:51px;
+$fontcontact: 14px;
 
 
 // Colours
 
 /* HXD */
 $black: #000;
+$blacksecondary:#141414;
+$neumorphimsprimary:#080808;
+$neumorphimssecondary:#202020;
 $white: #fff;
 $whiteshadow: rgba(255,255,255,1);
 $lemon: #A6FD17;
@@ -29,10 +38,10 @@ $bordergreen:38px;
 $borderpink:50px;
 
 /* DIMENSIONS */
-$nav:60px;
+$nav:80px;
 $footer: 60px;
-$margs: 20px;
-$nav:56px;
+$margs: 27px;
+
 
 // animations
 $defaultLinear: all 0.15s linear;

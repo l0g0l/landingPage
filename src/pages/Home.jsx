@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout/Layout'
 
-import '../sass/pages/_home.scss'
+// import '../sass/pages/_home.scss'
 
 const Home = () => {
     return (

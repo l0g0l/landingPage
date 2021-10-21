@@ -1,6 +1,5 @@
 import React from 'react'
 
-// import '../../sass/layout/_header.scss'
 
 const Header = () => {
     return (

@@ -1,32 +1,28 @@
 .container-layout {
-    display: grid;
-    grid-template-columns: 80px auto;
+  display: grid;
+  grid-template-columns: 100px auto;
 }
 .contact {
-    text-align: right;
-    margin-right: 30px;
-    position: absolute;
-    top: 0;
-    right: 30px;
-}
-.introduceMe-img{
-    width: 20%;
-    display: block;
-    position: absolute;
-    top: 200px;
-    left: 207px;
-    border-radius: 100px;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 27px;
+  line-height: 25px;
+  font-size: $fontcontact;
+    strong {
+        font-size: 19px;
+    }
 }
 .myName {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 218px;
-    right:30px;
-    font-size: 60px;
-    text-align: right;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 218px;
+  right: 27px;
+  font-size: $fontname;
+  text-align: right;
+    span:first-child {
+        font-size: $fontnamefirst;
+    }
 }
-.myName span:first-child {
-    font-size: 90px;
-}
+

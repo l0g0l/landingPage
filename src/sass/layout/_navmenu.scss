@@ -1,19 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .container-nav {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-row: 1/7;
-  // background-color: red;
+  background: $blacksecondary;
+  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary, -6px -6px 7px $neumorphimssecondary;
+  box-shadow: 6px 6px 7px $neumorphimsprimary, -6px -6px 7px $neumorphimssecondary;
   position: fixed;
   top: 0;
- 
-  
 }
 nav {
   display: flex;
   flex-direction: column;
+  width: $nav;
   align-items: center;
   justify-content: center;
-  width: 90px;
+  margin-top: 30px;
+    ul:nth-child(2) {
+        margin-left: 80px;
+      }
 }
 ul {
   list-style: none;
@@ -22,28 +30,28 @@ ul {
 .social a,
 .menu a {
   display: block;
-  color: #fff;
+  color: $white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: $fontmenunav;
   margin: 0 0 16px 0;
 }
-.social li:last-child{
+.social li:last-child {
   margin: 0 0 100px 0;
 }
 .menu li {
-  margin-left: 74px;
-  font-weight: 300;
+  margin-left: 0;
+  font-weight: $fontweightnav;
 }
 .logo-img {
-  width: 30px;
+  width: 35px;
 }
 .social .overlay {
   display: block;
   position: absolute;
-  height: 20px;
-  box-shadow: 0 0 4px #fff;
-  background-color: #fff;
-  padding: 3px;
+  height: 17px;
+  box-shadow: 0 0 4px $whiteshadow;
+  background-color:$white;
+  padding: 4px;
   border-radius: 6px;
   margin-left: 70px;
   margin-top: -58px;
@@ -51,8 +59,8 @@ ul {
   transform: translateX(-20%);
   opacity: 0;
   transition: all 450ms;
-  color: #000;
-  font-size: 18px;
+  color: $black;
+  font-size: $fontoverlay;
 }
 .social li:hover .overlay {
   opacity: 1;

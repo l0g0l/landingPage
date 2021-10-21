@@ -1,9 +1,7 @@
 import React from 'react'
 import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
-import Header from '../header/Header'
-
-// import '../../sass/layout/_layout.scss'
+import Header from './header/Header'
 
 
 const Layout = ({ children }) => {
@@ -14,19 +12,16 @@ const Layout = ({ children }) => {
             <main>
                 <div className="contact">
                     <p>class <b>Contact</b>&#123;</p>
-                    <p>constructor(public <strong>name:</strong>string public <strong>email:</strong>string)</p>
+                    <p>constructor(public <strong>name:</strong>string, public <strong>email:</strong>string)&#123;&#125;&nbsp;&#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
                 </div>
-               {/*  <div className="introduceMe">
-                    <img className="introduceMe-img" src="/img/aboutMHuert.jpg" alt="yo en mi huerto" />
-                </div> */}
-
+        
                 <div className="myName">
 
-                    <span>Lucia Gonzalez</span>
+                    <span >Lucia Gonzalez</span>
 
-                    <span>Web Developer</span>
+                    <span >Web Developer</span>
 
                 </div>
                 {/* <div>
