@@ -14,15 +14,27 @@ const Layout = ({ children }) => {
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
                 </div>
-        
+
                 <div className="myname">
                     <span >Lucia Gonzalez</span>
                     <span >Web Developer</span>
                 </div>
                 <div className="container-main">
-            o
-                </div> 
-                
+                    <div className="commit-main ">
+                        <div className="commit-main end">
+
+                        </div>
+                    </div>
+                    <div className="main-branch">
+
+                    </div>
+
+
+
+
+
+                </div>
+
 
 
 
