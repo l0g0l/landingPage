@@ -3,17 +3,17 @@
   grid-template-columns: 100px auto;
 }
 .contact {
-  text-align: right;
+  text-align: left;
   position: absolute;
   top: 30px;
-  right: 27px;
+  left: 130px;
   line-height: 25px;
   font-size: $fontcontact;
     strong {
         font-size: 19px;
     }
 }
-.myName {
+.myname {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -24,5 +24,11 @@
     span:first-child {
         font-size: $fontnamefirst;
     }
+}
+.container-main  {
+    display:block;
+    position:absolute;
+    top: 461px;
+    left: 0;
 }
 

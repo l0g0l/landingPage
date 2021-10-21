@@ -31,28 +31,25 @@ const NavMenu = () => {
                             <img src="img/blog.png" alt="logo blog" className="logo-img" />
                         </a>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-                            <p className="overlay">https://github.com/l0g0l</p>
+                            <p className="overlay">https://desecreadeveloperblog.herokuapp.com/</p>
                         </a>
                     </li>
                 </ul>
 
+                <ul className="menu">
+                    <li >
+                        <Link to="#"> Home</Link>
+                    </li>
 
+                    <li>
+                        <Link to="#">About</Link>
+                    </li>
 
-                
-                    <ul className="menu">
-                        <li >
-                            <Link to="#"> Home</Link>
-                        </li>
+                    <li>
+                        <Link to="#">Skills</Link>
+                    </li>
+                </ul>
 
-                        <li>
-                            <Link to="#">About</Link>
-                        </li>
-
-                        <li>
-                            <Link to="#">Skills</Link>
-                        </li>
-                    </ul>
-              
 
             </nav>
         </div>
