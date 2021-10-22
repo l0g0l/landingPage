@@ -1,10 +1,19 @@
-import React from 'react'
+import { useState } from 'react'
 import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
-import Ball from '../Ball'
+import Image from '../Image'
+import MiniBall from '../MiniBall'
+import Branch from '../Branch'
 
 
 const Layout = ({ children }) => {
+    const [showBranch, setShowBranch] = useState(false)
+
+    const toggleBranch = () => {
+        setShowBranch(!showBranch)
+    }
+
+
     return (
         <div className="container-layout">
             <NavMenu />
@@ -22,14 +31,27 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="container-main">
                     <div className="commit-main ">
-                        
-                        <div className="commit-main end">
-                            <Ball />
+                        <div className="main-branch">
+
+                            <div className="commit-main end">
+                                <Image />
+                            </div>
                         </div>
                     </div>
-                    <div className="main-branch">
+                    {showBranch ?
+                        <>
+                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"59px"} />
+                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"59px"} />
+                        </>
+                        : null}
 
-                    </div>
+
+
+
+                    <MiniBall top={"200px"} />
+                    <MiniBall top={"300px"} />
+                    <MiniBall top={"550px"} func={toggleBranch} />
+                    <MiniBall top={"650px"} />
 
 
 

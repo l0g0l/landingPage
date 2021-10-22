@@ -30,24 +30,10 @@
   top: 461px;
   left: 50%;
 }
-.commit-main {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: red;
-  border: 1px solid $blacksecondary;
-    &.end {
-      display: block;
-      position: absolute;
-      top: 342px;
-      left: 0px;
-      // background-color: red;
-      border: 1px solid $blacksecondary;
-    }
-}
+
 .main-branch {
   width: 12px;
-  height: 300px;
+  height: 700px;
   position: absolute;
   top: 41px;
   left: 34%;
