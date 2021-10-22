@@ -1,6 +1,7 @@
 import React from 'react'
 import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
+import Ball from '../Ball'
 
 
 const Layout = ({ children }) => {
@@ -21,8 +22,9 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="container-main">
                     <div className="commit-main ">
+                        
                         <div className="commit-main end">
-
+                            <Ball />
                         </div>
                     </div>
                     <div className="main-branch">
