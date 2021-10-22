@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
             <NavMenu />
             <main>
                 <div className="contact">
-                    <p>class <b>Contact</b>&#123;</p>
+                    <p>class <strong>Contact</strong>&#123;</p>
                     <p>constructor(public <strong>name:</strong>string, public <strong>email:</strong>string)&#123;&#125;&nbsp;&#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
@@ -45,13 +45,11 @@ const Layout = ({ children }) => {
                         </>
                         : null}
 
-
-
-
                     <MiniBall top={"200px"} />
-                    <MiniBall top={"300px"} />
-                    <MiniBall top={"550px"} func={toggleBranch} />
-                    <MiniBall top={"650px"} />
+                    <MiniBall top={"600px"} />
+                    <MiniBall top={"500px"} />
+                    <MiniBall top={"750px"} func={toggleBranch} />
+                    <MiniBall top={"850px"} />
 
 
 

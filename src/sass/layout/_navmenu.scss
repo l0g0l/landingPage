@@ -7,8 +7,10 @@
   grid-template-rows: repeat(5, 1fr);
   grid-row: 1/7;
   background: $blacksecondary;
-  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary, -6px -6px 7px $neumorphimssecondary;
-  box-shadow: 6px 6px 7px $neumorphimsprimary, -6px -6px 7px $neumorphimssecondary;
+  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,
+    -6px -6px 7px $neumorphimssecondary;
+  box-shadow: 6px 6px 7px $neumorphimsprimary,
+    -6px -6px 7px $neumorphimssecondary;
   position: fixed;
   top: 0;
 }
@@ -19,9 +21,9 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-    ul:nth-child(2) {
-        margin-left: 80px;
-      }
+  ul:nth-child(2) {
+    margin-left: 80px;
+  }
 }
 ul {
   list-style: none;
@@ -50,7 +52,7 @@ ul {
   position: absolute;
   height: 17px;
   box-shadow: 0 0 4px $whiteshadow;
-  background-color:$white;
+  background-color: $white;
   padding: 4px;
   border-radius: 6px;
   margin-left: 70px;
