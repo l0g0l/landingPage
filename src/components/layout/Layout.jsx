@@ -40,8 +40,8 @@ const Layout = ({ children }) => {
                     </div>
                     {showBranch ?
                         <>
-                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"59px"} />
-                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"59px"} />
+                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"27px"} />
+                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} />
                         </>
                         : null}
 

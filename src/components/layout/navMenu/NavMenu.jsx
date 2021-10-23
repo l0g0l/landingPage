@@ -13,7 +13,7 @@ const NavMenu = () => {
                             <img src="img/github.png" alt="logo github" className="logo-img" />
                         </a>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-                            <p className="overlay">https://github.com/l0g0l</p>
+                            {/* <p className="overlay">https://github.com/l0g0l</p> */}
                         </a>
                     </li>
 
@@ -22,7 +22,7 @@ const NavMenu = () => {
                             <img src="img/linkedin.png" alt="logo linkedin" className="logo-img" />
                         </a>
                         <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer noopener" >
-                            <p className="overlay">https://www.linkedin.com/in/luciagonzalezlara/</p>
+                            {/* <p className="overlay">https://www.linkedin.com/in/luciagonzalezlara/</p> */}
                         </a>
                     </li>
 
@@ -31,7 +31,7 @@ const NavMenu = () => {
                             <img src="img/blog.png" alt="logo blog" className="logo-img" />
                         </a>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-                            <p className="overlay">https://desecreadeveloperblog.herokuapp.com/</p>
+                            {/* <p className="overlay">https://desecreadeveloperblog.herokuapp.com/</p> */}
                         </a>
                     </li>
                 </ul>
