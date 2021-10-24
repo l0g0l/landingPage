@@ -1,15 +1,15 @@
 import React from "react"
-import Modal from "react-modal"
+import ReactModal from "react-modal"
 
-Modal.setAppElement("#root");
+ReactModal.setAppElement("#root");
 
- const ModalXL = ({modalisopen, setisopen}) => {
- 
+const ModalXL = ({ modalisopen, setisopen, color, text1, text2, text3 }) => {
+console.log(modalisopen, setisopen, color, text1, text2, text3)
 
   return (
     <div className="modalXL">
-     
-      <Modal
+
+      <ReactModal
         isOpen={modalisopen}
         onRequestClose={() => setisopen(false)}
         overlayClassName={{
@@ -17,15 +17,26 @@ Modal.setAppElement("#root");
           afterOpen: "overlay-after",
           beforeClose: "overlay-before"
         }}
-        className={{
-          base: "content-base",
-          afterOpen: "content-after",
-          beforeClose: "content-before"
-        }}
-        closeTimeoutMS={500}
+        className={{base: "content-base",afterOpen: "content-after",beforeClose:"content-before"}}
+        closeTimeoutMS={100}
+        style={{content: {
+          background: '#A6FD17',
+        }}}
+        
+    
       >
-        <button onClick={() => setisopen(false)}>Close Modal</button>
-      </Modal>
+        <div className="txt">
+          <p>{text1}</p>
+
+          <p>{text2}</p>
+
+          <p>{text3}</p>
+        </div>
+
+
+
+        <button onClick={() => setisopen(false)}>Close</button>
+      </ReactModal>
     </div>
   );
 }
