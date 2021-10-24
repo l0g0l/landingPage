@@ -9,17 +9,20 @@ import Branch from '../Branch'
 const Layout = ({ children }) => {
     const [showBranch, setShowBranch] = useState(false)
 
+    //muestra o esconde el componente branch
     const toggleBranch = () => {
         setShowBranch(!showBranch)
     }
+
+  
 
 
     return (
         <div className="container-layout">
             <NavMenu />
             <main>
-                <div className="contact">
-                    <p>class <strong>Contact</strong>&#123;</p>
+                <div className="contact" id="contact">
+                    <p >class <strong>Contact</strong>&#123;</p>
                     <p>constructor(public <strong>name:</strong>string, public <strong>email:</strong>string)&#123;&#125;&nbsp;&#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
@@ -39,9 +42,9 @@ const Layout = ({ children }) => {
                         </div>
                     </div>
                     {showBranch ?
-                        <>
-                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"27px"} />
-                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} />
+                        <> {/*paso por props los estilos que va a necesitar cado uno de los componentes branch*/}
+                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"Don't Waste"}/> 
+                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coElA"}/>
                         </>
                         : null}
 

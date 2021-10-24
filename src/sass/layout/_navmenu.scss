@@ -30,19 +30,16 @@ ul {
   display: inline;
 }
 .social a,
-.menu a {
+.menu p {
   display: block;
   color: $white;
   text-decoration: none;
   font-size: $fontmenunav;
+  font-weight: $fontweightnav;
   margin: 0 0 16px 0;
 }
 .social li:last-child {
   margin: 0 0 100px 0;
-}
-.menu li {
-  margin-left: 0;
-  font-weight: $fontweightnav;
 }
 .logo-img {
   width: 35px;

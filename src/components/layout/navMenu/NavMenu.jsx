@@ -1,8 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react"
 
 
 const NavMenu = () => {
+
+    //Scroll to the Top
+
+    // Top: 0 takes us all the way back to the top of the page
+    // Behavior: smooth keeps it smooth!
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+
     return (
         <div className="container-nav">
             <nav>
@@ -13,7 +25,7 @@ const NavMenu = () => {
                             <img src="img/github.png" alt="logo github" className="logo-img" />
                         </a>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-                            {/* <p className="overlay">https://github.com/l0g0l</p> */}
+
                         </a>
                     </li>
 
@@ -22,7 +34,7 @@ const NavMenu = () => {
                             <img src="img/linkedin.png" alt="logo linkedin" className="logo-img" />
                         </a>
                         <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer noopener" >
-                            {/* <p className="overlay">https://www.linkedin.com/in/luciagonzalezlara/</p> */}
+
                         </a>
                     </li>
 
@@ -31,22 +43,22 @@ const NavMenu = () => {
                             <img src="img/blog.png" alt="logo blog" className="logo-img" />
                         </a>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-                            {/* <p className="overlay">https://desecreadeveloperblog.herokuapp.com/</p> */}
+
                         </a>
                     </li>
                 </ul>
 
                 <ul className="menu">
-                    <li >
-                        <Link to="#"> Home</Link>
+                    <li onClick={scrollToTop}>
+                        <p> Home</p>
                     </li>
 
                     <li>
-                        <Link to="#">About</Link>
+                        <p>About</p>
                     </li>
 
                     <li>
-                        <Link to="#">Skills</Link>
+                        <p>Skills</p>
                     </li>
                 </ul>
 
