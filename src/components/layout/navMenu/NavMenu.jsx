@@ -1,8 +1,10 @@
-import React from "react"
+import {useState} from "react"
+import ModalXL from "../../ModalXL";
 
 
 const NavMenu = () => {
 
+    const [modalIsOpen, setIsOpen] = useState(false);
     //Scroll to the Top
 
     // Top: 0 takes us all the way back to the top of the page
@@ -54,7 +56,8 @@ const NavMenu = () => {
                     </li>
 
                     <li>
-                        <p>About</p>
+                        <p onClick={() => setIsOpen(true)}>About</p>
+                       <ModalXL modalisopen={modalIsOpen} setisopen={setIsOpen}/>
                     </li>
 
                     <li>
