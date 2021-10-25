@@ -5,10 +5,10 @@ function Modal({ closeModal, title, text, tecnolog, img, url }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <div className="titleCloseBtn">
-          <button onClick={() => { closeModal(false) }}>
+          <button onClick={() => { closeModal(false)}}>
             X
           </button>
+        <div className="titleCloseBtn">
        
         </div>
         <div className="title">

@@ -3,8 +3,8 @@ import ReactModal from "react-modal"
 
 ReactModal.setAppElement("#root");
 
-const ModalXL = ({ modalisopen, setisopen, color, text1, text2, text3 }) => {
-console.log(modalisopen, setisopen, color, text1, text2, text3)
+const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenuname }) => {
+ 
 
   return (
     <div className="modalXL">
@@ -17,20 +17,31 @@ console.log(modalisopen, setisopen, color, text1, text2, text3)
           afterOpen: "overlay-after",
           beforeClose: "overlay-before"
         }}
-        className={{base: "content-base",afterOpen: "content-after",beforeClose:"content-before"}}
+        className={{ base: "content-base", afterOpen: "content-after", beforeClose: "content-before" }}
         closeTimeoutMS={100}
-        style={{content: {
-          background: '#A6FD17',
-        }}}
-        
-    
+        style={{
+          content: {
+            background: '#ff0571',
+          }
+        }}
       >
-        <div className="txt">
-          <p>{text1}</p>
 
-          <p>{text2}</p>
+        <div className="txt" >
+          {aboutmenuname
+            ?
+            textsabout.map((item, i) => (
 
-          <p>{text3}</p>
+              <p key={i}>{item}</p>
+
+            ))
+            :
+            textsskills.map((item, i )=> (
+
+              <p key={i}>{item}</p>
+
+            ))
+          }
+
         </div>
 
 

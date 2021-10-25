@@ -41,10 +41,11 @@ const Layout = ({ children }) => {
                             </div>
                         </div>
                     </div>
-                    {showBranch ?
+                    {showBranch 
+                        ?
                         <> {/*paso por props los estilos que va a necesitar cado uno de los componentes branch*/}
                             <Branch display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"Don't Waste"}/> 
-                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coElA"}/>
+                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"}/>
                         </>
                         : null}
 
