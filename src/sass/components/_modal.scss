@@ -14,7 +14,7 @@
   // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
-  padding: 10px 25px;
+  padding: 26px 20px 0 20px;
 }
 .modalContainer .title {
   display: block;
@@ -33,10 +33,11 @@ p {
 }
 .titleCloseBtn button {
   background-color: transparent;
+  bottom: 381px;
+  right: 12px;
   border: none;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
-  outline: none;
 }
 .img-modal {
   width: 134px;
@@ -47,8 +48,9 @@ p {
   justify-content: left;
   align-items: center;
   color: $black;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
+  margin-bottom: 8px;
 }
 .modalContainer .footer {
   display: flex;

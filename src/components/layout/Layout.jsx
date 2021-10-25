@@ -2,8 +2,8 @@ import { useState } from 'react'
 import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
 import Image from '../Image'
-import MiniBall from '../MiniBall'
-import Branch from '../Branch'
+import MainMiniBall from '../MainMiniBall'
+import BranchBall from '../BranchBall'
 
 
 const Layout = ({ children }) => {
@@ -44,16 +44,16 @@ const Layout = ({ children }) => {
                     {showBranch 
                         ?
                         <> {/*paso por props los estilos que va a necesitar cado uno de los componentes branch*/}
-                            <Branch display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"Don't Waste"}/> 
-                            <Branch display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"}/>
+                            <BranchBall display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"DontWaste"}/> 
+                            <BranchBall display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"}/>
                         </>
                         : null}
 
-                    <MiniBall top={"200px"} />
-                    <MiniBall top={"600px"} />
-                    <MiniBall top={"500px"} />
-                    <MiniBall top={"750px"} func={toggleBranch} />
-                    <MiniBall top={"850px"} />
+                    <MainMiniBall top={"200px"} />
+                    <MainMiniBall top={"600px"} />
+                    <MainMiniBall top={"500px"} />
+                    <MainMiniBall top={"750px"} func={toggleBranch} />
+                    <MainMiniBall top={"850px"} />
 
 
 

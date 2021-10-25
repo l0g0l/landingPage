@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
-const MiniBall = ({top, func}) => {
+const MainMiniBall = ({top, func}) => {
     return (
         <div className="commit-main sx" style={{top: top}} onClick={func}>
            
@@ -9,4 +9,4 @@ const MiniBall = ({top, func}) => {
     )
 }
 
-export default MiniBall
+export default MainMiniBall
