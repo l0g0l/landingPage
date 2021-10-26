@@ -1,8 +1,10 @@
 import React from "react";
 
 
-function Modal({ coela, dontwaste }) {
-  console.log(coela, dontwaste)
+function Modal({ coela, dontwaste, blog }) {
+  console.log(blog)
+
+  // según la prop recibida, muestro una info u otra
   return (
     <div className="modalBackground">
       {coela
@@ -32,14 +34,15 @@ function Modal({ coela, dontwaste }) {
 
           </div>
         </div>
+
         :
 
-      null}
+        null}
 
-        {dontwaste
+      {dontwaste
         ?
 
-        <div className="modalContainer">
+        <div className="modalContainer" >
           <div className="titleCloseBtn">
             <button onClick={() => { dontwaste.closeModal(false) }}>
               X
@@ -64,7 +67,44 @@ function Modal({ coela, dontwaste }) {
 
           </div>
         </div>
-        : null}
+
+        :
+
+        null}
+
+      {blog 
+          ?
+
+          <div className="modalContainer"  >
+            <div className="titleCloseBtn">
+              <button onClick={() => { blog.closeModal(false) }}>
+                X
+              </button>
+
+            </div>
+            <div className="title">
+              <p>{blog.title}</p>
+            </div>
+            <div className="body">
+              <div></div>
+              <span>{blog.text}
+                <br />
+                <strong>Tecnologías</strong>:
+                {blog.tecnolog}
+              </span>
+
+              <img src={blog.img} alt="home dontWaste app" className="img-modal" />
+            </div>
+            <div className="footer">
+              <a href={blog.url} target="_blank" rel="noreferrer noopener">View Web Application</a>
+
+            </div>
+          </div>
+
+          :
+
+          null}
+
     </div>
   );
 }

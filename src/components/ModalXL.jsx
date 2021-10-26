@@ -1,6 +1,7 @@
 import React from "react"
 import ReactModal from "react-modal"
 
+//Librería para montar el modal full screen del NavMenu
 ReactModal.setAppElement("#root");
 
 const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenuname }) => {
@@ -25,7 +26,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
           }
         }}
       >
-
+        {/*según el nombre del elemento del menú (aboutmenuname), pinta un texto u otro con el map */}
         <div className="txt" >
           {aboutmenuname
             ?
@@ -41,11 +42,8 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
 
             ))
           }
-
         </div>
-
-
-
+        
         <button onClick={() => setisopen(false)}>Close</button>
       </ReactModal>
     </div>

@@ -7,10 +7,7 @@ const NavMenu = () => {
     const [modalIsOpenAbout, setIsOpenAbout] = useState(false);
     const [modalIsOpenSkills, setIsOpenSkills] = useState(false);
 
-    //Scroll to the Top
-
-    // Top: 0 takes us all the way back to the top of the page
-    // Behavior: smooth keeps it smooth!
+    //Scroll to the Top, para navegar al comienzo de la pantalla
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -58,14 +55,14 @@ const NavMenu = () => {
                     </li>
 
                     <li>
+                        {/*Para ppintar los textos, se lo paso al componente como una prop siendo un array */}
                         <p onClick={() => setIsOpenAbout(true)}>About</p>
-
                         <ModalXL modalisopen={modalIsOpenAbout} setisopen={setIsOpenAbout} color={'#ff0571'} textsabout={['Tras más de 17 años como secretaria, administrativa e incluso empresaria, hace 5 meses decidí dar un giro a mi carrera profesional e intentar encontrar mi huequecito en el mundo Tech como Desarrolladora Full Stack (MERN.', 'En el mes de marzo  he finalizado un Bootcamp de Desarrollo Web de 500h en The Bridge. Digital Talent Accelerator, combinando clases teóricas con proyectos reales e incluso colaborando con otras verticales como UX/UI, Ciberseguridad y Data Science siendo esto el 80% del tiempo y una muy grata experiencia.', 'Gracias al background antes indicado, puedo aportar grandes cualidades como poner pasión en lo que hago, máxima implicación, querer seguir aprendiendo tratando de ser lo más auto suficiente posible (fundamental siendo un junior), gran capacidad para gestionar la frustración (la mía y las de los demás :) ) y saber trabajar en equipo.']} aboutmenuname={'About'} />
                     </li>
 
                     <li>
                         <p onClick={() => setIsOpenSkills(true)}>Skills</p>
-                        
+
                         <ModalXL modalisopen={modalIsOpenSkills} setisopen={setIsOpenSkills} color={'#ff0571'} textsskills={['Mentalidad de aprendizaje y crecimiento, Pasional, entusiasta e implicada, Colaboradora y tolerante, Adaptación al cambio, Autodidacta, Equipo']} skillsmenuname={'Skills'} />
                     </li>
                 </ul>

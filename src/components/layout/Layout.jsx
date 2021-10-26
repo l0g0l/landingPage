@@ -6,16 +6,22 @@ import MainMiniBall from '../MainMiniBall'
 import BranchBall from '../BranchBall'
 
 
-const Layout = ({ children }) => {
+const Layout = () => {
     const [showBranch, setShowBranch] = useState(false)
+    const [modalOpenBlog, setModalOpenBlog] = useState(false)
+    console.log(modalOpenBlog)
+
+   
 
     //muestra o esconde el componente branch
     const toggleBranch = () => {
         setShowBranch(!showBranch)
     }
 
-  
-
+    //abre el modal
+    const toggleModal = () => {
+        setModalOpenBlog(!modalOpenBlog)
+    }
 
     return (
         <div className="container-layout">
@@ -41,29 +47,27 @@ const Layout = ({ children }) => {
                             </div>
                         </div>
                     </div>
-                    {showBranch 
+                    {/*paso por props los estilos que va a necesitar cado uno de los componentes */}
+                    {showBranch
                         ?
-                        <> {/*paso por props los estilos que va a necesitar cado uno de los componentes branch*/}
-                            <BranchBall display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"DontWaste"}/> 
-                            <BranchBall display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"}/>
+                        <>
+                            <BranchBall display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"DontWaste"} />
+                            <BranchBall display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"} />
                         </>
-                        : null}
+                        :
+                        null}
 
                     <MainMiniBall top={"200px"} />
                     <MainMiniBall top={"600px"} />
                     <MainMiniBall top={"500px"} />
                     <MainMiniBall top={"750px"} func={toggleBranch} />
-                    <MainMiniBall top={"850px"} />
+                    <MainMiniBall top={"850px"} funcmodal={toggleModal} modalstate={modalOpenBlog}/>
 
 
 
 
 
                 </div>
-
-
-
-
 
             </main>
             {/* <Footer /> */}

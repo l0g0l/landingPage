@@ -43,7 +43,7 @@ button {
   border: 0;
   outline: 0;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: stretch;
   background-color: transparent;
   transition-property: background-color, width, height;
@@ -58,12 +58,11 @@ button {
       font-size: 15px !important;
       font-weight: bold !important;
       color: $white;
-        // span {
-        //   font-size: 25px;
-        // }
+      // span {
+      //   font-size: 25px;
+      // }
     }
-      
-  } 
+  }
 }
 .content-after {
   width: 70%;

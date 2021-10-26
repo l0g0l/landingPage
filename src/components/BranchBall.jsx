@@ -4,17 +4,18 @@ import Modal from './Modal'
 const BranchBall = ({ display, position, top, left, project }) => {
     const [modalOpenCoela, setModalOpenCoela] = useState(false)//comienza en false para que no se muestre
     const [modalOpenDW, setModalOpenDW] = useState(false)
-    console.log(modalOpenCoela)
-    console.log(modalOpenDW)
 
-
-
+    // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
         <div className=' branch-dev'>
-            <button onClick={() => {
-                setModalOpenCoela(true) 
-                setModalOpenDW(true)
-                }} className=' commit-main' style={{ display: display, position: position, top: top, left: left }}> </button>  
+            <button
+                onClick={() => {
+                    setModalOpenCoela(!modalOpenCoela)
+                    setModalOpenDW(!modalOpenDW)
+                }}
+                className=' commit-main'
+                style={{ display: display, position: position, top: top, left: left }}>
+            </button>
 
             {modalOpenCoela && project === 'coELA'
                 ?
@@ -35,7 +36,6 @@ const BranchBall = ({ display, position, top, left, project }) => {
             {modalOpenDW && project !== 'coELA'
                 ?
                 <>
-
                     <Modal
                         dontwaste={{
                             closeModal: setModalOpenDW,
@@ -47,8 +47,7 @@ const BranchBall = ({ display, position, top, left, project }) => {
                         }} />
                 </>
                 :
-                null}     
-                   
+                null}
 
         </div>
     )
