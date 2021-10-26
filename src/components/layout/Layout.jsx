@@ -11,7 +11,7 @@ const Layout = () => {
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
     console.log(modalOpenBlog)
 
-   
+
 
     //muestra o esconde el componente branch
     const toggleBranch = () => {
@@ -59,9 +59,28 @@ const Layout = () => {
 
                     <MainMiniBall top={"200px"} />
                     <MainMiniBall top={"600px"} />
-                    <MainMiniBall top={"500px"} />
-                    <MainMiniBall top={"750px"} func={toggleBranch} />
-                    <MainMiniBall top={"850px"} funcmodal={toggleModal} modalstate={modalOpenBlog}/>
+                    <MainMiniBall top={"500px"} tooltip3={'Maquetaciones'} />
+                    <MainMiniBall
+                        branch1={{
+                            top2: "750px",
+                            funcbranch: toggleBranch,
+                            tooltip2: 'Proyectos fin de Bootcamp',
+                            with2: '270px',
+                            topminiball2: '0px'
+                        }}
+                    />
+
+                    <MainMiniBall
+                        quiz={{
+                            funcmodal: toggleModal,
+                            top1: "850px",
+                            modalstate: modalOpenBlog,
+                            tooltip1: 'Mi primer proyecto',
+                            size1: '42px',
+                            topminiball1: '-2px',
+                            with1: '215px'
+                        }}
+                    />
 
 
 

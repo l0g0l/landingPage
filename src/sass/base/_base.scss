@@ -33,6 +33,25 @@ body {
     cursor: pointer;
   }
 }
+.tooltip-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid red;
+  text-align: center;
+}
+.text {
+  width: 200px;
+  border: 1px solid $white;
+  position: absolute;
+  top: -8px;
+  right: 42px;
+  // display: none;
+  color: $white;
+}
+.tooltip-container:hover .text {
+  display: block;
+}
 .branch-dev {
   width: 40px;
   height: 142px;

@@ -2,7 +2,7 @@ import React from "react";
 
 
 function Modal({ coela, dontwaste, blog }) {
-  console.log(blog)
+
 
   // según la prop recibida, muestro una info u otra
   return (

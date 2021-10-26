@@ -28,7 +28,8 @@ const BranchBall = ({ display, position, top, left, project }) => {
                             tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
                             img: '/img/modals/coELA-home.png',
                             url: 'https://coela.herokuapp.com/'
-                        }} />
+                        }} 
+                        />
                 </>
                 :
                 null}
@@ -44,7 +45,8 @@ const BranchBall = ({ display, position, top, left, project }) => {
                             tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
                             img: '/img/modals/dontWaste.gif',
                             url: 'https://dontwasteapp.herokuapp.com/'
-                        }} />
+                        }} 
+                        />
                 </>
                 :
                 null}
