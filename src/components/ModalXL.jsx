@@ -5,7 +5,8 @@ import ReactModal from "react-modal"
 ReactModal.setAppElement("#root");
 
 const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenuname }) => {
- 
+  console.log(textsskills)
+
 
   return (
     <div className="modalXL">
@@ -36,14 +37,16 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
 
             ))
             :
-            textsskills.map((item, i )=> (
+            textsskills.map((item, i) => (
 
-              <p key={i}>{item}</p>
-
+              <>
+                <p key={i}>{item.text}</p>
+                <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
+              </>
             ))
           }
         </div>
-        
+
         <button onClick={() => setisopen(false)}>Close</button>
       </ReactModal>
     </div>

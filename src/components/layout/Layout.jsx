@@ -49,7 +49,7 @@ const Layout = () => {
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
                 </div>
-                <button onClick={() => { scrollToDown() }}>
+                <button id="btnarrowdown"onClick={() => { scrollToDown() }}>
                     <div className="arrow" ></div>
                 </button>
 

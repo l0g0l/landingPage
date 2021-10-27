@@ -73,9 +73,11 @@ const NavMenu = () => {
                             modalisopen={modalIsOpenSkills} 
                             setisopen={setIsOpenSkills} 
                             color={'#ff0571'} 
-                            textsskills={['Mentalidad de aprendizaje y crecimiento, Pasional, entusiasta e implicada, Colaboradora y tolerante, Adaptación al cambio, Autodidacta, Equipo']} 
+                            textsskills={[{
+                                text:'Mentalidad de aprendizaje y crecimiento, Pasional, entusiasta e implicada, Colaboradora y tolerante, Adaptación al cambio, Autodidacta, Equipo', 
+                                cv:'/img/cv.pdf'}]} 
                             skillsmenuname={'Skills'}
-                            cv='/img/cvLuciaG_WebDeveloper_MERN'
+                            
                             />
                     </li>
                 </ul>
