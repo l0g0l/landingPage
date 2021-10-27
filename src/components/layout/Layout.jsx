@@ -14,6 +14,14 @@ const Layout = () => {
     const [showBranch3, setShowBranch3] = useState(false)
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
 
+      //Scroll para navegar al final de la pantalla
+    const scrollToDown = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+    };
+
     //muestra o esconde los componentes branch
     const toggleBranch1 = () => {
         setShowBranch1(!showBranch1)
@@ -32,7 +40,7 @@ const Layout = () => {
 
     return (
         <div className="container-layout">
-            
+
             <NavMenu />
             <main>
                 <div className="contact" id="contact">
@@ -41,7 +49,10 @@ const Layout = () => {
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
                 </div>
-                
+                <button onClick={() => { scrollToDown() }}>
+                    <div className="arrow" ></div>
+                </button>
+
                 <div className="myname">
                     <span >Lucía González</span>
                     <span >Web Developer</span>
@@ -148,9 +159,9 @@ const Layout = () => {
                 </div>
 
             </main>
-            
-                <Footer />
-           
+
+            <Footer />
+
         </div>
     )
 }

@@ -11,6 +11,55 @@ a {
     text-decoration: none;
   }
 }
+.arrow,
+.arrow:before {
+  position: absolute;
+}
+button {
+  background-color: transparent;
+  margin-right: 50px;
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    top: 87%;
+    left: 94%;
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    &button {
+      background-color: transparent;
+    }
+  }
+
+  .arrow:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 87%;
+    left: 94%;
+    margin: -24px 0 0 -25px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
+  @keyframes arrow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-5px, -5px);
+    }
+  }
+}
 
 .commit-main {
   display: block;
