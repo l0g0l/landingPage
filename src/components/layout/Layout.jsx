@@ -32,6 +32,7 @@ const Layout = () => {
 
     return (
         <div className="container-layout">
+            
             <NavMenu />
             <main>
                 <div className="contact" id="contact">
@@ -40,7 +41,7 @@ const Layout = () => {
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
                 </div>
-
+                
                 <div className="myname">
                     <span >Lucía González</span>
                     <span >Web Developer</span>
@@ -67,8 +68,8 @@ const Layout = () => {
                     {showBranch2
                         ?
                         <>
-                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"}  project={"Buscador de repos"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"}  project={"NPM Clone"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"} project={"Buscador de repos"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"} project={"NPM Clone"} />
                             <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
                             <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} />
                         </>
@@ -85,14 +86,14 @@ const Layout = () => {
                         null}
                     <MainMiniBall
                         branch3_3={{
-                            top4_4: "160px"
+                            top4_4: "210px"
                         }}
                     />
 
                     <MainMiniBall
                         branch3={{
                             funcbranch3: toggleBranch3,
-                            top4: "325px",
+                            top4: "375px",
                             tooltip4: 'Full Stack',
                             with4: '135px',
                             size4: '42px',
@@ -102,14 +103,14 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch2_2={{
-                            top3_3: "425px"
+                            top3_3: "475px"
                         }}
                     />
 
                     <MainMiniBall
                         branch2={{
                             funcbranch2: toggleBranch2,
-                            top3: "663px",
+                            top3: "713px",
                             tooltip3: 'Maquetaciones',
                             with3: '170px',
                             size3: '42px',
@@ -119,13 +120,13 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch1_1={{
-                            top1_1: "763px"
+                            top1_1: "813px"
                         }}
                     />
 
                     <MainMiniBall
                         branch1={{
-                            top2: "900px",
+                            top2: "950px",
                             funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
@@ -136,7 +137,7 @@ const Layout = () => {
                     <MainMiniBall
                         quiz={{
                             funcmodal: toggleModal,
-                            top1: "1000px",
+                            top1: "1050px",
                             modalstate: modalOpenBlog,
                             tooltip1: 'Mi primer proyecto',
                             size1: '42px',
@@ -144,15 +145,12 @@ const Layout = () => {
                             with1: '215px'
                         }}
                     />
-
-
-
-
-
                 </div>
 
             </main>
-            <Footer />
+            
+                <Footer />
+           
         </div>
     )
 }
