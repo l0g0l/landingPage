@@ -6,26 +6,13 @@
   text-align: right;
   line-height: $footer;
   position: absolute;
-  bottom: -1100px;
+  bottom: -1000px;
   font-size: 12px;
  
     p {
       margin-right: 27px;
     }
 }
-.tooltip {
-  text-decoration:none;
-  position:relative;
-}
- 
-.tooltip span {
-  display:none;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  color:black;
-  background:white; 
-}
- 
+
 
   

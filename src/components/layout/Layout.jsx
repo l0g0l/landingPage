@@ -72,14 +72,14 @@ const Layout = () => {
 
                     <MainMiniBall 
                         branch2_2={{
-                            top3_3:"263px" 
+                            top3_3:"322px" 
                         }} 
                     />
 
                     <MainMiniBall
                         branch2={{
                             funcbranch2: toggleBranch2,
-                            top3: "500px",
+                            top3: "563px",
                             tooltip3: 'Maquetaciones',
                             with3: '170px',
                             size3: '42px',
@@ -89,7 +89,7 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch1={{
-                            top2: "750px",
+                            top2: "800px",
                             funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
@@ -99,14 +99,14 @@ const Layout = () => {
 
                     <MainMiniBall 
                         branch1_1={{
-                            top1_1:"600px" 
+                            top1_1:"663px" 
                         }} 
                     />
 
                     <MainMiniBall
                         quiz={{
                             funcmodal: toggleModal,
-                            top1: "850px",
+                            top1: "900px",
                             modalstate: modalOpenBlog,
                             tooltip1: 'Mi primer proyecto',
                             size1: '42px',
