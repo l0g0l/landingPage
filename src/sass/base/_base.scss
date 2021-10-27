@@ -3,7 +3,14 @@ body {
   color: $white;
   font-family: $mainFont;
 }
-
+a {
+  text-decoration: none;
+  color: $pink-secondary;
+}
+a:hover {
+  color: $lemon;
+  text-decoration: none;
+}
 .commit-main {
   width: 30px;
   height: 30px;
@@ -46,13 +53,13 @@ body {
   position: absolute;
   top: -8px;
   right: 42px;
-  display: none;
+  // display: none;
   color: $white;
 }
 .tooltip-container:hover .text {
   display: block;
 }
-.branch-dev {
+.branch1 {
   width: 40px;
   height: 142px;
   display: block;
@@ -62,6 +69,17 @@ body {
   border: 3px solid blueviolet;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+}
+.branch2 {
+  width: 40px;
+  height: 244px;
+  display: block;
+  position: absolute;
+  top: 275px;
+  right: 21px;
+  border: 3px solid blueviolet;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .neon {

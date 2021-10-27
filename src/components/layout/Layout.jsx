@@ -3,22 +3,24 @@ import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
 import Image from '../Image'
 import MainMiniBall from '../MainMiniBall'
-import BranchBall from '../BranchBall'
+import Branch1 from '../Branch1'
+import Branch2 from '../Branch2'
 
 
 const Layout = () => {
-    const [showBranch, setShowBranch] = useState(false)
+    const [showBranch1, setShowBranch1] = useState(false)
+    const [showBranch2, setShowBranch2] = useState(false)
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
-    console.log(modalOpenBlog)
 
-
-
-    //muestra o esconde el componente branch
-    const toggleBranch = () => {
-        setShowBranch(!showBranch)
+    //muestra o esconde los componentes branch
+    const toggleBranch1 = () => {
+        setShowBranch1(!showBranch1)
+    }
+    const toggleBranch2 = () => {
+        setShowBranch2(!showBranch2)
     }
 
-    //abre el modal
+    //abre el modal del primer proyecto
     const toggleModal = () => {
         setModalOpenBlog(!modalOpenBlog)
     }
@@ -48,26 +50,57 @@ const Layout = () => {
                         </div>
                     </div>
                     {/*paso por props los estilos que va a necesitar cado uno de los componentes */}
-                    {showBranch
+                    {showBranch2
                         ?
                         <>
-                            <BranchBall display={"block"} position={"absolute"} top={"20px"} left={"27px"} project={"DontWaste"} />
-                            <BranchBall display={"block"} position={"absolute"} top={"80px"} left={"27px"} project={"coELA"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-16px"} project={"Buscador de repos"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-16px"} project={"NPM Clone"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-16px"} project={"Hackathon(Nuwe)"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-16px"} project={"Maquetación Avanzada"} />
                         </>
                         :
                         null}
 
-                    <MainMiniBall top={"200px"} />
-                    <MainMiniBall top={"600px"} />
-                    <MainMiniBall top={"500px"} tooltip3={'Maquetaciones'} />
+                    {showBranch1
+                        ?
+                        <>
+                            <Branch1 display={"block"} position={"absolute"} top={"80px"} left={"22px"} project={"coELA"} />
+                            <Branch1 display={"block"} position={"absolute"} top={"20px"} left={"22px"} project={"DontWaste"} />
+                        </>
+                        :
+                        null}
+
+                    <MainMiniBall 
+                        branch2_2={{
+                            top3_3:"263px" 
+                        }} 
+                    />
+
+                    <MainMiniBall
+                        branch2={{
+                            funcbranch2: toggleBranch2,
+                            top3: "500px",
+                            tooltip3: 'Maquetaciones',
+                            with3: '170px',
+                            size3: '42px',
+                            topminiball3: '-3px'
+                        }}
+                    />
+
                     <MainMiniBall
                         branch1={{
                             top2: "750px",
-                            funcbranch: toggleBranch,
+                            funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
                             topminiball2: '0px'
                         }}
+                    />
+
+                    <MainMiniBall 
+                        branch1_1={{
+                            top1_1:"600px" 
+                        }} 
                     />
 
                     <MainMiniBall
@@ -89,7 +122,7 @@ const Layout = () => {
                 </div>
 
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

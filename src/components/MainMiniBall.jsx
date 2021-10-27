@@ -1,18 +1,47 @@
 import Modal from './Modal'
 
-const MainMiniBall = ({ quiz, branch1 }) => {
-
-
-
+const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2 }) => {
     //pasando modalstate, uso el state del padre aquí
     // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el sigueinte ternario y el state hago que se muestre el modal o no
+    //tengo que poner que "existe branch1, (linea 9) y quiz (linea 21)" para que las props se reconozcan como propiedades del obj p.e. branch1.top2 o quiz.size1
     return (
         <>
+            {/*Empieza Branch2- 4 proyectos */}
+            {branch2_2 && branch2_2.top3_3 !== "850px"
+                ?
+                <div className="commit-main sx " style={{ top: branch2_2.top3_3, cursor: "auto" }}></div>
+
+                :
+                null}
+
+            {branch2 && branch2.top3 !== "850px"
+                ?
+                <div className="commit-main sx " style={{ top: branch2.top3 }} onClick={branch2.funcbranch2}>
+                    <div className="tooltip-container">
+                        <div className="text" style={{ width: branch2.with3, left: branch2.size3, top: branch2.topminiball3 }} >
+                            <span >{branch2.tooltip3}</span>
+                        </div>
+                    </div>
+                </div>
+
+                :
+                null}
+            {/*Termina Branch2-4 proyectos */}
+
+            
+            {/*Empieza Branch1- 2 proyectos */}
+            {branch1_1 && branch1_1.top1_1 !== "850px"
+                ?
+                <div className="commit-main sx " style={{ top: branch1_1.top1_1, cursor: "auto" }}></div>
+
+                :
+                null}
+
             {branch1 && branch1.top2 !== "850px"
                 ?
                 <div className="commit-main sx " style={{ top: branch1.top2 }} onClick={branch1.funcbranch}>
                     <div className="tooltip-container">
-                        <div className="text" style={{ width: branch1.with2 }} >
+                        <div className="text" style={{ width: branch1.with2, top: branch1.topminiball2  }} >
                             <span >{branch1.tooltip2}</span>
                         </div>
                     </div>
@@ -20,6 +49,8 @@ const MainMiniBall = ({ quiz, branch1 }) => {
 
                 :
                 null}
+            {/*Termina Branch1-2 proyectos */}
+
             {quiz && <div className="commit-main sx " tabindex="0" style={{ top: quiz.top1 }} onClick={quiz.funcmodal}>
                 <div className="tooltip-container">
                     <div className="text" style={{ right: quiz.size1, top: quiz.topminiball1, width: quiz.with1 }}>

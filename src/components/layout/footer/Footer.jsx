@@ -1,12 +1,10 @@
 import React from 'react'
 
-// import '../../../sass/layout/_footer.scss'
-
 
 const Footer = () => {
     return (
         <div className="container-footer">
-            Todos los derechos reservados &copy;.  Lucía González...Mujer, Valiente y ahora Web Developer
+            Todos los derechos reservados &copy;. Mujer, Valiente y ahora Web Developer...
         </div>
     )
 }

@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import Modal from './Modal'
 
-const BranchBall = ({ display, position, top, left, project }) => {
+const Branch1 = ({ display, position, top, left, project }) => {
+  
     const [modalOpenCoela, setModalOpenCoela] = useState(false)//comienza en false para que no se muestre
     const [modalOpenDW, setModalOpenDW] = useState(false)
 
+
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
-        <div className=' branch-dev'>
+        <div className=' branch1'>
             <button
                 onClick={() => {
                     setModalOpenCoela(!modalOpenCoela)
@@ -29,7 +31,7 @@ const BranchBall = ({ display, position, top, left, project }) => {
                             img: '/img/modals/coELA-home.png',
                             url: 'https://coela.herokuapp.com/'
                         }} 
-                        />
+                    />
                 </>
                 :
                 null}
@@ -46,7 +48,7 @@ const BranchBall = ({ display, position, top, left, project }) => {
                             img: '/img/modals/dontWaste.gif',
                             url: 'https://dontwasteapp.herokuapp.com/'
                         }} 
-                        />
+                    />
                 </>
                 :
                 null}
@@ -55,4 +57,4 @@ const BranchBall = ({ display, position, top, left, project }) => {
     )
 }
 
-export default BranchBall
+export default Branch1
