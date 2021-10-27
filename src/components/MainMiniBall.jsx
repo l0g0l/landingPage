@@ -1,11 +1,33 @@
 import Modal from './Modal'
 
-const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2 }) => {
+const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3 }) => {
     //pasando modalstate, uso el state del padre aquí
     // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el sigueinte ternario y el state hago que se muestre el modal o no
     //tengo que poner que "existe branch1, (linea 9) y quiz (linea 21)" para que las props se reconozcan como propiedades del obj p.e. branch1.top2 o quiz.size1
     return (
         <>
+             {/*Empieza Branch3- 4 proyectos */}
+             {branch3_3 && branch3_3.top4_4 !== "850px"
+                ?
+                <div className="commit-main sx " style={{ top: branch3_3.top4_4, cursor: "auto" }}></div>
+
+                :
+                null}
+
+            {branch3 && branch3.top4 !== "850px"
+                ?
+                <div className="commit-main sx " style={{ top: branch3.top4 }} onClick={branch3.funcbranch3}>
+                    <div className="tooltip-container">
+                        <div className="text" style={{ width: branch3.with4, right: branch3.size4, top: branch3.topminiball4 }} >
+                            <span >{branch3.tooltip4}</span>
+                        </div>
+                    </div>
+                </div>
+
+                :
+                null}
+            {/*Termina Branch3-4 proyectos */}
+
             {/*Empieza Branch2- 4 proyectos */}
             {branch2_2 && branch2_2.top3_3 !== "850px"
                 ?
@@ -51,6 +73,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2 }) => {
                 null}
             {/*Termina Branch1-2 proyectos */}
 
+            {/* Empieza Primer proyecto */}
             {quiz && <div className="commit-main sx " tabindex="0" style={{ top: quiz.top1 }} onClick={quiz.funcmodal}>
                 <div className="tooltip-container">
                     <div className="text" style={{ right: quiz.size1, top: quiz.topminiball1, width: quiz.with1 }}>
@@ -61,9 +84,9 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2 }) => {
                     ?
                     <div  >
                         <Modal
-                            blog={{
+                            quiz={{
                                 closeModal: quiz.funcmodal,
-                                title: 'BLOG',
+                                title: 'Quiz-Firebase',
                                 text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
                                 tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
                                 img: '/img/modals/coELA-home.png',
@@ -75,6 +98,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2 }) => {
                     </div>
                     :
                     null}
+            {/* Termina Primer proyecto */}        
 
             </div>
             }

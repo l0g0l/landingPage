@@ -5,11 +5,13 @@ import Image from '../Image'
 import MainMiniBall from '../MainMiniBall'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
+import Branch3 from '../Branch3'
 
 
 const Layout = () => {
     const [showBranch1, setShowBranch1] = useState(false)
     const [showBranch2, setShowBranch2] = useState(false)
+    const [showBranch3, setShowBranch3] = useState(false)
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
 
     //muestra o esconde los componentes branch
@@ -18,6 +20,9 @@ const Layout = () => {
     }
     const toggleBranch2 = () => {
         setShowBranch2(!showBranch2)
+    }
+    const toggleBranch3 = () => {
+        setShowBranch3(!showBranch3)
     }
 
     //abre el modal del primer proyecto
@@ -50,6 +55,15 @@ const Layout = () => {
                         </div>
                     </div>
                     {/*paso por props los estilos que va a necesitar cado uno de los componentes */}
+                    {showBranch3
+                        ?
+                        <>
+                            <Branch3 display={"block"} position={"absolute"} top={"12px"} left={"20px"} project={"De secre a Developer"} />
+                            <Branch3 display={"block"} position={"absolute"} top={"62px"} left={"20px"} project={"Agencia de Viajes"} />
+                            <Branch3 display={"block"} position={"absolute"} top={"112px"} left={"20px"} project={"Gestor de citas"} />
+                        </>
+                        :
+                        null}
                     {showBranch2
                         ?
                         <>
@@ -69,11 +83,27 @@ const Layout = () => {
                         </>
                         :
                         null}
+                    <MainMiniBall
+                        branch3_3={{
+                            top4_4: "62px"
+                        }}
+                    />
 
-                    <MainMiniBall 
+                    <MainMiniBall
+                        branch3={{
+                            funcbranch3: toggleBranch3,
+                            top4: "222px",
+                            tooltip4: 'Full Stack',
+                            with4: '135px',
+                            size4: '42px',
+                            topminiball4: '-2px'
+                        }}
+                    />
+
+                    <MainMiniBall
                         branch2_2={{
-                            top3_3:"322px" 
-                        }} 
+                            top3_3: "322px"
+                        }}
                     />
 
                     <MainMiniBall
@@ -97,10 +127,10 @@ const Layout = () => {
                         }}
                     />
 
-                    <MainMiniBall 
+                    <MainMiniBall
                         branch1_1={{
-                            top1_1:"663px" 
-                        }} 
+                            top1_1: "663px"
+                        }}
                     />
 
                     <MainMiniBall
