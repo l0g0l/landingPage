@@ -50,7 +50,7 @@ const Layout = () => {
                         <div className="main-branch">
 
                             <div className="commit-main end">
-                                <Image />
+                                {/* <Image /> */}
                             </div>
                         </div>
                     </div>
@@ -67,8 +67,8 @@ const Layout = () => {
                     {showBranch2
                         ?
                         <>
-                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"} project={"Buscador de repos"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"} project={"NPM Clone"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"}  project={"Buscador de repos"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"}  project={"NPM Clone"} />
                             <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
                             <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} />
                         </>

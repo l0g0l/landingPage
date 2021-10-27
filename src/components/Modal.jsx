@@ -4,7 +4,7 @@ import React from "react";
 function Modal({ content }) {
 
   return (
-    <div className="modalBackground">
+    <div className="modalBackground" style={{left:content.right}}>
       <div className="modalContainer" >
         <div className="titleCloseBtn">
           <button onClick={() => { content.closeModal(false) }}>
