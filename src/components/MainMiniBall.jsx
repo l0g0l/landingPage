@@ -84,7 +84,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                     ?
                     <div  >
                         <Modal
-                            quiz={{
+                            content={{
                                 closeModal: quiz.funcmodal,
                                 title: 'Quiz-Firebase',
                                 text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',

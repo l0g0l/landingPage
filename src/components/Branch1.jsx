@@ -23,7 +23,7 @@ const Branch1 = ({ display, position, top, left, project }) => {
                 ?
                 <>
                     <Modal
-                        coela={{
+                        content={{
                             closeModal: setModalOpenCoela,
                             title: 'coELA',
                             text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
@@ -40,7 +40,7 @@ const Branch1 = ({ display, position, top, left, project }) => {
                 ?
                 <>
                     <Modal
-                        dontwaste={{
+                        content={{
                             closeModal: setModalOpenDW,
                             title: 'DontWaste',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',

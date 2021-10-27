@@ -24,7 +24,7 @@ const Branch3 = ({ display, position, top, left, project }) => {
                 ?
                 <>
                     <Modal
-                        Hackathon={{
+                        content={{
                             closeModal: setModalOpenBlog,
                             title: 'De secre a Developer',
                             text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
@@ -37,11 +37,11 @@ const Branch3 = ({ display, position, top, left, project }) => {
                 :
                 null}
 
-            {modalOpenAgencia && project !== 'Agencia de Viajes'
+            {modalOpenAgencia && project === 'Agencia de Viajes'
                 ?
                 <>
                     <Modal
-                        npm={{
+                        content={{
                             closeModal: setModalOpenAgencia,
                             title: 'Agencia de Viajes',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
@@ -55,11 +55,11 @@ const Branch3 = ({ display, position, top, left, project }) => {
                 null}
 
 
-            {modalOpenPatientM && project !== 'Gestor de citas'
+            {modalOpenPatientM && project === 'Gestor de citas'
                 ?
                 <>
                     <Modal
-                        buscador={{
+                        content={{
                             closeModal: setModalOpenPatientM,
                             title: 'Gestor de citas',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',

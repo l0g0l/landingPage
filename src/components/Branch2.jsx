@@ -26,7 +26,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                 ?
                 <>
                     <Modal
-                        hackathon={{
+                        content={{
                             closeModal: setModalOpenHac,
                             title: 'Hackathon(Nuwe)',
                             text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
@@ -39,11 +39,11 @@ const Branch2 = ({ display, position, top, left, project }) => {
                 :
                 null}
 
-            {modalOpenNPM && project !== 'NPM Clone'
+            {modalOpenNPM && project === 'NPM Clone'
                 ?
                 <>
                     <Modal
-                        npm={{
+                        content={{
                             closeModal: setModalOpenNPM,
                             title: 'NPM Clone',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
@@ -57,11 +57,11 @@ const Branch2 = ({ display, position, top, left, project }) => {
                 null}
 
 
-            {modalOpenBuscRep && project !== 'Buscador de repos'
+            {modalOpenBuscRep && project === 'Buscador de repos'
                 ?
                 <>
                     <Modal
-                        buscador={{
+                        content={{
                             closeModal: setModalOpenBuscRep,
                             title: 'Buscador de repos',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
@@ -74,11 +74,11 @@ const Branch2 = ({ display, position, top, left, project }) => {
                 :
                 null}
 
-            {modalOpenMaqAv && project !== 'Maquetación Avanzada'
+            {modalOpenMaqAv && project === 'Maquetación Avanzada'
                 ?
                 <>
                     <Modal
-                        maquetacion={{
+                        content={{
                             closeModal: setModalOpenMaqAv,
                             title: 'Maquetación Avanzada',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',

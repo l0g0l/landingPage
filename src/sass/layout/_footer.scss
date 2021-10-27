@@ -1,14 +1,18 @@
 .container-footer {
-  display: grid;
-  grid-column: 1 / 3;
-  width: 100%;
+
+  width: 93%;
+  left: 87px;
   height: $footer;
-  text-align: right;
+  text-align: center;
   line-height: $footer;
   position: absolute;
-  bottom: -1000px;
+  bottom: -1118px;
   font-size: 12px;
- 
+  background: $blacksecondary;
+  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,
+    -6px -6px 7px $neumorphimssecondary;
+  box-shadow: 6px 6px 7px $neumorphimssecondary,
+    -1px -6px 7px $neumorphimsprimary;
     p {
       margin-right: 27px;
     }

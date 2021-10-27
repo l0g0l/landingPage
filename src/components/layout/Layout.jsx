@@ -42,7 +42,7 @@ const Layout = () => {
                 </div>
 
                 <div className="myname">
-                    <span >Lucia Gonzalez</span>
+                    <span >Lucía González</span>
                     <span >Web Developer</span>
                 </div>
                 <div className="container-main">
@@ -58,19 +58,19 @@ const Layout = () => {
                     {showBranch3
                         ?
                         <>
-                            <Branch3 display={"block"} position={"absolute"} top={"12px"} left={"20px"} project={"De secre a Developer"} />
-                            <Branch3 display={"block"} position={"absolute"} top={"62px"} left={"20px"} project={"Agencia de Viajes"} />
-                            <Branch3 display={"block"} position={"absolute"} top={"112px"} left={"20px"} project={"Gestor de citas"} />
+                            <Branch3 display={"block"} position={"absolute"} top={"12px"} left={"24px"} project={"De secre a Developer"} />
+                            <Branch3 display={"block"} position={"absolute"} top={"62px"} left={"24px"} project={"Agencia de Viajes"} />
+                            <Branch3 display={"block"} position={"absolute"} top={"112px"} left={"24px"} project={"Gestor de citas"} />
                         </>
                         :
                         null}
                     {showBranch2
                         ?
                         <>
-                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-16px"} project={"Buscador de repos"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-16px"} project={"NPM Clone"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-16px"} project={"Hackathon(Nuwe)"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-16px"} project={"Maquetación Avanzada"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"} project={"Buscador de repos"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"} project={"NPM Clone"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} />
                         </>
                         :
                         null}
@@ -78,21 +78,21 @@ const Layout = () => {
                     {showBranch1
                         ?
                         <>
-                            <Branch1 display={"block"} position={"absolute"} top={"80px"} left={"22px"} project={"coELA"} />
-                            <Branch1 display={"block"} position={"absolute"} top={"20px"} left={"22px"} project={"DontWaste"} />
+                            <Branch1 display={"block"} position={"absolute"} top={"80px"} left={"24px"} project={"coELA"} />
+                            <Branch1 display={"block"} position={"absolute"} top={"20px"} left={"24px"} project={"DontWaste"} />
                         </>
                         :
                         null}
                     <MainMiniBall
                         branch3_3={{
-                            top4_4: "62px"
+                            top4_4: "160px"
                         }}
                     />
 
                     <MainMiniBall
                         branch3={{
                             funcbranch3: toggleBranch3,
-                            top4: "222px",
+                            top4: "325px",
                             tooltip4: 'Full Stack',
                             with4: '135px',
                             size4: '42px',
@@ -102,24 +102,30 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch2_2={{
-                            top3_3: "322px"
+                            top3_3: "425px"
                         }}
                     />
 
                     <MainMiniBall
                         branch2={{
                             funcbranch2: toggleBranch2,
-                            top3: "563px",
+                            top3: "663px",
                             tooltip3: 'Maquetaciones',
                             with3: '170px',
                             size3: '42px',
-                            topminiball3: '-3px'
+                            topminiball3: '-2px'
+                        }}
+                    />
+
+                    <MainMiniBall
+                        branch1_1={{
+                            top1_1: "763px"
                         }}
                     />
 
                     <MainMiniBall
                         branch1={{
-                            top2: "800px",
+                            top2: "900px",
                             funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
@@ -128,15 +134,9 @@ const Layout = () => {
                     />
 
                     <MainMiniBall
-                        branch1_1={{
-                            top1_1: "663px"
-                        }}
-                    />
-
-                    <MainMiniBall
                         quiz={{
                             funcmodal: toggleModal,
-                            top1: "900px",
+                            top1: "1000px",
                             modalstate: modalOpenBlog,
                             tooltip1: 'Mi primer proyecto',
                             size1: '42px',
