@@ -86,11 +86,11 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                         <Modal
                             content={{
                                 closeModal: quiz.funcmodal,
-                                title: 'Quiz-Firebase',
-                                text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
-                                tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                                img: '/img/modals/coELA-home.png',
-                                url: 'https://coela.herokuapp.com/',
+                                title: 'Quiz-LocalStorage',
+                                text: 'Quiz constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive',
+                                tecnolog: 'HTML, CSS y JavaScript',
+                                img: '/img/modals/quiz_movil.gif',
+                                url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
                                 top: "850px"
 
                             }}

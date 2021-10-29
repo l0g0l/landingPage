@@ -14,15 +14,6 @@ const Layout = () => {
     const [showBranch3, setShowBranch3] = useState(false)
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
 
-      //Scroll para navegar al final de la pantalla
- /*    const scrollToDown = () => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: "smooth"
-        });
-    };
- */
- 
     //muestra o esconde los componentes branch
     const toggleBranch1 = () => {
         setShowBranch1(!showBranch1)
@@ -46,9 +37,9 @@ const Layout = () => {
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string, public <strong>email:</strong>string ) &#123;<br/> &#125; &#125;;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br/> &#125; &#125;;</p>
                     <p>let Lucia_Contact;</p>
-                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>, <strong>'luciag.lara@gmail.com' </strong>);</p>
+                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp;&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </div>
 
                 <div className="myname">
@@ -92,6 +83,7 @@ const Layout = () => {
                         </>
                         :
                         null}
+                        
                     <MainMiniBall
                         branch3_3={{
                             top4_4: "1057px"
@@ -138,6 +130,7 @@ const Layout = () => {
                             funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
+                            size1: '42px',
                             topminiball2: '0px'
                         }}
                     />
