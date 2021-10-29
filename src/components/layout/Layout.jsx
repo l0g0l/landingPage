@@ -67,10 +67,10 @@ const Layout = () => {
                     {showBranch2
                         ?
                         <>
-                            <Branch2 display={"block"} position={"absolute"} top={"77px"} left={"-20px"} project={"Buscador de repos"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"127px"} left={"-20px"} project={"NPM Clone"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"177px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"24px"} left={"-20px"} project={"Buscador de repos"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"74px"} left={"-20px"} project={"NPM Clone"} />
+                            <Branch2 display={"block"} position={"absolute"} top={"124px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
+                            {/* <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} /> */}
                         </>
                         :
                         null}
@@ -103,7 +103,7 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch2_2={{
-                            top3_3: "790px"
+                            top3_3: "735px"
                         }}
                     />
 

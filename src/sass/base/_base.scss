@@ -1,7 +1,7 @@
 body {
   background-color: $blacksecondary;
   color: $white;
-  font-family: $mainFont;
+  font-family:'Courier New', Courier, monospace;
 }
 a {
   text-decoration: none;
@@ -113,7 +113,7 @@ a {
     position: absolute;
     top: -8px;
     right: 42px;
-    display: none;
+    // display: none;
     color: $white;
   }
   &:hover .text {
@@ -126,7 +126,7 @@ a {
 }
 .branch2 {
   width: 40px;
-  height: 244px;
+  height: 189px;
   display: block;
   position: absolute;
   top: 559px;

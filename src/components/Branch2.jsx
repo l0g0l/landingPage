@@ -67,20 +67,23 @@ const Branch2 = ({ display, position, top, left, project }) => {
                     <Modal
                         content={{
                             closeModal: setModalOpenBuscRep,
-                            title: 'Buscador de repos',
-                            text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/dontWaste.gif',
-                            url: 'https://dontwasteapp.herokuapp.com/',
+                            title: 'Buscador GitHub',
+                            text: 'Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), save log data in the localstorage. ',
+                            tecnolog: 'HTML/CSS (Flex Grid),JavaScript y React js',
+                            img: '/img/modals/repos.gif',
+                            url: 'https://githubrepositoryfinder.herokuapp.com/',
                             right: '-448px',
-                            left:'0px'
+                            width:'364px',
+                            displayflex: 'unset',
+                            mt:'12px'
+                        , mb:'20px'
                         }} 
                     />
                 </>
                 :
                 null}
 
-            {modalOpenMaqAv && project === 'Maquetación Avanzada'
+            {/* {modalOpenMaqAv && project === 'Maquetación Avanzada'
                 ?
                 <>
                     <Modal
@@ -97,7 +100,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                     />
                 </>
                 :
-                null}
+                null} */}
 
         </div>
     )

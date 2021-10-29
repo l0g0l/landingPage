@@ -6,11 +6,10 @@
   src: url(../../assets/fonts/SourceSansPro-Black.ttf);
 }
 
-$mainFont:monospace; 
+$mainFont:sans-serif;
 $fontmenunav: 30px;
-$fontmenunav2: 20px;
 $fontweightnav: 300;
-$fontoverlay: 15px;
+$fonttooltip: 15px;
 $fontnamefirst:85px;
 $fontname:51px;
 $fontcontact: 14px;
@@ -29,7 +28,7 @@ $lemon: #A6FD17;
 $neonblue:#00fff6;
 $orange: #F1420A;
 $grey-primary:#242424;
-$grey-secondary:#5B5B5B;
+$grey-secondary:#949191;
 $pink:#ff0571;
 $pink-secondary: #E20BDA;
 $purple: #ae3dff;

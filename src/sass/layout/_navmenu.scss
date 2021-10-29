@@ -45,25 +45,4 @@ ul {
 .logo-img {
   width: 35px;
 }
-.social .overlay {
-  display: block;
-  position: absolute;
-  height: 17px;
-  box-shadow: 0 0 4px $whiteshadow;
-  background-color: $white;
-  padding: 4px;
-  border-radius: 6px;
-  margin-left: 70px;
-  margin-top: -58px;
-  cursor: pointer;
-  transform: translateX(-20%);
-  opacity: 0;
-  transition: all 450ms;
-  color: $black;
-  font-size: $fontoverlay;
-  
-    &li:hover .overlay {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
+
