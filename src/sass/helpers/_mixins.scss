@@ -1,0 +1,11 @@
+@mixin branch ($height, $top, $left, $branchcolor) {
+    width: 40px;
+    height: $height;
+    display: block;
+    position: absolute;
+    top: $top;
+    left: $left;
+    border: 3px solid $branchcolor;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}

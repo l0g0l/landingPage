@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -7,7 +8,8 @@ const ScrollToTop = () => {
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
+      top: 100,
+      bottom: 100,
       behavior: "smooth"
     });
   };
@@ -15,10 +17,10 @@ const ScrollToTop = () => {
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.pageYOffset > 500) {
+      if (window.pageYOffset > 40) {
         setIsVisible(true);
       } else {
-        setIsVisible(false);
+        setIsVisible(false)
       }
     };
 
@@ -27,15 +29,17 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-//scroll-to-top classes: fixed, bottom:0, right:0
+  //scroll-to-top classes: fixed, bottom:0, right:0
   return (
-    <div className="scroll-to-top">
-      {isVisible && (
-        <div onClick={scrollToTop}>
-          <h3>Go up!</h3>
-        </div>
-      )}
+    <div className="container-arrow">
+      {
+        isVisible &&
+        <button onClick={scrollToTop} id="btnarrowdown">
+          <div className="arrow" ></div>
+        </button>
+      }
+
     </div>
   );
 }
-export default ScrollToTop 
+export default ScrollToTop

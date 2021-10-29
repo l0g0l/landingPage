@@ -38,7 +38,6 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             ))
             :
             textsskills.map((item, i) => (
-
               <>
                 <p key={i}>{item.text}</p>
                 <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>

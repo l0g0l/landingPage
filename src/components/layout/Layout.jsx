@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import NavMenu from './navMenu/NavMenu'
 import Footer from './footer/Footer'
-import Image from '../Image'
 import MainMiniBall from '../MainMiniBall'
+import ScrollToTop from '../ScrollToTop'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
@@ -15,13 +15,14 @@ const Layout = () => {
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
 
       //Scroll para navegar al final de la pantalla
-    const scrollToDown = () => {
+ /*    const scrollToDown = () => {
         window.scrollTo({
             top: document.documentElement.scrollHeight,
             behavior: "smooth"
         });
     };
-
+ */
+ 
     //muestra o esconde los componentes branch
     const toggleBranch1 = () => {
         setShowBranch1(!showBranch1)
@@ -44,26 +45,22 @@ const Layout = () => {
             <NavMenu />
             <main>
                 <div className="contact" id="contact">
-                    <p >class <strong>Contact</strong>&#123;</p>
-                    <p>constructor(public <strong>name:</strong>string, public <strong>email:</strong>string)&#123;&#125;&nbsp;&#125;;</p>
+                    <p >class <strong>Contact</strong> &#123;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string, public <strong>email:</strong>string ) &#123;<br/> &#125; &#125;;</p>
                     <p>let Lucia_Contact;</p>
-                    <p>Lucia_Contact = new Contact(<strong>'Lucía González'</strong>, <strong>'luciag.lara@gmail.com'</strong>);</p>
+                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>, <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </div>
-                <button id="btnarrowdown"onClick={() => { scrollToDown() }}>
-                    <div className="arrow" ></div>
-                </button>
 
                 <div className="myname">
                     <span >Lucía González</span>
                     <span >Web Developer</span>
                 </div>
+              <ScrollToTop/>
                 <div className="container-main">
                     <div className="commit-main ">
                         <div className="main-branch">
 
-                            <div className="commit-main end">
-                                {/* <Image /> */}
-                            </div>
+                            <div className="commit-main end"></div>
                         </div>
                     </div>
                     {/*paso por props los estilos que va a necesitar cado uno de los componentes */}
@@ -97,14 +94,14 @@ const Layout = () => {
                         null}
                     <MainMiniBall
                         branch3_3={{
-                            top4_4: "210px"
+                            top4_4: "1057px"
                         }}
                     />
 
                     <MainMiniBall
                         branch3={{
                             funcbranch3: toggleBranch3,
-                            top4: "375px",
+                            top4: "890px",
                             tooltip4: 'Full Stack',
                             with4: '135px',
                             size4: '42px',
@@ -114,14 +111,14 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch2_2={{
-                            top3_3: "475px"
+                            top3_3: "790px"
                         }}
                     />
 
                     <MainMiniBall
                         branch2={{
                             funcbranch2: toggleBranch2,
-                            top3: "713px",
+                            top3: "548px",
                             tooltip3: 'Maquetaciones',
                             with3: '170px',
                             size3: '42px',
@@ -131,13 +128,13 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch1_1={{
-                            top1_1: "813px"
+                            top1_1: "448px"
                         }}
                     />
 
                     <MainMiniBall
                         branch1={{
-                            top2: "950px",
+                            top2: "310px",
                             funcbranch: toggleBranch1,
                             tooltip2: 'Proyectos fin de Bootcamp',
                             with2: '270px',
@@ -148,7 +145,7 @@ const Layout = () => {
                     <MainMiniBall
                         quiz={{
                             funcmodal: toggleModal,
-                            top1: "1050px",
+                            top1: "210px",
                             modalstate: modalOpenBlog,
                             tooltip1: 'Mi primer proyecto',
                             size1: '42px',
