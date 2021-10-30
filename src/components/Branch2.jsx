@@ -29,7 +29,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenHac,
                             title: 'Hackathon(Nuwe)',
-                            text: 'Clon de una pasarela de registro, contenie navegación sin persistencia de datos, Responsive.',
+                            text: 'Clon de una pasarela de registro, flujo de navegación sin persistencia de datos, Responsive.',
                             tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
                             img: '/img/modals/hackathon.gif',
                             url: 'https://hackathon-mwc.herokuapp.com/',
@@ -52,7 +52,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenNPM,
                             title: 'NPM Clone',
-                            text: 'Clon de una landing page utilizando únicamente HTML y CSS. Responsive',
+                            text: 'Clon de una landing page utilizando únicamente HTML y CSS. Responsive.',
                             tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
                             img: '/img/modals/npmclone.gif',
                             url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
