@@ -54,7 +54,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                             text: 'Clone de una landing page utilizando únicamente HTML y CSS. Responsive',
                             tecnolog: 'HTML y CSS, Heroku (deploy)',
                             img: '/img/modals/npmclone.gif',
-                            url: 'https://dontwasteapp.herokuapp.com/',
+                            url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
                             right: '-448px',
                             width: '384px',
                             displayflex: 'unset',
