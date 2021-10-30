@@ -86,14 +86,14 @@ const Layout = () => {
                         
                     <MainMiniBall
                         branch3_3={{
-                            top4_4: "1057px"
+                            top4_4: "1000px"
                         }}
                     />
 
                     <MainMiniBall
                         branch3={{
                             funcbranch3: toggleBranch3,
-                            top4: "890px",
+                            top4: "835px",
                             tooltip4: 'Full Stack',
                             with4: '135px',
                             size4: '42px',

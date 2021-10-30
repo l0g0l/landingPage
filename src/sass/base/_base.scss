@@ -26,7 +26,7 @@ a {
   .arrow {
     width: 25px;
     height: 25px;
-    top: 87%;
+    top: 357%;
     left: 94%;
     margin: -20px 0 0 -20px;
     -webkit-transform: rotate(-45deg);
@@ -82,7 +82,7 @@ a {
   &.end {
     display: block;
     position: absolute;
-    top: 997px;
+    top: 967px;
     left: -10px;
     // background-color: red;
     // border: 1px solid $blacksecondary;
@@ -136,7 +136,7 @@ a {
   border-bottom-left-radius: 20px;
 }
 .branch3 {
-  @include branch(169px, 901px, 28px, blueviolet);
+  @include branch(169px, 847px, 28px, blueviolet);
 
 }
 

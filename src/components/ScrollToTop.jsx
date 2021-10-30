@@ -8,7 +8,7 @@ const ScrollToTop = () => {
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
-      top: 100,
+      top: 50,
       behavior: "smooth"
     });
   };
