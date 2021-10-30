@@ -26,11 +26,16 @@ const Branch3 = ({ display, position, top, left, project }) => {
                     <Modal
                         content={{
                             closeModal: setModalOpenBlog,
-                            title: 'De secre a Developer',
-                            text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/coELA-home.png',
-                            url: 'https://coela.herokuapp.com/'
+                            title: 'De Secre a Develop',
+                            text: 'Creación de mi propio Blog.',
+                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT, Heroku (despliegue)',
+                            img: '/img/modals/blog.gif',
+                            url: 'https://desecreadeveloperblog.herokuapp.com/',
+                            width: '384px',
+                            displayflex: 'unset',
+                            mt: '12px', 
+                            mb: '15px',
+                            ls:'-2px'
                         }}
                     />
                 </>
@@ -44,10 +49,14 @@ const Branch3 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenAgencia,
                             title: 'Agencia de Viajes',
-                            text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/dontWaste.gif',
-                            url: 'https://dontwasteapp.herokuapp.com/'
+                            text: 'Creación de una web de Agencia de Viajes, en la que se pueden añadir opiniones sobre la experiencia de las vacaciones.',
+                            tecnolog: 'HTML/CSS,JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize), Heroku (despliegue)',
+                            img: '/img/modals/agencia.gif',
+                            url: 'https://pure-savannah-13335.herokuapp.com/',
+                            width: '384px',
+                            displayflex: 'unset',
+                            mt: '12px', 
+                            mb: '20px',
                         }}
                     />
                 </>
@@ -62,10 +71,14 @@ const Branch3 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenPatientM,
                             title: 'Gestor de citas',
-                            text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/dontWaste.gif',
-                            url: 'https://dontwasteapp.herokuapp.com/'
+                            text: 'Creación de un gestor de citas para pacientes. Se puede registrar una cita, mostrar los detalles y eliminarla. Responsive',
+                            tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose), Heroku (despliegue)',
+                            img: '/img/modals/patient.gif',
+                            url: 'https://veterinarypatientsmanager.herokuapp.com/',
+                            width: '384px',
+                            displayflex: 'unset',
+                            mt: '12px', 
+                            mb: '15px',
                         }}
                     />
                 </>

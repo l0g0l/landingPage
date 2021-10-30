@@ -11,7 +11,7 @@ function Modal({ content }) {
             X
           </button>
         </div>
-        <div className="title" style={{ marginBottom: content.mb }} >
+        <div className="title" style={{ marginBottom: content.mb, letterSpacing: content.ls }} >
           <p>{content.title}</p>
         </div>
         <div className="body"style={{ display: content.displayflex }} >
@@ -21,7 +21,10 @@ function Modal({ content }) {
             <strong>Tecnologías</strong>:
             {content.tecnolog}
           </span>
-          <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width, marginTop:content.mt }} />
+          <div style={{  marginRight:content.mr}} >
+
+          <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width, marginTop:content.mt, marginRight:content.mr}} />
+          </div>
         </div>
         <div className="footer">
           <a href={content.url} target="_blank" rel="noreferrer noopener">View Web Application</a>

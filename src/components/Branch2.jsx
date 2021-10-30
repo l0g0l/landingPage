@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Modal from './Modal'
 
 const Branch2 = ({ display, position, top, left, project }) => {
-  
+
     const [modalOpenHac, setModalOpenHac] = useState(false)
     const [modalOpenNPM, setModalOpenNPM] = useState(false)
     const [modalOpenBuscRep, setModalOpenBuscRep] = useState(false)
@@ -29,13 +29,16 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenHac,
                             title: 'Hackathon(Nuwe)',
-                            text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/coELA-home.png',
-                            url: 'https://coela.herokuapp.com/',
+                            text: 'Clone de una pasarela registro, que contenga navegación sin persistencia de datos, Responsive',
+                            tecnolog: 'HTML/CSS,JavaScript, React js,Heroku (despliegue)',
+                            img: '/img/modals/hackathon.gif',
+                            url: 'https://hackathon-mwc.herokuapp.com/',
                             right: '-448px',
-                            left:'0px'
-                        }} 
+                            width: '384px',
+                            displayflex: 'unset',
+                            mt: '12px', 
+                            mb: '50px',
+                        }}
                     />
                 </>
                 :
@@ -48,13 +51,17 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenNPM,
                             title: 'NPM Clone',
-                            text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
-                            img: '/img/modals/dontWaste.gif',
+                            text: 'Clone de una landing page utilizando únicamente HTML y CSS. Responsive',
+                            tecnolog: 'HTML y CSS, Heroku (deploy)',
+                            img: '/img/modals/npmclone.gif',
                             url: 'https://dontwasteapp.herokuapp.com/',
                             right: '-448px',
-                            left:'0px'
-                        }} 
+                            width: '384px',
+                            displayflex: 'unset',
+                            mt: '12px', 
+                            mb: '50px',
+                            mr:'10px'
+                        }}
                     />
                 </>
                 :
@@ -73,11 +80,11 @@ const Branch2 = ({ display, position, top, left, project }) => {
                             img: '/img/modals/repos.gif',
                             url: 'https://githubrepositoryfinder.herokuapp.com/',
                             right: '-448px',
-                            width:'364px',
+                            width: '364px',
                             displayflex: 'unset',
-                            mt:'12px'
-                        , mb:'20px'
-                        }} 
+                            mt: '12px', 
+                            mb: '20px'
+                        }}
                     />
                 </>
                 :
@@ -106,5 +113,5 @@ const Branch2 = ({ display, position, top, left, project }) => {
     )
 }
 
-export default Branch2 
+export default Branch2
 
