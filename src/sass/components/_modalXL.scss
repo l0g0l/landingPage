@@ -55,7 +55,7 @@ button {
     flex-direction: column;
     
     p {
-      margin-bottom: 30px !important;
+      margin-bottom: 20px !important;
       font-size: 15px !important;
       font-weight: bold !important;
       color: $white;
@@ -67,17 +67,23 @@ button {
     font-size: 30px;
     }
   }
+  .text-modal-skills {
+    text-align: right;
+    
+  }
   .img-modalXL {
-    width: 19%;
-    margin-bottom: 15px;
- 
+    width: 36%;
+    margin-bottom: 8px;
   }
   .container-img-cv-modalXL {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: flex-end;
-    margin-right: 60px;
+    margin-right: 30px;
+      & a {
+        margin-right: 30px;
+      }
   }
   .container-prog-img {
     display: flex;

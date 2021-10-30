@@ -41,8 +41,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             textsskills.map((item, i) => (
               <>
 
-
-                <p key={i}>{item.text}</p>
+                
                 <div className="container-prog-img">
 
                   <ProgressBar />
@@ -50,10 +49,11 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
 
                   <div className="container-img-cv-modalXL">
 
-                    <img className="img-modalXL" src={item.img} alt="Mi foto" />
-                    <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
+                    {/* <img className="img-modalXL" src={item.img} alt="Mi foto" /> */}
+                    {/* <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a> */}
 
                   </div>
+                <p className="text-modal-skills"key={i}>{item.text}</p>
                 </div>
 
               </>

@@ -50,7 +50,7 @@ const ProgressBar = () => {
 
                 </ul>
             </div>
-            <div>
+            {/* <div>
 
                 <div>
 
@@ -84,7 +84,7 @@ const ProgressBar = () => {
 
                     <span className="porcent8">60%</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

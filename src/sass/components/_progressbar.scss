@@ -1,13 +1,18 @@
+.container-progressivebar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-top: 50px;
+}
 #skill {
   list-style: none;
   font-size: 11px;
   font-weight: bold;
   width: 100px;
   line-height: 2em;
-
 }
 #skill li {
-  width: 300px;
+  width: 200px;
   margin-bottom: 30px;
   background: $white;;
   background-image: $white;
@@ -29,47 +34,40 @@
   -webkit-box-shadow: 0 1px 0px $shadowprogbar1_1, 0 1px 0 $shadowprogbar1;
   box-shadow: 0 1px 0px $shadowprogbar1_1, 0 1px 0 $shadowprogbar1;
 }
-.container-progressivebar {
-  display: flex;
-  flex-direction: row;
-}
 .porcent1 {
-  @include porcent(108px, 331px);
+  @include porcent(108px, 385px);
 }
 .porcent2 {
-  @include porcent(152px, 331px);
+  @include porcent(152px, 355px);
 }
 .porcent3 {
-  @include porcent(196px, 331px);
+  @include porcent(196px, 355px);
 }
 .porcent4 {
-  @include porcent(240px, 331px);
+  @include porcent(240px, 355px);
 }
 .porcent5 {
-  @include porcent(284px, 331px);
+  @include porcent(284px, 355px);
 }
 .porcent6 {
-  @include porcent(328px, 331px);
+  @include porcent(328px, 355px);
 }
-
 .porcent7 {
-  @include porcent(422px, 331px);
+  @include porcent(422px, 355px);
 }
 .porcent8 {
-  @include porcent(378px, 331px);
+  @include porcent(378px, 355px);
 }
+
 .html_css {
   @include progressivebar(10%, $progressivebar1, $progressivebar1_1);
 }
-
 .javascript {
   @include progressivebar(10%, $progressivebar2, $progressivebar2_2);
 }
-
 .react {
   @include progressivebar(10%, $progressivebar3, $progressivebar3_3);
 }
-
 .angular {
   @include progressivebar(10%, $progressivebar4, $progressivebar4_4);
 }
