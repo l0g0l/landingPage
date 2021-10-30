@@ -1,19 +1,31 @@
-@mixin branch ($height, $top, $left, $branchcolor) {
-    width: 40px;
-    height: $height;
-    display: block;
-    position: absolute;
-    top: $top;
-    left: $left;
-    border: 3px solid $branchcolor;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+@mixin branch($height, $top, $left, $branchcolor) {
+  width: 40px;
+  height: $height;
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+  border: 3px solid $branchcolor;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
+@mixin porcent($top, $left) {
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+}
 
-@mixin porcent ($top, $left) {
-    display: block;
-    position: absolute;
-    top: $top;
-    left: $left;
+@mixin progressivebar($with, $bc, $bi) {
+  width: $with;
+  -moz-animation: graphic-design 2s ease-out;
+  -webkit-animation: graphic-design 2s ease-out;
+  background-color: $bc;
+  background-image: -webkit-gradient(linear,left top,left bottom,from($bc),to($bi));
+  background-image: -webkit-linear-gradient(top, $bc, $bi);
+  background-image: -moz-linear-gradient(top, $bc, $bi);
+  background-image: -ms-linear-gradient(top, $bc, $bi);
+  background-image: -o-linear-gradient(top, $bc, $bi);
+  background-image: linear-gradient(top, $bc, $bi);
 }
