@@ -9,3 +9,11 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+
+@mixin porcent ($top, $left) {
+    display: block;
+    position: absolute;
+    top: $top;
+    left: $left;
+}

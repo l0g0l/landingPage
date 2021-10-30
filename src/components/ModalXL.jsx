@@ -1,5 +1,6 @@
 import React from "react"
 import ReactModal from "react-modal"
+import ProgressBar from "./ProgressBar";
 
 //Librería para montar el modal full screen del NavMenu
 ReactModal.setAppElement("#root");
@@ -39,8 +40,22 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             :
             textsskills.map((item, i) => (
               <>
+
+
                 <p key={i}>{item.text}</p>
-                <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
+                <div className="container-prog-img">
+
+                  <ProgressBar />
+
+
+                  <div className="container-img-cv-modalXL">
+
+                    <img className="img-modalXL" src={item.img} alt="Mi foto" />
+                    <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
+
+                  </div>
+                </div>
+
               </>
             ))
           }

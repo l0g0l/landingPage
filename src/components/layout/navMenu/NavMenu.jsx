@@ -74,8 +74,10 @@ const NavMenu = () => {
                             setisopen={setIsOpenSkills} 
                             color={'#ff0571'} 
                             textsskills={[{
-                                text:'Mentalidad de aprendizaje y crecimiento, Pasional, entusiasta e implicada, Colaboradora y tolerante, Adaptación al cambio, Autodidacta, Equipo', 
-                                cv:'/img/cv.pdf'}]} 
+                                text:'Mentalidad de aprendizaje y crecimiento, Pasional, Entusiasta e implicada, Colaboradora y tolerante, Adaptación al cambio, Autodidacta, Equipo.', 
+                                cv:'/img/cv.pdf',
+                                img:'/img/aboutMHuert.jpg'}]} 
+                                
                             skillsmenuname={'Skills'}
                             
                             />
