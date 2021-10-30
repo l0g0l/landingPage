@@ -26,8 +26,8 @@ const Branch1 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenCoela,
                             title: 'coELA',
-                            text: 'Aplicación Web (Mobile First) que le permite desde hacer donaciones instantáneas, hasta integrar la aplicación con su entidad bancaria.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,React Form Hooks,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
+                            text: 'Aplicación Web (Mobile First) que permite desde, hacer donaciones instantáneas, hasta integrar la aplicación con una entidad bancaria.',
+                            tecnolog: 'HTML/CSS, JavaScript, React js, React Form Hooks, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT, Deploy (Heroku)',
                             img: '/img/modals/coELA-home.png',
                             url: 'https://coela.herokuapp.com/',
                             mb: '0px',
@@ -46,10 +46,11 @@ const Branch1 = ({ display, position, top, left, project }) => {
                             closeModal: setModalOpenDW,
                             title: 'Don\'t Waste',
                             text: 'Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose),JWT,Heroku (despliegue)',
+                            tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT, Deploy(Heroku)',
                             img: '/img/modals/dontwaste.gif',
                             url: 'https://dontwasteapp.herokuapp.com/',
-                            mb: '29px'
+                            mbt: '29px',
+                            mb:'0px'
                         }}
                     />
                 </>

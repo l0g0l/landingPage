@@ -29,15 +29,16 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenHac,
                             title: 'Hackathon(Nuwe)',
-                            text: 'Clone de una pasarela registro, que contenga navegación sin persistencia de datos, Responsive',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Heroku (despliegue)',
+                            text: 'Clon de una pasarela de registro, contenie navegación sin persistencia de datos, Responsive.',
+                            tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
                             img: '/img/modals/hackathon.gif',
                             url: 'https://hackathon-mwc.herokuapp.com/',
-                            right: '-448px',
-                            width: '384px',
+                            left:'-450px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
+                            mt: '15px', 
                             mb: '50px',
+                            mbt:'30px'
                         }}
                     />
                 </>
@@ -51,16 +52,16 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenNPM,
                             title: 'NPM Clone',
-                            text: 'Clone de una landing page utilizando únicamente HTML y CSS. Responsive',
-                            tecnolog: 'HTML y CSS, Heroku (deploy)',
+                            text: 'Clon de una landing page utilizando únicamente HTML y CSS. Responsive',
+                            tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
                             img: '/img/modals/npmclone.gif',
                             url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
-                            right: '-448px',
-                            width: '384px',
+                            left:'-450px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
-                            mb: '50px',
-                            mr:'10px'
+                            mt: '20px', 
+                            mr:'10px',
+                            mbt:'30px'
                         }}
                     />
                 </>
@@ -75,15 +76,16 @@ const Branch2 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenBuscRep,
                             title: 'Buscador GitHub',
-                            text: 'Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), save log data in the localstorage. ',
-                            tecnolog: 'HTML/CSS (Flex Grid),JavaScript y React js',
+                            text: 'Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), almacenamiento de datos en LocalStorage. ',
+                            tecnolog: 'HTML/CSS (Flex Grid), JavaScript y React js. Deploy (Heroku)',
                             img: '/img/modals/repos.gif',
                             url: 'https://githubrepositoryfinder.herokuapp.com/',
-                            right: '-448px',
-                            width: '364px',
+                            left:'-450px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
-                            mb: '20px'
+                            mt: '15px', 
+                            mb: '20px',
+                            mbt:'20px'
                         }}
                     />
                 </>

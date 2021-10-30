@@ -87,12 +87,13 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                             content={{
                                 closeModal: quiz.funcmodal,
                                 title: 'Quiz-LocalStorage',
-                                text: 'Quiz constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive',
-                                tecnolog: 'HTML, CSS y JavaScript',
+                                text: 'Creación de un Quiz, Constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. 3 niveles de dificultad.SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive',
+                                tecnolog: 'HTML, CSS y JavaScript. Deploy (GitHubPages)',
                                 img: '/img/modals/quiz_movil.gif',
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
-                                mb: "25px"
-
+                                mbt: "35px",
+                                mb:'0px',
+                                left:'97px'
                             }}
                         />
                     </div>

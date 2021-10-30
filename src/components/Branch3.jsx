@@ -27,15 +27,15 @@ const Branch3 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenBlog,
                             title: 'De Secre a Develop',
-                            text: 'Creación de mi propio Blog.',
-                            tecnolog: 'HTML/CSS,JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT, Heroku (despliegue)',
+                            text: 'Creación de mi propio Blog web app.',
+                            tecnolog: 'HTML/CSS,JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                             img: '/img/modals/blog.gif',
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
-                            width: '384px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
-                            mb: '15px',
-                            ls:'-2px'
+                            mt: '12px',
+                            ls:'-2px',
+                            mbt:'20px'
                         }}
                     />
                 </>
@@ -49,14 +49,14 @@ const Branch3 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenAgencia,
                             title: 'Agencia de Viajes',
-                            text: 'Creación de una web de Agencia de Viajes, en la que se pueden añadir opiniones sobre la experiencia de las vacaciones.',
-                            tecnolog: 'HTML/CSS,JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize), Heroku (despliegue)',
+                            text: 'Creación de una web de Agencia de Viajes, se pueden añadir opiniones sobre experiencias vacacionales.',
+                            tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                             img: '/img/modals/agencia.gif',
                             url: 'https://pure-savannah-13335.herokuapp.com/',
-                            width: '384px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
-                            mb: '20px',
+                            mt: '12px',
+                            mbt:'10px'
                         }}
                     />
                 </>
@@ -71,14 +71,15 @@ const Branch3 = ({ display, position, top, left, project }) => {
                         content={{
                             closeModal: setModalOpenPatientM,
                             title: 'Gestor de citas',
-                            text: 'Creación de un gestor de citas para pacientes. Se puede registrar una cita, mostrar los detalles y eliminarla. Responsive',
+                            text: 'Creación de un gestor de citas. Se puede registrar una cita, mostrar y eliminar. Responsive.',
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose), Heroku (despliegue)',
                             img: '/img/modals/patient.gif',
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
-                            width: '384px',
+                            width: '370px',
                             displayflex: 'unset',
-                            mt: '12px', 
-                            mb: '15px',
+                            mt: '12px',
+                            mbt:'20px'
+                            
                         }}
                     />
                 </>
