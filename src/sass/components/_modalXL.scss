@@ -55,12 +55,12 @@ button {
     flex-direction: column;
 
     p {
-      margin-top: 20px !important;
-      font-size: 15px !important;
-      font-weight: bold !important;
+      margin-top: 20px ;
+      font-size: 15px ;
+      font-weight: bold ;
       color: $white;
       line-height: 25px;
-      // margin-right: 12px;
+      margin-right: 10px;
       // span {
       //   font-size: 25px;
       // }
@@ -107,3 +107,11 @@ button {
   left: 610px;
   color: $black;
 }
+.img-modalXL {
+  width: 14%;
+  float: left;
+  margin-right: 15px;
+  margin-top: 21px;
+  margin-left: 12px;
+}
+

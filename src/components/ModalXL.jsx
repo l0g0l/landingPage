@@ -33,8 +33,16 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
           {aboutmenuname
             ?
             textsabout.map((item, i) => (
+              <>
+                <div >
+                    <img src={item.img} alt="mi foto" className="img-modalXL" />
+                    <p key={i} clasName="txt-about" align="justify" style={{marginLeft:item.ml}} className="img-text">{item.text}
+                    </p>
 
-              <p key={i} clasName="txt-about">{item}</p>
+                </div>
+                   
+
+              </>
 
             ))
             :
