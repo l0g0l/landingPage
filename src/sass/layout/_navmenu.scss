@@ -35,11 +35,11 @@ ul li {
   text-decoration: none;
   font-size: $fontmenunav;
   font-weight: $fontweightnav;
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
   cursor: pointer;
 }
 .social li:last-child {
-  margin: 0 0 100px 0;
+  margin-bottom: 100px;
 }
 .logo-img {
   width: 35px;

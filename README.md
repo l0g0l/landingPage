@@ -7,8 +7,10 @@
 <h4 align="center">LuciaG's Web Developer Landing Page</h4>
 
   <p align="center">
-    <a href="">View Web Application</a>
+    <a href="https://luciagwebsitewebdeveloper.netlify.app/">View Web Application</a>
   </p>
+  <p align="center">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status" alt="Sonar Quality Gate"></p>
 </p>
 
 

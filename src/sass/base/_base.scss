@@ -31,7 +31,7 @@ a {
     margin: -20px 0 0 -20px;
     -webkit-transform: rotate(-45deg);
     border-left: none;
-    border-top: none;
+    // border-top: none;
     border-right: 2px #fff solid;
     border-top: 2px #fff solid;
     &button {
@@ -44,7 +44,7 @@ a {
     height: 15px;
     top: 9px;
     right: 9px;
-    margin: 0px 0 0 0px;
+    margin:0;
     -webkit-transform: rotate(-90deg);
     border-left: none;
     border-top: none;
@@ -60,7 +60,7 @@ a {
     }
     100% {
       opacity: 0;
-      transform: translate(0px -10px);
+      transform: translate(0 -10px);
      
  
     }
