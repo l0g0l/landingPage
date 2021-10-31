@@ -34,28 +34,20 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             ?
             textsabout.map((item, i) => (
 
-              <p key={i}>{item}</p>
+              <p key={i} clasName="txt-about">{item}</p>
 
             ))
             :
             textsskills.map((item, i) => (
               <>
-
-                
                 <div className="container-prog-img">
-
                   <ProgressBar />
-
-
                   <div className="container-img-cv-modalXL">
-
-                    {/* <img className="img-modalXL" src={item.img} alt="Mi foto" /> */}
-                    {/* <a href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a> */}
-
+                    <img src="https://img.icons8.com/plasticine/100/000000/resume.png" className="img-cv" alt="mi cv" />
+                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
                   </div>
-                <p className="text-modal-skills"key={i}>{item.text}</p>
+                  <p className="text-modal-skills" key={i}>{item.text}</p>
                 </div>
-
               </>
             ))
           }

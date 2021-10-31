@@ -53,37 +53,31 @@ button {
   .txt {
     display: flex;
     flex-direction: column;
-    
+
     p {
-      margin-top: 25px !important;
+      margin-top: 20px !important;
       font-size: 15px !important;
       font-weight: bold !important;
       color: $white;
+      line-height: 25px;
+      // margin-right: 12px;
       // span {
       //   font-size: 25px;
       // }
     }
-    p::first-letter{
-    font-size: 30px;
+    p::first-letter {
+      font-size: 30px;
     }
   }
   .text-modal-skills {
     text-align: right;
-    
-  }
-  .img-modalXL {
-    width: 36%;
-    margin-bottom: 8px;
   }
   .container-img-cv-modalXL {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: flex-end;
-    margin-right: 30px;
-      & a {
-        margin-right: 30px;
-      }
+    margin-right: 168px;
   }
   .container-prog-img {
     display: flex;
@@ -99,4 +93,17 @@ button {
   width: 0%;
   height: 0%;
   background-color: transparent;
+}
+.img-cv {
+  display: block;
+  position: absolute;
+  top: 194px;
+  left: 515px;
+}
+.cv {
+  display: block;
+  position: absolute;
+  top: 263px;
+  left: 610px;
+  color: $black;
 }

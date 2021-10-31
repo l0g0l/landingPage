@@ -8,31 +8,33 @@ const ScrollToTop = () => {
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
-      top: 50,
+      top: 60,
       behavior: "smooth"
     });
   };
 
   useEffect(() => {
-    // Button is displayed after scrolling for 440 pixels
+    // El icono aparece cuando ha sobrepasado los 50px de altura y desapare cuando sobrepasa los 900
     const toggleVisibility = () => {
-      if (window.pageYOffset > 0 ) {
+      if (window.pageYOffset > 50) {
         setIsVisible(true);
+        if (window.pageYOffset < 1000) {
+          setIsVisible(true);
+        }
+        else {
+          setIsVisible(false)
+        }
       }
-     else {
-      setIsVisible(false)
+      else {
+        setIsVisible(false)
+      }
+
     }
-    console.log(isVisible)
-   
-   
-  }
 
     window.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  //scroll-to-top classes: fixed, bottom:0, right:0
   return (
     <div className="container-arrow">
       {

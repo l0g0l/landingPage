@@ -26,7 +26,7 @@ a {
   .arrow {
     width: 25px;
     height: 25px;
-    top: 357%;
+    top: 186%;
     left: 94%;
     margin: -20px 0 0 -20px;
     -webkit-transform: rotate(-45deg);
@@ -107,6 +107,7 @@ a {
   border-radius: 50%;
   border: 1px solid red;
   text-align: center;
+  transition: all 1s;
   .text {
     width: 200px;
     border: 1px solid $white;
@@ -115,6 +116,7 @@ a {
     right: 42px;
     display: none;
     color: $white;
+    
   }
   &:hover .text {
     display: block;

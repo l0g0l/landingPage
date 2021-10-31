@@ -31,7 +31,7 @@ const Branch3 = ({ display, position, top, left, project }) => {
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                             img: '/img/modals/blog.gif',
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
-                            width: '370px',
+                            width: '360px',
                             displayflex: 'unset',
                             mt: '12px',
                             ls:'-2px',
@@ -53,7 +53,7 @@ const Branch3 = ({ display, position, top, left, project }) => {
                             tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                             img: '/img/modals/agencia.gif',
                             url: 'https://pure-savannah-13335.herokuapp.com/',
-                            width: '370px',
+                            width: '360px',
                             displayflex: 'unset',
                             mt: '12px',
                             mbt:'10px'
@@ -75,7 +75,7 @@ const Branch3 = ({ display, position, top, left, project }) => {
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',
                             img: '/img/modals/patient.gif',
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
-                            width: '370px',
+                            width: '360px',
                             displayflex: 'unset',
                             mt: '12px',
                             mbt:'20px'

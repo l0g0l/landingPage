@@ -76,7 +76,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
             {/* Empieza Primer proyecto */}
             {quiz && <div className="commit-main sx " tabindex="0" style={{ top: quiz.top1 }} onClick={quiz.funcmodal}>
                 <div className="tooltip-container">
-                    <div className="text" style={{ right: quiz.size1, top: quiz.topminiball1, width: quiz.with1 }}>
+                    <div className="text" style={{ left: quiz.size1, top: quiz.topminiball1, width: quiz.with1 }}>
                         <span >{quiz.tooltip1}</span>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
                                 mbt: "35px",
                                 mb:'0px',
-                                left:'97px'
+                                left:'-480px'
                             }}
                         />
                     </div>

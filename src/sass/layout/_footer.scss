@@ -9,10 +9,8 @@
   bottom: -1118px;
   font-size: 12px;
   background: $blacksecondary;
-  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,
-    -6px -6px 7px $neumorphimssecondary;
-  box-shadow: 6px 6px 7px $neumorphimssecondary,
-    -1px -6px 7px $neumorphimsprimary;
+  -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,-6px -6px 7px $neumorphimssecondary;
+  box-shadow: 6px 6px 7px $neumorphimsprimary,-1px -6px 7px $neumorphimsprimary;
     p {
       margin-right: 27px;
     }

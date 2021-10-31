@@ -17,7 +17,7 @@ function Modal({ content }) {
         <div className="body"style={{ display: content.displayflex }} >
           
           <span style={{ marginBottom: content.mb }}>{content.text}
-            <br /> <br/>
+            <br /> 
             <strong>Tecnologías</strong>: 
             {content.tecnolog}
           </span>

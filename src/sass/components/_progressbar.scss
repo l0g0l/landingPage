@@ -1,8 +1,8 @@
 .container-progressivebar {
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
-  margin-top: 50px;
+  margin-left: 12px;
+  margin-top: 49px;
 }
 #skill {
   list-style: none;
@@ -60,28 +60,28 @@
 }
 
 .html_css {
-  @include progressivebar(10%, $progressivebar1, $progressivebar1_1);
+  @include progressivebar(15.3%, $progressivebar1, $progressivebar1_1);
 }
 .javascript {
-  @include progressivebar(10%, $progressivebar2, $progressivebar2_2);
+  @include progressivebar(10.2%, $progressivebar2, $progressivebar2_2);
 }
 .react {
-  @include progressivebar(10%, $progressivebar3, $progressivebar3_3);
+  @include progressivebar(15.3%, $progressivebar3, $progressivebar3_3);
 }
 .angular {
-  @include progressivebar(10%, $progressivebar4, $progressivebar4_4);
+  @include progressivebar(5%, $progressivebar4, $progressivebar4_4);
 }
 .node {
-  @include progressivebar(10%, $progressivebar5, $progressivebar5_5);
+  @include progressivebar(12.75%, $progressivebar5, $progressivebar5_5);
 }
 .mongo {
-  @include progressivebar(10%, $progressivebar6, $progressivebar6_6);
+  @include progressivebar(15.3%, $progressivebar6, $progressivebar6_6);
 }
 .mysql {
-  @include progressivebar(10%, $progressivebar7, $progressivebar7_7);
+  @include progressivebar(12.75%, $progressivebar7, $progressivebar7_7);
 }
 .github {
-  @include progressivebar(10%, $progressivebar8, $progressivebar8_8);
+  @include progressivebar(15.3%, $progressivebar8, $progressivebar8_8);
 }
 
 /* @-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:100%;}  }
