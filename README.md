@@ -9,6 +9,9 @@
   <p align="center">
     <a href="https://luciagwebsitewebdeveloper.netlify.app/">View Web Application</a>
   </p>
+    <p align="center">
+<img src="https://www.codefactor.io/repository/github/l0g0l/landingpage/badge" alt="Codefactor Grade">
+</p>
   <p align="center">
 <img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status" alt="Sonar Quality Gate"></p>
 </p>
