@@ -37,21 +37,27 @@ const Layout = () => {
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br/> &#125; &#125;;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &#125; &#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </div>
 
                 <div className="myname">
                     <span >Lucía González</span>
-                    <span >Web Developer</span>
+                    <span>Web Developer</span>
                 </div>
-              <ScrollToTop/>
+                <ScrollToTop />
                 <div className="container-main">
                     <div className="commit-main ">
+                        <div className="tooltipcommitmain">
+                            <div className="text">
+
+                                <p>Pincha en cada una de las bolitas para ver mis proyectos</p>
+                            </div>
+                        </div>
                         <div className="main-branch">
 
-                            <div className="commit-main end"></div>
+                            <div className="commit-main end "></div>
                         </div>
                     </div>
                     {/*paso por props los estilos que va a necesitar cado uno de los componentes */}
@@ -83,7 +89,7 @@ const Layout = () => {
                         </>
                         :
                         null}
-                        
+
                     <MainMiniBall
                         branch3_3={{
                             top4_4: "1000px"

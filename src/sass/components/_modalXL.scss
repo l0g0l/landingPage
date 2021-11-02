@@ -53,10 +53,9 @@ button {
   .txt {
     display: flex;
     flex-direction: column;
-
     p {
-      margin-top: 20px ;
-      font-size: 15px ;
+      margin-top: 34px ;
+      font-size: 13px ;
       font-weight: bold ;
       color: $white;
       line-height: 25px;
@@ -94,6 +93,11 @@ button {
   height: 0%;
   background-color: transparent;
 }
+.container-img-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .img-cv {
   display: block;
   position: absolute;
@@ -108,10 +112,20 @@ button {
   color: $black;
 }
 .img-modalXL {
-  width: 14%;
-  float: left;
+  width: 30%;
+  border-radius: 60%;
   margin-right: 15px;
-  margin-top: 21px;
+  // margin-top: 21px;
   margin-left: 12px;
+}
+.titleCloseBtnModalX {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  top: 12px;
+  right: 12px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 

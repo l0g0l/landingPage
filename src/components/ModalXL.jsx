@@ -34,7 +34,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             ?
             textsabout.map((item, i) => (
               <>
-                <div >
+                <div className="container-img-txt">
                     <img src={item.img} alt="mi foto" className="img-modalXL" />
                     <p key={i} clasName="txt-about" align="justify" style={{marginLeft:item.ml}} className="img-text">{item.text}
                     </p>
@@ -60,8 +60,9 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             ))
           }
         </div>
-
-        <button onClick={() => setisopen(false)}>Close</button>
+       
+        <button onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
+        
       </ReactModal>
     </div>
   );
