@@ -57,7 +57,7 @@ const Layout = () => {
                         </div>
                         <div className="main-branch">
 
-                            <div className="commit-main end "></div>
+                            <div className="commitmain-end"></div>
                         </div>
                     </div>
                     {/*paso por props los estilos que va a necesitar cado uno de los componentes */}

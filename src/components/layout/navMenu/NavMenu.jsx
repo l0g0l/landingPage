@@ -25,27 +25,21 @@ const NavMenu = () => {
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
                             <img src="/img/github.png" alt="logo github" className="logo-img" />
                         </a>
-                        <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-
-                        </a>
+                        
                     </li>
 
                     <li>
                         <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer noopener">
                             <img src="/img/linkedin.png" alt="logo linkedin" className="logo-img" />
                         </a>
-                        <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer noopener" >
-
-                        </a>
+                    
                     </li>
 
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
                             <img src="/img/blog.png" alt="logo blog" className="logo-img" />
                         </a>
-                        <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener" >
-
-                        </a>
+                      
                     </li>
                 </ul>
 

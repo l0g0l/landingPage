@@ -28,6 +28,40 @@ nav {
 ul li {
   list-style: none;
 }
+ul li a {
+  position: relative; 
+  display: block;
+  width: 50px;
+  height: 50px;
+text-align: center;
+  background: $blacksecondary;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: $white;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px $whitesecondary;
+}
+
+ul li a:hover {
+  color: $white;
+  box-shadow: 0 0 3px $whitesecondary;
+}
 .social a,
 .menu p {
   display: block;
