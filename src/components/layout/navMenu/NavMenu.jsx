@@ -6,6 +6,7 @@ const NavMenu = () => {
 
     const [modalIsOpenAbout, setIsOpenAbout] = useState(false);
     const [modalIsOpenSkills, setIsOpenSkills] = useState(false);
+    const [visibleDiv, setVisibleDiv] = useState(false) //uso este state para hacer visible o no un div al hacer hover
 
     //Scroll to the Top, para navegar al comienzo de la pantalla
     const scrollToTop = () => {
@@ -14,7 +15,6 @@ const NavMenu = () => {
             behavior: "smooth"
         });
     };
-
 
     return (
         <div className="container-nav">
@@ -41,13 +41,18 @@ const NavMenu = () => {
                 <ul className="menu">
                     <li onClick={scrollToTop}>
                         <div className="container-img-p-navmenu">
-                            
+                            {/*con los eventos onMouseEnter y onMouseLeave, hago que se muestre o no un div al hacer hover. En este caso, si visibleDiv es true, es decir, se ha hecho el hover, muestra la flecha */}
+                            {visibleDiv && (
                             <div >
-                                <img src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú"  className="rightarrow"/>
+                                <img id="arrow" src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
                             </div>
-                            <div>
-                                <p className="home" > Home</p>
+                                
+                            )}
+
+                            <div onMouseEnter={() => setVisibleDiv(true)} onMouseLeave={() => setVisibleDiv(false)} >
+                                <p id="home" className="home" > Home</p>
                             </div>
+
 
                         </div>
                     </li>
