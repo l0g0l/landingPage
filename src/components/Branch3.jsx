@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal from './Modal'
 
-const Branch3 = ({ display, position, top, left, project }) => {
+const Branch3 = ({ display, position, top, left, project, boxcolor,  background }) => {
 
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
     const [modalOpenAgencia, setModalOpenAgencia] = useState(false)
@@ -17,7 +17,7 @@ const Branch3 = ({ display, position, top, left, project }) => {
                     setModalOpenPatientM(!modalOpenPatientM)
                 }}
                 className=' commit-main'
-                style={{ display: display, position: position, top: top, left: left }}>
+                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
             </button>
 
             {modalOpenBlog && project === 'De secre a Developer'

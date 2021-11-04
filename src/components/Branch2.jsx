@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal from './Modal'
 
-const Branch2 = ({ display, position, top, left, project }) => {
+const Branch2 = ({ display, position, top, left, project, boxcolor,  background  }) => {
 
     const [modalOpenHac, setModalOpenHac] = useState(false)
     const [modalOpenNPM, setModalOpenNPM] = useState(false)
@@ -19,7 +19,7 @@ const Branch2 = ({ display, position, top, left, project }) => {
                     setModalOpenMaqAv(!modalOpenMaqAv)
                 }}
                 className=' commit-main'
-                style={{ display: display, position: position, top: top, left: left }}>
+                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
             </button>
 
             {modalOpenHac && project === 'Hackathon(Nuwe)'

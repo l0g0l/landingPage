@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal from './Modal'
 
-const Branch1 = ({ display, position, top, left, project }) => {
+const Branch1 = ({ display, position, top, left, project, boxcolor,  background }) => {
 
     const [modalOpenCoela, setModalOpenCoela] = useState(false)//comienza en false para que no se muestre
     const [modalOpenDW, setModalOpenDW] = useState(false)
@@ -10,14 +10,16 @@ const Branch1 = ({ display, position, top, left, project }) => {
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
         <div className=' branch1'>
+    
             <button
                 onClick={() => {
                     setModalOpenCoela(!modalOpenCoela)
                     setModalOpenDW(!modalOpenDW)
                 }}
                 className=' commit-main'
-                style={{ display: display, position: position, top: top, left: left }}>
+                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
             </button>
+            
 
             {modalOpenCoela && project === 'coELA'
                 ?

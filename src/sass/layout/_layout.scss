@@ -39,6 +39,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  z-index: 2;
   & .text {
     display: none;
   }
@@ -64,9 +65,7 @@
         display: block;
       }
     }
-    background-color: rgb(204, 247, 136);
-    box-shadow: 0 0 5px rgb(64, 99, 7), 0 0 5px rgb(190, 250, 93),
-      0 0 5px rgb(190, 250, 93), 0 0 10px rgb(190, 250, 93);
+
   }
   cursor: pointer;
 }

@@ -64,18 +64,58 @@ const Layout = () => {
                     {showBranch3
                         ?
                         <>
-                            <Branch3 display={"block"} position={"absolute"} top={"12px"} left={"24px"} project={"De secre a Developer"} />
-                            <Branch3 display={"block"} position={"absolute"} top={"62px"} left={"24px"} project={"Agencia de Viajes"} />
-                            <Branch3 display={"block"} position={"absolute"} top={"112px"} left={"24px"} project={"Gestor de citas"} />
+                            <Branch3 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"12px"} 
+                                left={"24px"} 
+                                project={"De secre a Developer"} 
+                                background={'rgb(210, 240, 252)'}
+                                boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'}/>
+                            <Branch3 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"62px"} 
+                                left={"24px"} 
+                                project={"Agencia de Viajes"}
+                                background={'rgb(210, 240, 252)'}
+                                boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            <Branch3 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"112px"} 
+                                left={"24px"} 
+                                project={"Gestor de citas"}
+                                background={'rgb(210, 240, 252)'}
+                                boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'}/>
                         </>
                         :
                         null}
                     {showBranch2
                         ?
                         <>
-                            <Branch2 display={"block"} position={"absolute"} top={"24px"} left={"-20px"} project={"Buscador de repos"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"74px"} left={"-20px"} project={"NPM Clone"} />
-                            <Branch2 display={"block"} position={"absolute"} top={"124px"} left={"-20px"} project={"Hackathon(Nuwe)"} />
+                            <Branch2 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"24px"} left={"-20px"} 
+                                project={"Buscador de repos"}
+                                background={'rgb(231, 252, 197)'}
+                                boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'}/>
+                            <Branch2 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"74px"} left={"-20px"} 
+                                project={"NPM Clone"}
+                                background={'rgb(231, 252, 197)'}
+                                boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
+                            <Branch2 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"124px"} 
+                                left={"-20px"} 
+                                project={"Hackathon(Nuwe)"}
+                                background={'rgb(231, 252, 197)'}
+                                boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'}/>
                             {/* <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} /> */}
                         </>
                         :
@@ -84,8 +124,24 @@ const Layout = () => {
                     {showBranch1
                         ?
                         <>
-                            <Branch1 display={"block"} position={"absolute"} top={"80px"} left={"24px"} project={"coELA"} />
-                            <Branch1 display={"block"} position={"absolute"} top={"20px"} left={"24px"} project={"DontWaste"} />
+                            <Branch1 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"80px"} 
+                                left={"24px"} 
+                                project={"coELA"}
+                                background={'rgb(203, 201, 231)'}
+                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}   
+                              />
+                            <Branch1 
+                                display={"block"} 
+                                position={"absolute"} 
+                                top={"20px"} 
+                                left={"24px"} 
+                                project={"DontWaste"}
+                                background={'rgb(203, 201, 231)'}
+                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}
+                               />
                         </>
                         :
                         null}
