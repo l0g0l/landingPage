@@ -44,13 +44,13 @@ const NavMenu = () => {
                             {/*con los eventos onMouseEnter y onMouseLeave, hago que se muestre o no un div al hacer hover. En este caso, si visibleDiv es true, es decir, se ha hecho el hover, muestra la flecha */}
                             {visibleDiv && (
                             <div >
-                                <img id="arrow" src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
+                                <img style={{marginRight: '10px'}} id="arrow" src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
                             </div>
                                 
                             )}
 
-                            <div onMouseEnter={() => setVisibleDiv(true)} onMouseLeave={() => setVisibleDiv(false)} >
-                                <p id="home" className="home" > Home</p>
+                            <div onMouseEnter={() => setVisibleDiv(true)} onMouseLeave={() => setVisibleDiv(false)}  className="home" >
+                                <p>Home</p>
                             </div>
 
 

@@ -45,10 +45,12 @@
   transition: all 0.5s ease 0s;
   @include neon;
   &:hover {
+    transform: scale(1);
     .tooltipcommitmain {
       height: 25px;
       border-radius: 100%;
       text-align: center;
+
       .text {
         width: 250px;
         height: 100px;
@@ -68,6 +70,7 @@
   }
   cursor: pointer;
 }
+
 .commitmain-end {
   border-radius: 50%;
   width: 30px;
@@ -89,6 +92,7 @@
   left: 9px;
   @include neon;
   cursor: pointer;
+  z-index: 2;
 }
 .tooltip-container {
   width: 25px;
@@ -116,4 +120,5 @@
   top: 32px;
   left: 34%;
   @include neon;
+  z-index: 1;
 }
