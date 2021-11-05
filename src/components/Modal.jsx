@@ -22,10 +22,7 @@ function Modal({ content }) {
 
             </span>
           </div>
-
-
-
-          <div className="flip-container"  >
+       
             <div className="card">
               <div className="front">
 
@@ -44,7 +41,6 @@ function Modal({ content }) {
               </div>
             </div>
 
-          </div>
 
 
         </div>

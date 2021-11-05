@@ -91,7 +91,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                                 tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
                                 img: '/img/modals/quiz_movil.gif',
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
-                                mbt: "35px",
+                                mbt: "72px",
                                 mb:'0px',
                                 left:'-480px'
                             }}
