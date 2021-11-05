@@ -47,6 +47,9 @@ const Layout = () => {
                     <span><p className="web">Web </p>&nbsp;<p className="developer">Developer</p></span>
                 </div>
                 <ScrollToTop />
+                    <div className="container-downarrow">
+                        <img src="/img/flechaab.png" className="downarrow" alt="down arrow" />
+                    </div>
                 <div className="container-main">
                     <div className="commit-main ">
                         <div className="tooltipcommitmain">

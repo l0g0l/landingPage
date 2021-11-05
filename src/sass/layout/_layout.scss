@@ -29,6 +29,8 @@
 }
 .web {
   display: inline-block;
+  -moz-animation: textname1 2s ease-out;
+  -webkit-animation:textname1 2s ease-out;
   animation: textname1 2s ease-out;
 }
 @keyframes textname1 {
@@ -43,6 +45,8 @@
 }
 .developer {
   display: inline-block;
+  -moz-animation: textname2 3s ease-out;
+  -webkit-animation:textname2 3s ease-out;
   animation: textname2 3s ease-out;
 }
 @keyframes textname2 {
@@ -59,6 +63,26 @@
   position: absolute;
   top: 360px;
   left: 50%;
+}
+.container-downarrow {
+  position: absolute;
+  top: 407px;
+  left: 50.5%;
+}
+.downarrow {
+  width: 12%;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 .commit-main {
   display: block;
