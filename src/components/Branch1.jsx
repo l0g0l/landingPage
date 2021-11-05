@@ -32,6 +32,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML/CSS, JavaScript, React js, React Form Hooks, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy (Heroku)',
                             img: '/img/modals/coELA-home.png',
                             url: 'https://coela.herokuapp.com/',
+                            mbt:'81px',
                             mb: '0px',
 
                         }}
@@ -51,7 +52,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy(Heroku)',
                             img: '/img/modals/dontwaste.gif',
                             url: 'https://dontwasteapp.herokuapp.com/',
-                            mbt: '29px',
+                            mbt: '66px',
                             mb:'0px'
                         }}
                     />

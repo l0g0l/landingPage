@@ -14,24 +14,24 @@ function Modal({ content }) {
         <div className="title" style={{ marginBottom: content.mbt, letterSpacing: content.ls, fontSize: content.fs }} >
           <p>{content.title}</p>
         </div>
-        <div className="body" >
+        <div className="body" style={{ display: content.displayflex}} >
           <div>
 
-            <span style={{ marginBottom: content.mb }}>{content.text}
+            <span>{content.text}
               <br />
 
             </span>
           </div>
        
-            <div className="card">
+            <div className="card" style={{ width: content.width, height:content.height, marginLeft:content.ml, marginTop: content.mt }}>
               <div className="front">
 
-                <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width, marginTop: content.mt, marginRight: content.mr }} />
+                <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width,  marginRight: content.mr }} />
               </div>
               <div className="back">
                 <div>
 
-                  <p><bold>Tecnologías:</bold></p>
+                  <p><strong>Tecnologías:</strong></p>
                 </div>
                 <div>
 

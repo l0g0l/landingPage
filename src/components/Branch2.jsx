@@ -34,11 +34,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             img: '/img/modals/hackathon.gif',
                             url: 'https://hackathon-mwc.herokuapp.com/',
                             left:'-450px',
-                            width: '360px',
+                            width: '100%',
+                            height:'250%',
                             displayflex: 'unset',
-                            mt: '15px', 
-                            mb: '50px',
-                            mbt:'30px'
+                            mt: '20px', 
+                            mbt:'30px',
+                            ml:'unset'
                         }}
                     />
                 </>
@@ -57,11 +58,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             img: '/img/modals/npmclone.gif',
                             url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
                             left:'-450px',
-                            width: '360px',
+                            width: '100%',
+                            height:'250%',
                             displayflex: 'unset',
                             mt: '20px', 
-                            mr:'10px',
-                            mbt:'30px'
+                            mbt:'30px',
+                            ml:'unset'
                         }}
                     />
                 </>
@@ -81,11 +83,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             img: '/img/modals/repos.gif',
                             url: 'https://githubrepositoryfinder.herokuapp.com/',
                             left:'-450px',
-                            width: '360px',
+                            width: '100%',
+                            height:'250%',
                             displayflex: 'unset',
-                            mt: '15px', 
-                            mb: '20px',
-                            mbt:'20px'
+                            mt: '10px',
+                            mbt:'20px',
+                            ml:'unset'
                         }}
                     />
                 </>
