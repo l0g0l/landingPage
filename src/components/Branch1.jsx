@@ -32,6 +32,8 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML/CSS, JavaScript, React js, React Form Hooks, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy (Heroku)',
                             img: '/img/modals/coELA-home.png',
                             url: 'https://coela.herokuapp.com/',
+                            width: '150%',
+                            height:'280%',
                             mbt:'81px',
                             mb: '0px',
 
