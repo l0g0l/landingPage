@@ -37,7 +37,7 @@ const Layout = () => {
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &#125; &#125;;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &nbsp;&nbsp;&#125; <br/>&#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </div>
@@ -48,7 +48,7 @@ const Layout = () => {
                 </div>
                 <ScrollToTop />
                     <div className="container-downarrow">
-                        <img src="/img/flechaab2.png" className="downarrow" alt="down arrow" />
+                        <img src="img/flechaab2.png" className="downarrow" alt="down arrow" />
                     </div>
                 <div className="container-main">
                     <div className="commit-main ">

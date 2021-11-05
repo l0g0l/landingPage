@@ -89,7 +89,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                                 title: 'Quiz-LocalStorage',
                                 text: 'Creación de un Quiz. Constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. 3 niveles de dificultad.SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive.',
                                 tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
-                                img: '/img/modals/quiz_movil.gif',
+                                img: 'img/modals/quiz_movil.gif',
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
                                 mbt: "72px",
                                 mb:'0px',
