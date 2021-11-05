@@ -22,8 +22,37 @@
   font-size: $fontname;
   text-align: right;
   letter-spacing: -3px;
+  transition: all 300ms;
   span:first-child {
     font-size: $fontnamefirst;
+  }
+}
+.web {
+  display: inline-block;
+  animation: textname1 2s ease-out;
+}
+@keyframes textname1 {
+  from {
+    transform: translatey(
+      -500%
+    ); /*el texto se va fuera de arriba a abajo*/
+  }
+  to {
+    transform: translateY(0%); /*vuelve al punto original*/
+  }
+}
+.developer {
+  display: inline-block;
+  animation: textname2 3s ease-out;
+}
+@keyframes textname2 {
+  from {
+    transform: translatey(
+      -800%
+    ); /*el texto se va fuera de arriba a abajo*/
+  }
+  to {
+    transform: translateY(0%); /*vuelve al punto original*/
   }
 }
 .container-main {

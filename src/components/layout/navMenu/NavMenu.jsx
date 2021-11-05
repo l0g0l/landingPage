@@ -48,14 +48,11 @@ const NavMenu = () => {
                                 <div >
                                     <img src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
                                 </div>
-
                             )}
 
                             <div onMouseEnter={() => setVisibleDivHome(true)} onMouseLeave={() => setVisibleDivHome(false)} className="home" >
                                 <p>Home</p>
                             </div>
-
-
                         </div>
                     </li>
                     <li>
@@ -65,7 +62,6 @@ const NavMenu = () => {
                                 <div >
                                     <img src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
                                 </div>
-
                             )}
                             <div onMouseEnter={() => setVisibleDivAbout(true)} onMouseLeave={() => setVisibleDivAbout(false)} className="home" >
                                 <p onClick={() => setIsOpenAbout(true)} >About</p>
@@ -89,7 +85,6 @@ const NavMenu = () => {
                                 <div >
                                     <img src="/img/flechadcha.png" alt="flecha derecha señalando el nombre del menú" className="rightarrow" />
                                 </div>
-
                             )}
                             <div onMouseEnter={() => setVisibleDivSkills(true)} onMouseLeave={() => setVisibleDivSkills(false)} className="home" >
                                 <p onClick={() => setIsOpenSkills(true)}>Skills</p>
@@ -102,7 +97,6 @@ const NavMenu = () => {
                                         cv: '/img/cv.pdf'
                                     }]}
                                     skillsmenuname={'Skills'}
-
                                 />
                             </div>
                         </div>
