@@ -23,7 +23,7 @@ const NavMenu = () => {
                 <ul className="social">
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
-                            <img src="/public/img/github.png" alt="logo github" className="logo-img" />
+                            <img src="public/img/github.png" alt="logo github" className="logo-img" />
                         </a>
                     </li>
                     <li>
