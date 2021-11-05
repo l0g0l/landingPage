@@ -1,6 +1,12 @@
 import Modal from './Modal'
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3 }) => {
+
+       //hook para utilizar la libreria i18n para traducir la web
+   const {t} = useTranslation()
+
     //pasando modalstate, uso el state del padre aquí
     // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el sigueinte ternario y el state hago que se muestre el modal o no
     //tengo que poner que "existe branch1, (linea 9) y quiz (linea 21)" para que las props se reconozcan como propiedades del obj p.e. branch1.top2 o quiz.size1
@@ -87,7 +93,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                             content={{
                                 closeModal: quiz.funcmodal,
                                 title: 'Quiz-LocalStorage',
-                                text: 'Creación de un Quiz. Constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. 3 niveles de dificultad.SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive.',
+                                text: t('commit.ball.descrp'),
                                 tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
                                 img: 'img/modals/quiz_movil.gif',
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
