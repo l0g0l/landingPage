@@ -703,7 +703,7 @@ a:hover {
   background-color: #fad6e3;
   -webkit-box-shadow: 0 0 6px #804b5e, 0 0 6px #f674a4, 0 0 6px #f674a4, 0 0 12px #f674a4;
           box-shadow: 0 0 6px #804b5e, 0 0 6px #f674a4, 0 0 6px #f674a4, 0 0 12px #f674a4;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .commit-main .text {
@@ -1174,7 +1174,7 @@ button {
 
 .content-base .txt p {
   margin-top: 34px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   color: #191919;
   line-height: 25px;
@@ -1253,9 +1253,11 @@ button {
 }
 
 .img-modalXL {
-  width: 30%;
-  border-radius: 60%;
+  width: 34%;
+  border-radius: 12%;
+  margin: 33px 15px 0 12px;
   margin-right: 15px;
+  margin-top: 33px;
   margin-left: 12px;
 }
 

@@ -6,6 +6,8 @@ import ScrollToTop from '../ScrollToTop'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 
 const Layout = () => {
@@ -13,6 +15,20 @@ const Layout = () => {
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
+
+    //hook para utilizar la libreria i18n para traducir la web
+    const  [language, setLanguage] = useState('en')
+    const {t, i18n} = useTranslation()
+    
+          const onChangeLanguage = () => {
+            i18n.changeLanguage(language)
+            if(language === 'en') { //si está en inglés
+                setLanguage('es') //cambia a español
+            }else {
+                setLanguage('en') //sino déjalo en inglés
+            }
+        }
+    
 
     //muestra o esconde los componentes branch
     const toggleBranch1 = () => {
@@ -34,6 +50,9 @@ const Layout = () => {
         <div className="container-layout">
 
             <NavMenu />
+            <header>
+                <button onClick={()=>onChangeLanguage()}>{t('home.button.traduction')}</button>
+            </header>
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
@@ -54,7 +73,7 @@ const Layout = () => {
                     <div className="commit-main ">
                         <div className="tooltipcommitmain">
                             <div className="text">
-                                <p>Click on each ball to see my projects</p>
+                                <p>{t('home.click.ball')}</p>
                             </div>
                         </div>
                         <div className="main-branch">
@@ -158,7 +177,7 @@ const Layout = () => {
                         branch3={{
                             funcbranch3: toggleBranch3,
                             top4: "835px",
-                            tooltip4: 'Full Stack',
+                            tooltip4: t('home.commit.txt4'),
                             with4: '135px',
                             size4: '42px',
                             topminiball4: '-2px'
@@ -175,7 +194,7 @@ const Layout = () => {
                         branch2={{
                             funcbranch2: toggleBranch2,
                             top3: "548px",
-                            tooltip3: 'Layouts',
+                            tooltip3: t('home.commit.txt3'),
                             with3: '170px',
                             size3: '20px',
                             topminiball3: '-2px'
@@ -192,7 +211,7 @@ const Layout = () => {
                         branch1={{
                             top2: "310px",
                             funcbranch: toggleBranch1,
-                            tooltip2: 'Bootcamp final projects',
+                            tooltip2: t('home.commit.txt2'),
                             with2: '270px',
                             size1: '42px',
                             topminiball2: '0px'
@@ -204,7 +223,7 @@ const Layout = () => {
                             funcmodal: toggleModal,
                             top1: "210px",
                             modalstate: modalOpenBlog,
-                            tooltip1: 'My first project',
+                            tooltip1: t('home.commit.txt1'),
                             size1: '42px',
                             topminiball1: '-2px',
                             with1: '215px'

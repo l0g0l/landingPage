@@ -1,12 +1,18 @@
 import React from "react"
 import ReactModal from "react-modal"
 import ProgressBar from "./ProgressBar";
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 //Librería para montar el modal full screen del NavMenu
 ReactModal.setAppElement("#root");
 
 const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenuname }) => {
   console.log(textsskills)
+
+
+   //hook para utilizar la libreria i18n para traducir la web
+   const {t} = useTranslation()
 
 
   return (
@@ -52,7 +58,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                   <ProgressBar />
                   <div className="container-img-cv-modalXL">
                     <img src="https://img.icons8.com/plasticine/100/000000/resume.png" className="img-cv" alt="mi cv" />
-                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">Descárgate mi CV</a>
+                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">{t('modalxl.cv')}</a>
                   </div>
                   <p className="text-modal-skills" key={i}>{item.text}</p>
                 </div>
