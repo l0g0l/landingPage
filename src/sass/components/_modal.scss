@@ -7,7 +7,7 @@
   align-items: center;
   cursor: auto;
   border-radius: 12px;
-  box-shadow: 9px 9px 3.5px #030303;
+  box-shadow: 9px 9px 3px #000;
 }
 .modalContainer {
   width: 410px;
@@ -94,7 +94,7 @@ p {
   transform: rotateY(180deg);
   p {
     margin-bottom: 5px;
-    padding: 6px;
+    padding: 8px;
   }
 }
 .img-modal {

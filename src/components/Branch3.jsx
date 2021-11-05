@@ -31,12 +31,14 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                             img: '/img/modals/blog.gif',
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
-                            width: '360px',
+                            width: '100%',
+                            height:'500%',
                             displayflex: 'unset',
-                            mt: '12px',
+                            mt: '20px',
                             ls:'-2px',
-                            mbt:'20px',
-                            fs:'27px'
+                            mbt:'30px',
+                            fs:'27px',
+                            ml:'unset'
                         }}
                     />
                 </>
@@ -54,10 +56,12 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                             img: '/img/modals/agencia.gif',
                             url: 'https://pure-savannah-13335.herokuapp.com/',
-                            width: '360px',
+                            width: '100%',
+                            height:'300%',
                             displayflex: 'unset',
-                            mt: '12px',
-                            mbt:'10px'
+                            mt: '20px',
+                            mbt:'30px',
+                            ml:'unset'
                         }}
                     />
                 </>
@@ -76,10 +80,12 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',
                             img: '/img/modals/patient.gif',
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
-                            width: '360px',
+                            width: '100%',
+                            height:'300%',
                             displayflex: 'unset',
-                            mt: '12px',
-                            mbt:'20px'
+                            mt: '20px',
+                            mbt:'30px',
+                            ml:'unset'
                             
                         }}
                     />
