@@ -24,7 +24,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
         closeTimeoutMS={100}
         style={{
           content: {
-            background: '#ff0571',
+            background: '#d0d0d0',
           }
         }}
       >

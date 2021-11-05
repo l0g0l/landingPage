@@ -20,13 +20,13 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                 style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
             </button>
 
-            {modalOpenBlog && project === 'De secre a Developer'
+            {modalOpenBlog && project === 'De Secre a Developer'
                 ?
                 <>
                     <Modal
                         content={{
                             closeModal: setModalOpenBlog,
-                            title: 'De Secre a Develop',
+                            title: 'Blog De Secre a Developer',
                             text: 'Creación de mi propio Blog web app.',
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                             img: '/img/modals/blog.gif',
@@ -35,7 +35,8 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             displayflex: 'unset',
                             mt: '12px',
                             ls:'-2px',
-                            mbt:'20px'
+                            mbt:'20px',
+                            fs:'27px'
                         }}
                     />
                 </>

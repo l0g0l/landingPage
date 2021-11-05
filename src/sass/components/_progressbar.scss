@@ -10,6 +10,7 @@
   font-weight: bold;
   width: 100px;
   line-height: 2em;
+  color:$grey-text;
 }
 #skill li {
   width: 200px;
@@ -22,9 +23,11 @@
   -webkit-box-shadow: 0 1px 0 $shadowprogbar1 inset, 0 1px 0 $shadowprogbar1_1;
   box-shadow: 0 1px 0 $shadowprogbar1, 0 1px 0 $shadowprogbar1_1;
 }
+
 #skill li .progressivebar {
   position: relative;
   top: -20px;
+  color:$grey-text;
 }
 .bar {
   height: 15px;

@@ -51,8 +51,7 @@ const Layout = () => {
                     <div className="commit-main ">
                         <div className="tooltipcommitmain">
                             <div className="text">
-
-                                <p>Pincha en cada una de las bolitas para ver mis proyectos</p>
+                                <p>Click on each of the balls to see my projects</p>
                             </div>
                         </div>
                         <div className="main-branch">
@@ -69,7 +68,7 @@ const Layout = () => {
                                 position={"absolute"} 
                                 top={"12px"} 
                                 left={"24px"} 
-                                project={"De secre a Developer"} 
+                                project={"De Secre a Developer"} 
                                 background={'rgb(210, 240, 252)'}
                                 boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'}/>
                             <Branch3 
@@ -173,9 +172,9 @@ const Layout = () => {
                         branch2={{
                             funcbranch2: toggleBranch2,
                             top3: "548px",
-                            tooltip3: 'Maquetaciones',
+                            tooltip3: 'Layouts',
                             with3: '170px',
-                            size3: '42px',
+                            size3: '20px',
                             topminiball3: '-2px'
                         }}
                     />
@@ -190,7 +189,7 @@ const Layout = () => {
                         branch1={{
                             top2: "310px",
                             funcbranch: toggleBranch1,
-                            tooltip2: 'Proyectos fin de Bootcamp',
+                            tooltip2: 'Bootcamp final projects',
                             with2: '270px',
                             size1: '42px',
                             topminiball2: '0px'
@@ -202,7 +201,7 @@ const Layout = () => {
                             funcmodal: toggleModal,
                             top1: "210px",
                             modalstate: modalOpenBlog,
-                            tooltip1: 'Mi primer proyecto',
+                            tooltip1: 'My first project',
                             size1: '42px',
                             topminiball1: '-2px',
                             with1: '215px'
