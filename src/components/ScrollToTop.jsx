@@ -8,7 +8,7 @@ const ScrollToTop = () => {
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
-      top: 60,
+      top: 0,
       behavior: "smooth"
     });
   };
@@ -18,7 +18,7 @@ const ScrollToTop = () => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 50) {
         setIsVisible(true);
-        if (window.pageYOffset < 1000) {
+        if (window.pageYOffset < 1100) {
           setIsVisible(true);
         }
         else {

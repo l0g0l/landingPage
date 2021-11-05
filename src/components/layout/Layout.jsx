@@ -54,7 +54,7 @@ const Layout = () => {
                     <div className="commit-main ">
                         <div className="tooltipcommitmain">
                             <div className="text">
-                                <p>Click on each of the balls to see my projects</p>
+                                <p>Click on each ball to see my projects</p>
                             </div>
                         </div>
                         <div className="main-branch">

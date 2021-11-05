@@ -8,13 +8,13 @@ const NavMenu = () => {
     const [modalIsOpenSkills, setIsOpenSkills] = useState(false);
 
 
-    //Scroll to the Top, para navegar al comienzo de la pantalla
+ /*    //Scroll to the Top, para navegar al comienzo de la pantalla
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-    };
+    }; */
 
     return (
         <div className="container-nav">
@@ -39,9 +39,9 @@ const NavMenu = () => {
                 </ul>
 
                 <ul className="menu">
-                    <li onClick={scrollToTop}>
+                    {/* <li onClick={scrollToTop}>
                         <p>Home</p>
-                    </li>
+                    </li> */}
                     <li>
                         {/*Para pintar los textos, se lo paso al componente como una prop siendo un array */}
 
