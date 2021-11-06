@@ -51,7 +51,9 @@ const Layout = () => {
 
             <NavMenu />
             <header>
-                <button onClick={()=>onChangeLanguage()}>{t('home.button.traduction')}</button>
+                <button className="changelanguage" onClick={()=>onChangeLanguage()}>{t('home.button.traduction')}
+                    <img className="img-change" src="/public/img/idioma.png" alt="icono cambio de idioma" />
+                </button>
             </header>
             <main>
                 <div className="contact" id="contact">

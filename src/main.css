@@ -542,6 +542,20 @@ a:hover {
       grid-template-columns: 100px auto;
 }
 
+.changelanguage {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 93px;
+  background-color: transparent !important;
+}
+
+.img-change {
+  width: 20%;
+}
+
 .contact {
   text-align: left;
   position: absolute;
