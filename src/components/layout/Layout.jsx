@@ -18,18 +18,18 @@ const Layout = () => {
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
 
     //hook para utilizar la libreria i18n para traducir la web
-    const  [language, setLanguage] = useState('en')
-    const {t, i18n} = useTranslation()
-    
-          const onChangeLanguage = () => {
-            i18n.changeLanguage(language)
-            if(language === 'en') { //si está en inglés
-                setLanguage('es') //cambia a español
-            }else {
-                setLanguage('en') //sino déjalo en inglés
-            }
+    const [language, setLanguage] = useState('en')
+    const { t, i18n } = useTranslation()
+
+    const onChangeLanguage = () => {
+        i18n.changeLanguage(language)
+        if (language === 'en') { //si está en inglés
+            setLanguage('es') //cambia a español
+        } else {
+            setLanguage('en') //sino déjalo en inglés
         }
-    
+    }
+
 
     //muestra o esconde los componentes branch
     const toggleBranch1 = () => {
@@ -51,15 +51,15 @@ const Layout = () => {
         <div className="container-layout">
 
             <NavMenu />
-         
-                <button className="changelanguage" onClick={()=>onChangeLanguage()}>
-                    <img className="img-change" src={idioma} alt="icono cambio de idioma" />
-                </button>
-      
+
+            <button className="changelanguage" onClick={() => onChangeLanguage()}>
+                <img className="img-change" src={idioma} alt="icono cambio de idioma" />
+            </button>
+
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &nbsp;&nbsp;&#125; <br/>&#125;;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
                     <p>let Lucia_Contact;</p>
                     <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </div>
@@ -69,9 +69,9 @@ const Layout = () => {
                     <span><p className="web">Web </p>&nbsp;<p className="developer">Developer</p></span>
                 </div>
                 <ScrollToTop />
-                    <div className="container-downarrow">
-                        <img src="img/flechaab2.png" className="downarrow" alt="down arrow" />
-                    </div>
+                <div className="container-downarrow">
+                    <img src="img/flechaab2.png" className="downarrow" alt="down arrow" />
+                </div>
                 <div className="container-main">
                     <div className="commit-main ">
                         <div className="tooltipcommitmain">
@@ -91,24 +91,24 @@ const Layout = () => {
                             <Branch3
                                 display={"block"}
                                 position={"absolute"}
-                                top={"12px"}
-                                left={"24px"}
+                                top={"23px"}
+                                left={"32px"}
                                 project={"De Secre a Developer"}
                                 background={'rgb(210, 240, 252)'}
                                 boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
                             <Branch3
                                 display={"block"}
                                 position={"absolute"}
-                                top={"62px"}
-                                left={"24px"}
+                                top={"73px"}
+                                left={"32px"}
                                 project={"Agencia de Viajes"}
                                 background={'rgb(210, 240, 252)'}
                                 boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
                             <Branch3
                                 display={"block"}
                                 position={"absolute"}
-                                top={"112px"}
-                                left={"24px"}
+                                top={"123px"}
+                                left={"32px"}
                                 project={"Gestor de citas"}
                                 background={'rgb(210, 240, 252)'}
                                 boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
@@ -121,22 +121,24 @@ const Layout = () => {
                             <Branch2
                                 display={"block"}
                                 position={"absolute"}
-                                top={"24px"} left={"-20px"}
+                                top={"27px"}
+                                left={"-22px"}
                                 project={"Buscador de repos"}
                                 background={'rgb(231, 252, 197)'}
                                 boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
                             <Branch2
                                 display={"block"}
                                 position={"absolute"}
-                                top={"74px"} left={"-20px"}
+                                top={"77px"}
+                                left={"-22px"}
                                 project={"NPM Clone"}
                                 background={'rgb(231, 252, 197)'}
                                 boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
                             <Branch2
                                 display={"block"}
                                 position={"absolute"}
-                                top={"124px"}
-                                left={"-20px"}
+                                top={"127px"}
+                                left={"-22px"}
                                 project={"Hackathon(Nuwe)"}
                                 background={'rgb(231, 252, 197)'}
                                 boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
@@ -151,8 +153,8 @@ const Layout = () => {
                             <Branch1
                                 display={"block"}
                                 position={"absolute"}
-                                top={"80px"}
-                                left={"24px"}
+                                top={"73px"}
+                                left={"32px"}
                                 project={"coELA"}
                                 background={'rgb(203, 201, 231)'}
                                 boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}
@@ -160,8 +162,8 @@ const Layout = () => {
                             <Branch1
                                 display={"block"}
                                 position={"absolute"}
-                                top={"20px"}
-                                left={"24px"}
+                                top={"23px"}
+                                left={"32px"}
                                 project={"DontWaste"}
                                 background={'rgb(203, 201, 231)'}
                                 boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}
@@ -172,7 +174,7 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch3_3={{
-                            top4_4: "1000px"
+                            top4_4: "1017px"
                         }}
                     />
 
@@ -206,13 +208,13 @@ const Layout = () => {
 
                     <MainMiniBall
                         branch1_1={{
-                            top1_1: "448px"
+                            top1_1: "444px"
                         }}
                     />
 
                     <MainMiniBall
                         branch1={{
-                            top2: "310px",
+                            top2: "313px",
                             funcbranch: toggleBranch1,
                             tooltip2: t('home.commit.txt2'),
                             with2: '270px',

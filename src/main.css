@@ -411,10 +411,10 @@ a:hover {
 
 .branch1 {
   width: 40px;
-  height: 142px;
+  height: 130px;
   display: block;
   position: absolute;
-  top: 321px;
+  top: 326px;
   left: 28px;
   -webkit-box-shadow: 0 0 6px #4e497e, 0 0 6px #6f69ac, 0 0 6px #6f69ac, 0 0 12px #6f69ac;
           box-shadow: 0 0 6px #4e497e, 0 0 6px #6f69ac, 0 0 6px #6f69ac, 0 0 12px #6f69ac;
@@ -437,7 +437,7 @@ a:hover {
 
 .branch3 {
   width: 40px;
-  height: 169px;
+  height: 182px;
   display: block;
   position: absolute;
   top: 847px;
@@ -718,7 +718,7 @@ a:hover {
   background-color: #fad6e3;
   -webkit-box-shadow: 0 0 6px #804b5e, 0 0 6px #f674a4, 0 0 6px #f674a4, 0 0 12px #f674a4;
           box-shadow: 0 0 6px #804b5e, 0 0 6px #f674a4, 0 0 6px #f674a4, 0 0 12px #f674a4;
-  cursor: auto;
+  cursor: pointer;
 }
 
 .commit-main .text {

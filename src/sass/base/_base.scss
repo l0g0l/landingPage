@@ -14,8 +14,8 @@ a {
 
 .branch1 {
   @include branch(
-    142px,
-    321px,
+    130px,
+    326px,
     28px,
     // rgb(210, 240, 252),
     0 0 6px rgb(78, 73, 126),
@@ -42,7 +42,7 @@ a {
 }
 .branch3 {
   @include branch(
-    169px,
+    182px,
     847px,
     28px,
     // rgb(231, 252, 197),
