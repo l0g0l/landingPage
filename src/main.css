@@ -545,15 +545,16 @@ a:hover {
 .changelanguage {
   display: block;
   position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
-  right: 93px;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 5px;
   background-color: transparent !important;
+  cursor: pointer;
 }
 
 .img-change {
-  width: 20%;
+  width: 60%;
 }
 
 .contact {

@@ -6,6 +6,7 @@ import ScrollToTop from '../ScrollToTop'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
+import idioma from '../../assets/idioma.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -50,11 +51,11 @@ const Layout = () => {
         <div className="container-layout">
 
             <NavMenu />
-            <header>
-                <button className="changelanguage" onClick={()=>onChangeLanguage()}>{t('home.button.traduction')}
-                    <img className="img-change" src="img/idioma.png" alt="icono cambio de idioma" />
+         
+                <button className="changelanguage" onClick={()=>onChangeLanguage()}>
+                    <img className="img-change" src={idioma} alt="icono cambio de idioma" />
                 </button>
-            </header>
+      
             <main>
                 <div className="contact" id="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
