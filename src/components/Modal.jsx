@@ -1,7 +1,11 @@
 import React from "react";
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 
 function Modal({ content }) {
+  //hook para utilizar la libreria i18n para traducir la web
+  const {t} = useTranslation()
 
   return (
     <div className="modalBackground" style={{ left: content.left, right: content.right }}>
@@ -29,7 +33,7 @@ function Modal({ content }) {
             </div>
             <div className="back">
               <div>
-                <p><strong>Tecnologías:</strong></p>
+                <p><strong>{t('modal.tecnolog')}:</strong></p>
               </div>
               <div>
                 <p>  {content.tecnolog}</p>
@@ -38,7 +42,7 @@ function Modal({ content }) {
           </div>
         </div>
         <div className="footer">
-          <a href={content.url} target="_blank" rel="noreferrer noopener">View Web Application</a>
+          <a href={content.url} target="_blank" rel="noreferrer noopener">{t('modal.viewapp')}</a>
         </div>
       </div>
     </div>

@@ -10,11 +10,19 @@
  "home.commit.txt2":"Bootcamp final projects",
  "home.commit.txt3":"Layouts",
  "home.commit.txt4":"Full Stack",
- "footer1":"All rights reserved",
- "footer2":"Woman, Brave and now Web Developer",
+ "modal.tecnolog":"Technologies",
+ "modal.viewapp":"View Web Application...",
  "commit.ball.descrp":"Creation of a Quiz. It will consist of 5 questions. Each question will have 4 options and only one of them will be correct. 3 levels of difficulty. Store the score of each game in LocalStorage. Responsive.",
  "branch1.txtcoela":"Web application (Mobile First) that allows from instant donations to integrating the application with a bank.",
- "branch1.txtdontw":"Creation of a recipe web application (Mobile First) whose search engine provides recipes according to the ingredient or ingredients selected, and can also be filtered by the type of food desired as well as by allergens."
-
-
+ "branch1.txtdontw":"Creation of a recipe web application (Mobile First) whose search engine provides recipes according to the ingredient or ingredients selected, and can also be filtered by the type of food desired as well as by allergens.",
+ "branch2.txtbgit":"Repository finder on GitHub. FrontEnd app. SPA (single page application), data storage in LocalStorage.",
+ "branch2.txtnpm":"Clone of a landing page using only HTML and CSS. Responsive.",
+ "branch2.txthack":"Clone of a registration gateway, navigation flow without data persistence, Responsive.",
+ "branch3.txtgestor":"Creation of an appointment manager. You can register an appointment, display and delete it. Responsive.",
+ "branch3.txtagencia":"Creation of a Travel Agency website, opinions on holiday experiences can be added.",
+ "branch3.txtblog":"Creation of my own Blog web app.",
+ "footer1":"All rights reserved",
+ "footer2":"Woman, Brave and now Web Developer"
+ 
+ 
 }

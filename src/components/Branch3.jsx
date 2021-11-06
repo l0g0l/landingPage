@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import Modal from './Modal'
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 const Branch3 = ({ display, position, top, left, project, boxcolor,  background }) => {
 
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
     const [modalOpenAgencia, setModalOpenAgencia] = useState(false)
     const [modalOpenPatientM, setModalOpenPatientM] = useState(false)
+
+    //hook para utilizar la libreria i18n para traducir la web
+   const {t} = useTranslation()
 
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
@@ -27,7 +32,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenBlog,
                             title: 'Blog De Secre a Developer',
-                            text: 'Creación de mi propio Blog web app.',
+                            text: t('branch3.txtblog'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                             img: 'img/modals/blog.gif',
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
@@ -52,7 +57,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenAgencia,
                             title: 'Agencia de Viajes',
-                            text: 'Creación de una web de Agencia de Viajes, se pueden añadir opiniones sobre experiencias vacacionales.',
+                            text: t('branch3.txtagencia'),
                             tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                             img: 'img/modals/agencia.gif',
                             url: 'https://pure-savannah-13335.herokuapp.com/',
@@ -76,7 +81,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenPatientM,
                             title: 'Gestor de citas',
-                            text: 'Creación de un gestor de citas. Se puede registrar una cita, mostrar y eliminar. Responsive.',
+                            text: t('branch3.txtgestor'),
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',
                             img: 'img/modals/patient.gif',
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',

@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Modal from './Modal'
+import { useTranslation } from 'react-i18next' //traducir a otros idiomas
+
 
 const Branch2 = ({ display, position, top, left, project, boxcolor,  background  }) => {
 
@@ -7,6 +9,10 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
     const [modalOpenNPM, setModalOpenNPM] = useState(false)
     const [modalOpenBuscRep, setModalOpenBuscRep] = useState(false)
     const [modalOpenMaqAv, setModalOpenMaqAv] = useState(false)
+
+      //hook para utilizar la libreria i18n para traducir la web
+   const {t} = useTranslation()
+
 
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
@@ -29,7 +35,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenHac,
                             title: 'Hackathon(Nuwe)',
-                            text: 'Clon de una pasarela de registro, flujo de navegación sin persistencia de datos, Responsive.',
+                            text: t('branch2.txthack'),
                             tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
                             img: 'img/modals/hackathon.gif',
                             url: 'https://hackathon-mwc.herokuapp.com/',
@@ -53,7 +59,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenNPM,
                             title: 'NPM Clone',
-                            text: 'Clon de una landing page utilizando únicamente HTML y CSS. Responsive.',
+                            text: t('branch2.txtnpm'),
                             tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
                             img: 'img/modals/npmclone.gif',
                             url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
@@ -78,7 +84,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                         content={{
                             closeModal: setModalOpenBuscRep,
                             title: 'Buscador GitHub',
-                            text: 'Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), almacenamiento de datos en LocalStorage. ',
+                            text: t('branch2.txtbgit'),
                             tecnolog: 'HTML/CSS (Flex Grid), JavaScript y React js. Deploy (Heroku)',
                             img: 'img/modals/repos.gif',
                             url: 'https://githubrepositoryfinder.herokuapp.com/',
