@@ -7,7 +7,7 @@ import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
 import idioma1 from '../../assets/img/idioma1.png'
-import flelchaab2 from '../../assets/img/flelchaab2.png'
+import flechaab2 from '../../assets/img/flechaab2.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -71,7 +71,7 @@ const Layout = () => {
                 </div>
                 <ScrollToTop />
                 <div className="container-downarrow">
-                    <img src={flelchaab2} className="downarrow" alt="down arrow" />
+                    <img src={flechaab2} className="downarrow" alt="down arrow" />
                 </div>
                 <div className="container-main">
                     <div className="commit-main ">
