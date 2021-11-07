@@ -7,7 +7,7 @@
 <h4 align="center">LuciaG's Web Developer Landing Page</h4>
 
   <p align="center">
-    <a href="https://luciagwebsitewebdeveloper.netlify.app/">View Web Application</a>
+    <a href="https://luciawebdeveloperpage.herokuapp.com/">View Web Application</a>
   </p>
     <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/landingpage/badge" alt="Codefactor Grade">

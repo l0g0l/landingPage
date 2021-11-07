@@ -49,7 +49,7 @@ const NavMenu = () => {
                             setisopen={setIsOpenAbout}
                             textsabout={[{
                                 text: t('navmenu.modalxl.txt1'),
-                                img:{yo},
+                                img: yo,
                                 ml: '12px'
                             }]}
                             aboutmenuname={'About'}
@@ -62,7 +62,7 @@ const NavMenu = () => {
                             setisopen={setIsOpenSkills}
                             textsskills={[{
                                 text: t('navmenu.modalxl.txt2'),
-                                cv: {cv}
+                                cv: cv
                             }]}
                             skillsmenuname={'Skills'}
                         />
