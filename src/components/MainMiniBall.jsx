@@ -1,4 +1,6 @@
 import Modal from './Modal'
+import quizfirebase from '../assets/img/modals/quizfirebase.gif'
+
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -95,7 +97,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                                 title: 'Quiz-LocalStorage',
                                 text: t('commit.ball.descrp'),
                                 tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
-                                img: '/img/modals/quiz_movil.gif',
+                                img: quizfirebase,
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
                                 mbt: "72px",
                                 mb:'0px',

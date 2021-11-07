@@ -24,7 +24,7 @@ const NavMenu = () => {
                 <ul className="social">
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
-                            <img src={github} alt="logo github" className="logo-img" />
+                            <img src={github} alt="logo github" className="logo-img"/>
                         </a>
                     </li>
                     <li>
@@ -33,7 +33,7 @@ const NavMenu = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
+                        <a href="https://desecreadeveloperblog.herokuapp.com/" target="_blank" rel="noreferrer noopener">
                             <img src={blog} alt="logo blog" className="logo-img" />
                         </a>
                     </li>

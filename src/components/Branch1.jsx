@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Modal from './Modal'
+import coELA from '../assets/img/modals/coELA.png'
+import dontwaste from '../assets/img/modals/dontwaste.gif'
+
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -36,7 +39,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'coELA',
                             text: t('branch1.txtcoela'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, React Form Hooks, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy (Heroku)',
-                            img: '/img/modals/coELA-home.png',
+                            img: coELA,
                             url: 'https://coela.herokuapp.com/',
                             width: '150%',
                             height:'280%',
@@ -58,7 +61,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Don\'t Waste',
                             text: t('branch1.txtdontw'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy(Heroku)',
-                            img: '/img/modals/dontwaste.gif',
+                            img: dontwaste,
                             url: 'https://dontwasteapp.herokuapp.com/',
                             mbt: '66px',
                             mb:'0px'

@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Modal from './Modal'
+import patient from '../assets/img/modals/patient.gif'
+import agencia from '../assets/img/modals/agencia.gif'
+import blog from '../assets/img/modals/blog.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -34,7 +37,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Blog De Secre a Developer',
                             text: t('branch3.txtblog'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
-                            img: '/img/modals/blog.gif',
+                            img: blog,
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
                             width: '100%',
                             height:'500%',
@@ -59,7 +62,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Agencia de Viajes',
                             text: t('branch3.txtagencia'),
                             tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
-                            img: '/img/modals/agencia.gif',
+                            img: agencia,
                             url: 'https://pure-savannah-13335.herokuapp.com/',
                             width: '100%',
                             height:'300%',
@@ -83,7 +86,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Gestor de citas',
                             text: t('branch3.txtgestor'),
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',
-                            img: '/img/modals/patient.gif',
+                            img: patient,
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
                             width: '100%',
                             height:'300%',

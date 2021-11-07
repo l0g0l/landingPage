@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Modal from './Modal'
+import repos from '../assets/img/modals/repos.gif'
+import npmclone from '../assets/img/modals/npmclone.gif'
+import hackathon from '../assets/img/modals/hackathon.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -37,7 +40,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Hackathon(Nuwe)',
                             text: t('branch2.txthack'),
                             tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
-                            img: '/img/modals/hackathon.gif',
+                            img: hackathon,
                             url: 'https://hackathon-mwc.herokuapp.com/',
                             left:'-450px',
                             width: '100%',
@@ -61,7 +64,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'NPM Clone',
                             text: t('branch2.txtnpm'),
                             tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
-                            img: '/img/modals/npmclone.gif',
+                            img: npmclone,
                             url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
                             left:'-450px',
                             width: '100%',
@@ -86,7 +89,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor,  background 
                             title: 'Buscador GitHub',
                             text: t('branch2.txtbgit'),
                             tecnolog: 'HTML/CSS (Flex Grid), JavaScript y React js. Deploy (Heroku)',
-                            img: '/img/modals/repos.gif',
+                            img: repos,
                             url: 'https://githubrepositoryfinder.herokuapp.com/',
                             left:'-450px',
                             width: '100%',
