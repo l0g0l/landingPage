@@ -6,7 +6,7 @@ import ScrollToTop from '../ScrollToTop'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
-import idioma from '../../assets/idioma.png'
+import idioma1 from '../../assets/idioma1.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -53,7 +53,7 @@ const Layout = () => {
             <NavMenu />
 
             <button className="changelanguage" onClick={() => onChangeLanguage()}>
-                <img className="img-change" src={idioma} alt="icono cambio de idioma" />
+                <img className="img-change" src={idioma1} alt="icono cambio de idioma" />
             </button>
 
             <main>
@@ -156,8 +156,8 @@ const Layout = () => {
                                 top={"73px"}
                                 left={"32px"}
                                 project={"coELA"}
-                                background={'rgb(203, 201, 231)'}
-                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}
+                                background={'rgb(190, 187, 223)'}
+                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(194, 189, 233)'}
                             />
                             <Branch1
                                 display={"block"}
@@ -166,7 +166,7 @@ const Layout = () => {
                                 left={"32px"}
                                 project={"DontWaste"}
                                 background={'rgb(203, 201, 231)'}
-                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(111, 105, 172)'}
+                                boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(170, 166, 209)'}
                             />
                         </>
                         :

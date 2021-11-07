@@ -1,4 +1,4 @@
-@mixin branch($height, $top, $left,  $boxcolor1, $boxcolor2, $boxcolor3, $boxcolor4) {
+@mixin branch($height,$top,$left,$boxcolor1,$boxcolor2,$boxcolor3,$boxcolor4) {
   width: 40px;
   height: $height;
   display: block;
@@ -23,7 +23,13 @@
   -moz-animation: graphic-design 2s ease-out;
   -webkit-animation: graphic-design 2s ease-out;
   background-color: $bc;
-  background-image: -webkit-gradient(linear,left top,left bottom,from($bc),to($bi));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($bc),
+    to($bi)
+  );
   background-image: -webkit-linear-gradient(top, $bc, $bi);
   background-image: -moz-linear-gradient(top, $bc, $bi);
   background-image: -ms-linear-gradient(top, $bc, $bi);
@@ -33,11 +39,11 @@
 
 @mixin neon() {
   background-color: rgb(250, 214, 227);
-  box-shadow:    
-  0 0 6px rgb(128, 75, 94),
+  box-shadow: 
+  0 0 6px rgb(128, 75, 94), 
+  0 0 6px rgb(246, 116, 164),
   0 0 6px rgb(246, 116, 164), 
-  0 0 6px rgb(246, 116, 164),  
-  0 0 12px rgb(246, 116, 164)
+  0 0 12px rgb(246, 116, 164);
 }
 
 /*background-color: rgb(250, 214, 227);
@@ -62,11 +68,9 @@ box-shadow:
   0 0 6px rgb(190, 250, 93),  
   0 0 12px rgb(190, 250, 93)  */
 
-/* background-color: rgb(203, 201, 231);
- box-shadow:    
- 0 0 6px rgb(78, 73, 126),
- 0 0 6px rgb(111, 105, 172),
- 0 0 6px rgb(111, 105, 172),  
- 0 0 12px rgb(111, 105, 172)*/
-
- 
+/* background-color: rgb(190, 187, 223);
+  box-shadow:    
+  0 0 6px rgb(78, 73, 126),
+  0 0 6px rgb(111, 105, 172),
+  0 0 6px rgb(111, 105, 172),  
+  0 0 12px rgb(194, 189, 233)*/

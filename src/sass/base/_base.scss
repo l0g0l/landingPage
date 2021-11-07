@@ -17,11 +17,10 @@ a {
     130px,
     326px,
     28px,
-    // rgb(210, 240, 252),
     0 0 6px rgb(78, 73, 126),
     0 0 6px rgb(111, 105, 172),
     0 0 6px rgb(111, 105, 172),  
-    0 0 12px rgb(111, 105, 172)
+    0 0 12px  rgb(194, 189, 233)
   );
 }
 .branch2 {
@@ -31,7 +30,6 @@ a {
   position: absolute;
   top: 559px;
   right: -17px;
-  // border: 3px solid rgb(164, 144, 204);
   box-shadow: 
   0 0 6px rgb(70, 110, 6),
   0 0 6px rgb(190, 250, 93), 
@@ -42,11 +40,10 @@ a {
 }
 .branch3 {
   @include branch(
-    182px,
-    847px,
-    28px,
-    // rgb(231, 252, 197),
-    0 0 6px rgb(53, 108, 129),
+  182px,
+  847px,
+  28px,
+  0 0 6px rgb(53, 108, 129),
  0 0 6px rgb(106, 209, 250), 
  0 0 6px rgb(106, 209, 250),  
  0 0 12px rgb(106, 209, 250)
