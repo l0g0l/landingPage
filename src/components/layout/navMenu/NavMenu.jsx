@@ -1,6 +1,6 @@
 import { useState } from "react"
 import ModalXL from "../../ModalXL";
-import github from '../../../assets/img/gihub.png'
+import github from '../../../assets/img/github.png'
 import linkedin from '../../../assets/img/linkedin.png'
 import blog from '../../../assets/img/blog.png'
 import yo from '../../../assets/img/yo.jpg'
