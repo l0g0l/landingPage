@@ -1,10 +1,10 @@
 import { useState } from "react"
 import ModalXL from "../../ModalXL";
-import github from '../../assets/img/github.png'
-import linkedin from '../../assets/img/linkedin.png'
-import blog from '../../assets/img/blog.png'
-import yo from '../../assets/img/yo.jpg'
-import cv from '../../assets/img/cv.pdf'
+import github from '../../../assets/img/gihub.png'
+import linkedin from '../../../assets/img/linkedin.png'
+import blog from '../../../assets/img/blog.png'
+import yo from '../../../assets/img/yo.jpg'
+import cv from '../../../assets/img/cv.pdf'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
