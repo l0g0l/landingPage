@@ -11,9 +11,23 @@
   right: -4px;
  background-color: transparent !important;
  cursor: pointer;
+ .img-change{
+   width: 30%;
+ }
 }
-.img-change{
-  width: 30%;
+.tooltip-container-language {
+   transition: all 1s;
+  .textlanguage {
+    width: 200px;
+    position: absolute;
+    top: 52px;
+    right: 6px;
+    display: none;
+    color: $white;
+  }
+  &:hover .textlanguage {
+    display: block;
+  }
 }
 .contact {
   text-align: left;
@@ -167,7 +181,6 @@
   transition: all 1s;
   .text {
     width: 200px;
-    // border: 1px solid $white;
     position: absolute;
     top: -8px;
     right: 42px;
