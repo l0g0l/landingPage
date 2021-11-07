@@ -19,17 +19,17 @@ const NavMenu = () => {
                 <ul className="social">
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
-                            <img src="img/github.png" alt="logo github" className="logo-img" />
+                            <img src="/img/github.png" alt="logo github" className="logo-img" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/luciagonzalezlara/" target="_blank" rel="noreferrer noopener">
-                            <img src="img/linkedin.png" alt="logo linkedin" className="logo-img" />
+                            <img src="/img/linkedin.png" alt="logo linkedin" className="logo-img" />
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
-                            <img src="img/blog.png" alt="logo blog" className="logo-img" />
+                            <img src="/img/blog.png" alt="logo blog" className="logo-img" />
                         </a>
                     </li>
                 </ul>
@@ -44,7 +44,7 @@ const NavMenu = () => {
                             setisopen={setIsOpenAbout}
                             textsabout={[{
                                 text: t('navmenu.modalxl.txt1'),
-                                img: 'img/yo.jpg',
+                                img: '/img/yo.jpg',
                                 ml: '12px'
                             }]}
                             aboutmenuname={'About'}
@@ -57,7 +57,7 @@ const NavMenu = () => {
                             setisopen={setIsOpenSkills}
                             textsskills={[{
                                 text: t('navmenu.modalxl.txt2'),
-                                cv: 'img/cv.pdf'
+                                cv: '/img/cv.pdf'
                             }]}
                             skillsmenuname={'Skills'}
                         />

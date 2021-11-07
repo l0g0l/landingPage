@@ -70,7 +70,7 @@ const Layout = () => {
                 </div>
                 <ScrollToTop />
                 <div className="container-downarrow">
-                    <img src="img/flechaab2.png" className="downarrow" alt="down arrow" />
+                    <img src="/img/flechaab2.png" className="downarrow" alt="down arrow" />
                 </div>
                 <div className="container-main">
                     <div className="commit-main ">
