@@ -22,7 +22,7 @@ $black: #000;
 $blacksecondary:#141414;
 $neumorphimsprimary:#080808;
 $neumorphimssecondary:#202020;
-$white: #fff;
+$white: #ffff;
 $whitesecondary: rgb(136, 133, 133);
 $whiteshadow: rgba(255,255,255,1);
 $lemon: rgb(166, 253, 23);
@@ -46,24 +46,13 @@ $progressivebar8:#FDA77F;
 $shadowprogbar1:#bebbb9;
 $shadowprogbar1_1:#fcfcfc;
 
-/* FEATURES*/
-$bordergreen:38px;
-$borderpink:50px;
+
 
 /* DIMENSIONS */
 $nav:85px;
 $footer: 50px;
 $margs: 27px;
 
-
-// animations
-$defaultLinear: all 0.15s linear;
-$transitionEase: all 0.5s ease;
-
-@keyframes opacity {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 // BREAKPOINTS
 @mixin for-size($size) {
