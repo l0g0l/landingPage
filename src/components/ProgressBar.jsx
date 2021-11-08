@@ -8,7 +8,7 @@ const ProgressBar = () => {
                 <ul id="skill">
                     <li>
                         <span className="bar html_css"></span>
-                        <span className="progressivebar">HTML/CSS</span>
+                        <span className="progressivebar">HTML/CSS/SASS</span>
 
                     </li>
                     <li>
@@ -24,7 +24,7 @@ const ProgressBar = () => {
                     </li>
                     <li>
                         <span className="bar angular"></span>
-                        <span className="progressivebar">Angular</span>
+                        <span className="progressivebar">Angular/TypeScript</span>
 
                     </li>
                     <li>
@@ -34,7 +34,7 @@ const ProgressBar = () => {
                     </li>
                     <li>
                         <span className="bar mongo"></span>
-                        <span className="progressivebar">BBDD Mongodb</span>
+                        <span className="progressivebar">BBDD Mongodb/Mongoose</span>
 
                     </li>
                     <li>
@@ -50,41 +50,6 @@ const ProgressBar = () => {
 
                 </ul>
             </div>
-            {/* <div>
-
-                <div>
-
-                    <span className="porcent1">60%</span>
-                </div>
-                <div>
-
-                    <span className="porcent2">40%</span>
-                </div>
-                <div>
-
-                    <span className="porcent3">50%</span>
-                </div>
-                <div>
-
-                    <span className="porcent4">20%</span>
-                </div>
-                <div>
-
-                    <span className="porcent5">50%</span>
-                </div>
-                <div>
-
-                    <span className="porcent6">60%</span>
-                </div>
-                <div>
-
-                    <span className="porcent7" >40%</span>
-                </div>
-                <div>
-
-                    <span className="porcent8">60%</span>
-                </div>
-            </div> */}
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import ReactModal from "react-modal"
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "./ProgressBar"
+import cvimg from "../assets/img/cvimg.png"
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -57,7 +58,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                 <div className="container-prog-img">
                   <ProgressBar />
                   <div className="container-img-cv-modalXL">
-                    <img src="https://img.icons8.com/plasticine/100/000000/resume.png" className="img-cv" alt="mi cv" />
+                    <img src={cvimg} className="img-cv" alt="mi cv" />
                     <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">{t('modalxl.cv')}</a>
                   </div>
                   <p className="text-modal-skills" key={i}>{item.text}</p>

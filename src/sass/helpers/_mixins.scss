@@ -18,23 +18,16 @@
   left: $left;
 }
 
-@mixin progressivebar($with, $bc, $bi) {
+@mixin progressivebar($with, $bc) {
   width: $with;
   -moz-animation: graphic-design 2s ease-out;
   -webkit-animation: graphic-design 2s ease-out;
   background-color: $bc;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from($bc),
-    to($bi)
-  );
-  background-image: -webkit-linear-gradient(top, $bc, $bi);
-  background-image: -moz-linear-gradient(top, $bc, $bi);
-  background-image: -ms-linear-gradient(top, $bc, $bi);
-  background-image: -o-linear-gradient(top, $bc, $bi);
-  background-image: linear-gradient(to top, $bc, $bi);
+   background-image: -webkit-linear-gradient(top, $bc);
+  background-image: -moz-linear-gradient(top, $bc);
+  background-image: -ms-linear-gradient(top, $bc);
+  background-image: -o-linear-gradient(top, $bc);
+  background-image: linear-gradient(to top, $bc);
 }
 
 @mixin neon() {

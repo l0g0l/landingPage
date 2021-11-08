@@ -55,9 +55,9 @@ button {
     display: flex;
     flex-direction: column;
     p {
-      margin-top: 34px ;
-      font-size: 12px ;
-      font-weight: bold ;
+      margin-top: 34px;
+      font-size: 12px;
+      font-weight: bold;
       color: $grey-text;
       line-height: 25px;
       margin-right: 10px;
@@ -114,11 +114,11 @@ button {
 }
 .img-modalXL {
   width: 34%;
-  border-radius: 45%;
+  border-radius: 49%;
   margin: 33px 15px 0 12px;
-  margin-right: 15px;
-  margin-top: 33px;
-  margin-left: 12px;
+  // border: 1px solid #191919;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .titleCloseBtnModalX {
   display: flex;
@@ -130,4 +130,3 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
-

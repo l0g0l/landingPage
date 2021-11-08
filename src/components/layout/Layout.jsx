@@ -52,11 +52,11 @@ const Layout = () => {
         <div className="container-layout">
 
             <NavMenu />
+            {/*botón para cambiar el lenguaje, tooltip que según hayas seleccionado el idioma, te mostrará el otro */}
             <div className="tooltip-container-language">
-
                 <button className="changelanguage" onClick={() => onChangeLanguage()}>
                     <img className="img-change" src={idioma1} alt="icono cambio de idioma" />
-                    {language === 'es'
+                    {language === 'en'
                         ?
 
                         <div className="textlanguage" >
