@@ -89,7 +89,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             img: patient,
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
                             width: '100%',
-                            height:'300%',
+                            height:'200%',
                             displayflex: 'unset',
                             mt: '20px',
                             mbt:'30px',
