@@ -22,13 +22,18 @@ const Layout = () => {
     const [language, setLanguage] = useState('en')
     const { t, i18n } = useTranslation()
 
+
     const onChangeLanguage = () => {
-        i18n.changeLanguage(language)
+        //creo una variable fuera del if  para almacenar cual es el lenguaje al que quiero traducir, ya que no puedo utilizar el state que acabo de actualizar
+        let tmplenguaje
         if (language === 'en') { //si está en inglés
+            tmplenguaje = 'es'
             setLanguage('es') //cambia a español
         } else {
+            tmplenguaje = 'en'
             setLanguage('en') //sino déjalo en inglés
         }
+        i18n.changeLanguage(tmplenguaje)
     }
 
 
