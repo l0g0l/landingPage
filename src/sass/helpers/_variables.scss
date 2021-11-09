@@ -6,13 +6,15 @@
   src: url(../../assets/fonts/SourceSansPro-Black.ttf);
 }
 
-$mainFont:sans-serif;
+$mainfont: "Courier New", Courier, monospace;
 $fontmenunav: 29px;
 $fontweightnav: 300;
 $fonttooltip: 15px;
 $fontnamefirst:85px;
 $fontname:51px;
 $fontcontact: 14px;
+$fontmodalXltxt: 13px;
+$fontfirstlettermodal: 30px;
 
 
 // Colours
@@ -46,6 +48,10 @@ $progressivebar8:#000;
 $progressivebar9: #0769ad;
 $progressivebar10:#534292;
 
+$aboutbcc2: #ADC2A9;
+$aboutbcc3: #C89595;
+$aboutbcc4: #F29191;
+$aboutbcc5: #d9aff7;
 
 
 /* DIMENSIONS */

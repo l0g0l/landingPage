@@ -1,7 +1,4 @@
-.modalXL {
-  font-family: $mainFont;
-  text-align: center;
-}
+//=========== Fondo ==============
 .overlay-base {
   padding: 1rem;
   position: fixed;
@@ -28,6 +25,7 @@
   background-color: rgba(0, 0, 0, 0);
   opacity: 0;
 }
+//=========== Contenido ==============
 .content-base {
   position: relative;
   border: 0;
@@ -45,41 +43,60 @@
     flex-direction: column;
     p {
       margin-top: 34px;
-      font-size: 13px;
-      font-weight: bold;
+      font-size: $fontmodalXltxt;
+      font-weight: normal;
       color: $grey-text;
-      line-height: 25px;
-      margin-right: 10px;
-      // span {
-      //   font-size: 25px;
-      // }
+      line-height: 25.5px;
     }
     p::first-letter {
-      font-size: 30px;
+      font-size: $fontfirstlettermodal;
     }
   }
-  .container-progbar-txtimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-top: 40px;
-    margin-left: 10px;
-  }
-  .container-img-cv-modalXL {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: flex-end;
-    position: relative;
-    top: -210px;
-  }
-  
-  .text-modal-skills {
-    position: relative;
-    top: -130px;
-    text-align: left;
-  }
 }
+//=========== De Skills ==============
+.container-progbar-txtimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.container-img-cv-modalXL {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+  position: relative;
+  top: -210px;
+}
+.text-modal-skills {
+  position: relative;
+  top: -130px;
+  text-align: left;
+}
+
+//=========== Termina Skills ==============
+//=========== De About ==============
+.container-img-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+.backgroundimg {
+  height: 89%;
+  background-color: $aboutbcc5;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+.img-modalXL {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  margin: 47px 15px 0 15px;
+}
+//=========== Termina About ==============
 .content-after {
   width: 60%;
   height: 90%;
@@ -91,20 +108,6 @@
   height: 0%;
   background-color: transparent;
 }
-.container-img-txt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-modalXL {
-  width: 34%;
-  border-radius: 49%;
-  margin: 33px 15px 0 12px;
-  // border: 1px solid #191919;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
 .titleCloseBtnModalX {
   display: flex;
   justify-content: flex-end;
@@ -113,6 +116,6 @@
   right: 12px;
   border: none !important;
   font-size: 20px;
-outline: none !important;
+  outline: none !important;
   cursor: pointer;
 }

@@ -19,7 +19,7 @@ const ProgressBar = () => {
                 </li>
                 <li>
                     <span className="bar jquery"></span>
-                    <span className="progressivebar">J Query</span>
+                    <span className="progressivebar">JQuery</span>
                 </li>
                 <li>
                     <span className="bar angular"></span>

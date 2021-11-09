@@ -3,7 +3,7 @@ import ModalXL from "../../ModalXL";
 import github from '../../../assets/img/github.png'
 import linkedin from '../../../assets/img/linkedin.png'
 import blog from '../../../assets/img/blog.png'
-import yo from '../../../assets/img/yo.jpg'
+import yo3 from '../../../assets/img/yo3.jpg'
 import cv from '../../../assets/img/cv.pdf'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
@@ -54,7 +54,7 @@ const NavMenu = () => {
                             setisopen={setIsOpenAbout}
                             textsabout={[{
                                 text: t('navmenu.modalxl.txt1'),
-                                img: yo,
+                                img: yo3,
                                 ml: '12px'
                             }]}
                             aboutmenuname={'About'}
