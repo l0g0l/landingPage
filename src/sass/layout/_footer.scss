@@ -1,11 +1,12 @@
 .container-footer {
-  width: 92.7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92.8%;
+  position: relative;
+  bottom: -1118px;
   left: 91px;
   height: $footer;
-  text-align: center;
-  line-height: $footer;
-  position: absolute;
-  bottom: -1118px;
   font-size: 12px;
   background: $blacksecondary;
   -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,
@@ -16,7 +17,6 @@
   }
 
   @include for-size(desktop-up) {
-    
     background-color: red;
   }
 }

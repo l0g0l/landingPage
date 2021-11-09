@@ -7,9 +7,13 @@ a {
   text-decoration: none;
   color: $grey-text;
   &:hover {
-    color:$pink;
+    color: $pink;
     text-decoration: none;
   }
+}
+button {
+  border: none;
+  outline: none;
 }
 
 .branch1 {
@@ -19,8 +23,8 @@ a {
     28px,
     0 0 6px rgb(78, 73, 126),
     0 0 6px rgb(111, 105, 172),
-    0 0 6px rgb(111, 105, 172),  
-    0 0 12px  rgb(194, 189, 233)
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(194, 189, 233)
   );
 }
 .branch2 {
@@ -30,42 +34,41 @@ a {
   position: absolute;
   top: 559px;
   right: -17px;
-  box-shadow: 
-  0 0 6px rgb(70, 110, 6),
-  0 0 6px rgb(190, 250, 93), 
-  0 0 6px rgb(190, 250, 93),  
-  0 0 12px rgb(190, 250, 93);
+  box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+    0 0 6px rgb(190, 250, 93), 0 0 12px rgb(190, 250, 93);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 .branch3 {
   @include branch(
-  182px,
-  847px,
-  28px,
-  0 0 6px rgb(53, 108, 129),
- 0 0 6px rgb(106, 209, 250), 
- 0 0 6px rgb(106, 209, 250),  
- 0 0 12px rgb(106, 209, 250)
+    182px,
+    847px,
+    28px,
+    0 0 6px rgb(53, 108, 129),
+    0 0 6px rgb(106, 209, 250),
+    0 0 6px rgb(106, 209, 250),
+    0 0 12px rgb(106, 209, 250)
   );
 }
 
 //Scroll top
+.container-arrow {
+  position: absolute;
+  top: 540px;
+  right: 50px;
+}
 
-.arrow,
 .arrow:before {
   position: absolute;
 }
-#btnarrowdown {
-  background-color: transparent;
-  margin-right: 50px;
+#btnarrowtotop {
+  background-color: transparent !important;
   position: fixed;
-
+  outline: none;
+  border: none;
   .arrow {
     width: 25px;
     height: 25px;
-    top: 186%;
-    left: 94%;
     margin: -20px 0 0 -20px;
     -webkit-transform: rotate(-45deg);
     border-left: none;

@@ -18,7 +18,7 @@ const ScrollToTop = () => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 50) {
         setIsVisible(true);
-        if (window.pageYOffset < 1100) {
+        if (window.pageYOffset < 1000) {
           setIsVisible(true);
         }
         else {
@@ -39,7 +39,7 @@ const ScrollToTop = () => {
     <div className="container-arrow">
       {
         isVisible &&
-        <button onClick={scrollToTop} id="btnarrowdown">
+        <button onClick={scrollToTop} id="btnarrowtotop">
           <div className="arrow" ></div>
         </button>
       }
