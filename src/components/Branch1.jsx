@@ -15,7 +15,6 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
    const {t} = useTranslation()
 
 
-
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
         <div className=' branch1'>
@@ -70,9 +69,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                 </>
                 :
                 null}
-
         </div>
     )
 }
-
 export default Branch1

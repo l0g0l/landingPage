@@ -96,10 +96,10 @@ const Layout = () => {
             </section>
 
             <ScrollToTop />
-            <div className="container-downarrow">
+            <section className="container-downarrow">
                 <img src={flechaab2} className="downarrow" alt="down arrow" />
-            </div>
-            <div className="container-main">
+            </section>
+            <section className="container-main">
                 <div className="commit-main ">
                     <div className="tooltipcommitmain">
                         <div className="text">
@@ -261,10 +261,9 @@ const Layout = () => {
                         with1: '215px'
                     }}
                 />
-            </div>
+            </section>
         </main>
         <Footer />
     </>
 }
-
 export default Layout;

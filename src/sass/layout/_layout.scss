@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin: 0 40px 60px 140px;
 }
+//=========== Contacto ==============
 .contact {
   line-height: 25px;
   font-size: $fontcontact;
@@ -12,6 +13,7 @@
     font-size: 19px;
   }
 }
+//=========== Botón Idioma ==============
 .container-tooltip-language {
   height: 0%;
   transition: all 1s;
@@ -37,6 +39,7 @@
 .img-changelanguage {
   width: 26px;
 }
+//=========== Mi nombre ==============
 .myname {
   display: flex;
   flex-direction: column;
@@ -49,7 +52,7 @@
     font-size: $fontnamefirst;
   }
 }
-
+//=========== Animación web developer ==============
 .container-web-developer {
   display: flex;
   align-items: center;
@@ -90,6 +93,8 @@
   top: 360px;
   left: 50%;
 }
+
+//=================== flecha abajo ==========================
 .container-downarrow {
   position: absolute;
   top: 407px;
@@ -114,6 +119,17 @@
     transform: translateY(-5px);
   }
 }
+//=========== Rama main ==============
+.main-branch {
+  width: 11px;
+  height: 970px;
+  position: absolute;
+  top: 32px;
+  left: 34%;
+  @include neon;
+  z-index: 1;
+}
+//=========== Commit main ==============
 .commit-main {
   display: block;
   position: absolute;
@@ -122,6 +138,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
   z-index: 2;
   & .text {
     display: none;
@@ -134,7 +151,6 @@
       height: 25px;
       border-radius: 100%;
       text-align: center;
-
       .text {
         width: 250px;
         height: 100px;
@@ -149,20 +165,8 @@
       }
     }
   }
-  cursor: pointer;
 }
-
-.commitmain-end {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: block;
-  position: absolute;
-  top: 967px;
-  left: -10px;
-  @include neon;
-  cursor: auto;
-}
+//=========== bolitas pequeñas de commits ==============
 .commitmain-sx {
   width: 25px;
   height: 25px;
@@ -175,6 +179,7 @@
   cursor: pointer;
   z-index: 2;
 }
+//=========== tooltip de cada bolita ==============
 .tooltip-container {
   width: 25px;
   height: 25px;
@@ -193,12 +198,15 @@
     display: block;
   }
 }
-.main-branch {
-  width: 11px;
-  height: 970px;
+//=========== Commit final ==============
+.commitmain-end {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
   position: absolute;
-  top: 32px;
-  left: 34%;
+  top: 967px;
+  left: -10px;
   @include neon;
-  z-index: 1;
+  cursor: auto;
 }

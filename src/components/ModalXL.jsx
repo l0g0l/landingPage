@@ -12,8 +12,8 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
   console.log(textsskills)
 
 
-   //hook para utilizar la libreria i18n para traducir la web
-   const {t} = useTranslation()
+  //hook para utilizar la libreria i18n para traducir la web
+  const { t } = useTranslation()
 
 
   return (
@@ -31,7 +31,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
         closeTimeoutMS={100}
         style={{
           content: {
-            background: '#d0d0d0',
+            background: '#ffff',
           }
         }}
       >
@@ -42,34 +42,37 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             textsabout.map((item, i) => (
               <>
                 <div className="container-img-txt">
-                    <img src={item.img} alt="mi foto" className="img-modalXL" />
-                    <p key={i} align="justify" style={{marginLeft:item.ml}}>{item.text}
-                    </p>
+                  <img src={item.img} alt="mi foto" className="img-modalXL" />
+                  <p key={i} align="justify" style={{ marginLeft: item.ml }}>{item.text}
+                  </p>
 
                 </div>
-                   
-
               </>
 
             ))
             :
             textsskills.map((item, i) => (
               <>
-                <div className="container-prog-img">
+                <div className="container-progbar-txtimg">
+
+
                   <ProgressBar />
+
                   <div className="container-img-cv-modalXL">
                     <img src={cvimg} className="img-cv" alt="mi cv" />
                     <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">{t('modalxl.cv')}</a>
                   </div>
-                  <p className="text-modal-skills" key={i}>{item.text}</p>
+                  <div>
+                    <p className="text-modal-skills" key={i}>{item.text}</p>
+                  </div>
                 </div>
               </>
             ))
           }
         </div>
-       
+
         <button onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
-        
+
       </ReactModal>
     </div>
   );

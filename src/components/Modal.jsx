@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 function Modal({ content }) {
   //hook para utilizar la libreria i18n para traducir la web
-  const {t} = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <div className="modalBackground" style={{ left: content.left, right: content.right }}>
@@ -48,7 +48,6 @@ function Modal({ content }) {
     </div>
   )
 }
-
 export default Modal;
 
 

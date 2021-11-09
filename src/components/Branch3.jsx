@@ -6,14 +6,14 @@ import blog from '../assets/img/modals/blog.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch3 = ({ display, position, top, left, project, boxcolor,  background }) => {
+const Branch3 = ({ display, position, top, left, project, boxcolor, background }) => {
 
     const [modalOpenBlog, setModalOpenBlog] = useState(false)
     const [modalOpenAgencia, setModalOpenAgencia] = useState(false)
     const [modalOpenPatientM, setModalOpenPatientM] = useState(false)
 
     //hook para utilizar la libreria i18n para traducir la web
-   const {t} = useTranslation()
+    const { t } = useTranslation()
 
     // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
@@ -25,7 +25,7 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                     setModalOpenPatientM(!modalOpenPatientM)
                 }}
                 className=' commit-main'
-                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
+                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor: background }}>
             </button>
 
             {modalOpenBlog && project === 'De Secre a Developer'
@@ -40,13 +40,13 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             img: blog,
                             url: 'https://desecreadeveloperblog.herokuapp.com/',
                             width: '100%',
-                            height:'500%',
+                            height: '500%',
                             displayflex: 'unset',
                             mt: '20px',
-                            ls:'-2px',
-                            mbt:'30px',
-                            fs:'27px',
-                            ml:'unset'
+                            ls: '-2px',
+                            mbt: '30px',
+                            fs: '27px',
+                            ml: 'unset'
                         }}
                     />
                 </>
@@ -65,11 +65,11 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             img: agencia,
                             url: 'https://pure-savannah-13335.herokuapp.com/',
                             width: '100%',
-                            height:'300%',
+                            height: '300%',
                             displayflex: 'unset',
                             mt: '20px',
-                            mbt:'30px',
-                            ml:'unset'
+                            mbt: '30px',
+                            ml: 'unset'
                         }}
                     />
                 </>
@@ -89,21 +89,19 @@ const Branch3 = ({ display, position, top, left, project, boxcolor,  background 
                             img: patient,
                             url: 'https://veterinarypatientsmanager.herokuapp.com/',
                             width: '100%',
-                            height:'200%',
+                            height: '200%',
                             displayflex: 'unset',
                             mt: '20px',
-                            mbt:'30px',
-                            ml:'unset'
-                            
+                            mbt: '30px',
+                            ml: 'unset'
+
                         }}
                     />
                 </>
                 :
                 null}
-
         </div>
     )
 }
-
 export default Branch3
 

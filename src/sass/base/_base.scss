@@ -1,3 +1,4 @@
+//=========== Genéricos ==============
 body {
   background-color: $blacksecondary;
   color: $white;
@@ -15,7 +16,7 @@ button {
   border: none;
   outline: none;
 }
-
+//=========== Ramas ==============
 .branch1 {
   @include branch(
     130px,
@@ -50,14 +51,12 @@ button {
     0 0 12px rgb(106, 209, 250)
   );
 }
-
-//Scroll top
+//=========== Animación scroll to top ==============
 .container-arrow {
   position: absolute;
   top: 540px;
   right: 50px;
 }
-
 .arrow:before {
   position: absolute;
 }
@@ -105,4 +104,4 @@ button {
     }
   }
 }
-//End //Scroll Down
+

@@ -1,36 +1,55 @@
+// .container-progressivebar {
+//   display: flex;
+//   flex-direction: row;
+//   margin-left: 12px;
+//   margin-top: 49px;
+// }
 .container-progressivebar {
   display: flex;
-  flex-direction: row;
-  margin-left: 12px;
-  margin-top: 49px;
+  align-items: center;
+  justify-content: left;
+  
 }
-#skill {
+.skill {
   list-style: none;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   width: 100px;
-  line-height: 2em;
-  color:$grey-text;
+  line-height: 24px;
+  color: $grey-text;
+  margin-right: 140px;
 }
-#skill li {
+.skill li {
   width: 200px;
-  margin-bottom: 30px;
-  background: $white;
+  margin-bottom: 34px;
+  background: $grey-backg;
   background-image: $white;
   height: 15px;
   border-radius: 10px;
 }
 
-#skill li .progressivebar {
+.skill li .progressivebar {
   position: relative;
   top: -20px;
-  color:$grey-text;
+  color: $grey-text;
   margin-left: 4px;
 }
 .bar {
   height: 15px;
   position: absolute;
   border-radius: 10px;
+}
+.skill li .progressivebarDeploy {
+  position: relative;
+  top: -33px;
+  color: $grey-text;
+  margin-left: 4px;
+}
+.skill li .progressivebarDeploy2 {
+  position: relative;
+  top: -20px;
+  color: $grey-text;
+  margin-left: -47px;
 }
 
 .html_css {
