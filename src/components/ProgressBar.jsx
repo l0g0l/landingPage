@@ -18,7 +18,7 @@ const ProgressBar = () => {
                     <span className="progressivebar">Reacj js</span>
                 </li>
                 <li>
-                    <span className="bar javascript"></span>
+                    <span className="bar jquery"></span>
                     <span className="progressivebar">J Query</span>
                 </li>
                 <li>
@@ -41,7 +41,7 @@ const ProgressBar = () => {
                     <span className="progressivebar">BBDD MySQL</span>
                 </li>
                 <li>
-                    <span className="bar mysql"></span>
+                    <span className="bar deploy"></span>
                     <span className="progressivebarDeploy">Deploy:</span>
                     <span className="progressivebarDeploy2">Heroku, GitHub Pages, Netifly</span>
                 </li>
