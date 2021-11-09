@@ -29,12 +29,12 @@ function Modal({ content }) {
             </span>
           </div>
 
-          <div className="card" style={{ width: content.width, height: content.height, marginLeft: content.ml, marginTop: content.mt }}>
+          <div className="card" style={{width: content.width, height: content.height, marginLeft: content.ml, marginTop: content.mt }}>
             <div className="front">
 
               <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width, marginRight: content.mr }} />
             </div>
-            <div className="back">
+            <div className="back" style={{ marginBottom: content.mbb}}>
               <div>
                 <p><strong>{t('modal.tecnolog')}:</strong></p>
               </div>
