@@ -42,8 +42,9 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             url: 'https://coela.herokuapp.com/',
                             width: '150%',
                             height:'280%',
-                            mbt:'81px',
-                            mb: '0px',
+                            mbt:'100px',
+                            mb: '35px',
+                            bcc:'rgb(194, 189, 233)'
 
                         }}
                     />
@@ -63,7 +64,8 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             img: dontwaste,
                             url: 'https://dontwasteapp.herokuapp.com/',
                             mbt: '66px',
-                            mb:'0px'
+                            mb:'-3px',
+                            bcc:'rgb(194, 189, 233)'
                         }}
                     />
                 </>

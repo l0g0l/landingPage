@@ -21,7 +21,7 @@ function Modal({ content }) {
             <p>{content.title}</p>
           </div>
         </div>
-        <div className="body" style={{ display: content.displayflex }} >
+        <div className="body" style={{ marginBottom: content.mb, display: content.displayflex }} >
           <div>
             <span>{content.text}
               <br />
@@ -44,7 +44,7 @@ function Modal({ content }) {
             </div>
           </div>
         </div>
-        <button className="footer" style={{backgroundColor: content.bcc}}>
+        <button className="footer" style={{ backgroundColor: content.bcc}}>
           <a href={content.url} target="_blank" rel="noreferrer noopener" className="linkproject">{t('modal.viewapp')}</a>
         </button>
       </div>
