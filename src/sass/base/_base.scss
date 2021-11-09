@@ -12,9 +12,13 @@ a {
     text-decoration: none;
   }
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 button {
-  border: none;
-  outline: none;
+  border: none !important;
+  outline: none !important;
 }
 //=========== Ramas ==============
 .branch1 {
@@ -104,4 +108,3 @@ button {
     }
   }
 }
-

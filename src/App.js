@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom'
-import Home from './pages/Home'
+import Layout from './components/layout/Layout'
 
 import './main.scss'
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Home />
+        <Layout />
       </BrowserRouter>
     </>
   );
