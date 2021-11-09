@@ -13,9 +13,10 @@ const NavMenu = () => {
 
     const [modalIsOpenAbout, setIsOpenAbout] = useState(false);
     const [modalIsOpenSkills, setIsOpenSkills] = useState(false)
-    
-   //hook para utilizar la libreria i18n para traducir la web
-   const {t} = useTranslation()
+
+    //hook para utilizar la libreria i18n para traducir la web
+    const { t } = useTranslation()
+    console.log(t)
 
     return (
         <div className="container-nav">
@@ -24,7 +25,7 @@ const NavMenu = () => {
                 <ul className="social">
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
-                            <img src={github} alt="logo github" className="logo-img"/>
+                            <img src={github} alt="logo github" className="logo-img" />
                         </a>
                     </li>
                     <li>
@@ -42,8 +43,12 @@ const NavMenu = () => {
                 <ul className="menu">
                     <li>
                         {/*Para pintar los textos, se lo paso al componente como una prop siendo un array */}
-
-                        <p onClick={() => setIsOpenAbout(true)} >{t('navmenu.about')}</p>
+                        {t('navmenu.about') === 'Sobre mi'
+                            ?
+                            <p onClick={() => setIsOpenAbout(true)} style={{ marginLeft: '80px' }}>{t('navmenu.about')}</p>
+                            :
+                            <p onClick={() => setIsOpenAbout(true)} >{t('navmenu.about')}</p>
+                        }
                         <ModalXL
                             modalisopen={modalIsOpenAbout}
                             setisopen={setIsOpenAbout}
@@ -56,7 +61,12 @@ const NavMenu = () => {
                         />
                     </li>
                     <li>
-                        <p onClick={() => setIsOpenSkills(true)}>{t('navmenu.skills')}</p>
+                        {t('navmenu.skills') === 'Habilidades'
+                            ?
+                            <p onClick={() => setIsOpenSkills(true)} style={{ marginLeft: '80px' }}>{t('navmenu.skills')}</p>
+                            :
+                            <p onClick={() => setIsOpenSkills(true)}>{t('navmenu.skills')}</p>
+                        }
                         <ModalXL
                             modalisopen={modalIsOpenSkills}
                             setisopen={setIsOpenSkills}
