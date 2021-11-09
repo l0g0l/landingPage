@@ -210,8 +210,7 @@ const Layout = () => {
                         funcbranch3: toggleBranch3,
                         top4: "835px",
                         tooltip4: t('home.commit.txt4'),
-                        with4: '135px',
-                        size4: '42px',
+                        size4: '15px',
                         topminiball4: '-2px'
                     }}
                 />
@@ -227,7 +226,6 @@ const Layout = () => {
                         funcbranch2: toggleBranch2,
                         top3: "548px",
                         tooltip3: t('home.commit.txt3'),
-                        with3: '170px',
                         size3: '20px',
                         topminiball3: '-2px'
                     }}
@@ -258,7 +256,6 @@ const Layout = () => {
                         tooltip1: t('home.commit.txt1'),
                         size1: '42px',
                         topminiball1: '-2px',
-                        with1: '215px'
                     }}
                 />
             </section>

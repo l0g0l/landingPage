@@ -9,14 +9,17 @@ function Modal({ content }) {
 
   return (
     <div className="modalBackground" style={{ left: content.left, right: content.right }}>
-      <div className="modalContainer"  >
-        <div className="titleCloseBtn">
-          <button onClick={() => { content.closeModal(false) }}>
-            X
-          </button>
-        </div>
-        <div className="title" style={{ marginBottom: content.mbt, letterSpacing: content.ls, fontSize: content.fs }} >
-          <p>{content.title}</p>
+
+        <div className="modalContainer"  >
+      <div className="colormodalprojects" style={{marginBottom:content.mbt, backgroundColor: content.bcc}}>
+          <div className="titleCloseBtn">
+            <button onClick={() => { content.closeModal(false) }}>
+              X
+            </button>
+          </div>
+          <div className="title" style={{letterSpacing: content.ls, fontSize: content.fs }} >
+            <p>{content.title}</p>
+          </div>
         </div>
         <div className="body" style={{ display: content.displayflex }} >
           <div>
@@ -41,9 +44,9 @@ function Modal({ content }) {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <a href={content.url} target="_blank" rel="noreferrer noopener">{t('modal.viewapp')}</a>
-        </div>
+        <button className="footer" style={{backgroundColor: content.bcc}}>
+          <a href={content.url} target="_blank" rel="noreferrer noopener" className="linkproject">{t('modal.viewapp')}</a>
+        </button>
       </div>
     </div>
   )

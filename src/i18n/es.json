@@ -11,6 +11,7 @@
  "home.commit.txt3":"Maquetaciones",
  "home.commit.txt4":"Full Stack",
  "modal.tecnolog":"Tecnologías",
+ "modal.viewapp":"Ver Proyecto",
  "commit.ball.descrp":"Creación de un Quiz. Constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. 3 niveles de dificultad.SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive.",
  "branch1.txtcoela":"Aplicación Web (Mobile First) que permite desde, hacer donaciones instantáneas, hasta integrar la aplicación con una entidad bancaria."
  ,"branch1.txtdontw":"Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.",
@@ -21,6 +22,5 @@
  "branch3.txtagencia":"Creación de una web de Agencia de Viajes, se pueden añadir opiniones sobre experiencias vacacionales.",
  "branch3.txtblog":"Creación de mi propio Blog web app.",
  "footer1":"Todos los derechos reservados",
- "footer2":"Mujer, Valiente y ahora Web Developer",
- "modal.viewapp":"Echa un vistazo..."
+ "footer2":"Mujer, Valiente y ahora Web Developer"
 }
