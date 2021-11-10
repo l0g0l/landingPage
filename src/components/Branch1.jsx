@@ -44,7 +44,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             height:'280%',
                             mbt:'100px',
                             mb: '35px',
-                            bcc:'rgb(194, 189, 233)'
+                            bcc:'rgb(211, 206, 250)'
 
                         }}
                     />
@@ -65,7 +65,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             url: 'https://dontwasteapp.herokuapp.com/',
                             mbt: '66px',
                             mb:'-3px',
-                            bcc:'rgb(194, 189, 233)'
+                            bcc:'rgb(211, 206, 250)'
                         }}
                     />
                 </>
