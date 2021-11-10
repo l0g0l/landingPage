@@ -100,7 +100,7 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
                                 img: quizfirebase,
                                 url: 'https://l0g0l.github.io/Quiz_LocalStorage/',
                                 mbt: "72px",
-                                mb: '10px',
+                                mb: '20px',
                                 left: '-480px',
                                 bcc:'rgb(252, 175, 203)'
                             }}

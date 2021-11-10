@@ -48,7 +48,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             displayflex: 'unset',
                             mt: '20px',
                             mbt: '30px',
-                            mb:'135px',
+                            mb:'150px',
                             ml: 'unset',
                             bcc:'rgb(196, 230, 142)'
                         }}
@@ -73,7 +73,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             height: '250%',
                             displayflex: 'unset',
                             mt: '20px',
-                            mb:'135px',
+                            mb:'150px',
                             mbt: '30px',
                             ml: 'unset',
                             bcc:'rgb(196, 230, 142)'
@@ -100,7 +100,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             height: '250%',
                             displayflex: 'unset',
                             mt: '10px',
-                            mb:'135px',
+                            mb:'150px',
                             mbt: '20px',
                             ml: 'unset',
                             bcc:'rgb(196, 230, 142)'
