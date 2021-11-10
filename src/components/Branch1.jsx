@@ -64,7 +64,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                             img: dontwaste,
                             url: 'https://dontwasteapp.herokuapp.com/',
                             mbt: '66px',
-                            mb:'3px',
+                            mb:'2px',
                             bcc:'rgb(211, 206, 250)',
                             brd:'1px solid #cac7c7dd'
                         }}
