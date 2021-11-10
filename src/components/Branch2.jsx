@@ -48,7 +48,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             displayflex: 'unset',
                             mt: '20px',
                             mbt: '30px',
-                            mb:'1450px',
+                            mb:'140px',
                             ml: 'unset',
                             bcc:'rgb(201, 233, 150)',
                             brd:'1px solid #cac7c7dd'
