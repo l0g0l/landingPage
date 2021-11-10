@@ -64,8 +64,8 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                   <ProgressBar />
 
                   <div className="container-img-cv-modalXL">
-                    <img src={cvimg} className="img-cv" alt="mi cv" />
-                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf">{t('modalxl.cv')}</a>
+                    <img src={cvimg}  alt="mi cv" />
+                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf" >{t('modalxl.cv')}</a>
                   </div>
                   <div>
                     <p className="text-modal-skills" key={i}>{item.text}</p>
