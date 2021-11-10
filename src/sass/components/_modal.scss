@@ -69,8 +69,7 @@
   }
 }
 
-//Start card rotate
-
+//=========== Rotación imagen ==============
 .card {
   position: relative;
   width: 250%;
@@ -113,7 +112,5 @@
 .img-modal {
   width: inherit;
   height: inherit;
-  // border: 1px solid $grey-secondary;
 }
 
-//End card rotate

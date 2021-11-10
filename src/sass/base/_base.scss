@@ -79,9 +79,9 @@ button {
     margin: -20px 0 0 -20px;
     -webkit-transform: rotate(-45deg);
     border-left: none;
-    // border-top: none;
     border-right: 2px #fff solid;
     border-top: 2px #fff solid;
+    cursor: pointer;
     &button {
       background-color: transparent;
     }
