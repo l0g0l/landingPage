@@ -103,8 +103,7 @@
   font-size: 12px;
   text-align: center;
   margin-bottom: 8px;
-  background-color: rgb(173, 170, 170);
-  border: 1px solid $grey-secondary;
+  background-color: $grey;
   transform: rotateY(180deg);
   p {
     margin-bottom: 5px;
@@ -114,7 +113,7 @@
 .img-modal {
   width: inherit;
   height: inherit;
-  border: 1px solid $grey-secondary;
+  // border: 1px solid $grey-secondary;
 }
 
 //End card rotate

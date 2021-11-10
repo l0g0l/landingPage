@@ -48,7 +48,8 @@ const Branch3 = ({ display, position, top, left, project, boxcolor, background }
                             mbt: '30px',
                             fs: '27px',
                             ml: 'unset',
-                            bcc:'rgb(177, 227, 247)'
+                            bcc:'rgb(177, 227, 247)',
+                            brd:'1px solid #cac7c7dd'
                         }}
                     />
                 </>

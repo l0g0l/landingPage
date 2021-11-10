@@ -50,7 +50,8 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             mbt: '30px',
                             mb:'1450px',
                             ml: 'unset',
-                            bcc:'rgb(196, 230, 142)'
+                            bcc:'rgb(196, 230, 142)',
+                            brd:'1px solid #cac7c7dd'
                         }}
                     />
                 </>

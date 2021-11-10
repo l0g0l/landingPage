@@ -32,7 +32,7 @@ function Modal({ content }) {
           <div className="card" style={{width: content.width, height: content.height, marginLeft: content.ml, marginTop: content.mt }}>
             <div className="front">
 
-              <img src={content.img} alt={content.title} className="img-modal" style={{ width: content.width, marginRight: content.mr }} />
+              <img src={content.img} alt={content.title} className="img-modal" style={{ border: content.brd,  width: content.width, marginRight: content.mr }} />
             </div>
             <div className="back" style={{ marginBottom: content.mbb}}>
               <div>
