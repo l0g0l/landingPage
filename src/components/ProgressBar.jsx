@@ -43,7 +43,7 @@ const ProgressBar = () => {
                 <li>
                     <span className="bar deploy"></span>
                     <span className="progressivebarDeploy">Deploy:</span>
-                    <span className="progressivebarDeploy2">Heroku, GitHub Pages, Netlifly</span>
+                    <span className="progressivebarDeploy2">Heroku, GitHubPages, Netlifly</span>
                 </li>
                 <li>
                     <span className="bar github"></span>
