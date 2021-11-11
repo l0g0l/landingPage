@@ -12,6 +12,12 @@
   strong {
     font-size: 19px;
   }
+  .email {
+    color: $white;
+    &:hover {
+      color:$pink;
+    }
+  }
 }
 //=========== Botón Idioma ==============
 .container-tooltip-language {
@@ -87,37 +93,28 @@
 }
 
 //================== Rama principal ========================
-
 .container-main {
   position: absolute;
   top: 360px;
   left: 50%;
 }
 
-//=================== flecha abajo ==========================
-.container-downarrow {
+//=========== Commit main ==============
+.text-home {    
+  width: 250px;
+  height: 84px;
   position: absolute;
-  top: 407px;
-  left: 50.5%;
-}
-.downarrow {
-  width: 12%;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
+  top: 33px;
+  right: 73px;
+  color: $white;
+  font-size: 13px;
+  box-shadow: 0 0 10px 2px #949191 ;
+  border-radius: 40px;
+  line-height: 20px;
+  padding: 12px;
+  text-align: center;
+  transition: all 1s;
+  cursor: pointer;
 }
 //=========== Rama main ==============
 .main-branch {
@@ -140,22 +137,6 @@
   border-radius: 50%;
   z-index: 2;
   @include neon;
-  }
-  .text-home {    
-    width: 250px;
-    height: 84px;
-    position: absolute;
-    top: 33px;
-    right: 73px;
-    color: $white;
-    font-size: 13px;
-    box-shadow: 0 0 7px 2px #7c7b7b;
-    border-radius: 40px;
-    line-height: 20px;
-    padding: 12px;
-    text-align: center;
-    transition: all 1s;
-    cursor: pointer;
   }
 
 //=========== bolitas pequeñas de commits ==============

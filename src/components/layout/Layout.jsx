@@ -16,8 +16,7 @@ const Layout = () => {
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
     const [modales, setModales] = useState(true)
-    const [visibleDiv, setVisibleDiv] = useState({ display: 'none' })
-    const [style, setStyle] = useState({ display: 'none' });
+    // const [style, setStyle] = useState({ display: 'none' });
 
     //hook para utilizar la libreria i18n para traducir la web
     const [language, setLanguage] = useState('en')
@@ -59,7 +58,7 @@ const Layout = () => {
                     <p >class <strong>Contact</strong> &#123;</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name: </strong>string,&nbsp;&nbsp;public <strong>email: </strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
                     <p>let Lucia_Contact: string;</p>
-                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
+                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong><a href="mailto:luciag.lara@gmail.com" className="email">'luciag.lara@gmail.com' </a></strong>);</p>
                 </section>
 
                 <section className="container-tooltip-language ">
@@ -97,7 +96,7 @@ const Layout = () => {
 
 
             <section className="container-main">
-                <div className="text-home"
+             {/*    <div className="text-home"
                     onMouseEnter={e => {
                         setStyle({ display: 'block' });
                     }}
@@ -105,6 +104,9 @@ const Layout = () => {
                         setStyle({ display: 'none' })
                     }}>
                     <p style={style}>{t('home.click.ball')}</p>
+                </div> */}
+                   <div className="text-home" >
+                    <p>{t('home.click.ball')}</p>
                 </div>
 
                 <div className="commit-main ">
