@@ -1,4 +1,3 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -13,15 +12,19 @@
 <img src="https://www.codefactor.io/repository/github/l0g0l/landingpage/badge" alt="Codefactor Grade">
 </p>
   <p align="center">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status" alt="Sonar Quality Gate"></p>
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status
+" alt="Sonar Quality Gate"></p>
 </p>
+<p align="center">
+<img src="/public/accesibilidadlanding.png" alt="Accesibility Rate" width="500"></p>
 
-
+</p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#learn-more">Learn More</a></li>
   <li><a  href="#prerequisites">Prerequisites</a></li>
     <li>
       <a href="#installation">Installation</a>
@@ -33,29 +36,29 @@
       <a href="#app-overview">App Overview</a>
     </li>
     <li><a href="#languages-and-tools">Languages and Tools</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#repositories">Repositories</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-</details>  
+</details>
 
 ## Learn more
 
 To be more familiar with the libraries and frameworks I have mainly used I will leave a short explanation here:
 
-### [Pug](https://pugjs.org/api/getting-started.html)
+### [react-modal](https://www.npmjs.com/package/react-modal)
 
-npm install pug
+npm i react-modal
 
- PUG, is a Javascript library that was previously known as JADE. It is an easy-to-code template engine used to code HTML in a more readable fashion. One upside to PUG is that it equips developers to code reusable HTML documents by pulling data dynamically from the API. 
+It' s a module of npm to created modal in such a way that it fulfills the accessibility requirements of the modern web. We seek to keep the focus on accessibility while providing a functional, capable modal component for general use.
+### [react-i18next](https://react.i18next.com/)
 
+npm install react-i18next i18next
 
-### Prerequisites  
+The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes. It's optimally suited for server-side rendering
 
+### Prerequisites
 
--  [React js](https://es.reactjs.org/)
+- [React js](https://es.reactjs.org/)
 - Clone the repository on your local machine (https://github.com/l0g0l/landingPage.git)
-
 
 ## Installation
 
@@ -66,26 +69,25 @@ Install the dependencies and devDependencies for the frontend repository.
 ```sh
 npm i
 ```
+
 In the project directory, you can run:
 
 ```sh
 npm start
 ```
 
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
+## About The Project
 
 This project it's my personal portfolio to show my most important works as Web Developer
 
-The Frontend has been created with [React js](https://es.reactjs.org/), [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript), [SASS](https://sass-lang.com/) and [Bootstrap](https://getbootstrap.com/)
+The Frontend has been created with [React js](https://es.reactjs.org/), [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript), [SASS](https://sass-lang.com/)
 
 The project are deployed in [Heroku](https://id.heroku.com/) through the `main` branch.
 
-
-
 <!-- USAGE -->
+
 ## App Overview
 
 ###### Registration & Login
@@ -95,12 +97,12 @@ The project are deployed in [Heroku](https://id.heroku.com/) through the `main` 
 <br>
 <br>
 
-
 ---
 
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Languages and Tools:
+
 <p align="left">
        <a href="https://sass-lang.com/" target="_blank"> 
         <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="SASS" width="40" height="40"/>
@@ -119,24 +121,18 @@ The project are deployed in [Heroku](https://id.heroku.com/) through the `main` 
     </a>
  </p>
 
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 <!-- CONTACT -->
-## Contact
 
-  
+## Contact
 
 Lucía González
 
-  
-
 [<img src="https://github.com/l0g0l/hackathonmwc/raw/main/src/images/GitHub.png" width=45px heigth=45px>](https://github.com/l0g0l)
-
-  
 
 [<img src="https://github.com/l0g0l/hackathonmwc/raw/main/src/images/linkedin.png" width=40px heigth=40px>](https://www.linkedin.com/in/luciagonzalezlara)
