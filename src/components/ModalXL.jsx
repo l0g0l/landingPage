@@ -1,6 +1,6 @@
 import React from "react"
 import ReactModal from "react-modal"
-import cvimg from "../assets/img/cvimg.png"
+// import cvimg from "../assets/img/cvimg.png"
 import logos from "../assets/img/logos.png"
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 

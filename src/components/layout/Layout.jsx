@@ -227,8 +227,9 @@ const Layout = () => {
                         funcbranch3: toggleBranch3,
                         top4: "835px",
                         tooltip4: t('home.commit.txt4'),
-                        size4: '15px',
-                        topminiball4: '-2px'
+                        size4: '45px',
+                        topminiball4: '3px',
+                        bcc:'#e9afb8'
                     }}
                 />
 
@@ -244,7 +245,8 @@ const Layout = () => {
                         top3: "548px",
                         tooltip3: t('home.commit.txt3'),
                         size3: '20px',
-                        topminiball3: '-2px'
+                        topminiball3: '3px',
+                        bcc:'#e9afb8'
                     }}
                 />
 
@@ -260,8 +262,10 @@ const Layout = () => {
                         funcbranch: toggleBranch1,
                         tooltip2: t('home.commit.txt2'),
                         with2: '270px',
-                        size1: '42px',
-                        topminiball2: '0px'
+                        size1: '62px',
+                        topminiball2: '0px',
+                        bcc:'#e9afb8'
+                        
                     }}
                 />
 
@@ -272,8 +276,9 @@ const Layout = () => {
                         setmodales:setModales,
                         tooltip1: t('home.commit.txt1'),
                         size1: '42px',
-                        topminiball1: '-2px',
-                        project:'quiz'
+                        topminiball1: '0',
+                        project:'quiz',
+                        bcc:'#e9afb8'
                     }}
                 />
             </section>
