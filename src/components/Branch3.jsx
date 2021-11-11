@@ -6,11 +6,8 @@ import blog from '../assets/img/modals/blog.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch3 = ({ display, position, top, left, project, boxcolor, background }) => {
+const Branch3 = ({ display, position, top, left, project, boxcolor, background, modales, setmodales }) => {
 
-    const [modalOpenBlog, setModalOpenBlog] = useState(false)
-    const [modalOpenAgencia, setModalOpenAgencia] = useState(false)
-    const [modalOpenPatientM, setModalOpenPatientM] = useState(false)
 
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
@@ -20,20 +17,23 @@ const Branch3 = ({ display, position, top, left, project, boxcolor, background }
         <div className=' branch3'>
             <button
                 onClick={() => {
-                    setModalOpenBlog(!modalOpenBlog)
-                    setModalOpenAgencia(!modalOpenAgencia)
-                    setModalOpenPatientM(!modalOpenPatientM)
+                    console.log(`${modales} - ${project}`)
+                    if (modales === project) {
+                        setmodales("")
+                    } else {
+                        setmodales(project)
+                    }
                 }}
                 className=' commit-main'
                 style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor: background }}>
             </button>
 
-            {modalOpenBlog && project === 'De Secre a Developer'
+            {modales === project && project === 'De Secre a Developer'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenBlog,
+                            closeModal: setmodales,
                             title: 'Blog De Secre a Developer',
                             text: t('branch3.txtblog'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
@@ -56,12 +56,12 @@ const Branch3 = ({ display, position, top, left, project, boxcolor, background }
                 :
                 null}
 
-            {modalOpenAgencia && project === 'Agencia de Viajes'
+          {modales === project && project === 'Agencia de Viajes'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenAgencia,
+                            closeModal: setmodales,
                             title: 'Agencia de Viajes',
                             text: t('branch3.txtagencia'),
                             tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
@@ -82,12 +82,12 @@ const Branch3 = ({ display, position, top, left, project, boxcolor, background }
                 null}
 
 
-            {modalOpenPatientM && project === 'Gestor de citas'
+            {modales === project && project === 'Gestor de citas'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenPatientM,
+                            closeModal: setmodales,
                             title: 'Gestor de citas',
                             text: t('branch3.txtgestor'),
                             tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',

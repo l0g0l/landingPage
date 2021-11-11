@@ -16,7 +16,8 @@ const Layout = () => {
     const [showBranch1, setShowBranch1] = useState(false)
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
-    const [modalOpenBlog, setModalOpenBlog] = useState(false)
+    const [modalOpenQuiz, setModalOpenQuiz] = useState(false)
+    const [modales, setModales] = useState(true)
 
     //hook para utilizar la libreria i18n para traducir la web
     const [language, setLanguage] = useState('en')
@@ -50,7 +51,7 @@ const Layout = () => {
 
     //abre el modal del primer proyecto
     const toggleModal = () => {
-        setModalOpenBlog(!modalOpenBlog)
+        setModalOpenQuiz(!modalOpenQuiz)
     }
 
     return <>
@@ -121,6 +122,8 @@ const Layout = () => {
                             top={"23px"}
                             left={"32px"}
                             project={"De Secre a Developer"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
                         <Branch3
@@ -129,6 +132,8 @@ const Layout = () => {
                             top={"73px"}
                             left={"32px"}
                             project={"Agencia de Viajes"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
                         <Branch3
@@ -137,6 +142,8 @@ const Layout = () => {
                             top={"123px"}
                             left={"32px"}
                             project={"Gestor de citas"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
                     </>
@@ -151,6 +158,8 @@ const Layout = () => {
                             top={"27px"}
                             left={"-22px"}
                             project={"Buscador de repos"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
                         <Branch2
@@ -159,6 +168,8 @@ const Layout = () => {
                             top={"77px"}
                             left={"-22px"}
                             project={"NPM Clone"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
                         <Branch2
@@ -167,6 +178,8 @@ const Layout = () => {
                             top={"127px"}
                             left={"-22px"}
                             project={"Hackathon(Nuwe)"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
                         {/* <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} /> */}
@@ -183,6 +196,8 @@ const Layout = () => {
                             top={"73px"}
                             left={"32px"}
                             project={"coELA"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(190, 187, 223)'}
                             boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(194, 189, 233)'}
                         />
@@ -192,6 +207,8 @@ const Layout = () => {
                             top={"23px"}
                             left={"32px"}
                             project={"DontWaste"}
+                            modales={modales}
+                            setmodales={setModales}
                             background={'rgb(203, 201, 231)'}
                             boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(170, 166, 209)'}
                         />
@@ -250,12 +267,13 @@ const Layout = () => {
 
                 <MainMiniBall
                     quiz={{
-                        funcmodal: toggleModal,
                         top1: "210px",
-                        modalstate: modalOpenBlog,
+                        modales:modales,
+                        setmodales:setModales,
                         tooltip1: t('home.commit.txt1'),
                         size1: '42px',
                         topminiball1: '-2px',
+                        project:'quiz'
                     }}
                 />
             </section>

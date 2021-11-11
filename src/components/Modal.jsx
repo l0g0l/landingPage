@@ -2,18 +2,17 @@ import React from "react";
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-
 function Modal({ content }) {
   //hook para utilizar la libreria i18n para traducir la web
   const { t } = useTranslation()
 
   return (
-    <div className="modalBackground" style={{ left: content.left, right: content.right }}>
+    <div className="modalBackground " style={{ left: content.left, right: content.right }}>
 
         <div className="modalContainer"  >
       <div className="colormodalprojects" style={{marginBottom:content.mbt, backgroundColor: content.bcc}}>
           <div className="titleCloseBtn">
-            <button onClick={() => { content.closeModal(false) }}>
+            <button onClick={() => { content.closeModal("") }}>
               X
             </button>
           </div>

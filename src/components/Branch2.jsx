@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Modal from './Modal'
 import repos from '../assets/img/modals/repos.gif'
 import npmclone from '../assets/img/modals/npmclone.gif'
@@ -6,12 +5,8 @@ import hackathon from '../assets/img/modals/hackathon.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch2 = ({ display, position, top, left, project, boxcolor, background }) => {
+const Branch2 = ({ display, position, top, left, project, boxcolor, background, modales, setmodales  }) => {
 
-    const [modalOpenHac, setModalOpenHac] = useState(false)
-    const [modalOpenNPM, setModalOpenNPM] = useState(false)
-    const [modalOpenBuscRep, setModalOpenBuscRep] = useState(false)
-    const [modalOpenMaqAv, setModalOpenMaqAv] = useState(false)
 
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
@@ -22,21 +17,23 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
         <div className=' branch2'>
             <button
                 onClick={() => {
-                    setModalOpenHac(!modalOpenHac)
-                    setModalOpenNPM(!modalOpenNPM)
-                    setModalOpenBuscRep(!modalOpenBuscRep)
-                    setModalOpenMaqAv(!modalOpenMaqAv)
+                    console.log(`${modales} - ${project}`)
+                    if (modales === project) {
+                        setmodales("")
+                    } else {
+                        setmodales(project)
+                    }
                 }}
                 className=' commit-main'
                 style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor: background }}>
             </button>
 
-            {modalOpenHac && project === 'Hackathon(Nuwe)'
+            {modales === project && project === 'Hackathon(Nuwe)'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenHac,
+                            closeModal: setmodales,
                             title: 'Hackathon(Nuwe)',
                             text: t('branch2.txthack'),
                             tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
@@ -58,12 +55,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                 :
                 null}
 
-            {modalOpenNPM && project === 'NPM Clone'
+            {modales === project && project === 'NPM Clone'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenNPM,
+                            closeModal: setmodales,
                             title: 'NPM Clone',
                             text: t('branch2.txtnpm'),
                             tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
@@ -78,6 +75,7 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                             mbt: '30px',
                             ml: 'unset',
                             bcc:'rgb(201, 233, 150)'
+                            
                         }}
                     />
                 </>
@@ -85,12 +83,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background }
                 null}
 
 
-            {modalOpenBuscRep && project === 'Buscador de repos'
+            {modales === project && project === 'Buscador de repos'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenBuscRep,
+                            closeModal: setmodales,
                             title: 'Buscador GitHub',
                             text: t('branch2.txtbgit'),
                             tecnolog: 'HTML/CSS (Flex Grid), JavaScript y React js. Deploy (Heroku)',

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Modal from './Modal'
 import coELA from '../assets/img/modals/coELA.png'
 import dontwaste from '../assets/img/modals/dontwaste.gif'
@@ -6,10 +5,9 @@ import dontwaste from '../assets/img/modals/dontwaste.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch1 = ({ display, position, top, left, project, boxcolor,  background }) => {
+const Branch1 = ({ display, position, top, left, project, boxcolor,  background, modales, setmodales  }) => {
+    console.log(modales)
 
-    const [modalOpenCoela, setModalOpenCoela] = useState(false)//comienza en false para que no se muestre
-    const [modalOpenDW, setModalOpenDW] = useState(false)
 
       //hook para utilizar la libreria i18n para traducir la web
    const {t} = useTranslation()
@@ -21,20 +19,25 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
     
             <button
                 onClick={() => {
-                    setModalOpenCoela(!modalOpenCoela)
-                    setModalOpenDW(!modalOpenDW)
+                    console.log(`${modales} - ${project}`)
+                    if (modales === project) {
+                        setmodales("")
+                    } else {
+                        setmodales(project)
+                    }
+                    //setModalOpen(!modalOpen)
                 }}
                 className=' commit-main'
                 style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
             </button>
             
 
-            {modalOpenCoela && project === 'coELA'
+            {modales === project && project === 'coELA'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenCoela,
+                            closeModal: setmodales,
                             title: 'coELA',
                             text: t('branch1.txtcoela'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, React Form Hooks, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy (Heroku)',
@@ -52,12 +55,12 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background 
                 :
                 null}
 
-            {modalOpenDW && project !== 'coELA'
+            {modales === project && project !== 'coELA'
                 ?
                 <>
                     <Modal
                         content={{
-                            closeModal: setModalOpenDW,
+                            closeModal: setmodales,
                             title: 'Don\'t Waste',
                             text: t('branch1.txtdontw'),
                             tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy(Heroku)',

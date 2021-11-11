@@ -4,12 +4,14 @@ import quizfirebase from '../assets/img/modals/quizfirebase.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3 }) => {
+const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3}) => {
+    console.log(quiz)
+  
 
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
 
-    //pasando modalstate, uso el state del padre aquí
+  
     // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el sigueinte ternario y el state hago que se muestre el modal o no
     //tengo que poner que "existe branch1, (linea 9) y quiz (linea 21)" para que las props se reconozcan como propiedades del obj p.e. branch1.top2 o quiz.size1
     return (
@@ -82,18 +84,25 @@ const MainMiniBall = ({ quiz, branch1, branch1_1, branch2, branch2_2, branch3, b
             {/*Termina Branch1-2 proyectos */}
 
             {/* Empieza Primer proyecto */}
-            {quiz && <div className="commitmain-sx " style={{ top: quiz.top1 }} onClick={quiz.funcmodal}>
+            {quiz && <div className="commitmain-sx " style={{ top: quiz.top1 }} onClick={() => {
+                    console.log(`${quiz.modales} - ${quiz.project}`)
+                    if (quiz.modales === quiz.project) {
+                        quiz.setmodales("")
+                    } else {
+                        quiz.setmodales(quiz.project)
+                    }
+                }}>
                 <div className="tooltip-container">
                     <div className="text" style={{ left: quiz.size1, top: quiz.topminiball1, width: quiz.width1 }}>
                         <span >{quiz.tooltip1}</span>
                     </div>
                 </div>
-                {quiz.modalstate === true
+                {quiz.modales === quiz.project && quiz.project === 'quiz'
                     ?
                     <div  >
                         <Modal
                             content={{
-                                closeModal: quiz.funcmodal,
+                                closeModal: quiz.setmodales,
                                 title: 'Quiz-LocalStorage',
                                 text: t('commit.ball.descrp'),
                                 tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
