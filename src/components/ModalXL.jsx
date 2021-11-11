@@ -1,7 +1,7 @@
 import React from "react"
 import ReactModal from "react-modal"
-import ProgressBar from "./ProgressBar"
 import cvimg from "../assets/img/cvimg.png"
+import logos from "../assets/img/logos.png"
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -35,44 +35,41 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
           }
         }}
       >
-        {/*según el nombre del elemento del menú (aboutmenuname), pinta un texto u otro con el map */}
-        <div className="txt" >
+        {/*según el nombre del elemento del menú (aboutmenuname), pinta un contenido*/}
+        <div className="txt">
           {aboutmenuname
             ?
-            textsabout.map((item, i) => (
-              <>
-                <div className="container-img-txt">
-                  <div className="backgroundimg">
+            <>
+              <div className="container-img-txt">
+                <div className="backgroundimg">
 
-                  <img src={item.img} alt="mi foto" className="img-modalXL" />
-                  </div>
-                  <div>
-                    
-                  <p key={i} align="justify" style={{ marginLeft: item.ml }}>{item.text}</p>
-                  </div>
-
+                  <img src={textsabout.img} alt="mi foto" className="img-modalXL" />
                 </div>
-              </>
+                <div>
 
-            ))
+                  <p className="text-modal-about">{textsabout.text}</p>
+                </div>
+
+              </div>
+            </>
             :
-            textsskills.map((item, i) => (
-              <>
-                <div className="container-progbar-txtimg">
-
-
-                  <ProgressBar />
-
-                  <div className="container-img-cv-modalXL">
-                    <img src={cvimg}  alt="mi cv" />
-                    <a className="cv" href={item.cv} download="CV LucíaG_WebDeveloper.pdf" >{t('modalxl.cv')}</a>
-                  </div>
+            <>
+              <div className="container-logos-txt">
+                <div className="container-txt-cv">
+                  <p className="text-modal-skills" >{textsskills.text}</p>
                   <div>
-                    <p className="text-modal-skills" key={i}>{item.text}</p>
+                    {/* <img src={cvimg} alt="mi cv" /> */}
+                    <a className="cv" href={textsskills.cv} download="CV LucíaG_WebDeveloper.pdf" >{t('modalxl.cv')}</a>
                   </div>
                 </div>
-              </>
-            ))
+
+                <div className="logos">
+                  <img src={logos} alt="logos todas la tecnologías que conozco" className="logos-img" />
+                </div>
+              </div>
+
+            </>
+
           }
         </div>
 

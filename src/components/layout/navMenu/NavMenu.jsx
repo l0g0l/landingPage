@@ -52,11 +52,10 @@ const NavMenu = () => {
                         <ModalXL
                             modalisopen={modalIsOpenAbout}
                             setisopen={setIsOpenAbout}
-                            textsabout={[{
+                            textsabout={{
                                 text: t('navmenu.modalxl.txt1'),
-                                img: yo3,
-                                ml: '12px'
-                            }]}
+                                img: yo3
+                            }}
                             aboutmenuname={'About'}
                         />
                     </li>
@@ -70,10 +69,10 @@ const NavMenu = () => {
                         <ModalXL
                             modalisopen={modalIsOpenSkills}
                             setisopen={setIsOpenSkills}
-                            textsskills={[{
+                            textsskills={{
                                 text: t('navmenu.modalxl.txt2'),
                                 cv: cv
-                            }]}
+                            }}
                             skillsmenuname={'Skills'}
                         />
                     </li>

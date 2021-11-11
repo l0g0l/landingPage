@@ -39,8 +39,6 @@
   transition-timing-function: ease-in-out;
   padding: 14px 20px;
   .txt {
-    display: flex;
-    flex-direction: column;
     p {
       margin-top: 34px;
       font-size: $fontmodalXltxt;
@@ -54,56 +52,71 @@
   }
 }
 //=========== De Skills ==============
-.container-progbar-txtimg {
+.container-logos-txt {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin-top: 88px;
-  margin-left: 10px;
-}
-.container-img-cv-modalXL {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: flex-end;
-  position: relative;
-  top: -210px;
-}
-.cv {
-  margin-bottom: 7px;
-}
-.text-modal-skills {
-  position: relative;
-  top: -130px;
-  text-align: left;
+  flex-direction: row-reverse;
+  padding: 20px 10px 20px 20px;
+  margin-top: 12px;
+  .container-txt-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    .text-modal-skills {
+      text-align: right;
+      margin-top: -78px !important;
+      text-align: right;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 90px;
+    }
+  }
+  .logos {
+    width: 103%;
+  }
+  .logos-img {
+    width: inherit;
+    border-radius: 6px;
+  }
+  div,.cv,a {
+    color: $pink;
+  }
+  .cv {
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+  }
 }
 
 //=========== Termina Skills ==============
+
 //=========== De About ==============
 .container-img-txt {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 10px;
   margin-top: 13px;
-}
-.backgroundimg {
-  height: 89%;
-  background-color: $aboutbcc4;
-  margin-top: 30px;
-  border-radius: 6px;
-}
-.img-modalXL {
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  margin: 47px 15px 0 15px;
+
+  .backgroundimg {
+    background-color: $aboutbcc4;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  .text-modal-about {
+    margin-left: 10px;
+  }
+  .img-modalXL {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    padding: 10px;
+  }
 }
 //=========== Termina About ==============
 .content-after {
-  width: 60%;
-  height: 90%;
-  background-color: $pink;
+  width: 55%;
+  height: 85%;
   border-radius: 6px;
 }
 .content-before {
