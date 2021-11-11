@@ -2,9 +2,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img height="200" src="" alt="Logo" >
+    <img height="200" src="/public/profile.ico" alt="Logo" >
 
-<h4 align="center">LuciaG's Web Developer Landing Page</h4>
+<h4 align="center">LuciaG Landing Page</h4>
 
   <p align="center">
     <a href="https://luciawebdeveloperpage.herokuapp.com/">View Web Application</a>
@@ -39,12 +39,22 @@
   </ol>
 </details>  
 
+## Learn more
+
+To be more familiar with the libraries and frameworks I have mainly used I will leave a short explanation here:
+
+### [Pug](https://pugjs.org/api/getting-started.html)
+
+npm install pug
+
+ PUG, is a Javascript library that was previously known as JADE. It is an easy-to-code template engine used to code HTML in a more readable fashion. One upside to PUG is that it equips developers to code reusable HTML documents by pulling data dynamically from the API. 
+
 
 ### Prerequisites  
 
 
 -  [React js](https://es.reactjs.org/)
-- Clone the repository on your local machine (https://github.com/l0g0l/portfolio.git)
+- Clone the repository on your local machine (https://github.com/l0g0l/landingPage.git)
 
 
 ## Installation

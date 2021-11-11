@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Modal from './Modal'
 import patient from '../assets/img/modals/patient.gif'
 import agencia from '../assets/img/modals/agencia.gif'
