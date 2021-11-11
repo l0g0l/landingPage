@@ -24,7 +24,7 @@
   &:hover .textlanguage {
     display: block;
     margin-right: 40px;
-    margin-top: -12px;
+    margin-top: -15px;
     font-size: 13px;
   }
 }
@@ -138,34 +138,26 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  cursor: pointer;
   z-index: 2;
-  & .text {
-    display: none;
-  }
-  transition: all 0.5s ease 0s;
   @include neon;
-  &:hover {
-    transform: scale(1);
-    .tooltipcommitmain {
-      height: 25px;
-      border-radius: 100%;
-      text-align: center;
-      .text {
-        width: 250px;
-        height: 100px;
-        position: absolute;
-        top: -70px;
-        right: 90px;
-        color: $white;
-        font-size: 16px;
-      }
-      &:hover .text {
-        display: block;
-      }
-    }
   }
-}
+  .text-home {    
+    width: 250px;
+    height: 84px;
+    position: absolute;
+    top: 33px;
+    right: 73px;
+    color: $white;
+    font-size: 13px;
+    box-shadow: 0 0 7px 2px #7c7b7b;
+    border-radius: 40px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: all 1s;
+    cursor: pointer;
+  }
+
 //=========== bolitas pequeñas de commits ==============
 .commitmain-sx {
   width: 25px;
@@ -191,7 +183,7 @@
     position: absolute;
     top: -8px;
     right: 42px;
-    // display: none;
+    display: none;
     color: $white;
   }
   &:hover .text {

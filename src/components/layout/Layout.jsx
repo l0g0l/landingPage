@@ -7,7 +7,6 @@ import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
 import idioma1 from '../../assets/img/idioma1.png'
-import flechaab2 from '../../assets/img/flechaab2.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -16,8 +15,9 @@ const Layout = () => {
     const [showBranch1, setShowBranch1] = useState(false)
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
-    const [modalOpenQuiz, setModalOpenQuiz] = useState(false)
     const [modales, setModales] = useState(true)
+    const [visibleDiv, setVisibleDiv] = useState({ display: 'none' })
+    const [style, setStyle] = useState({ display: 'none' });
 
     //hook para utilizar la libreria i18n para traducir la web
     const [language, setLanguage] = useState('en')
@@ -49,11 +49,6 @@ const Layout = () => {
         setShowBranch3(!showBranch3)
     }
 
-    //abre el modal del primer proyecto
-    const toggleModal = () => {
-        setModalOpenQuiz(!modalOpenQuiz)
-    }
-
     return <>
 
         <NavMenu />
@@ -62,8 +57,8 @@ const Layout = () => {
             <header className="container-contact-btnchangel">
                 <section className="contact">
                     <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name:</strong>string,&nbsp;&nbsp;public <strong>email:</strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
-                    <p>let Lucia_Contact;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name: </strong>string,&nbsp;&nbsp;public <strong>email: </strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
+                    <p>let Lucia_Contact: string;</p>
                     <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong>'luciag.lara@gmail.com' </strong>);</p>
                 </section>
 
@@ -90,23 +85,30 @@ const Layout = () => {
                 <div className="myname">
                     <span >Lucía González</span>
                     <span className="container-web-developer">
-                        <p className="web">Web </p>
-                        <p className="developer">Developer</p>
+
+                        <p className="web">{t('home.web')}</p>
+                        <p className="developer">{t('home.developer')}</p>
+
                     </span>
                 </div>
             </section>
 
             <ScrollToTop />
-            <section className="container-downarrow">
-                <img src={flechaab2} className="downarrow" alt="down arrow" />
-            </section>
+
+
             <section className="container-main">
+                <div className="text-home"
+                    onMouseEnter={e => {
+                        setStyle({ display: 'block' });
+                    }}
+                    onMouseLeave={e => {
+                        setStyle({ display: 'none' })
+                    }}>
+                    <p style={style}>{t('home.click.ball')}</p>
+                </div>
+
                 <div className="commit-main ">
-                    <div className="tooltipcommitmain">
-                        <div className="text">
-                            <p>{t('home.click.ball')}</p>
-                        </div>
-                    </div>
+
                     <div className="main-branch">
 
                         <div className="commitmain-end"></div>
@@ -229,7 +231,7 @@ const Layout = () => {
                         tooltip4: t('home.commit.txt4'),
                         size4: '45px',
                         topminiball4: '3px',
-                        bcc:'#e9afb8'
+                        bcc: '#e9afb8'
                     }}
                 />
 
@@ -246,7 +248,7 @@ const Layout = () => {
                         tooltip3: t('home.commit.txt3'),
                         size3: '20px',
                         topminiball3: '3px',
-                        bcc:'#e9afb8'
+                        bcc: '#e9afb8'
                     }}
                 />
 
@@ -264,21 +266,21 @@ const Layout = () => {
                         with2: '270px',
                         size1: '62px',
                         topminiball2: '0px',
-                        bcc:'#e9afb8'
-                        
+                        bcc: '#e9afb8'
+
                     }}
                 />
 
                 <MainMiniBall
                     quiz={{
                         top1: "210px",
-                        modales:modales,
-                        setmodales:setModales,
+                        modales: modales,
+                        setmodales: setModales,
                         tooltip1: t('home.commit.txt1'),
-                        size1: '42px',
+                        size1: '60px',
                         topminiball1: '0',
-                        project:'quiz',
-                        bcc:'#e9afb8'
+                        project: 'quiz',
+                        bcc: '#e9afb8'
                     }}
                 />
             </section>
