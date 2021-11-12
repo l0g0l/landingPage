@@ -90,9 +90,8 @@ The project are deployed in [Heroku](https://id.heroku.com/) through the `main` 
 
 ## App Overview
 
-###### Registration & Login
 
-<img src="" alt="landingpage" >
+<img src="/public/landing.gif" alt="landingpage" >
 
 <br>
 <br>
