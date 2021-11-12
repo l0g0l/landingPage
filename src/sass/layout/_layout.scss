@@ -14,7 +14,6 @@
   }
   .email {
     color: $pink;
-  
   }
 }
 //=========== Botón Idioma ==============
@@ -89,6 +88,25 @@
     }
   }
 }
+.container-myname-txt {
+  display: flex;
+  flex-direction: column;
+  margin-left: 330px;
+  //=========== Texto cómo navegar ==============
+  .text-home {
+    width: 250px;
+    height: 84px;
+    color: $white;
+    font-size: 13px;
+    box-shadow: 0 0 10px 2px #949191;
+    border-radius: 40px;
+    line-height: 20px;
+    padding: 18px 19px;
+    text-align: center;
+    transition: all 1s;
+    margin-top: -62px;
+  }
+}
 
 //================== Rama principal ========================
 .container-main {
@@ -97,23 +115,6 @@
   left: 50%;
 }
 
-//=========== Texto cómo navegar ==============
-.text-home {    
-  width: 250px;
-  height: 84px;
-  position: absolute;
-  top: -18px;
-  right: 60px;
-  color: $white;
-  font-size: 13px;
-  box-shadow: 0 0 10px 2px #949191 ;
-  border-radius: 40px;
-  line-height: 20px;
-  padding: 12px;
-  text-align: center;
-  transition: all 1s;
-  cursor: pointer;
-}
 //=========== Rama main ==============
 .main-branch {
   width: 11px;
@@ -135,7 +136,7 @@
   border-radius: 50%;
   z-index: 2;
   @include neon;
-  }
+}
 
 //=========== bolitas pequeñas de commits ==============
 .commitmain-sx {

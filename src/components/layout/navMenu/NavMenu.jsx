@@ -8,7 +8,6 @@ import cv from '../../../assets/img/cv.pdf'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-
 const NavMenu = () => {
 
     const [modalIsOpenAbout, setIsOpenAbout] = useState(false);

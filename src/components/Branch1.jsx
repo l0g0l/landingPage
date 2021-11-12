@@ -5,7 +5,7 @@ import dontwaste from '../assets/img/modals/dontwaste.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch1 = ({ display, position, top, left, project, boxcolor,  background, modales, setmodales  }) => {
+const Branch1 = ({ display, position, top, left, project, boxcolor,  background, modales, setmodales, cursor  }) => {
     console.log(modales)
 
 
@@ -28,7 +28,7 @@ const Branch1 = ({ display, position, top, left, project, boxcolor,  background,
                     //setModalOpen(!modalOpen)
                 }}
                 className=' commit-main'
-                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background }}>
+                style={{ display: display, position: position, top: top, left: left, boxShadow: boxcolor, backgroundColor:background, cursor:cursor }}>
             </button>
             
 

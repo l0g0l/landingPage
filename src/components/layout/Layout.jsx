@@ -79,24 +79,30 @@ const Layout = () => {
                 </section>
 
             </header>
+            <div className="container-myname-txt">
 
-            <section>
-                <div className="myname">
-                    <span >Lucía González</span>
-                    <span className="container-web-developer">
+                <section>
+                    <div className="myname">
+                        <span >Lucía González</span>
+                        <span className="container-web-developer">
 
-                        <p className="web">{t('home.web')}</p>
-                        <p className="developer">{t('home.developer')}</p>
+                            <p className="web">{t('home.web')}</p>
+                            <p className="developer">{t('home.developer')}</p>
 
-                    </span>
-                </div>
-            </section>
+                        </span>
+                    </div>
+                </section>
+
+                <section className="text-home" >
+                    <p>{t('home.click.ball')}</p>
+                </section>
+            </div>
 
             <ScrollToTop />
 
 
             <section className="container-main">
-             {/*    <div className="text-home"
+                {/*    <div className="text-home"
                     onMouseEnter={e => {
                         setStyle({ display: 'block' });
                     }}
@@ -105,9 +111,6 @@ const Layout = () => {
                     }}>
                     <p style={style}>{t('home.click.ball')}</p>
                 </div> */}
-                   <div className="text-home" >
-                    <p>{t('home.click.ball')}</p>
-                </div>
 
                 <div className="commit-main ">
 
@@ -127,6 +130,7 @@ const Layout = () => {
                             left={"32px"}
                             project={"De Secre a Developer"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
@@ -137,6 +141,7 @@ const Layout = () => {
                             left={"32px"}
                             project={"Agencia de Viajes"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
@@ -147,6 +152,7 @@ const Layout = () => {
                             left={"32px"}
                             project={"Gestor de citas"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(210, 240, 252)'}
                             boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
@@ -163,6 +169,7 @@ const Layout = () => {
                             left={"-22px"}
                             project={"Buscador de repos"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
@@ -173,6 +180,7 @@ const Layout = () => {
                             left={"-22px"}
                             project={"NPM Clone"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
@@ -183,6 +191,7 @@ const Layout = () => {
                             left={"-22px"}
                             project={"Hackathon(Nuwe)"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(231, 252, 197)'}
                             boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
@@ -201,6 +210,7 @@ const Layout = () => {
                             left={"32px"}
                             project={"coELA"}
                             modales={modales}
+                            cursor={'pointer'}
                             setmodales={setModales}
                             background={'rgb(190, 187, 223)'}
                             boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(194, 189, 233)'}
@@ -213,6 +223,7 @@ const Layout = () => {
                             project={"DontWaste"}
                             modales={modales}
                             setmodales={setModales}
+                            cursor={'pointer'}
                             background={'rgb(203, 201, 231)'}
                             boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(170, 166, 209)'}
                         />
