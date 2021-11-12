@@ -3,7 +3,7 @@
 <p align="center">
     <img height="200" src="/public/profile.ico" alt="Logo" >
 
-<h4 align="center">LuciaG Landing Page</h4>
+<h4 align="center">Web Developer LuciaG Landing Page</h4>
 
   <p align="center">
     <a href="https://luciawebdeveloperpage.herokuapp.com/">View Web Application</a>
@@ -11,13 +11,9 @@
     <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/landingpage/badge" alt="Codefactor Grade">
 </p>
-  <p align="center">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status
-" alt="Sonar Quality Gate"></p>
-</p>
-<p align="center">
-<img src="/public/accesibilidadlanding.png" alt="Accesibility Rate" width="500"></p>
 
+<p align="center">
+<img src="/public/accesibilidadlanding.png" alt="Accesibility Rate" width="400"></p>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -49,6 +45,7 @@ To be more familiar with the libraries and frameworks I have mainly used I will 
 npm i react-modal
 
 It' s a module of npm to created modal in such a way that it fulfills the accessibility requirements of the modern web. We seek to keep the focus on accessibility while providing a functional, capable modal component for general use.
+
 ### [react-i18next](https://react.i18next.com/)
 
 npm install react-i18next i18next
@@ -89,7 +86,6 @@ The project are deployed in [Heroku](https://id.heroku.com/) through the `main` 
 <!-- USAGE -->
 
 ## App Overview
-
 
 <img src="/public/landing.gif" alt="landingpage" >
 
