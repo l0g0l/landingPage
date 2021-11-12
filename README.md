@@ -48,7 +48,7 @@ It' s a module of npm to created modal in such a way that it fulfills the access
 
 ### [react-i18next](https://react.i18next.com/)
 
-npm install react-i18next i18next
+npm i react-i18next  i18next
 
 The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes. It's optimally suited for server-side rendering
 
