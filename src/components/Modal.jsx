@@ -4,16 +4,16 @@ import girar from "../assets/img/girar.png"
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-function Modal({ content }) {
+function Modal({ content, css }) {
   //hook para utilizar la libreria i18n para traducir la web
   const { t } = useTranslation()
 
   return (
-    <div className="modalBackground " style={{ left: content.left, right: content.right }}>
+    <div className={`modalbackground ${css}`} style={{ left: content.left, right: content.right }}>
 
-      <div className="modalContainer"  >
+      <div className="modalcontainer"  >
         <div className="colormodalprojects" style={{ marginBottom: content.mbt, backgroundColor: content.bcc }}>
-          <div className="titleCloseBtn">
+          <div className="titleclosebtn">
             <button onClick={() => { content.closeModal("") }}>
               X
             </button>
@@ -45,14 +45,10 @@ function Modal({ content }) {
             </div>
           </div>
         </div>
-
-        0.
-        
         <div className="container-icon-btn">
           <div>
             <img src={girar} alt="icono para girar la imagen" className="roundicon" style={{ bottom: content.icn_bt, right: content.icn_rg }} />
           </div>
-
           <div>
             <button className="footer" style={{ backgroundColor: content.bcc }}>
               <a href={content.url} target="_blank" rel="noreferrer noopener" className="linkproject">{t('modal.viewapp')}</a>
