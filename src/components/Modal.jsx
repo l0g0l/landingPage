@@ -45,9 +45,12 @@ function Modal({ content }) {
             </div>
           </div>
         </div>
+
+        0.
+        
         <div className="container-icon-btn">
           <div>
-            <img src={girar} alt="icono para girar la imagen" className="roundicon" style={{bottom:content.icn_bt, right:content.icn_rg}} />
+            <img src={girar} alt="icono para girar la imagen" className="roundicon" style={{ bottom: content.icn_bt, right: content.icn_rg }} />
           </div>
 
           <div>

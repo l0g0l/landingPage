@@ -13,7 +13,7 @@
     font-size: 19px;
   }
   .email {
-    color: $pink;
+    color: #db7093;
   }
 }
 //=========== Botón Idioma ==============
@@ -92,6 +92,9 @@
   display: flex;
   flex-direction: column;
   margin-left: 330px;
+  @include for-size(desktop-only) {
+    margin-left: 589px;
+  }
   //=========== Texto cómo navegar ==============
   .text-home {
     width: 250px;
@@ -105,6 +108,7 @@
     text-align: center;
     transition: all 1s;
     margin-top: -62px;
+  
   }
 }
 

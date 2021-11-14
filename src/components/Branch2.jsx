@@ -5,7 +5,7 @@ import hackathon from '../assets/img/modals/hackathon.gif'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const Branch2 = ({ display, position, top, left, project, boxcolor, background, modales, setmodales  }) => {
+const Branch2 = ({ display, position, top, left, project, boxcolor, background, modales, setmodales }) => {
 
 
     //hook para utilizar la libreria i18n para traducir la web
@@ -45,12 +45,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background, 
                             displayflex: 'unset',
                             mt: '20px',
                             mbt: '30px',
-                            mb:'208px',
+                            mb: '208px',
                             ml: 'unset',
-                            bcc:'rgb(201, 233, 150)',
-                            brd:'1px solid #cac7c7dd',
-                            icn_bt:'62px',
-                            icn_rg:'18px'
+                            bcc: 'rgb(201, 233, 150)',
+                            brd: '1px solid #cac7c7dd',
+                            icn_bt: '62px',
+                            icn_rg: '18px'
                         }}
                     />
                 </>
@@ -73,13 +73,13 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background, 
                             height: '250%',
                             displayflex: 'unset',
                             mt: '20px',
-                            mb:'208px',
+                            mb: '208px',
                             mbt: '30px',
                             ml: 'unset',
-                            bcc:'rgb(201, 233, 150)',
-                            icn_bt:'62px',
-                            icn_rg:'18px'
-                            
+                            bcc: 'rgb(201, 233, 150)',
+                            icn_bt: '62px',
+                            icn_rg: '18px'
+
                         }}
                     />
                 </>
@@ -103,12 +103,12 @@ const Branch2 = ({ display, position, top, left, project, boxcolor, background, 
                             height: '250%',
                             displayflex: 'unset',
                             mt: '10px',
-                            mb:'210px',
+                            mb: '210px',
                             mbt: '20px',
                             ml: 'unset',
-                            bcc:'rgb(201, 233, 150)',
-                            icn_bt:'44px',
-                            icn_rg:'18px'
+                            bcc: 'rgb(201, 233, 150)',
+                            icn_bt: '44px',
+                            icn_rg: '18px'
                         }}
                     />
                 </>
