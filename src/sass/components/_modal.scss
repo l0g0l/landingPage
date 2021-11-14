@@ -1,7 +1,5 @@
-.modalbackground,
-.quizprops {
+.modalbackground {
   position: absolute;
-  left: 80px;
   top: -85px;
   display: flex;
   justify-content: center;
@@ -124,18 +122,19 @@
 }
 
 //=========== Refactorización props  ==============
-.quizprops {
+.quizpropscss {
   & .modalbackground {
-    left: -480px;
+    left: -480px ;
+    
   }
   & .colormodalprojects {
     margin-bottom: 72px;
   }
   & .body {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   & .colormodalprojects, .footer {
-    background-color: rgb(252, 175, 203);
+    background-color: rgb(252, 175, 203); 
   }
   & .roundicon {
     bottom: 39px;

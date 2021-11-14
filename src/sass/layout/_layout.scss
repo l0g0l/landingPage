@@ -186,3 +186,16 @@
   @include neon;
   cursor: auto;
 }
+
+//=========== Refactorización props  ==============
+.miniballpropsquiz {
+& .commitmain-sx {
+  top: 210px;
+  background-color:#e9afb8 ;
+}
+& .text {
+    left: 60px;
+    top: 0;
+}
+
+}

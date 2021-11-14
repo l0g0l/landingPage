@@ -286,15 +286,16 @@ const Layout = () => {
 
                 <MainMiniBall
                     quiz={{
-                        top1: "210px",
                         modales: modales,
                         setmodales: setModales,
                         tooltip1: t('home.commit.txt1'),
-                        size1: '60px',
-                        topminiball1: '0',
                         project: 'quiz',
-                        bcc: '#e9afb8'
+                        // top1: "210px",
+                        // size1: '60px',
+                        // topminiball1: '0',
+                        // bcc: '#e9afb8'
                     }}
+                    css={'miniballpropsquiz'}
                 />
             </section>
         </main>
