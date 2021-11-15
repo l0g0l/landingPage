@@ -124,38 +124,44 @@ const Layout = () => {
                     ?
                     <>
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"23px"}
-                            left={"32px"}
                             project={"De Secre a Developer"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"23px"}
+                            // left={"32px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(210, 240, 252)'}
+                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} 
+                            css={'branch3propsblog'}
+                            />
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"73px"}
-                            left={"32px"}
                             project={"Agencia de Viajes"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"73px"}
+                            // left={"32px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(210, 240, 252)'}
+                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'}
+                            css={'branch3propsviajes'}
+                             />
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"123px"}
-                            left={"32px"}
                             project={"Gestor de citas"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"123px"}
+                            // left={"32px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(210, 240, 252)'}
+                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} 
+                            css={'branch3propscitas'}
+                            />
                     </>
                     :
                     null}
@@ -166,40 +172,19 @@ const Layout = () => {
                             project={"Buscador de repos"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"27px"}
-                            // left={"-22px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(231, 252, 197)'}
-                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} 
                             css={'branch2propsrepos'}
-                            />
+                        />
                         <Branch2
                             project={"NPM Clone"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"77px"}
-                            // left={"-22px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(231, 252, 197)'}
-                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} 
                             css={'branch2propsnpm'}
 
-                            />
+                        />
                         <Branch2
                             project={"Hackathon(Nuwe)"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"127px"}
-                            // left={"-22px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(231, 252, 197)'}
-                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'}
                             css={'branch2propshack'}
                         />
                     </>

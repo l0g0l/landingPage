@@ -365,3 +365,51 @@
     0 0 12px rgb(190, 250, 93);
   }
 }
+.branch3propscitas {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 123px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
+}
+.branch3propsviajes {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
+}
+.branch3propsblog {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
+}

@@ -18,7 +18,6 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
             <div className=' branch2'>
                 <button
                     onClick={() => {
-                        console.log(`${modales} - ${project}`)
                         if (modales === project) {
                             setmodales("")
                         } else {
