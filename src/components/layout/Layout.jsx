@@ -163,39 +163,45 @@ const Layout = () => {
                     ?
                     <>
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"27px"}
-                            left={"-22px"}
                             project={"Buscador de repos"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"27px"}
+                            // left={"-22px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(231, 252, 197)'}
+                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} 
+                            css={'branch2propsrepos'}
+                            />
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"77px"}
-                            left={"-22px"}
                             project={"NPM Clone"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"77px"}
+                            // left={"-22px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(231, 252, 197)'}
+                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} 
+                            css={'branch2propsnpm'}
+
+                            />
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"127px"}
-                            left={"-22px"}
                             project={"Hackathon(Nuwe)"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
-                        {/* <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} /> */}
+                            // display={"block"}
+                            // position={"absolute"}
+                            // top={"127px"}
+                            // left={"-22px"}
+                            // cursor={'pointer'}
+                            // background={'rgb(231, 252, 197)'}
+                            // boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'}
+                            css={'branch2propshack'}
+                        />
                     </>
                     :
                     null}

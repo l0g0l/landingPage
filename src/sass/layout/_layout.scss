@@ -317,3 +317,51 @@
     0 0 12px rgb(170, 166, 209);
   }
 }
+.branch2propshack {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 127px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
+.branch2propsnpm {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
+.branch2propsrepos {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
