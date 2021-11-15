@@ -62,7 +62,6 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
                     :
                     null}
 
-
                 {modales === project && project === 'Buscador de repos'
                     ?
                     <>

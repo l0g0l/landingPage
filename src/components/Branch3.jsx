@@ -55,14 +55,13 @@ const Branch3 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                                 img: agencia,
                                 url: 'https://pure-savannah-13335.herokuapp.com/',
-                
+
                             }}
                             css={'branch3propscssviajes'}
                         />
                     </>
                     :
                     null}
-
 
                 {modales === project && project === 'Gestor de citas'
                     ?
