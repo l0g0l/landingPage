@@ -185,8 +185,43 @@
   @include neon;
   cursor: auto;
 }
+//=========== Ramas ==============
+.branch1 {
+  @include branch(
+    130px,
+    326px,
+    28px,
+    0 0 6px rgb(78, 73, 126),
+    0 0 6px rgb(111, 105, 172),
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(194, 189, 233)
+  );
+}
+.branch2 {
+  width: 40px;
+  height: 189px;
+  display: block;
+  position: absolute;
+  top: 559px;
+  right: -17px;
+  box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+    0 0 6px rgb(190, 250, 93), 0 0 12px rgb(190, 250, 93);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.branch3 {
+  @include branch(
+    182px,
+    847px,
+    28px,
+    0 0 6px rgb(53, 108, 129),
+    0 0 6px rgb(106, 209, 250),
+    0 0 6px rgb(106, 209, 250),
+    0 0 12px rgb(106, 209, 250)
+  );
+}
 
-//=========== Refactorización props  ==============
+//=========== Refactorización props Miniballs ==============
 .miniballpropsquiz {
   & .commitmain-sx {
     top: 210px;
@@ -247,4 +282,38 @@
     top: 1017px;
     cursor: auto;
   }
-} 
+}
+
+//=========== Refactorización props Branchs ==============
+.branch1propsdw {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(203, 201, 231);
+    box-shadow:
+    0 0 6px rgb(78, 73, 126), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(170, 166, 209);
+  }
+}
+.branch1propscoela {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(203, 201, 231);
+    box-shadow:
+    0 0 6px rgb(78, 73, 126), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(170, 166, 209);
+  }
+}

@@ -204,28 +204,16 @@ const Layout = () => {
                     ?
                     <>
                         <Branch1
-                            display={"block"}
-                            position={"absolute"}
-                            top={"73px"}
-                            left={"32px"}
                             project={"coELA"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(190, 187, 223)'}
-                            boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(194, 189, 233)'}
+                            css={'branch1propscoela'}
                         />
                         <Branch1
-                            display={"block"}
-                            position={"absolute"}
-                            top={"23px"}
-                            left={"32px"}
                             project={"DontWaste"}
                             modales={modales}
                             setmodales={setModales}
-                            cursor={'pointer'}
-                            background={'rgb(203, 201, 231)'}
-                            boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(170, 166, 209)'}
+                            css={'branch1propsdw'}
                         />
                     </>
                     :

@@ -5,29 +5,24 @@ import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
 const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3 }) => {
-    console.log(quiz)
-
-
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
 
 
-    // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el sigueinte ternario y el state hago que se muestre el modal o no
-    //tengo que poner que "existe branch1, (linea 9) y quiz (linea 21)" para que las props se reconozcan como propiedades del obj p.e. branch1.top2 o quiz.size1
+    // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el siguiente ternario y el state hago que se muestre el modal o no
+  
     return (
         <>
-
-
             {/*Empieza Branch3- 4 proyectos */}
-            {branch3_3 && branch3_3.top4_4 !== "850px"
+            {branch3_3
                 ?
                 <div className={` ${css}`}><div className="commitmain-sx " ></div></div>
                 :
                 null}
 
-            {branch3 && branch3.top4 !== "850px"
+            {branch3
                 ?
-                <div className={` ${css}`}><div className="commitmain-sx "  onClick={branch3.funcbranch3}>
+                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch3.funcbranch3}>
                     <div className="tooltip-container">
                         <div className="text"  >
                             <span >{branch3.tooltip4}</span>
