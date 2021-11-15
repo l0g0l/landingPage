@@ -9,16 +9,35 @@
     -6px -6px 7px $neumorphimssecondary;
   position: fixed;
   top: 0;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: $nav;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    ul:nth-child(2) {
+      margin-left: 94px;
+      @include for-size(phone) {
+        margin-left: 10px;
+      }
+    }
+    @include for-size(phone) {
+      width: 60px;
+    }
+  }
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  width: $nav;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  ul:nth-child(2) {
-    margin-left: 94px;
+.logo-img {
+  width: 35px;
+  @include for-size(phone) {
+    width: 30px;
+  }
+}
+.social li:last-child {
+  margin-bottom: 100px;
+  @include for-size(phone) {
+    margin-bottom: 100px;
   }
 }
 .social a,
@@ -29,12 +48,43 @@ nav {
   font-size: $fontmenunav;
   margin-bottom: 14px;
   cursor: pointer;
+  @include for-size(phone) {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 }
-.social li:last-child {
-  margin-bottom: 100px;
+
+//=========== Toggle palabras por Iconos ==============
+.aboutword {
+  display: block;
+  @include for-size(phone) {
+    display: none;
+  }
 }
-.logo-img {
-  width: 35px;
+.abouticon {
+  display: none;
+  @include for-size(phone) {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+.skillsword {
+  display: block;
+  @include for-size(phone) {
+    display: none;
+  }
+}
+.skillsicon {
+  display: none;
+  @include for-size(phone) {
+    display: block;
+  }
+}
+.woman {
+  width: 78%;
+}
+.skills {
+  width: 75%;
 }
 
 //=========== Efecto hover RRSS ==============
@@ -73,5 +123,3 @@ ul li a:hover {
   color: $white;
   box-shadow: 0 0 5px $whitesecondary;
 }
-
-

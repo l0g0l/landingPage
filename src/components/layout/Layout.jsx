@@ -7,6 +7,7 @@ import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
 import idioma1 from '../../assets/img/idioma1.png'
+import email from '../../assets/img/email.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -54,12 +55,19 @@ const Layout = () => {
         {/*botón para cambiar el lenguaje, tooltip que según hayas seleccionado el idioma, te mostrará el otro */}
         <main>
             <header className="container-contact-btnchangel">
-                <section className="contact">
-                    <p >class <strong>Contact</strong> &#123;</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name: </strong>string,&nbsp;&nbsp;public <strong>email: </strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
-                    <p>let Lucia_Contact: string;</p>
-                    <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong><a href="mailto:luciag.lara@gmail.com" className="email">'luciag.lara@gmail.com' </a></strong>);</p>
-                </section>
+               
+                    <section className="contact">
+                        <p >class <strong>Contact</strong> &#123;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name: </strong>string,&nbsp;&nbsp;public <strong>email: </strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
+                        <p>let Lucia_Contact: string;</p>
+                        <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong><a href="mailto:luciag.lara@gmail.com" className="email">'luciag.lara@gmail.com' </a></strong>);</p>
+                    </section>
+
+                    <section className="email-icon">
+                        <img src={email} alt="icono email" className="email-img" />
+                    </section>
+                    
+             
 
                 <section className="container-tooltip-language ">
                     <button className="changelanguage" onClick={() => onChangeLanguage()}>

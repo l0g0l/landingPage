@@ -9,6 +9,7 @@
   line-height: 25px;
   font-size: $fontcontact;
   margin-top: 35px;
+  // display: none;
   strong {
     font-size: 19px;
   }
@@ -16,6 +17,17 @@
     color: #db7093;
   }
 }
+//=========== Email =============
+.email-icon {
+  // display: none;
+  .email-img {
+    // position: relative;
+    // top: 61px;
+    // left: 211px;
+    width: 27px;
+  }
+}
+
 //=========== Botón Idioma ==============
 .container-tooltip-language {
   height: 0%;

@@ -5,6 +5,10 @@ import linkedin from '../../../assets/img/linkedin.png'
 import blog from '../../../assets/img/blog.png'
 import yo3 from '../../../assets/img/yo3.jpg'
 import cv from '../../../assets/img/cv.pdf'
+import woman from '../../../assets/img/woman.png'
+import skills from '../../../assets/img/skills.png'
+
+
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -44,9 +48,23 @@ const NavMenu = () => {
                         {/*Para pintar los textos, se lo paso al componente como una prop siendo un array */}
                         {t('navmenu.about') === 'Sobre mi'
                             ?
-                            <p onClick={() => setIsOpenAbout(true)} style={{ marginLeft: '80px' }}>{t('navmenu.about')}</p>
+                            <>
+                                <div className="aboutword">
+                                    <p onClick={() => setIsOpenAbout(true)} style={{ marginLeft: '80px' }} >{t('navmenu.about')}</p>
+                                </div>
+                                <div className="abouticon">
+                                    <img src={woman} alt="icono about me" className="woman" title="Sobre mi" onClick={() => setIsOpenAbout(true)} />
+                                </div>
+                            </>
                             :
-                            <p onClick={() => setIsOpenAbout(true)} >{t('navmenu.about')}</p>
+                            <>
+                                <div className="aboutword">
+                                    <p onClick={() => setIsOpenAbout(true)} >{t('navmenu.about')}</p>
+                                </div>
+                                <div className="abouticon">
+                                    <img src={woman} alt="icono about me" className="woman" title="About" onClick={() => setIsOpenAbout(true)} />
+                                </div>
+                            </>
                         }
                         <ModalXL
                             modalisopen={modalIsOpenAbout}
@@ -61,9 +79,23 @@ const NavMenu = () => {
                     <li>
                         {t('navmenu.skills') === 'Habilidades'
                             ?
-                            <p onClick={() => setIsOpenSkills(true)} style={{ marginLeft: '80px' }}>{t('navmenu.skills')}</p>
+                            <>
+                                <div className="skillsword">
+                                    <p onClick={() => setIsOpenSkills(true)} style={{ marginLeft: '80px' }} >{t('navmenu.skills')}</p>
+                                </div>
+                                <div className="skillsicon">
+                                    <img src={skills} alt="icono skills" className="skills" onClick={() => setIsOpenSkills(true)} />
+                                </div>
+                            </>
                             :
-                            <p onClick={() => setIsOpenSkills(true)}>{t('navmenu.skills')}</p>
+                            <>
+                                <div className="skillsword">
+                                    <p onClick={() => setIsOpenSkills(true)} >{t('navmenu.skills')}</p>
+                                </div>
+                                <div className="skillsicon">
+                                    <img src={skills} alt="icono skills" className="skills" onClick={() => setIsOpenSkills(true)} />
+                                </div>
+                            </>
                         }
                         <ModalXL
                             modalisopen={modalIsOpenSkills}
