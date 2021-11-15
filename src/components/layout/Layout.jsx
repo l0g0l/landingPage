@@ -7,7 +7,7 @@ import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
 import idioma1 from '../../assets/img/idioma1.png'
-import email from '../../assets/img/email.png'
+import email1 from '../../assets/img/email1.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -64,7 +64,7 @@ const Layout = () => {
                     </section>
 
                     <section className="email-icon">
-                        <img src={email} alt="icono email" className="email-img" />
+                    <a href="mailto:luciag.lara@gmail.com" className="email"><img src={email1} alt="icono email" className="email-img" /></a>
                     </section>
                     
              
@@ -91,7 +91,7 @@ const Layout = () => {
 
                 <section>
                     <div className="myname">
-                        <span >Lucía González</span>
+                        <span className="name">Lucía González</span>
                         <span className="container-web-developer">
 
                             <p className="web">{t('home.web')}</p>

@@ -3,13 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 40px 60px 140px;
+  @include for-size(phone) {
+    margin: -10px 20px 60px 0
+  }
 }
 //=========== Contacto ==============
 .contact {
   line-height: 25px;
   font-size: $fontcontact;
   margin-top: 35px;
-  // display: none;
+  display: block;
+  @include for-size(phone) {
+    display: none;
+  }
   strong {
     font-size: 19px;
   }
@@ -19,12 +25,14 @@
 }
 //=========== Email =============
 .email-icon {
-  // display: none;
+  display: none;
+  @include for-size(phone) {
+    display: block;
+    margin-left: 324px;
+    margin-top: 30px;
+  }
   .email-img {
-    // position: relative;
-    // top: 61px;
-    // left: 211px;
-    width: 27px;
+     width: 27px;
   }
 }
 
@@ -41,6 +49,10 @@
     margin-right: 40px;
     margin-top: -15px;
     font-size: 13px;
+    @include for-size(phone) {
+      display: none;
+    
+    }
   }
 }
 .changelanguage {
@@ -65,18 +77,34 @@
   margin-right: 40px;
   span:first-child {
     font-size: $fontnamefirst;
+    @include for-size(phone) {
+    font-size: 39px;
+    text-align: center; 
   }
+}
+  @include for-size(phone) {
+    font-size: 19px;
+    text-align: center;
+    margin-right: 16px; 
+}
 }
 //=========== Animación web developer ==============
 .container-web-developer {
   display: flex;
   align-items: center;
   justify-content: end;
+  @include for-size(phone) {
+    justify-content: center;
+    margin-bottom: 58px;
+}
   .web {
     -moz-animation: textname1 2s ease-out;
     -webkit-animation: textname1 2s ease-out;
     animation: textname1 2s ease-out;
     margin-right: 20px;
+    @include for-size(phone) {
+      margin-right: 8px;
+  }
   }
   @keyframes textname1 {
     from {
@@ -107,6 +135,9 @@
   @include for-size(desktop-only) {
     margin-left: 602px;
   }
+  @include for-size(phone) {
+    margin-left: 75px;
+  }
   //=========== Texto cómo navegar ==============
   .text-home {
     width: 250px;
@@ -120,6 +151,13 @@
     text-align: center;
     transition: all 1s;
     margin-top: -62px;
+    @include for-size(phone) {
+      width: 230px;
+      height: 71px;
+      font-size: 11px;
+      margin-left: 31px;
+      margin-top: unset;
+    }
   }
 }
 
@@ -128,6 +166,10 @@
   position: absolute;
   top: 360px;
   left: 50%;
+  @include for-size(phone) {
+    top: 313px;
+    left: 52%;
+  }
 }
 
 //=========== Rama main ==============
