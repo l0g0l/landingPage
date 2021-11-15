@@ -37,20 +37,8 @@ const Branch3 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), GridfsFS, Multer, JWT. Deploy (Heroku)',
                                 img: blog,
                                 url: 'https://desecreadeveloperblog.herokuapp.com/',
-                                width: '100%',
-                                height: '500%',
-                                displayflex: 'unset',
-                                mt: '20px',
-                                ls: '-2px',
-                                mb: '232px',
-                                mbt: '30px',
-                                fs: '27px',
-                                ml: 'unset',
-                                bcc: 'rgb(177, 227, 247)',
-                                brd: '1px solid #cac7c7dd',
-                                icn_bt: '37px',
-                                icn_rg: '18px'
                             }}
+                            css={'branch3propscssblog'}
                         />
                     </>
                     :
@@ -67,17 +55,9 @@ const Branch3 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS, JavaScript, PUG (Template Engine), Node js (Framework Express), BBDD SQL (Sequelize). Deploy (Heroku)',
                                 img: agencia,
                                 url: 'https://pure-savannah-13335.herokuapp.com/',
-                                width: '100%',
-                                height: '300%',
-                                displayflex: 'unset',
-                                mt: '20px',
-                                mbt: '30px',
-                                mb: '210px',
-                                ml: 'unset',
-                                bcc: 'rgb(177, 227, 247)',
-                                icn_bt: '37px',
-                                icn_rg: '18px'
+                
                             }}
+                            css={'branch3propscssviajes'}
                         />
                     </>
                     :
@@ -95,18 +75,8 @@ const Branch3 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML Bootstrap, JavaScript, React js,Node js (Framework Express),BBDD Mongodb (Mongoose). Deploy (Heroku)',
                                 img: patient,
                                 url: 'https://veterinarypatientsmanager.herokuapp.com/',
-                                width: '100%',
-                                height: '200%',
-                                displayflex: 'unset',
-                                mt: '20px',
-                                mbt: '30px',
-                                mb: '192px',
-                                ml: 'unset',
-                                bcc: 'rgb(177, 227, 247)',
-                                icn_bt: '37px',
-                                icn_rg: '18px'
-
                             }}
+                            css={'branch3propscsscitas'}
                         />
                     </>
                     :

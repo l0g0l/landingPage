@@ -11,7 +11,7 @@ function Modal({ content, css }) {
   return (
     <>
       <div className={` ${css}`}>
-        <div className="modalbackground" style={{ right: content.right }}>
+        <div className="modalbackground">
           <div className="modalcontainer"  >
             <div className="colormodalprojects" style={{ marginBottom: content.mbt, backgroundColor: content.bcc }}>
               <div className="titleclosebtn">

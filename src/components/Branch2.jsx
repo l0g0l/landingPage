@@ -12,7 +12,6 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
     const { t } = useTranslation()
 
 
-    // incluyo en el onClick los dos states para que se cambien al clicar en cada botón. SOLO me ha funcionado cuando he cambiado la linea 35 modalOpen==='DontWaste no funcionaba. Paso una única props como un obj
     return (
         <div className={` ${css}`}>
             <div className=' branch2'>
@@ -38,19 +37,8 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS, JavaScript, React js. Deploy (Heroku)',
                                 img: hackathon,
                                 url: 'https://hackathon-mwc.herokuapp.com/',
-                                left: '-450px',
-                                width: '100%',
-                                height: '250%',
-                                displayflex: 'unset',
-                                mt: '20px',
-                                mbt: '30px',
-                                mb: '208px',
-                                ml: 'unset',
-                                bcc: 'rgb(201, 233, 150)',
-                                brd: '1px solid #cac7c7dd',
-                                icn_bt: '62px',
-                                icn_rg: '18px'
                             }}
+                            css={'branch2propscsshack'}
                         />
                     </>
                     :
@@ -67,19 +55,8 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML y CSS. Deploy (GitHubPages)',
                                 img: npmclone,
                                 url: 'https://l0g0l.github.io/cloneWebsiteNPM/',
-                                left: '-450px',
-                                width: '100%',
-                                height: '250%',
-                                displayflex: 'unset',
-                                mt: '20px',
-                                mb: '208px',
-                                mbt: '30px',
-                                ml: 'unset',
-                                bcc: 'rgb(201, 233, 150)',
-                                icn_bt: '62px',
-                                icn_rg: '18px'
-
                             }}
+                            css={'branch2propscssnpm'}
                         />
                     </>
                     :
@@ -97,18 +74,8 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS (Flex Grid), JavaScript y React js. Deploy (Heroku)',
                                 img: repos,
                                 url: 'https://githubrepositoryfinder.herokuapp.com/',
-                                left: '-454px',
-                                width: '100%',
-                                height: '250%',
-                                displayflex: 'unset',
-                                mt: '10px',
-                                mb: '210px',
-                                mbt: '20px',
-                                ml: 'unset',
-                                bcc: 'rgb(201, 233, 150)',
-                                icn_bt: '44px',
-                                icn_rg: '18px'
                             }}
+                            css={'branch2propscssrepos'}
                         />
                     </>
                     :
