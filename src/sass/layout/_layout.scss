@@ -108,7 +108,6 @@
     text-align: center;
     transition: all 1s;
     margin-top: -62px;
-  
   }
 }
 
@@ -189,13 +188,63 @@
 
 //=========== Refactorización props  ==============
 .miniballpropsquiz {
-& .commitmain-sx {
-  top: 210px;
-  background-color:#e9afb8 ;
-}
-& .text {
+  & .commitmain-sx {
+    top: 210px;
+    background-color: #e9afb8;
+  }
+  & .text {
     left: 60px;
     top: 0;
+  }
 }
-
+.miniballpropsbranch1 {
+  & .commitmain-sx {
+    top: 313px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    left: 62px;
+    top: 0;
+  }
 }
+.miniballpropsbranch1_1 {
+  & .commitmain-sx {
+    top: 444px;
+    cursor: auto;
+  }
+}
+.miniballpropsbranch2 {
+  & .commitmain-sx {
+    top: 548px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    right: 20px;
+    top: 3px;
+  }
+}
+.miniballpropsbranch2_2 {
+  & .commitmain-sx {
+    top: 735px;
+    cursor: auto;
+  }
+}
+.miniballpropsbranch3 {
+  & .commitmain-sx {
+    top: 835px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    left: 45px;
+    top: 3px;
+  }
+}
+.miniballpropsbranch3_3 {
+  & .commitmain-sx {
+    top: 1017px;
+    cursor: auto;
+  }
+} 

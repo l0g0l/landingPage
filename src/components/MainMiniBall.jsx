@@ -21,108 +21,104 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
             {/*Empieza Branch3- 4 proyectos */}
             {branch3_3 && branch3_3.top4_4 !== "850px"
                 ?
-                <div className="commitmain-sx " style={{ top: branch3_3.top4_4, cursor: "auto" }}></div>
-
+                <div className={` ${css}`}><div className="commitmain-sx " ></div></div>
                 :
                 null}
 
             {branch3 && branch3.top4 !== "850px"
                 ?
-                <div className="commitmain-sx " style={{ backgroundColor: branch3.bcc, top: branch3.top4 }} onClick={branch3.funcbranch3}>
+                <div className={` ${css}`}><div className="commitmain-sx "  onClick={branch3.funcbranch3}>
                     <div className="tooltip-container">
-                        <div className="text" style={{ width: branch3.with4, left: branch3.size4, top: branch3.topminiball4 }} >
+                        <div className="text"  >
                             <span >{branch3.tooltip4}</span>
                         </div>
                     </div>
                 </div>
-
+                </div>
                 :
                 null}
             {/*Termina Branch3-4 proyectos */}
 
             {/*Empieza Branch2- 4 proyectos */}
-            {branch2_2 && branch2_2.top3_3 !== "850px"
+            {branch2_2
                 ?
-                <div className="commitmain-sx " style={{ top: branch2_2.top3_3, cursor: "auto" }}></div>
-
+                <div className={` ${css}`}><div className="commitmain-sx " ></div></div>
                 :
                 null}
 
-            {branch2 && branch2.top3 !== "850px"
+            {branch2
                 ?
-                <div className="commitmain-sx " style={{ backgroundColor: branch2.bcc, top: branch2.top3 }} onClick={branch2.funcbranch2}>
+                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch2.funcbranch2}>
                     <div className="tooltip-container">
-                        <div className="text" style={{ width: branch2.with3, right: branch2.size3, top: branch2.topminiball3 }} >
+                        <div className="text" >
                             <span >{branch2.tooltip3}</span>
                         </div>
                     </div>
                 </div>
-
+                </div>
                 :
                 null}
             {/*Termina Branch2-4 proyectos */}
 
-
             {/*Empieza Branch1- 2 proyectos */}
             {branch1_1
                 ?
-                <div className="commitmain-sx " style={{ top: branch1_1.top1_1, cursor: "auto" }}></div>
-
+                <div className={` ${css}`}><div className="commitmain-sx "></div></div>
                 :
                 null}
 
             {branch1
                 ?
-                <div className="commitmain-sx " style={{ backgroundColor: branch1.bcc, top: branch1.top2 }} onClick={branch1.funcbranch}>
+                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch1.funcbranch}>
                     <div className="tooltip-container">
-                        <div className="text" style={{ left: branch1.size1, width: branch1.with2, top: branch1.topminiball2 }} >
+                        <div className="text" >
                             <span >{branch1.tooltip2}</span>
                         </div>
                     </div>
                 </div>
-
+                </div>
                 :
                 null}
             {/*Termina Branch1-2 proyectos */}
 
             {/* Empieza Primer proyecto */}
-            
-                {quiz && <div className={` ${css}`}> <div className="commitmain-sx " onClick={() => {
-                    console.log(`${quiz.modales} - ${quiz.project}`)
-                    if (quiz.modales === quiz.project) {
-                        quiz.setmodales("")
-                    } else {
-                        quiz.setmodales(quiz.project)
-                    }
-                }}>
-                    <div className="tooltip-container">
-                        <div className="text">
-                            <span >{quiz.tooltip1}</span>
-                        </div>
-                    </div>
-                    {quiz.modales === quiz.project && quiz.project === 'quiz'
-                        ?
-                        <div  >
-                            <Modal
-                                content={{
-                                    closeModal: quiz.setmodales,
-                                    title: 'Quiz-LocalStorage',
-                                    text: t('commit.ball.descrp'),
-                                    tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
-                                    img: quizfirebase,
-                                    url: 'https://l0g0l.github.io/Quiz_LocalStorage/'
-                                }}
-                                css={'quizpropscss'}
 
-                            />
-                        </div>
-                        :
-                        null}
-                    {/* Termina Primer proyecto */}
-
-                </div>
-            </div>
+            {quiz && <div className={` ${css}`}> <div className="commitmain-sx " onClick={() => {
+                console.log(`${quiz.modales} - ${quiz.project}`)
+                if (quiz.modales === quiz.project) {
+                    quiz.setmodales("")
+                } else {
+                    quiz.setmodales(quiz.project)
                 }
+            }}>
+                <div className="tooltip-container">
+                    <div className="text">
+                        <span >{quiz.tooltip1}</span>
+                    </div>
+                </div>
+                {quiz.modales === quiz.project && quiz.project === 'quiz'
+                    ?
+                    <div  >
+                        <Modal
+                            content={{
+                                closeModal: quiz.setmodales,
+                                title: 'Quiz-LocalStorage',
+                                text: t('commit.ball.descrp'),
+                                tecnolog: 'HTML/CSS y JavaScript. Deploy (GitHubPages)',
+                                img: quizfirebase,
+                                url: 'https://l0g0l.github.io/Quiz_LocalStorage/'
+                            }}
+                            css={'quizpropscss'}
+
+                        />
+                    </div>
+                    :
+                    null}
+                {/* Termina Primer proyecto */}
+
+            </div>
+            </div>
+            }
         </>
     )
 }
