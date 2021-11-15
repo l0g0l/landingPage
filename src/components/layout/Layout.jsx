@@ -100,7 +100,6 @@ const Layout = () => {
 
             <ScrollToTop />
 
-
             <section className="container-main">
                 {/*    <div className="text-home"
                     onMouseEnter={e => {
@@ -127,44 +126,24 @@ const Layout = () => {
                             project={"De Secre a Developer"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"23px"}
-                            // left={"32px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(210, 240, 252)'}
-                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} 
                             css={'branch3propsblog'}
-                            />
+                        />
                         <Branch3
                             project={"Agencia de Viajes"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"73px"}
-                            // left={"32px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(210, 240, 252)'}
-                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'}
                             css={'branch3propsviajes'}
-                             />
+                        />
                         <Branch3
                             project={"Gestor de citas"}
                             modales={modales}
                             setmodales={setModales}
-                            // display={"block"}
-                            // position={"absolute"}
-                            // top={"123px"}
-                            // left={"32px"}
-                            // cursor={'pointer'}
-                            // background={'rgb(210, 240, 252)'}
-                            // boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} 
                             css={'branch3propscitas'}
-                            />
+                        />
                     </>
                     :
                     null}
+                    
                 {showBranch2
                     ?
                     <>

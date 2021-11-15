@@ -125,7 +125,6 @@
 .quizpropscss {
   & .modalbackground {
     left: -480px ;
-    
   }
   & .colormodalprojects {
     margin-bottom: 72px;
@@ -139,5 +138,50 @@
   & .roundicon {
     bottom: 39px;
     right: 18px;
+  }
+}
+.branch1propscsscoela {
+  & .modalbackground {
+    left: 90px ;
+  }
+  & .card {
+    width: 150%;
+    height: 280%;
+  }
+  & .colormodalprojects {
+    margin-bottom: 100px;
+    background-color:rgb(211, 206, 250) ;
+  }
+  & .body {
+    margin-bottom: 105px;
+  }
+  & .footer {
+    background-color:rgb(211, 206, 250) ;
+  }
+  & .roundicon {
+    bottom: 21px;
+    right: 18px;
+  }
+}
+.branch1propscssdw {
+  & .modalbackground {
+    left: 90px ;
+  }
+  & .colormodalprojects {
+    margin-bottom: 66px;
+    background-color:rgb(211, 206, 250);
+  }
+  & .body {
+    margin-bottom: 67px;
+  }
+  & .footer {
+    background-color:rgb(211, 206, 250) ;
+  }
+  & .roundicon {
+    bottom: 21px;
+    right: 18px;
+  }
+  & .img-modal {
+    border:1px solid #cac7c7dd ;
   }
 }
