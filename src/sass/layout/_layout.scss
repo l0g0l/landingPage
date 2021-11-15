@@ -93,7 +93,7 @@
   flex-direction: column;
   margin-left: 330px;
   @include for-size(desktop-only) {
-    margin-left: 589px;
+    margin-left: 602px;
   }
   //=========== Texto cómo navegar ==============
   .text-home {
@@ -108,7 +108,6 @@
     text-align: center;
     transition: all 1s;
     margin-top: -62px;
-  
   }
 }
 
@@ -185,4 +184,232 @@
   left: -10px;
   @include neon;
   cursor: auto;
+}
+//=========== Ramas ==============
+.branch1 {
+  @include branch(
+    130px,
+    326px,
+    28px,
+    0 0 6px rgb(78, 73, 126),
+    0 0 6px rgb(111, 105, 172),
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(194, 189, 233)
+  );
+}
+.branch2 {
+  width: 40px;
+  height: 189px;
+  display: block;
+  position: absolute;
+  top: 559px;
+  right: -17px;
+  box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+    0 0 6px rgb(190, 250, 93), 0 0 12px rgb(190, 250, 93);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.branch3 {
+  @include branch(
+    182px,
+    847px,
+    28px,
+    0 0 6px rgb(53, 108, 129),
+    0 0 6px rgb(106, 209, 250),
+    0 0 6px rgb(106, 209, 250),
+    0 0 12px rgb(106, 209, 250)
+  );
+}
+
+//=========== Refactorización props Miniballs ==============
+.miniballpropsquiz {
+  & .commitmain-sx {
+    top: 210px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    left: 60px;
+    top: 0;
+  }
+}
+.miniballpropsbranch1 {
+  & .commitmain-sx {
+    top: 313px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    left: 62px;
+    top: 0;
+  }
+}
+.miniballpropsbranch1_1 {
+  & .commitmain-sx {
+    top: 444px;
+    cursor: auto;
+  }
+}
+.miniballpropsbranch2 {
+  & .commitmain-sx {
+    top: 548px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    right: 20px;
+    top: 3px;
+  }
+}
+.miniballpropsbranch2_2 {
+  & .commitmain-sx {
+    top: 735px;
+    cursor: auto;
+  }
+}
+.miniballpropsbranch3 {
+  & .commitmain-sx {
+    top: 835px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    width: 270px;
+    left: 45px;
+    top: 3px;
+  }
+}
+.miniballpropsbranch3_3 {
+  & .commitmain-sx {
+    top: 1017px;
+    cursor: auto;
+  }
+}
+
+//=========== Refactorización props Branchs ==============
+.branch1propsdw {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(203, 201, 231);
+    box-shadow:
+    0 0 6px rgb(78, 73, 126), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(170, 166, 209);
+  }
+}
+.branch1propscoela {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(203, 201, 231);
+    box-shadow:
+    0 0 6px rgb(78, 73, 126), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172), 
+    0 0 6px rgb(111, 105, 172),
+    0 0 12px rgb(170, 166, 209);
+  }
+}
+.branch2propshack {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 127px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
+.branch2propsnpm {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
+.branch2propsrepos {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: -22px;
+    cursor: pointer;
+    background: rgb(231, 252, 197);
+    box-shadow:
+    0 0 6px rgb(70, 110, 6), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93), 
+    0 0 6px rgb(190, 250, 93),
+    0 0 12px rgb(190, 250, 93);
+  }
+}
+.branch3propscitas {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 123px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
+}
+.branch3propsviajes {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
+}
+.branch3propsblog {
+  & .commit-main {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    cursor: pointer;
+    background: rgb(210, 240, 252);
+    box-shadow:
+    0 0 6px  rgb(53, 108, 129), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250), 
+    0 0 6px  rgb(106, 209, 250),
+    0 0 12px  rgb(106, 209, 250);
+  }
 }

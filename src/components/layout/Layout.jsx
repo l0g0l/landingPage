@@ -100,7 +100,6 @@ const Layout = () => {
 
             <ScrollToTop />
 
-
             <section className="container-main">
                 {/*    <div className="text-home"
                     onMouseEnter={e => {
@@ -124,78 +123,49 @@ const Layout = () => {
                     ?
                     <>
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"23px"}
-                            left={"32px"}
                             project={"De Secre a Developer"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            css={'branch3propsblog'}
+                        />
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"73px"}
-                            left={"32px"}
                             project={"Agencia de Viajes"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            css={'branch3propsviajes'}
+                        />
                         <Branch3
-                            display={"block"}
-                            position={"absolute"}
-                            top={"123px"}
-                            left={"32px"}
                             project={"Gestor de citas"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(210, 240, 252)'}
-                            boxcolor={'0 0 6px  rgb(53, 108, 129), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250), 0 0 6px  rgb(106, 209, 250),0 0 12px  rgb(106, 209, 250)'} />
+                            css={'branch3propscitas'}
+                        />
                     </>
                     :
                     null}
+                    
                 {showBranch2
                     ?
                     <>
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"27px"}
-                            left={"-22px"}
                             project={"Buscador de repos"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
+                            css={'branch2propsrepos'}
+                        />
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"77px"}
-                            left={"-22px"}
                             project={"NPM Clone"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
+                            css={'branch2propsnpm'}
+
+                        />
                         <Branch2
-                            display={"block"}
-                            position={"absolute"}
-                            top={"127px"}
-                            left={"-22px"}
                             project={"Hackathon(Nuwe)"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(231, 252, 197)'}
-                            boxcolor={'0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),0 0 12px rgb(190, 250, 93)'} />
-                        {/* <Branch2 display={"block"} position={"absolute"} top={"27px"} left={"-20px"} project={"Maquetación Avanzada"} /> */}
+                            css={'branch2propshack'}
+                        />
                     </>
                     :
                     null}
@@ -204,97 +174,68 @@ const Layout = () => {
                     ?
                     <>
                         <Branch1
-                            display={"block"}
-                            position={"absolute"}
-                            top={"73px"}
-                            left={"32px"}
                             project={"coELA"}
                             modales={modales}
-                            cursor={'pointer'}
                             setmodales={setModales}
-                            background={'rgb(190, 187, 223)'}
-                            boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(194, 189, 233)'}
+                            css={'branch1propscoela'}
                         />
                         <Branch1
-                            display={"block"}
-                            position={"absolute"}
-                            top={"23px"}
-                            left={"32px"}
                             project={"DontWaste"}
                             modales={modales}
                             setmodales={setModales}
-                            cursor={'pointer'}
-                            background={'rgb(203, 201, 231)'}
-                            boxcolor={'0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),0 0 12px rgb(170, 166, 209)'}
+                            css={'branch1propsdw'}
                         />
                     </>
                     :
                     null}
 
                 <MainMiniBall
-                    branch3_3={{
-                        top4_4: "1017px"
-                    }}
+                    branch3_3={true}
+                    css={'miniballpropsbranch3_3'}
                 />
 
                 <MainMiniBall
                     branch3={{
                         funcbranch3: toggleBranch3,
-                        top4: "835px",
                         tooltip4: t('home.commit.txt4'),
-                        size4: '45px',
-                        topminiball4: '3px',
-                        bcc: '#e9afb8'
                     }}
+                    css={'miniballpropsbranch3'}
                 />
 
                 <MainMiniBall
-                    branch2_2={{
-                        top3_3: "735px"
-                    }}
+                    branch2_2={true}
+                    css={'miniballpropsbranch2_2'}
                 />
 
                 <MainMiniBall
                     branch2={{
                         funcbranch2: toggleBranch2,
-                        top3: "548px",
                         tooltip3: t('home.commit.txt3'),
-                        size3: '20px',
-                        topminiball3: '3px',
-                        bcc: '#e9afb8'
                     }}
+                    css={'miniballpropsbranch2'}
                 />
 
                 <MainMiniBall
-                    branch1_1={{
-                        top1_1: "444px"
-                    }}
+                    branch1_1={true}
+                    css={'miniballpropsbranch1_1'}
                 />
 
                 <MainMiniBall
                     branch1={{
-                        top2: "313px",
                         funcbranch: toggleBranch1,
                         tooltip2: t('home.commit.txt2'),
-                        with2: '270px',
-                        size1: '62px',
-                        topminiball2: '0px',
-                        bcc: '#e9afb8'
-
                     }}
+                    css={'miniballpropsbranch1'}
                 />
 
                 <MainMiniBall
                     quiz={{
-                        top1: "210px",
                         modales: modales,
                         setmodales: setModales,
                         tooltip1: t('home.commit.txt1'),
-                        size1: '60px',
-                        topminiball1: '0',
                         project: 'quiz',
-                        bcc: '#e9afb8'
                     }}
+                    css={'miniballpropsquiz'}
                 />
             </section>
         </main>

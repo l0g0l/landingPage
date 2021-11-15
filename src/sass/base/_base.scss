@@ -24,41 +24,7 @@ button {
   border: none !important;
   outline: none !important;
 }
-//=========== Ramas ==============
-.branch1 {
-  @include branch(
-    130px,
-    326px,
-    28px,
-    0 0 6px rgb(78, 73, 126),
-    0 0 6px rgb(111, 105, 172),
-    0 0 6px rgb(111, 105, 172),
-    0 0 12px rgb(194, 189, 233)
-  );
-}
-.branch2 {
-  width: 40px;
-  height: 189px;
-  display: block;
-  position: absolute;
-  top: 559px;
-  right: -17px;
-  box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
-    0 0 6px rgb(190, 250, 93), 0 0 12px rgb(190, 250, 93);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.branch3 {
-  @include branch(
-    182px,
-    847px,
-    28px,
-    0 0 6px rgb(53, 108, 129),
-    0 0 6px rgb(106, 209, 250),
-    0 0 6px rgb(106, 209, 250),
-    0 0 12px rgb(106, 209, 250)
-  );
-}
+
 //=========== Animación scroll to top ==============
 .container-arrow {
   position: absolute;
@@ -71,8 +37,6 @@ button {
 #btnarrowtotop {
   background-color: transparent !important;
   position: fixed;
-  outline: none;
-  border: none;
   .arrow {
     width: 25px;
     height: 25px;
