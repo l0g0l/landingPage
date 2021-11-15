@@ -114,12 +114,26 @@ ul li a::before {
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
+  @include for-size(phone) {
+    background: unset;
+    transition: unset;
+    transform: unset;
+    z-index: unset;
+  }
 }
 ul li a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px $whitesecondary;
+  @include for-size(phone) {
+    transform: unset;
+    box-shadow: unset;
+  }
 }
 ul li a:hover {
   color: $white;
   box-shadow: 0 0 5px $whitesecondary;
+  @include for-size(phone) {
+    color: unset;
+    box-shadow: unset;
+  }
 }

@@ -15,9 +15,18 @@
   box-shadow: 6px 6px 7px $neumorphimsprimary, -1px -6px 7px $neumorphimsprimary;
   p {
     margin-right: 27px;
+    @include for-size(phone) {
+      margin-right: unset;
+      text-align: center;
+      padding: 5px;
+   }
   }
 
   @include for-size(desktop-only) {
     width: 94.8%;
   }
-}
+  @include for-size(phone) {
+    width: 82%;
+    left: 68px;
+ }
+} 
