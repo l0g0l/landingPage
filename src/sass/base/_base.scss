@@ -30,6 +30,9 @@ button {
   position: absolute;
   top: 540px;
   right: 50px;
+  @include for-size(phone) {
+  display: none;
+}
 }
 .arrow:before {
   position: absolute;
