@@ -31,6 +31,9 @@
     margin-left: 300px;
     margin-top: 30px;
   }
+  @include for-size(xsphone) {
+    margin-left: 284px;
+  }
   .email-img {
      width: 27px;
   }
@@ -80,6 +83,9 @@
     @include for-size(phone) {
     font-size: 39px;
     text-align: center; 
+  }
+  @include for-size(xsphone) {
+    font-size: 38px;
   }
 }
   @include for-size(phone) {
@@ -157,6 +163,10 @@
       font-size: 11px;
       margin-left: 31px;
       margin-top: unset;
+    }
+    @include for-size(xsphone) {
+      margin-left: 12px;
+      
     }
   }
 }
