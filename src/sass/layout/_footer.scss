@@ -24,15 +24,14 @@
       margin-right: unset;
       text-align: center;
       padding: 5px;
+      font-size: 10px;
    }
   }
-
   @include for-size(desktop-only) {
     width: 94.8%;
   }
   @include for-size(phone) {
-    width: 82%;
+    width: 81.8%;
     left: 68px;
-  
  }
 } 

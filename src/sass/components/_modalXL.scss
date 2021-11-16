@@ -46,7 +46,7 @@
       color: $grey-text;
       line-height: 25.5px;
       @include for-size(phone) {
-        margin-top: 20px;     
+        margin-top: 20px;
       }
     }
     p::first-letter {
@@ -57,8 +57,10 @@
 
 //=========== De About ==============
 .scrollmodalxl {
-  overflow: auto;
-}
+  @include for-size(phone) {
+    height: 650px;
+    overflow: auto;
+  }
 .container-img-txt {
   display: flex;
   margin-left: 10px;
@@ -66,14 +68,11 @@
   @include for-size(desktop-only) {
     margin-top: 30px;
     margin-left: 16px;
-   }
-   @include for-size(phone) {
+  }
+  @include for-size(phone) {
     display: unset;
-    overflow: auto; 
-    height: 200px;
-    width: 100px;
-   }
-
+    margin-left: 15px;
+  }
   .backgroundimg {
     display: block;
     background-color: $aboutbcc4;
@@ -81,26 +80,11 @@
     border-radius: 6px;
     @include for-size(desktop-only) {
       margin-top: 34px;
-     }
-    @include for-size(phone) {
-     height: 25px;
-     margin-top: 15px;
-     }
-  }
-  .text-modal-about {
-    margin-left: 16px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-    @include for-size(desktop-only) {
-     font-size: 18px !important;
-     line-height: 35px !important;
-     
     }
     @include for-size(phone) {
-      font-size: 13px !important;
-      line-height: 25px !important;
-      word-spacing: 0;
-     }
+      margin-left: 10px;
+      margin-right: 5px;
+    }
   }
   .img-modalXL {
     width: 200px;
@@ -108,12 +92,28 @@
     border-radius: 150px;
     padding: 8px;
     @include for-size(desktop-only) {
-      padding: 10px
-     }
+      padding: 10px;
+    }
     @include for-size(phone) {
-      display: none;
-     }
+      width: 80px;
+      height: 80px;
+    }
   }
+  .text-modal-about {
+    margin-left: 16px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    @include for-size(desktop-only) {
+      font-size: 18px !important;
+      line-height: 35px !important;
+    }
+    @include for-size(phone) {
+      font-size: 13px !important;
+      line-height: 25px !important;
+      word-spacing: 0;
+    }
+  }
+}
 }
 //=========== Termina About ==============
 
@@ -126,10 +126,10 @@
   @include for-size(desktop-only) {
     margin-top: 30px;
     margin-left: 10px;
-   }
-   @include for-size(phone) {
+  }
+  @include for-size(phone) {
     display: unset;
-   }
+  }
   .container-txt-cv {
     display: flex;
     flex-direction: column;
@@ -149,25 +149,24 @@
         line-height: 35px !important;
         word-spacing: 3px;
         margin-top: -97px !important;
-       
-       }
-       @include for-size(phone) {
+      }
+      @include for-size(phone) {
         margin-top: 30px !important;
         font-size: 14px !important;
         text-align: center;
         margin-bottom: 30px;
-       }
+      }
     }
   }
   .logos {
     width: 99%;
     @include for-size(desktop-only) {
-    width: 100%;
+      width: 100%;
     }
     @include for-size(phone) {
       width: 100%;
       margin-left: 6px;
-     }
+    }
   }
   .logos-img {
     width: inherit;
@@ -190,7 +189,7 @@
     }
     @include for-size(phone) {
       right: 108px;
-     }
+    }
   }
 }
 //=========== Termina Skills ==============
@@ -201,12 +200,11 @@
   border-radius: 6px;
   @include for-size(desktop-only) {
     width: 45%;
-    height: 65%
+    height: 65%;
   }
   @include for-size(phone) {
     width: 85%;
     height: 95%;
- 
   }
 }
 .content-before {

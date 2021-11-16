@@ -61,7 +61,6 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                 <div className="container-txt-cv">
                   <p className="text-modal-skills" >{textsskills.text}</p>
                   <div>
-                    {/* <img src={cvimg} alt="mi cv" /> */}
                     <a className="cv" href={textsskills.cv} download="CV LucíaG_WebDeveloper.pdf" >{t('modalxl.cv')}</a>
                   </div>
                 </div>
