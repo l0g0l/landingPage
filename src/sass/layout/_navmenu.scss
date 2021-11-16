@@ -46,6 +46,7 @@
   color: $white;
   text-decoration: none;
   font-size: $fontmenunav;
+  letter-spacing: 1px;
   margin-bottom: 14px;
   cursor: pointer;
   @include for-size(phone) {

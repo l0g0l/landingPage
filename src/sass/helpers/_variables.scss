@@ -1,12 +1,18 @@
 //=========== Fuentes ==============
 
-$mainfont: "Courier New", Courier, monospace;
-$fontmenunav: 29px;
-$fontweightnav: 300;
+@font-face {
+    font-family: 'ubuntu';
+    src:  url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-style: normal;
+    unicode-range: "U+0-10FFFF";
+}
+
+$mainfont: ubuntu,"Courier New", monospace, sans-serif;
+$fontmenunav: 31px;
 $fonttooltip: 15px;
 $fontnamefirst:75px;
-$fontname:51px;
-$fontcontact: 14px;
+$fontname:48px;
+$fontcontact: 16px;
 $fontmodalXltxt: 13px;
 $fontfirstlettermodal: 30px;
 
