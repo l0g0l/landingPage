@@ -105,7 +105,6 @@
     height: 100%;
   }
 }
-
 .card:hover {
   transform: rotateY(180deg);
 }
@@ -145,6 +144,16 @@
 .quizpropscss {
   & .modalbackground {
     left: -480px;
+    @include for-size(desktop-only) {
+      top: -57px;
+      left: -533px;
+    }
+    & .modalcontainer {
+      @include for-size(desktop-only) {
+        width: 450px;
+        height: 448px;
+      }
+    }
     @include for-size(phone) {
       left: -148px;
       top: -270px;
@@ -152,14 +161,26 @@
   }
   & .colormodalprojects {
     margin-bottom: 72px;
+    @include for-size(desktop-only) {
+      margin-bottom: 35px;
+    }
     @include for-size(phone) {
       margin-bottom: 28px;
     }
   }
   & .body {
     margin-bottom: 15px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       font-size: 11px;
+    }
+  }
+  & .card {
+    @include for-size(desktop-only) {
+      height: 200%;
     }
   }
   & .colormodalprojects,
@@ -174,35 +195,65 @@
       right: 20px;
     }
   }
+  & .footer {
+    @include for-size(desktop-only) {
+      right: 155px;
+    }
+  }
 }
 .branch1propscsscoela {
   & .modalbackground {
     left: 90px;
+    @include for-size(desktop-only) {
+      top: -66px;
+      left: 106px;
+    }
     @include for-size(phone) {
       left: -215px;
       top: 150px;
       z-index: 3;
     }
   }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
+    }
+  }
   & .card {
     width: 150%;
     height: 280%;
+    @include for-size(desktop-only) {
+      height: 352%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 100px;
     background-color: rgb(211, 206, 250);
+    @include for-size(desktop-only) {
+      margin-bottom: 30px;
+    }
     @include for-size(phone) {
       margin-bottom: 24px;
     }
   }
   & .body {
     margin-bottom: 105px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 85px;
     }
   }
   & .footer {
     background-color: rgb(211, 206, 250);
+    @include for-size(desktop-only) {
+      bottom: 122px;
+      right: 247px;
+    }
+
     @include for-size(phone) {
       margin-right: 150px;
     }
@@ -210,30 +261,56 @@
   & .roundicon {
     bottom: 21px;
     right: 18px;
+    @include for-size(desktop-only) {
+      bottom: 30px;
+      right: 185px;
+    }
     @include for-size(phone) {
       bottom: 31px;
-      right: 148px;
+      right: 177px;
     }
   }
 }
 .branch1propscssdw {
   & .modalbackground {
     left: 90px;
+    @include for-size(desktop-only) {
+      top: -66px;
+      left: 106px;
+    }
     @include for-size(phone) {
       left: -215px;
       top: 150px;
       z-index: 3;
     }
   }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
+    }
+  }
+  & .card {
+    @include for-size(desktop-only) {
+      height: 190%;
+    }
+  }
   & .colormodalprojects {
     margin-bottom: 66px;
     background-color: rgb(211, 206, 250);
+    @include for-size(desktop-only) {
+      margin-bottom: 30px;
+    }
     @include for-size(phone) {
       margin-bottom: 24px;
     }
   }
   & .body {
     margin-bottom: 67px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 75px;
     }
@@ -244,6 +321,9 @@
   }
   & .footer {
     background-color: rgb(211, 206, 250);
+    @include for-size(desktop-only) {
+      right: 155px;
+    }
   }
   & .roundicon {
     bottom: 21px;
@@ -256,10 +336,20 @@
 .branch2propscsshack {
   & .modalbackground {
     left: -460px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: -512px;
+    }
     @include for-size(phone) {
       left: -165px;
       top: 210px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -267,6 +357,9 @@
     height: 240%;
     margin-top: 20px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 300%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 30px;
@@ -275,12 +368,20 @@
   & .body {
     margin-bottom: 208px;
     display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 178px;
     }
   }
   & .footer {
     background-color: rgb(201, 233, 150);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 62px;
@@ -297,10 +398,20 @@
 .branch2propscssnpm {
   & .modalbackground {
     left: -460px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: -512px;
+    }
     @include for-size(phone) {
       left: -165px;
       top: 210px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -308,6 +419,9 @@
     height: 250%;
     margin-top: 20px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 300%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 30px;
@@ -315,13 +429,21 @@
   }
   & .body {
     margin-bottom: 208px;
+    display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 178px;
     }
-    display: unset;
   }
   & .footer {
     background-color: rgb(201, 233, 150);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 62px;
@@ -335,10 +457,20 @@
 .branch2propscssrepos {
   & .modalbackground {
     left: -460px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: -512px;
+    }
     @include for-size(phone) {
       left: -165px;
       top: 210px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -346,6 +478,9 @@
     height: 240%;
     margin-top: 10px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 300%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 20px;
@@ -354,16 +489,28 @@
   & .body {
     margin-bottom: 210px;
     display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 180px;
     }
   }
   & .footer {
     background-color: rgb(201, 233, 150);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 44px;
     right: 18px;
+    @include for-size(desktop-only) {
+      bottom: 61px;
+     
+    }
     @include for-size(phone) {
       bottom: 21px;
       right: 19px;
@@ -373,10 +520,20 @@
 .branch3propscssblog {
   & .modalbackground {
     left: 90px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: 90px;
+    }
     @include for-size(phone) {
       left: -210px;
       top: 205px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -384,6 +541,9 @@
     height: 450%;
     margin-top: 20px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 500%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 30px;
@@ -395,6 +555,10 @@
   & .title {
     font-size: 24px;
     word-spacing: -3px;
+    @include for-size(desktop-only) {
+      font-size: 30px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       font-size: 22px;
     }
@@ -402,6 +566,10 @@
   & .body {
     margin-bottom: 232px;
     display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 207px;
     }
@@ -411,10 +579,18 @@
   }
   & .footer {
     background-color: rgb(177, 227, 247);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 37px;
     right: 18px;
+    @include for-size(desktop-only) {
+      bottom: 60px;
+      right: 21px;
+    }
     @include for-size(phone) {
       bottom: 21px;
       right: 20px;
@@ -424,10 +600,20 @@
 .branch3propscssviajes {
   & .modalbackground {
     left: 90px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: 90px;
+    }
     @include for-size(phone) {
       left: -210px;
       top: 205px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -435,6 +621,9 @@
     height: 200%;
     margin-top: 20px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 300%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 30px;
@@ -445,10 +634,18 @@
   }
   & .title {
     font-size: 27px;
+    @include for-size(desktop-only) {
+      font-size: 30px;
+      word-spacing: 3px;
+    }
   }
   & .body {
     margin-bottom: 210px;
     display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 170px;
     }
@@ -458,10 +655,18 @@
   }
   & .footer {
     background-color: rgb(177, 227, 247);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 37px;
     right: 18px;
+    @include for-size(desktop-only) {
+      bottom: 60px;
+      right: 21px;
+    }
     @include for-size(phone) {
       bottom: 17px;
       right: 20px;
@@ -471,10 +676,20 @@
 .branch3propscsscitas {
   & .modalbackground {
     left: 90px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: 90px;
+    }
     @include for-size(phone) {
       left: -210px;
       top: 205px;
       z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
     }
   }
   & .card {
@@ -482,6 +697,9 @@
     height: 200%;
     margin-top: 20px;
     margin-left: unset;
+    @include for-size(desktop-only) {
+      height: 300%;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 30px;
@@ -492,20 +710,36 @@
   }
   & .title {
     font-size: 27px;
+    @include for-size(desktop-only) {
+      font-size: 30px;
+      word-spacing: 3px;
+    }
   }
   & .body {
     margin-bottom: 192px;
     display: unset;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+      word-spacing: 3px;
+    }
     @include for-size(phone) {
       margin-bottom: 170px;
     }
   }
   & .footer {
     background-color: rgb(177, 227, 247);
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
   }
   & .roundicon {
     bottom: 37px;
     right: 18px;
+    @include for-size(desktop-only) {
+      bottom: 60px;
+      right: 21px;
+    }
     @include for-size(phone) {
       bottom: 17px;
       right: 20px;

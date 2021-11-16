@@ -40,6 +40,8 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
           {aboutmenuname
             ?
             <>
+            <div className="scrollmodalxl">
+
               <div className="container-img-txt">
                 <div className="backgroundimg">
 
@@ -51,6 +53,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                 </div>
 
               </div>
+            </div>
             </>
             :
             <>
