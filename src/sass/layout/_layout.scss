@@ -300,8 +300,9 @@
     top: 0;
     @include for-size(phone) {
       width: 120px;
-      left: 54px;
-      top: 6px;
+      left: -41px;
+      top: -321px;
+      color: pink;
   }
   }
 }
