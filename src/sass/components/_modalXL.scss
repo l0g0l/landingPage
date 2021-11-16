@@ -45,7 +45,9 @@
       font-weight: normal;
       color: $grey-text;
       line-height: 25.5px;
- 
+      @include for-size(phone) {
+        margin-top: 20px;     
+      }
     }
     p::first-letter {
       font-size: $fontfirstlettermodal;
@@ -61,8 +63,12 @@
   @include for-size(desktop-only) {
     margin-top: 20px;
    }
+   @include for-size(phone) {
+    display: unset;
+   }
 
   .backgroundimg {
+    display: block;
     background-color: $aboutbcc4;
     margin-top: 25px;
     border-radius: 6px;
@@ -74,12 +80,21 @@
      line-height: 35px !important;
      word-spacing: 2px;
     }
+    @include for-size(phone) {
+      font-size: 13px !important;
+      line-height: 25px !important;
+      word-spacing: 0;
+     }
   }
   .img-modalXL {
     width: 200px;
     height: 200px;
     border-radius: 150px;
-    padding: 10px;
+    padding: 5px 0 0 7px;
+    @include for-size(phone) {
+      width: 0;
+      height: 0;
+     }
   }
 }
 //=========== Termina About ==============
@@ -92,6 +107,9 @@
   margin-top: 17px;
   @include for-size(desktop-only) {
     margin-top: 5px !important;
+   }
+   @include for-size(phone) {
+    display: unset;
    }
   .container-txt-cv {
     display: flex;
@@ -111,6 +129,12 @@
         word-spacing: 2px;
         margin-top: -100px !important;
        }
+       @include for-size(phone) {
+        margin-top: 30px !important;
+        font-size: 14px !important;
+        text-align: center;
+        margin-bottom: 30px;
+       }
     }
   }
   .logos {
@@ -118,6 +142,10 @@
     @include for-size(desktop-only) {
     width: 90%;
     }
+    @include for-size(phone) {
+      width: 100%;
+      margin-left: 6px;
+     }
   }
   .logos-img {
     width: inherit;
@@ -135,7 +163,10 @@
     bottom: 57px;
     @include for-size(desktop-only) {
       bottom: 33px;
-      }
+    }
+    @include for-size(phone) {
+      right: 108px;
+     }
   }
 }
 //=========== Termina Skills ==============
@@ -147,6 +178,11 @@
   @include for-size(desktop-only) {
     width: 55%;
     height: 65%
+  }
+  @include for-size(phone) {
+    width: 85%;
+    height: 95%;
+ 
   }
 }
 .content-before {
