@@ -58,62 +58,63 @@
 //=========== De About ==============
 .scrollmodalxl {
   @include for-size(phone) {
-    height: 650px;
+    height: 640px;
     overflow: auto;
   }
-.container-img-txt {
-  display: flex;
-  margin-left: 10px;
-  margin-top: 10px;
-  @include for-size(desktop-only) {
-    margin-top: 30px;
-    margin-left: 16px;
-  }
-  @include for-size(phone) {
-    display: unset;
-    margin-left: 15px;
-  }
-  .backgroundimg {
-    display: block;
-    background-color: $aboutbcc4;
-    margin-top: 25px;
-    border-radius: 6px;
+  .container-img-txt {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
     @include for-size(desktop-only) {
-      margin-top: 34px;
+      margin-top: 30px;
+      margin-left: 16px;
     }
     @include for-size(phone) {
-      margin-left: 10px;
-      margin-right: 5px;
+      display: unset;
+      margin-left: 15px;
+    }
+    .backgroundimg {
+      display: block;
+      background-color: $aboutbcc4;
+      margin-top: 25px;
+      border-radius: 6px;
+      @include for-size(desktop-only) {
+        margin-top: 34px;
+      }
+      @include for-size(phone) {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
+    .img-modalXL {
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      padding: 8px;
+      @include for-size(desktop-only) {
+        padding: 10px;
+      }
+      @include for-size(phone) {
+        width: 80px;
+        height: 80px;
+        padding: 6px;
+      }
+    }
+    .text-modal-about {
+      margin-left: 16px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      @include for-size(desktop-only) {
+        font-size: 18px !important;
+        line-height: 35px !important;
+      }
+      @include for-size(phone) {
+        font-size: 13px !important;
+        line-height: 25px !important;
+        word-spacing: 0;
+      }
     }
   }
-  .img-modalXL {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    padding: 8px;
-    @include for-size(desktop-only) {
-      padding: 10px;
-    }
-    @include for-size(phone) {
-      width: 80px;
-      height: 80px;
-    }
-  }
-  .text-modal-about {
-    margin-left: 16px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-    @include for-size(desktop-only) {
-      font-size: 18px !important;
-      line-height: 35px !important;
-    }
-    @include for-size(phone) {
-      font-size: 13px !important;
-      line-height: 25px !important;
-      word-spacing: 0;
-    }
-  }
-}
 }
 //=========== Termina About ==============
 
@@ -152,9 +153,10 @@
       }
       @include for-size(phone) {
         margin-top: 30px !important;
-        font-size: 14px !important;
-        text-align: center;
+        font-size: 13px !important;
+        text-align: justify;
         margin-bottom: 30px;
+        word-spacing: -3.6px;
       }
     }
   }
@@ -188,7 +190,7 @@
       word-spacing: 3px;
     }
     @include for-size(phone) {
-      right: 108px;
+      right: 114px;
     }
   }
 }
