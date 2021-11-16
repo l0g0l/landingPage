@@ -22,8 +22,8 @@
   display: flex;
   flex-direction: column;
   @include for-size(phone) {
-    width: 356px;
-    height: 366px;
+    width: 320px;
+    height: 325px;
 }
 }
 .colormodalprojects {
@@ -100,9 +100,11 @@
   margin-left: 12px;
   cursor: pointer;
   @include for-size(phone) {
-    height: 135%;
+    width: 300%;
+    height: 100%;
+  }
 }
-}
+
 .card:hover {
   transform: rotateY(180deg);
 }
@@ -143,7 +145,8 @@
   & .modalbackground {
     left: -480px ;
     @include for-size(phone) {
-      left: -197px ;
+      left: -148px ;
+      top: -232px;
   }
   }
   & .colormodalprojects {
@@ -153,7 +156,7 @@
   }
   }
   & .body {
-    margin-bottom: 80px;
+    margin-bottom: 15px;
   }
   & .colormodalprojects, .footer {
     background-color: rgb(252, 175, 203); 
@@ -162,7 +165,7 @@
     bottom: 39px;
     right: 18px;
     @include for-size(phone) {
-      bottom: 37px;
+      bottom: 22px;
       right: 20px;
   }
   }
