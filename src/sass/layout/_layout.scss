@@ -101,7 +101,7 @@
   justify-content: end;
   @include for-size(phone) {
     justify-content: center;
-    margin-bottom: 58px;
+    margin-bottom: 86px;
 }
   .web {
     -moz-animation: textname1 2s ease-out;
@@ -230,7 +230,7 @@
     position: absolute;
     top: -8px;
     right: 42px;
-    display: none;
+    // display: none;
     color: $white;
       @include for-size(phone) {
       font-size: 12px;
@@ -301,8 +301,8 @@
     @include for-size(phone) {
       width: 120px;
       left: -41px;
-      top: -321px;
-      color: pink;
+      top: -308px;
+      color: #e9afb8;
   }
   }
 }
