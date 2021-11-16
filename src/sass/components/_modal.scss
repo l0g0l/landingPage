@@ -59,7 +59,6 @@
   font-size: 14px;
   word-spacing: 3px;
   text-align: left;
-  // margin-bottom: 8px;
   padding: 0 20px;
   line-height: 18px;
 }
@@ -147,21 +146,19 @@
       top: -57px;
       left: -533px;
     }
-    & .modalcontainer {
-      @include for-size(desktop-only) {
-        width: 450px;
-        height: 448px;
-      }
-    }
     @include for-size(phone) {
       left: -148px;
       top: -270px;
     }
   }
-  & .colormodalprojects {
+  & .modalcontainer {
     @include for-size(desktop-only) {
-      margin-bottom: 35px;
+      width: 450px;
+      height: 448px;
     }
+  }
+  & .colormodalprojects {
+    background-color: rgb(252, 175, 203);
    }
   & .title {
     font-size: 30px;
@@ -170,16 +167,6 @@
       font-size: 25px;
       word-spacing: 3px;
       letter-spacing: 1px;
-    }
-  }
-  & .body {
-    margin-bottom: 15px;
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      font-size: 12px;
     }
   }
   & .card {
@@ -191,9 +178,14 @@
       height: 125%;
     }
   }
-  & .colormodalprojects,
-  .footer {
-    background-color: rgb(252, 175, 203);
+  & .body {
+    word-spacing: 4px;
+      @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
   }
   & .roundicon {
     bottom: 39px;
@@ -204,81 +196,13 @@
     }
   }
   & .footer {
+    background-color: rgb(252, 175, 203);
     right: 129px;
     @include for-size(desktop-only) {
       right: 155px;
     }
     @include for-size(phone) {
       right: 90px;
-    }
-  }
-}
-.branch1propscsscoela {
-  & .modalbackground {
-    left: 90px;
-    @include for-size(desktop-only) {
-      top: -66px;
-      left: 106px;
-    }
-    @include for-size(phone) {
-      left: -215px;
-      top: 150px;
-      z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
-    }
-  }
-  & .card {
-    width: 150%;
-    height: 393%;
-    @include for-size(desktop-only) {
-      height: 437%;
-    }
-  }
-  & .colormodalprojects {
-    background-color: rgb(211, 206, 250);
-    @include for-size(desktop-only) {
-      margin-bottom: 30px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 24px;
-    }
-  }
-  & .body {
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 85px;
-    }
-  }
-  & .footer {
-    background-color: rgb(211, 206, 250);
-    bottom: 100px;
-    right: 225px;
-    @include for-size(desktop-only) {
-      bottom: 122px;
-      right: 252px;
-    }
-    @include for-size(phone) {
-      margin-right: 150px;
-    }
-  }
-  & .roundicon {
-    bottom: 30px;
-    right: 190px;
-    @include for-size(desktop-only) {
-      bottom: 30px;
-      right: 200px;
-    }
-    @include for-size(phone) {
-      bottom: 31px;
-      right: 177px;
     }
   }
 }
@@ -301,29 +225,37 @@
       height: 448px;
     }
   }
-  & .card {
-    @include for-size(desktop-only) {
-      height: 175%;
-    }
-  }
   & .colormodalprojects {
     background-color: rgb(211, 206, 250);
-    @include for-size(desktop-only) {
-      margin-bottom: 30px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 15px;
-    }
-  }
-  & .body {
+   }
+   & .body {
+    word-spacing: 4px;
      @include for-size(desktop-only) {
       font-size: 16px;
-      word-spacing: 3px;
     }
      @include for-size(phone) {
-       font-size: 13px;
+       font-size: 12px;
      }
   }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
+  & .card {
+    height: 160%;
+    @include for-size(desktop-only) {
+      height: 190%;
+    }
+    @include for-size(phone) {
+      height: 105%;
+    }
+  }
+
   & .img-modal {
     border: 1px solid #cac7c7dd;
   }
@@ -332,6 +264,7 @@
     right: 18px;
     @include for-size(phone) {
       bottom: 35px;
+      right: 20px;
     }
   }
   & .footer {
@@ -341,20 +274,20 @@
       right: 155px;
     }
     @include for-size(phone) {
-      right: 84px;
+      right: 90px;
     }
   }
 }
-.branch2propscsshack {
+.branch1propscsscoela {
   & .modalbackground {
-    left: -460px;
+    left: 90px;
     @include for-size(desktop-only) {
-      top: -70px;
-      left: -512px;
+      top: -66px;
+      left: 106px;
     }
     @include for-size(phone) {
-      left: -165px;
-      top: 210px;
+      left: -166px;
+      top: -15px;
       z-index: 3;
     }
   }
@@ -364,106 +297,65 @@
       height: 448px;
     }
   }
-  & .card {
-    width: 100%;
-    height: 250%;
-    margin-top: 20px;
-    margin-left: unset;
-    @include for-size(desktop-only) {
-      height: 300%;
-    }
-  }
   & .colormodalprojects {
-    background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
+    background-color: rgb(211, 206, 250);
     @include for-size(desktop-only) {
-      font-size: 16px;
+      margin-bottom: 30px;
+    }
+   }
+   & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
       word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 178px;
-    }
-  }
-  & .footer {
-    background-color: rgb(201, 233, 150);
-    right: 129px;
-    @include for-size(desktop-only) {
-      bottom: 11px;
-      right: 150px;
-    }
-  }
-  & .roundicon {
-    bottom: 65px;
-    right: 18px;
-    @include for-size(phone) {
-      bottom: 21px;
-      right: 19px;
-    }
-  }
-  & .img-modal {
-    border: 1px solid #cac7c7dd;
-  }
-}
-.branch2propscssnpm {
-  & .modalbackground {
-    left: -460px;
-    @include for-size(desktop-only) {
-      top: -70px;
-      left: -512px;
-    }
-    @include for-size(phone) {
-      left: -165px;
-      top: 210px;
-      z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
+      letter-spacing: 1px;
     }
   }
   & .card {
-    width: 100%;
-    height: 250%;
-    margin-top: 20px;
-    margin-left: unset;
+    width: 150%;
+    height: 393%;
     @include for-size(desktop-only) {
-      height: 300%;
-    }
-  }
-  & .colormodalprojects {
-    background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
+      height: 437%;
     }
     @include for-size(phone) {
-      margin-bottom: 178px;
+      height: 242%;
     }
   }
-  & .img-modal {
-    border: 1px solid #cac7c7dd;
-  }
-  & .footer {
-    background-color: rgb(201, 233, 150);
-    right: 129px;
-    @include for-size(desktop-only) {
-      bottom: 11px;
-      right: 150px;
+
+  & .body {
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
     }
+     @include for-size(phone) {
+       font-size: 12px;
+       
+     }
   }
   & .roundicon {
-    bottom: 64px;
-    right: 18px;
+    bottom: 35px;
+    right: 185px;
+    @include for-size(desktop-only) {
+      bottom: 30px;
+      right: 200px;
+    }
     @include for-size(phone) {
-      bottom: 21px;
-      right: 19px;
+      bottom: 25px;
+      right: 137px;
+    }
+  }
+  & .footer {
+    background-color: rgb(211, 206, 250);
+    bottom: 100px;
+    right: 225px;
+    @include for-size(desktop-only) {
+      bottom: 122px;
+      right: 252px;
+    }
+    @include for-size(phone) {
+      bottom: 80px;
+    right: 153px;
     }
   }
 }
@@ -475,8 +367,8 @@
       left: -512px;
     }
     @include for-size(phone) {
-      left: -165px;
-      top: 210px;
+      left: -115px;
+      top: -17px;
       z-index: 3;
     }
   }
@@ -486,26 +378,52 @@
       height: 448px;
     }
   }
+  & .colormodalprojects {
+    background-color: rgb(201, 233, 150);
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
   & .card {
     width: 100%;
     height: 250%;
     margin-top: 20px;
     margin-left: unset;
     @include for-size(desktop-only) {
+      margin-top: 10px;
       height: 300%;
     }
+    @include for-size(phone) {
+      margin-top: 10px;
+      height: 184%;
+    }
   }
-  & .colormodalprojects {
-    background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
+  & .roundicon {
+    bottom: 64px;
+    right: 18px;
     @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
+      bottom: 55px;
+     
     }
     @include for-size(phone) {
-      margin-bottom: 180px;
+      bottom: 23px;
+      right: 19px;
     }
   }
   & .footer {
@@ -515,17 +433,165 @@
       bottom: 11px;
       right: 150px;
     }
+    @include for-size(phone) {
+      right: 90px;
+    }
+  }
+}
+.branch2propscssnpm {
+  & .modalbackground {
+    left: -460px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: -512px;
+    }
+    @include for-size(phone) {
+      left: -115px;
+      top: -17px;
+      z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
+    }
+  }
+  & .colormodalprojects {
+    background-color: rgb(201, 233, 150);
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
+  & .card {
+    width: 100%;
+    height: 250%;
+    margin-top: 20px;
+    margin-left: unset;
+    @include for-size(desktop-only) {
+      margin-top: 10px;
+      height: 420%;
+    }
+    @include for-size(phone) {
+      margin-top: 10px;
+      height: 284%;
+    }
+  }
+  & .img-modal {
+    border: 1px solid #cac7c7dd;
   }
   & .roundicon {
     bottom: 64px;
     right: 18px;
+    @include for-size(phone) {
+      bottom: 23px;
+      right: 19px;
+    }
+  }
+  & .footer {
+    background-color: rgb(201, 233, 150);
+    right: 129px;
     @include for-size(desktop-only) {
-      bottom: 61px;
-     
+      bottom: 11px;
+      right: 150px;
     }
     @include for-size(phone) {
-      bottom: 21px;
+      right: 90px;
+    }
+  }
+
+}
+.branch2propscsshack {
+  & .modalbackground {
+    left: -460px;
+    @include for-size(desktop-only) {
+      top: -70px;
+      left: -512px;
+    }
+    @include for-size(phone) {
+      left: -115px;
+      top: -17px;
+      z-index: 3;
+    }
+  }
+  & .modalcontainer {
+    @include for-size(desktop-only) {
+      width: 450px;
+      height: 448px;
+    }
+  }
+  & .colormodalprojects {
+    background-color: rgb(201, 233, 150);
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
+  & .card {
+    width: 100%;
+    height: 250%;
+    margin-top: 20px;
+    margin-left: unset;
+    @include for-size(desktop-only) {
+      margin-top: 10px;
+      height: 420%;
+    }
+    @include for-size(phone) {
+      margin-top: 10px;
+      height: 270%;
+    }
+  }
+  & .img-modal {
+    border: 1px solid #cac7c7dd;
+  }
+  & .roundicon {
+    bottom: 65px;
+    right: 18px;
+    @include for-size(phone) {
+      bottom: 23px;
       right: 19px;
+    }
+  }
+  & .footer {
+    background-color: rgb(201, 233, 150);
+    right: 129px;
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
+    @include for-size(phone) {
+      right: 90px;
     }
   }
 }
@@ -537,8 +603,8 @@
       left: 90px;
     }
     @include for-size(phone) {
-      left: -210px;
-      top: 205px;
+      left: -166px;
+      top: -17px;
       z-index: 3;
     }
   }
@@ -548,52 +614,42 @@
       height: 448px;
     }
   }
+  & .colormodalprojects {
+    background-color: rgb(177, 227, 247);
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 23px;
+    }
+  }
   & .card {
     width: 100%;
     height: 450%;
     margin-top: 20px;
     margin-left: unset;
     @include for-size(desktop-only) {
+      margin-top: 10px;
       height: 500%;
     }
-  }
-  & .colormodalprojects {
-    background-color: rgb(177, 227, 247);
     @include for-size(phone) {
-      margin-bottom: 20px;
-    }
-  }
-  & .title {
-    font-size: 30px;
-    word-spacing: -1px;
-    @include for-size(desktop-only) {
-      font-size: 30px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      font-size: 22px;
-    }
-  }
-  & .body {
-    display: unset;
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 207px;
+      margin-top: 10px;
+      height: 526%;
     }
   }
   .img-modal {
     border: 1px solid #cac7c7dd;
-  }
-  & .footer {
-    background-color: rgb(177, 227, 247);
-    right: 129px;
-    @include for-size(desktop-only) {
-      bottom: 11px;
-      right: 150px;
-    }
   }
   & .roundicon {
     bottom: 57px;
@@ -603,10 +659,22 @@
       right: 21px;
     }
     @include for-size(phone) {
-      bottom: 21px;
-      right: 20px;
+      bottom: 23px;
+      right: 19px;
     }
   }
+  & .footer {
+    background-color: rgb(177, 227, 247);
+    right: 129px;
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
+    @include for-size(phone) {
+      right: 90px;
+    }
+  }
+
 }
 .branch3propscssviajes {
   & .modalbackground {
@@ -616,8 +684,8 @@
       left: 90px;
     }
     @include for-size(phone) {
-      left: -210px;
-      top: 205px;
+      left: -166px;
+      top: -17px;
       z-index: 3;
     }
   }
@@ -627,49 +695,44 @@
       height: 448px;
     }
   }
+  & .colormodalprojects {
+    background-color: rgb(177, 227, 247);
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
   & .card {
     width: 100%;
     height: 275%;
     margin-top: 20px;
     margin-left: unset;
     @include for-size(desktop-only) {
+      margin-top: 10px;
       height: 300%;
     }
-  }
-  & .colormodalprojects {
-    background-color: rgb(177, 227, 247);
     @include for-size(phone) {
-      margin-bottom: 20px;
-    }
-  }
-  & .title {
-    font-size: 30px;
-    word-spacing: -1px;
-    @include for-size(desktop-only) {
-      font-size: 30px;
-      word-spacing: 3px;
-    }
-  }
-  & .body {
-    display: unset;
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 170px;
+      margin-top: 10px;
+      height: 287%;
     }
   }
   .img-modal {
     border: 1px solid #cac7c7dd;
-  }
-  & .footer {
-    background-color: rgb(177, 227, 247);
-    right: 129px;
-    @include for-size(desktop-only) {
-      bottom: 11px;
-      right: 150px;
-    }
   }
   & .roundicon {
     bottom: 57px;
@@ -679,8 +742,19 @@
       right: 21px;
     }
     @include for-size(phone) {
-      bottom: 17px;
-      right: 20px;
+      bottom: 23px;
+      right: 19px;
+    }
+  }
+  & .footer {
+    background-color: rgb(177, 227, 247);
+    right: 129px;
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
+    @include for-size(phone) {
+      right: 90px;
     }
   }
 }
@@ -692,8 +766,8 @@
       left: 90px;
     }
     @include for-size(phone) {
-      left: -210px;
-      top: 205px;
+      left: -166px;
+      top: -17px;
       z-index: 3;
     }
   }
@@ -703,49 +777,44 @@
       height: 448px;
     }
   }
+  & .colormodalprojects {
+    background-color: rgb(177, 227, 247);
+   }
+   & .body {
+    display: unset;
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
   & .card {
     width: 100%;
     height: 275%;
     margin-top: 20px;
     margin-left: unset;
     @include for-size(desktop-only) {
+      margin-top: 10px;
       height: 300%;
     }
-  }
-  & .colormodalprojects {
-    background-color: rgb(177, 227, 247);
     @include for-size(phone) {
-      margin-bottom: 20px;
-    }
-  }
-  & .title {
-    font-size: 30px;
-    word-spacing: -1px;
-    @include for-size(desktop-only) {
-      font-size: 30px;
-      word-spacing: 3px;
-    }
-  }
-  & .body {
-    display: unset;
-    @include for-size(desktop-only) {
-      font-size: 16px;
-      word-spacing: 3px;
-    }
-    @include for-size(phone) {
-      margin-bottom: 170px;
+      margin-top: 10px;
+      height: 185%;
     }
   }
   .img-modal {
     border: 1px solid #cac7c7dd;
-  }
-  & .footer {
-    background-color: rgb(177, 227, 247);
-    right: 129px;
-    @include for-size(desktop-only) {
-      bottom: 11px;
-      right: 150px;
-    }
   }
   & .roundicon {
     bottom: 57px;
@@ -755,8 +824,20 @@
       right: 21px;
     }
     @include for-size(phone) {
-      bottom: 17px;
-      right: 20px;
+      bottom: 23px;
+      right: 19px;
     }
   }
+  & .footer {
+    background-color: rgb(177, 227, 247);
+    right: 129px;
+    @include for-size(desktop-only) {
+      bottom: 11px;
+      right: 150px;
+    }
+    @include for-size(phone) {
+      right: 90px;
+    }
+  }
+
 }
