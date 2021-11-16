@@ -60,11 +60,15 @@
   display: flex;
   margin-left: 10px;
   margin-top: 10px;
+
   @include for-size(desktop-only) {
     margin-top: 20px;
    }
    @include for-size(phone) {
     display: unset;
+    overflow: auto; 
+    height: 200px;
+    width: 100px;
    }
 
   .backgroundimg {
@@ -72,6 +76,10 @@
     background-color: $aboutbcc4;
     margin-top: 25px;
     border-radius: 6px;
+    @include for-size(phone) {
+     height: 25px;
+     margin-top: 15px;
+     }
   }
   .text-modal-about {
     margin-left: 14px;
@@ -92,8 +100,7 @@
     border-radius: 150px;
     padding: 5px 0 0 7px;
     @include for-size(phone) {
-      width: 0;
-      height: 0;
+      display: none;
      }
   }
 }
