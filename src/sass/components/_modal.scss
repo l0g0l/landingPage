@@ -12,8 +12,7 @@
   box-shadow: 0 0 7px 1px #919090;
   @include for-size(phone) {
     top: -62px;
-}
-
+  }
 }
 .modalcontainer {
   width: 410px;
@@ -24,7 +23,7 @@
   @include for-size(phone) {
     width: 320px;
     height: 325px;
-}
+  }
 }
 .colormodalprojects {
   padding: 3px 13px 10px;
@@ -38,7 +37,7 @@
   font-size: 32px;
   @include for-size(phone) {
     font-size: 25px;
-}
+  }
 }
 .titleclosebtn {
   display: flex;
@@ -72,10 +71,12 @@
   }
 }
 .footer {
+  position: absolute;
+  bottom: 9px;
+  right: 86px;
   text-align: center;
   width: 136px;
   height: 27px;
-  margin: 0 auto;
   font-size: 11.8px;
   border-radius: 10px;
   padding: 8px 0;
@@ -129,10 +130,10 @@
   transform: rotateY(180deg);
   @include for-size(phone) {
     font-size: 11px;
-}
+  }
   p {
     margin-bottom: 5px;
-    padding: 6px;  
+    padding: 6px;
   }
 }
 .img-modal {
@@ -143,23 +144,27 @@
 //=========== Refactorización props  ==============
 .quizpropscss {
   & .modalbackground {
-    left: -480px ;
+    left: -480px;
     @include for-size(phone) {
-      left: -148px ;
-      top: -232px;
-  }
+      left: -148px;
+      top: -294px;
+    }
   }
   & .colormodalprojects {
     margin-bottom: 72px;
     @include for-size(phone) {
       margin-bottom: 28px;
-  }
+    }
   }
   & .body {
     margin-bottom: 15px;
+    @include for-size(phone) {
+      font-size: 11px;
+    }
   }
-  & .colormodalprojects, .footer {
-    background-color: rgb(252, 175, 203); 
+  & .colormodalprojects,
+  .footer {
+    background-color: rgb(252, 175, 203);
   }
   & .roundicon {
     bottom: 39px;
@@ -167,18 +172,17 @@
     @include for-size(phone) {
       bottom: 22px;
       right: 20px;
-  }
+    }
   }
 }
 .branch1propscsscoela {
   & .modalbackground {
-    left: 90px ;
+    left: 90px;
     @include for-size(phone) {
-      left: -215px ;
+      left: -215px;
       top: 150px;
       z-index: 3;
-     
-  }
+    }
   }
   & .card {
     width: 150%;
@@ -186,79 +190,77 @@
   }
   & .colormodalprojects {
     margin-bottom: 100px;
-    background-color:rgb(211, 206, 250) ;
+    background-color: rgb(211, 206, 250);
     @include for-size(phone) {
       margin-bottom: 24px;
-  }
+    }
   }
   & .body {
     margin-bottom: 105px;
     @include for-size(phone) {
       margin-bottom: 85px;
-  }
+    }
   }
   & .footer {
-    background-color:rgb(211, 206, 250) ;
+    background-color: rgb(211, 206, 250);
     @include for-size(phone) {
-   margin-right: 150px;
-  }
+      margin-right: 150px;
+    }
   }
   & .roundicon {
     bottom: 21px;
     right: 18px;
     @include for-size(phone) {
-    bottom: 31px;
-    right: 148px;
-     }
+      bottom: 31px;
+      right: 148px;
+    }
   }
 }
 .branch1propscssdw {
   & .modalbackground {
-    left: 90px ;
+    left: 90px;
     @include for-size(phone) {
-      left: -215px ;
+      left: -215px;
       top: 150px;
       z-index: 3;
-     
-  }
+    }
   }
   & .colormodalprojects {
     margin-bottom: 66px;
-    background-color:rgb(211, 206, 250);
+    background-color: rgb(211, 206, 250);
     @include for-size(phone) {
       margin-bottom: 24px;
-  }
+    }
   }
   & .body {
-    margin-bottom: 67px;   
+    margin-bottom: 67px;
     @include for-size(phone) {
       margin-bottom: 75px;
-  }
+    }
   }
   .back {
     @include for-size(phone) {
-  
-  }
+    }
   }
   & .footer {
-    background-color:rgb(211, 206, 250) ;
+    background-color: rgb(211, 206, 250);
   }
   & .roundicon {
     bottom: 21px;
     right: 18px;
   }
   & .img-modal {
-    border:1px solid #cac7c7dd ;
+    border: 1px solid #cac7c7dd;
   }
 }
 .branch2propscsshack {
   & .modalbackground {
-    left: -460px ;
+    left: -460px;
     @include for-size(phone) {
-      left: -165px ;
+      left: -165px;
       top: 210px;
-     z-index: 3;   
-  }
+      z-index: 3;
+    }
   }
   & .card {
     width: 100%;
@@ -268,7 +270,7 @@
   }
   & .colormodalprojects {
     margin-bottom: 30px;
-    background-color:rgb(201, 233, 150);
+    background-color: rgb(201, 233, 150);
   }
   & .body {
     margin-bottom: 208px;
@@ -278,7 +280,7 @@
     }
   }
   & .footer {
-    background-color:rgb(201, 233, 150) ;
+    background-color: rgb(201, 233, 150);
   }
   & .roundicon {
     bottom: 62px;
@@ -289,17 +291,17 @@
     }
   }
   & .img-modal {
-    border:1px solid #cac7c7dd ;
+    border: 1px solid #cac7c7dd;
   }
 }
 .branch2propscssnpm {
   & .modalbackground {
-    left: -460px ;
+    left: -460px;
     @include for-size(phone) {
-      left: -165px ;
+      left: -165px;
       top: 210px;
-     z-index: 3;   
-  }
+      z-index: 3;
+    }
   }
   & .card {
     width: 100%;
@@ -309,7 +311,7 @@
   }
   & .colormodalprojects {
     margin-bottom: 30px;
-    background-color:rgb(201, 233, 150);
+    background-color: rgb(201, 233, 150);
   }
   & .body {
     margin-bottom: 208px;
@@ -319,7 +321,7 @@
     display: unset;
   }
   & .footer {
-    background-color:rgb(201, 233, 150) ;
+    background-color: rgb(201, 233, 150);
   }
   & .roundicon {
     bottom: 62px;
@@ -332,12 +334,12 @@
 }
 .branch2propscssrepos {
   & .modalbackground {
-    left: -460px ;
+    left: -460px;
     @include for-size(phone) {
-      left: -165px ;
+      left: -165px;
       top: 210px;
-     z-index: 3;   
-  }
+      z-index: 3;
+    }
   }
   & .card {
     width: 100%;
@@ -347,7 +349,7 @@
   }
   & .colormodalprojects {
     margin-bottom: 20px;
-    background-color:rgb(201, 233, 150);
+    background-color: rgb(201, 233, 150);
   }
   & .body {
     margin-bottom: 210px;
@@ -357,7 +359,7 @@
     }
   }
   & .footer {
-    background-color:rgb(201, 233, 150) ;
+    background-color: rgb(201, 233, 150);
   }
   & .roundicon {
     bottom: 44px;
@@ -370,14 +372,14 @@
 }
 .branch3propscssblog {
   & .modalbackground {
-    left: 90px ;
+    left: 90px;
     @include for-size(phone) {
-      left: -210px ;
+      left: -210px;
       top: 205px;
-     z-index: 3;   
+      z-index: 3;
+    }
   }
-  }
-   & .card {
+  & .card {
     width: 100%;
     height: 450%;
     margin-top: 20px;
@@ -385,7 +387,7 @@
   }
   & .colormodalprojects {
     margin-bottom: 30px;
-    background-color:rgb(177, 227, 247);
+    background-color: rgb(177, 227, 247);
     @include for-size(phone) {
       margin-bottom: 20px;
     }
@@ -408,7 +410,7 @@
     border: 1px solid #cac7c7dd;
   }
   & .footer {
-    background-color:rgb(177, 227, 247) ;
+    background-color: rgb(177, 227, 247);
   }
   & .roundicon {
     bottom: 37px;
@@ -421,92 +423,92 @@
 }
 .branch3propscssviajes {
   & .modalbackground {
-    left: 90px ;
+    left: 90px;
     @include for-size(phone) {
-      left: -210px ;
+      left: -210px;
       top: 205px;
-     z-index: 3;   
-  }
+      z-index: 3;
+    }
   }
   & .card {
-   width: 100%;
-   height: 200%;
-   margin-top: 20px;
-   margin-left: unset;
- }
- & .colormodalprojects {
-   margin-bottom: 30px;
-   background-color:rgb(177, 227, 247);
-   @include for-size(phone) {
-    margin-bottom: 20px;
+    width: 100%;
+    height: 200%;
+    margin-top: 20px;
+    margin-left: unset;
   }
- }
- & .title {
-   font-size: 27px;
- }
- & .body {
-   margin-bottom: 210px;
-   display: unset;
-   @include for-size(phone) {
-    margin-bottom: 170px;
+  & .colormodalprojects {
+    margin-bottom: 30px;
+    background-color: rgb(177, 227, 247);
+    @include for-size(phone) {
+      margin-bottom: 20px;
+    }
   }
- }
- .img-modal {
-   border: 1px solid #cac7c7dd;
- }
- & .footer {
-   background-color:rgb(177, 227, 247) ;
- }
- & .roundicon {
-   bottom: 37px;
-   right: 18px;
-   @include for-size(phone) {
-    bottom: 17px;
-    right: 20px;
+  & .title {
+    font-size: 27px;
   }
- }
+  & .body {
+    margin-bottom: 210px;
+    display: unset;
+    @include for-size(phone) {
+      margin-bottom: 170px;
+    }
+  }
+  .img-modal {
+    border: 1px solid #cac7c7dd;
+  }
+  & .footer {
+    background-color: rgb(177, 227, 247);
+  }
+  & .roundicon {
+    bottom: 37px;
+    right: 18px;
+    @include for-size(phone) {
+      bottom: 17px;
+      right: 20px;
+    }
+  }
 }
 .branch3propscsscitas {
   & .modalbackground {
-    left: 90px ;
+    left: 90px;
     @include for-size(phone) {
-      left: -210px ;
+      left: -210px;
       top: 205px;
-     z-index: 3;   
-  }
+      z-index: 3;
+    }
   }
   & .card {
-   width: 100%;
-   height: 200%;
-   margin-top: 20px;
-   margin-left: unset;
- }
- & .colormodalprojects {
-   margin-bottom: 30px;
-   background-color:rgb(177, 227, 247);
-   @include for-size(phone) {
-    margin-bottom: 20px;
+    width: 100%;
+    height: 200%;
+    margin-top: 20px;
+    margin-left: unset;
   }
- }
- & .title {
-   font-size: 27px;
- }
- & .body {
-   margin-bottom: 192px;
-   display: unset;
-   @include for-size(phone) {
-    margin-bottom: 170px;
+  & .colormodalprojects {
+    margin-bottom: 30px;
+    background-color: rgb(177, 227, 247);
+    @include for-size(phone) {
+      margin-bottom: 20px;
+    }
   }
-}
- & .footer {
-   background-color:rgb(177, 227, 247) ;
- }
- & .roundicon {
-   bottom: 37px;
-   right: 18px;
-   @include for-size(phone) {
-    bottom: 17px;
-    right: 20px;
+  & .title {
+    font-size: 27px;
   }
- }
+  & .body {
+    margin-bottom: 192px;
+    display: unset;
+    @include for-size(phone) {
+      margin-bottom: 170px;
+    }
+  }
+  & .footer {
+    background-color: rgb(177, 227, 247);
+  }
+  & .roundicon {
+    bottom: 37px;
+    right: 18px;
+    @include for-size(phone) {
+      bottom: 17px;
+      right: 20px;
+    }
+  }
 }
