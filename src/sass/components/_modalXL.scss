@@ -144,7 +144,7 @@
       word-spacing: 3px;
       letter-spacing: 1px;
       line-height: 22px;
-      margin-left: 18px;
+      margin-left: 12px;
       @include for-size(desktop-only) {
         font-size: 18px !important;
         line-height: 35px !important;
@@ -154,10 +154,9 @@
       @include for-size(phone) {
         margin-top: 30px !important;
         font-size: 13px !important;
-        text-align: justify;
+        text-align: left;
         margin-bottom: 30px;
-        word-spacing: -3.6px;
-      }
+     
     }
   }
   .logos {
