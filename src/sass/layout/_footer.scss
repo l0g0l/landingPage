@@ -7,7 +7,9 @@
   bottom: -1118px;
   left: 91px;
   height: $footer;
-  font-size: 12px;
+  font-size: $fontfooter;
+  word-spacing: 3px;
+  letter-spacing: 1px;
   margin-top: 70px;
   background: $blacksecondary;
   -webkit-box-shadow: 6px 6px 7px $neumorphimsprimary,
@@ -15,6 +17,9 @@
   box-shadow: 6px 6px 7px $neumorphimsprimary, -1px -6px 7px $neumorphimsprimary;
   p {
     margin-right: 27px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
     @include for-size(phone) {
       margin-right: unset;
       text-align: center;

@@ -49,6 +49,10 @@
   letter-spacing: 1px;
   margin-bottom: 14px;
   cursor: pointer;
+  @include for-size(desktop-only) {
+    font-size: 35px;
+    letter-spacing: 1px;  
+  }
   @include for-size(phone) {
     font-size: 13px;
     margin-bottom: 0;
