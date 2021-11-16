@@ -29,7 +29,7 @@
   padding: 3px 13px 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .modalcontainer .title {
   display: block;
@@ -59,7 +59,7 @@
   font-size: 14px;
   word-spacing: 3px;
   text-align: left;
-  margin-bottom: 8px;
+  // margin-bottom: 8px;
   padding: 0 20px;
   line-height: 18px;
 }
@@ -103,10 +103,6 @@
   perspective: 1000px;
   margin-left: 12px;
   cursor: pointer;
-  @include for-size(phone) {
-    width: 300%;
-    height: 100%;
-  }
 }
 .card:hover {
   transform: rotateY(180deg);
@@ -166,8 +162,14 @@
     @include for-size(desktop-only) {
       margin-bottom: 35px;
     }
+   }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
     @include for-size(phone) {
-      margin-bottom: 28px;
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
     }
   }
   & .body {
@@ -177,13 +179,16 @@
       word-spacing: 3px;
     }
     @include for-size(phone) {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
   & .card {
     height: 180%;
     @include for-size(desktop-only) {
       height: 200%;
+    }
+    @include for-size(phone) {
+      height: 125%;
     }
   }
   & .colormodalprojects,
@@ -202,6 +207,9 @@
     right: 129px;
     @include for-size(desktop-only) {
       right: 155px;
+    }
+    @include for-size(phone) {
+      right: 90px;
     }
   }
 }
@@ -282,8 +290,8 @@
       left: 106px;
     }
     @include for-size(phone) {
-      left: -215px;
-      top: 150px;
+      left: -166px;
+      top: -15px;
       z-index: 3;
     }
   }
@@ -304,7 +312,7 @@
       margin-bottom: 30px;
     }
     @include for-size(phone) {
-      margin-bottom: 24px;
+      margin-bottom: 15px;
     }
   }
   & .body {
@@ -312,9 +320,9 @@
       font-size: 16px;
       word-spacing: 3px;
     }
-    @include for-size(phone) {
-      margin-bottom: 75px;
-    }
+     @include for-size(phone) {
+       font-size: 13px;
+     }
   }
   & .img-modal {
     border: 1px solid #cac7c7dd;
@@ -322,12 +330,18 @@
   & .roundicon {
     bottom: 39px;
     right: 18px;
+    @include for-size(phone) {
+      bottom: 35px;
+    }
   }
   & .footer {
     background-color: rgb(211, 206, 250);
     right: 129px;
     @include for-size(desktop-only) {
       right: 155px;
+    }
+    @include for-size(phone) {
+      right: 84px;
     }
   }
 }
