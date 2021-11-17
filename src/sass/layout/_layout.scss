@@ -357,7 +357,7 @@
     @include for-size(phone) {
       left: 70px;
       width: 100px;
-      top: 5px;
+      top: -15px;
     }
     @include for-size(xsphone) {
       left: 41px;
@@ -383,7 +383,7 @@
     top: 3px;
     @include for-size(phone) {
       right: 66px;
-      top: 3px;
+      top: -8px;
     }
     @include for-size(xsphone) {
       right: 42px;
@@ -409,7 +409,7 @@
     @include for-size(phone) {
       width: 100px;
       left: 67px;
-      top: 8px;
+      top: -7px;
     }
     @include for-size(xsphone) {
       left: 44px;

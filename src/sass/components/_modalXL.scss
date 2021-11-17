@@ -60,7 +60,7 @@
   height: 410px;
   overflow: auto;
   @include for-size(phone) {
-    height: 500px;
+    height: 625px;
     overflow: auto;
   }
   @include for-size(xsphone) {
