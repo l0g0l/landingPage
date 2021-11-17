@@ -64,7 +64,7 @@ box-shadow:
 //=========== Breakpoints ==============
 @mixin for-size($size) {
   @if $size == xsphone {                                              // phone-xs
-    @media (max-width: 375px) { @content; }
+    @media (max-width: 320px) { @content; }
   } @else if $size == phone {                                         // phone-only
     @media (max-width: 690px) { @content; }
   } @else if $size == no-phone {                                      // tablet-portrait-up

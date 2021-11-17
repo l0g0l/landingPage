@@ -29,8 +29,8 @@
     height: 325px;
   }
   @include for-size(xsphone) {
-    width: 290px;
-    height: 288px;
+    width: 286px;
+    height: 280px;
   }
 }
 .colormodalprojects {
@@ -45,7 +45,7 @@
   color: $grey-text;
   font-size: 32px;
   word-spacing: 3px;
- }
+}
 .titleclosebtn {
   display: flex;
   justify-content: flex-end;
@@ -137,9 +137,19 @@
   @include for-size(phone) {
     font-size: 11px;
   }
+  @include for-size(xsphone) {
+    font-size: 8px;
+    word-spacing: -2px;
+  }
   p {
     margin-bottom: 5px;
     padding: 6px;
+    @include for-size(xsphone) {
+      padding: 3px;
+      margin-bottom: -4px;
+      line-height: 12px;
+      letter-spacing: 0.5px;
+    }
   }
 }
 .img-modal {
@@ -160,12 +170,13 @@
       top: -270px;
     }
     @include for-size(xsphone) {
-      left: -133px;
+      left: -158px;
+      top: -279px;
     }
   }
-   & .colormodalprojects {
+  & .colormodalprojects {
     background-color: rgb(252, 175, 203);
-   }
+  }
   & .title {
     font-size: 30px;
     word-spacing: -1px;
@@ -189,7 +200,7 @@
   }
   & .body {
     word-spacing: 4px;
-      @include for-size(desktop-only) {
+    @include for-size(desktop-only) {
       font-size: 16px;
     }
     @include for-size(phone) {
@@ -234,13 +245,17 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -151px;
+      left: -176px;
+      top: -18px;
     }
   }
   & .colormodalprojects {
     background-color: rgb(211, 206, 250);
-   }
-   & .title {
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
+    }
+  }
+  & .title {
     font-size: 30px;
     word-spacing: -1px;
     @include for-size(phone) {
@@ -260,17 +275,16 @@
     @include for-size(xsphone) {
       height: 85%;
     }
-    
   }
-   & .body {
+  & .body {
     word-spacing: 4px;
-     @include for-size(desktop-only) {
+    @include for-size(desktop-only) {
       font-size: 16px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
-     @include for-size(xsphone) {
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
       font-size: 11.5px;
     }
   }
@@ -314,14 +328,21 @@
       top: -15px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -176px;
+      top: -18px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(211, 206, 250);
     @include for-size(desktop-only) {
       margin-bottom: 30px;
     }
-   }
-   & .title {
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
+    }
+  }
+  & .title {
     font-size: 30px;
     word-spacing: -1px;
     @include for-size(phone) {
@@ -339,17 +360,21 @@
     @include for-size(phone) {
       height: 242%;
     }
+    @include for-size(xsphone) {
+      height: 211%;
+    }
   }
-
   & .body {
     word-spacing: 4px;
-     @include for-size(desktop-only) {
+    @include for-size(desktop-only) {
       font-size: 16px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-       
-     }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+    }
   }
   & .roundicon {
     bottom: 35px;
@@ -362,6 +387,10 @@
       bottom: 25px;
       right: 137px;
     }
+    @include for-size(xsphone) {
+      bottom: 18px;
+      right: 118px;
+    }
   }
   & .footer {
     background-color: rgb(211, 206, 250);
@@ -373,7 +402,11 @@
     }
     @include for-size(phone) {
       bottom: 80px;
-    right: 153px;
+      right: 153px;
+    }
+    @include for-size(phone) {
+      bottom: 73px;
+      right: 130px;
     }
   }
 }
@@ -389,19 +422,15 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -127px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
@@ -425,13 +454,30 @@
       margin-top: 10px;
       height: 184%;
     }
+    @include for-size(phone) {
+      margin-top: 10px;
+      height: 184%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+      line-height: 14px;
+    }
   }
   & .roundicon {
     bottom: 64px;
     right: 18px;
     @include for-size(desktop-only) {
       bottom: 55px;
-     
     }
     @include for-size(phone) {
       bottom: 23px;
@@ -448,6 +494,9 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
 }
 .branch2propscssnpm {
@@ -462,19 +511,15 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -127px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
@@ -498,6 +543,20 @@
       margin-top: 10px;
       height: 284%;
     }
+    @include for-size(xsphone) {
+      margin-top: 10px;
+      height: 217%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
   }
   & .img-modal {
     border: 1px solid #cac7c7dd;
@@ -520,8 +579,10 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
-
 }
 .branch2propscsshack {
   & .modalbackground {
@@ -535,19 +596,15 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -127px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(201, 233, 150);
-  }
-  & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
@@ -571,6 +628,24 @@
       margin-top: 10px;
       height: 270%;
     }
+    @include for-size(xsphone) {
+      margin-top: 10px;
+      height: 280%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+      line-height: 15px;
+    }
   }
   & .img-modal {
     border: 1px solid #cac7c7dd;
@@ -593,6 +668,9 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
 }
 .branch3propscssblog {
@@ -607,25 +685,24 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -176px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(177, 227, 247);
-  }
-  & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
     word-spacing: -1px;
     @include for-size(phone) {
       font-size: 23px;
+    }
+    @include for-size(xsphone) {
+      font-size: 20px;
     }
   }
   & .card {
@@ -640,6 +717,20 @@
     @include for-size(phone) {
       margin-top: 10px;
       height: 526%;
+    }
+    @include for-size(xsphone) {
+      margin-top: 10px;
+      height: 432%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
     }
   }
   .img-modal {
@@ -667,8 +758,10 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
-
 }
 .branch3propscssviajes {
   & .modalbackground {
@@ -682,19 +775,15 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -176px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(177, 227, 247);
-  }
-  & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
@@ -718,6 +807,24 @@
       margin-top: 10px;
       height: 287%;
     }
+    @include for-size(xsphone) {
+      margin-top: 10px;
+      height: 173%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+      line-height: 15px;
+    }
   }
   .img-modal {
     border: 1px solid #cac7c7dd;
@@ -744,6 +851,9 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
 }
 .branch3propscsscitas {
@@ -758,19 +868,15 @@
       top: -17px;
       z-index: 3;
     }
+    @include for-size(xsphone) {
+      left: -176px;
+    }
   }
   & .colormodalprojects {
     background-color: rgb(177, 227, 247);
-   }
-   & .body {
-    display: unset;
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
+    @include for-size(xsphone) {
+      margin-bottom: 10px;
     }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
   }
   & .title {
     font-size: 30px;
@@ -794,6 +900,24 @@
       margin-top: 10px;
       height: 185%;
     }
+    @include for-size(xsphone) {
+      margin-top: 10px;
+      height: 173%;
+    }
+  }
+  & .body {
+    display: unset;
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+      line-height: 15px;
+    }
   }
   .img-modal {
     border: 1px solid #cac7c7dd;
@@ -820,6 +944,8 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 78px;
+    }
   }
-
 }

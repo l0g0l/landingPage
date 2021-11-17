@@ -60,7 +60,11 @@
   height: 410px;
   overflow: auto;
   @include for-size(phone) {
-    height: 640px;
+    height: 500px;
+    overflow: auto;
+  }
+  @include for-size(xsphone) {
+    height: 470px;
     overflow: auto;
   }
   .container-img-txt {
@@ -155,8 +159,12 @@
       @include for-size(phone) {
         margin-top: 30px !important;
         font-size: 13px !important;
-        text-align: l;
+        text-align: left;
         margin-bottom: 30px;
+      }
+      @include for-size(xsphone) {
+        margin-top: 0px !important;
+        text-align: left;
       }
     }
   }
@@ -169,14 +177,16 @@
       width: 100%;
       margin-left: 6px;
     }
+    @include for-size(xsphone) {
+      width: 105%;
+      margin-left: -7px;
+    }
   }
   .logos-img {
     width: inherit;
     border-radius: 6px;
   }
-  div,
-  .cv,
-  a {
+  div, .cv, a {
     color: #db7093;
   }
   .cv {
@@ -191,6 +201,10 @@
     }
     @include for-size(phone) {
       right: 114px;
+    }
+    @include for-size(xsphone) {
+      bottom: 35px;
+      right: 85px;
     }
   }
 }
