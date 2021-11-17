@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 0 40px 60px 140px;
   @include for-size(phone) {
-    margin: -10px 20px 60px 0
+    margin: -10px 20px 60px 0;
   }
 }
 //=========== Contacto ==============
@@ -37,10 +37,11 @@
     margin-top: 30px;
   }
   @include for-size(xsphone) {
-    margin-left: 284px;
+    margin-left: 225px;
+    margin-right: 20px;
   }
   .email-img {
-     width: 27px;
+    width: 27px;
   }
 }
 
@@ -88,21 +89,24 @@
       font-size: 85px;
     }
     @include for-size(phone) {
-    font-size: 39px;
-    text-align: center; 
+      font-size: 39px;
+      text-align: center;
+    }
+    @include for-size(xsphone) {
+      font-size: 34px;
+    }
   }
-  @include for-size(xsphone) {
-    font-size: 37px;
+  @include for-size(desktop-only) {
+    font-size: 48px;
   }
-}
-@include for-size(desktop-only) {
-  font-size: 48px;
-}
   @include for-size(phone) {
     font-size: 19px;
     text-align: center;
-    margin-right: 16px; 
-}
+    margin-right: 16px;
+  }
+  @include for-size(xsphone) {
+    margin-right: 18px;
+  }
 }
 //=========== Animación web developer ==============
 .container-web-developer {
@@ -112,7 +116,11 @@
   @include for-size(phone) {
     justify-content: center;
     margin-bottom: 86px;
-}
+  }
+  @include for-size(xsphone) {
+    justify-content: center;
+    margin-bottom: 86px;
+  }
   .web {
     -moz-animation: textname1 2s ease-out;
     -webkit-animation: textname1 2s ease-out;
@@ -120,7 +128,7 @@
     margin-right: 20px;
     @include for-size(phone) {
       margin-right: 8px;
-  }
+    }
   }
   @keyframes textname1 {
     from {
@@ -154,6 +162,7 @@
   @include for-size(phone) {
     margin-left: 75px;
   }
+
   //=========== Texto cómo navegar ==============
   .text-home {
     width: 250px;
@@ -180,8 +189,11 @@
       margin-top: unset;
     }
     @include for-size(xsphone) {
+      width: 175px;
+      height: 84px;
+      font-size: 11px;
       margin-left: 12px;
-      
+      padding: 10px 18px 18px 18px;
     }
   }
 }
@@ -249,7 +261,7 @@
     right: 42px;
     // display: none;
     color: $white;
-      @include for-size(phone) {
+    @include for-size(phone) {
       font-size: 13px;
       word-spacing: -3px;
     }
@@ -325,8 +337,11 @@
       top: -308px;
       color: #fff;
       word-spacing: 3px;
-      letter-spacing: 1px
-  }
+      letter-spacing: 1px;
+    }
+    @include for-size(xsphone) {
+      width: 127px;
+    }
   }
 }
 .miniballpropsbranch1 {
@@ -344,9 +359,9 @@
       top: 5px;
     }
     @include for-size(xsphone) {
-      left: 60px;
-      width: 100px;
-      top: -5px;
+      left: 41px;
+      width: 96px;
+      top: -34px;
     }
   }
 }
@@ -366,10 +381,13 @@
     right: 75px;
     top: 3px;
     @include for-size(phone) {
-    right: 66px;
-    top: 3px;
-    
-  }
+      right: 66px;
+      top: 3px;
+    }
+    @include for-size(xsphone) {
+      right: 42px;
+      top: -7px;
+    }
   }
 }
 .miniballpropsbranch2_2 {
@@ -390,8 +408,13 @@
     @include for-size(phone) {
       width: 100px;
       left: 67px;
-     top: 8px;
-  }
+      top: 8px;
+    }
+    @include for-size(xsphone) {
+      left: 44px;
+      width: 96px;
+      top: -23px;
+    }
   }
 }
 .miniballpropsbranch3_3 {
@@ -410,12 +433,9 @@
     left: 32px;
     cursor: pointer;
     background: rgb(203, 201, 231);
-    box-shadow:
-    0 0 6px rgb(78, 73, 126), 
-    0 0 6px rgb(111, 105, 172), 
-    0 0 6px rgb(111, 105, 172), 
-    0 0 6px rgb(111, 105, 172),
-    0 0 12px rgb(170, 166, 209);
+    box-shadow: 0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172),
+      0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),
+      0 0 12px rgb(170, 166, 209);
   }
 }
 .branch1propscoela {
@@ -426,12 +446,9 @@
     left: 32px;
     cursor: pointer;
     background: rgb(203, 201, 231);
-    box-shadow:
-    0 0 6px rgb(78, 73, 126), 
-    0 0 6px rgb(111, 105, 172), 
-    0 0 6px rgb(111, 105, 172), 
-    0 0 6px rgb(111, 105, 172),
-    0 0 12px rgb(170, 166, 209);
+    box-shadow: 0 0 6px rgb(78, 73, 126), 0 0 6px rgb(111, 105, 172),
+      0 0 6px rgb(111, 105, 172), 0 0 6px rgb(111, 105, 172),
+      0 0 12px rgb(170, 166, 209);
   }
 }
 .branch2propshack {
@@ -442,12 +459,9 @@
     left: -22px;
     cursor: pointer;
     background: rgb(231, 252, 197);
-    box-shadow:
-    0 0 6px rgb(70, 110, 6), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93),
-    0 0 12px rgb(190, 250, 93);
+    box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+      0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),
+      0 0 12px rgb(190, 250, 93);
   }
 }
 .branch2propsnpm {
@@ -458,12 +472,9 @@
     left: -22px;
     cursor: pointer;
     background: rgb(231, 252, 197);
-    box-shadow:
-    0 0 6px rgb(70, 110, 6), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93),
-    0 0 12px rgb(190, 250, 93);
+    box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+      0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),
+      0 0 12px rgb(190, 250, 93);
   }
 }
 .branch2propsrepos {
@@ -474,12 +485,9 @@
     left: -22px;
     cursor: pointer;
     background: rgb(231, 252, 197);
-    box-shadow:
-    0 0 6px rgb(70, 110, 6), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93), 
-    0 0 6px rgb(190, 250, 93),
-    0 0 12px rgb(190, 250, 93);
+    box-shadow: 0 0 6px rgb(70, 110, 6), 0 0 6px rgb(190, 250, 93),
+      0 0 6px rgb(190, 250, 93), 0 0 6px rgb(190, 250, 93),
+      0 0 12px rgb(190, 250, 93);
   }
 }
 .branch3propscitas {
@@ -490,12 +498,9 @@
     left: 32px;
     cursor: pointer;
     background: rgb(210, 240, 252);
-    box-shadow:
-    0 0 6px  rgb(53, 108, 129), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250),
-    0 0 12px  rgb(106, 209, 250);
+    box-shadow: 0 0 6px rgb(53, 108, 129), 0 0 6px rgb(106, 209, 250),
+      0 0 6px rgb(106, 209, 250), 0 0 6px rgb(106, 209, 250),
+      0 0 12px rgb(106, 209, 250);
   }
 }
 .branch3propsviajes {
@@ -506,12 +511,9 @@
     left: 32px;
     cursor: pointer;
     background: rgb(210, 240, 252);
-    box-shadow:
-    0 0 6px  rgb(53, 108, 129), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250),
-    0 0 12px  rgb(106, 209, 250);
+    box-shadow: 0 0 6px rgb(53, 108, 129), 0 0 6px rgb(106, 209, 250),
+      0 0 6px rgb(106, 209, 250), 0 0 6px rgb(106, 209, 250),
+      0 0 12px rgb(106, 209, 250);
   }
 }
 .branch3propsblog {
@@ -522,11 +524,8 @@
     left: 32px;
     cursor: pointer;
     background: rgb(210, 240, 252);
-    box-shadow:
-    0 0 6px  rgb(53, 108, 129), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250), 
-    0 0 6px  rgb(106, 209, 250),
-    0 0 12px  rgb(106, 209, 250);
+    box-shadow: 0 0 6px rgb(53, 108, 129), 0 0 6px rgb(106, 209, 250),
+      0 0 6px rgb(106, 209, 250), 0 0 6px rgb(106, 209, 250),
+      0 0 12px rgb(106, 209, 250);
   }
 }

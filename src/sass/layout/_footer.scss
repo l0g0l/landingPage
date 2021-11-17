@@ -34,4 +34,8 @@
     width: 81.8%;
     left: 68px;
  }
+ @include for-size(xsphone) {
+  width: 76.8%;
+
+}
 } 
