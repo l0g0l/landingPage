@@ -20,9 +20,17 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  @include for-size(desktop-only) {
+    width: 450px;
+    height: 448px;
+  }
   @include for-size(phone) {
     width: 320px;
     height: 325px;
+  }
+  @include for-size(xsphone) {
+    width: 290px;
+    height: 288px;
   }
 }
 .colormodalprojects {
@@ -37,10 +45,7 @@
   color: $grey-text;
   font-size: 32px;
   word-spacing: 3px;
-  @include for-size(phone) {
-    font-size: 25px;
-  }
-}
+ }
 .titleclosebtn {
   display: flex;
   justify-content: flex-end;
@@ -82,6 +87,10 @@
   font-size: 11.8px;
   border-radius: 10px;
   line-height: 27px;
+  @include for-size(xsphone) {
+    height: 24px;
+    line-height: 24px;
+  }
   .linkproject {
     color: $grey-text;
     &:hover {
@@ -150,14 +159,11 @@
       left: -148px;
       top: -270px;
     }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
+    @include for-size(xsphone) {
+      left: -133px;
     }
   }
-  & .colormodalprojects {
+   & .colormodalprojects {
     background-color: rgb(252, 175, 203);
    }
   & .title {
@@ -177,6 +183,9 @@
     @include for-size(phone) {
       height: 125%;
     }
+    @include for-size(xsphone) {
+      height: 95%;
+    }
   }
   & .body {
     word-spacing: 4px;
@@ -185,6 +194,9 @@
     }
     @include for-size(phone) {
       font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
     }
   }
   & .roundicon {
@@ -204,6 +216,9 @@
     @include for-size(phone) {
       right: 90px;
     }
+    @include for-size(xsphone) {
+      right: 85px;
+    }
   }
 }
 .branch1propscssdw {
@@ -218,26 +233,14 @@
       top: -15px;
       z-index: 3;
     }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
+    @include for-size(xsphone) {
+      left: -151px;
     }
   }
   & .colormodalprojects {
     background-color: rgb(211, 206, 250);
    }
-   & .body {
-    word-spacing: 4px;
-     @include for-size(desktop-only) {
-      font-size: 16px;
-    }
-     @include for-size(phone) {
-       font-size: 12px;
-     }
-  }
-  & .title {
+   & .title {
     font-size: 30px;
     word-spacing: -1px;
     @include for-size(phone) {
@@ -254,8 +257,23 @@
     @include for-size(phone) {
       height: 105%;
     }
+    @include for-size(xsphone) {
+      height: 85%;
+    }
+    
   }
-
+   & .body {
+    word-spacing: 4px;
+     @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+     @include for-size(phone) {
+       font-size: 12px;
+     }
+     @include for-size(xsphone) {
+      font-size: 11.5px;
+    }
+  }
   & .img-modal {
     border: 1px solid #cac7c7dd;
   }
@@ -266,6 +284,9 @@
       bottom: 35px;
       right: 20px;
     }
+    @include for-size(xsphone) {
+      bottom: 33px;
+    }
   }
   & .footer {
     background-color: rgb(211, 206, 250);
@@ -275,6 +296,9 @@
     }
     @include for-size(phone) {
       right: 90px;
+    }
+    @include for-size(xsphone) {
+      right: 85px;
     }
   }
 }
@@ -289,12 +313,6 @@
       left: -166px;
       top: -15px;
       z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
     }
   }
   & .colormodalprojects {
@@ -372,12 +390,6 @@
       z-index: 3;
     }
   }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
-    }
-  }
   & .colormodalprojects {
     background-color: rgb(201, 233, 150);
   }
@@ -449,12 +461,6 @@
       left: -115px;
       top: -17px;
       z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
     }
   }
   & .colormodalprojects {
@@ -530,12 +536,6 @@
       z-index: 3;
     }
   }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
-    }
-  }
   & .colormodalprojects {
     background-color: rgb(201, 233, 150);
   }
@@ -606,12 +606,6 @@
       left: -166px;
       top: -17px;
       z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
     }
   }
   & .colormodalprojects {
@@ -689,12 +683,6 @@
       z-index: 3;
     }
   }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
-    }
-  }
   & .colormodalprojects {
     background-color: rgb(177, 227, 247);
   }
@@ -769,12 +757,6 @@
       left: -166px;
       top: -17px;
       z-index: 3;
-    }
-  }
-  & .modalcontainer {
-    @include for-size(desktop-only) {
-      width: 450px;
-      height: 448px;
     }
   }
   & .colormodalprojects {

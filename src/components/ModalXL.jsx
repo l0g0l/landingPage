@@ -36,7 +36,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
         }}
       >
         {/*según el nombre del elemento del menú (aboutmenuname), pinta un contenido*/}
-        <div className="txt">
+        
           {aboutmenuname
             ?
             <>
@@ -73,7 +73,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
             </>
 
           }
-        </div>
+    
 
         <button onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
 

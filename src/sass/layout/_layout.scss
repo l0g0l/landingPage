@@ -147,7 +147,7 @@
 .container-myname-txt {
   display: flex;
   flex-direction: column;
-  margin-left: 330px;
+  margin-left: 261px;
   @include for-size(desktop-only) {
     margin-left: 602px;
   }
@@ -247,12 +247,16 @@
     letter-spacing: 1px;
     top: -8px;
     right: 42px;
-    display: none;
+    // display: none;
     color: $white;
       @include for-size(phone) {
       font-size: 13px;
       word-spacing: -3px;
-  }
+    }
+    @include for-size(xsphone) {
+      font-size: 12px;
+      word-spacing: 1px;
+    }
   }
   &:hover .text {
     display: block;
@@ -338,7 +342,12 @@
       left: 70px;
       width: 100px;
       top: 5px;
-  }
+    }
+    @include for-size(xsphone) {
+      left: 60px;
+      width: 100px;
+      top: -5px;
+    }
   }
 }
 .miniballpropsbranch1_1 {
