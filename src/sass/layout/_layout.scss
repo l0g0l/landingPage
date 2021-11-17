@@ -260,7 +260,7 @@
     letter-spacing: 1px;
     top: -8px;
     right: 42px;
-    display: none;
+    // display: none;
     color: $white;
     @include for-size(phone) {
       font-size: 13px;
@@ -333,8 +333,8 @@
     left: 60px;
     top: 0;
     @include for-size(phone) {
-      width: 120px;
-      left: -41px;
+      width: 135px;
+      left: -58px;
       top: -308px;
       color: #fff;
       word-spacing: 3px;
@@ -355,7 +355,7 @@
     left: 62px;
     top: 0;
     @include for-size(phone) {
-      left: 70px;
+      left: 62px;
       width: 100px;
       top: -15px;
     }
