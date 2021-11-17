@@ -29,7 +29,7 @@
     height: 325px;
   }
   @include for-size(xsphone) {
-    width: 286px;
+    width: 292px;
     height: 280px;
   }
 }
@@ -170,7 +170,7 @@
       top: -270px;
     }
     @include for-size(xsphone) {
-      left: -158px;
+      left: -162px;
       top: -279px;
     }
   }
@@ -246,7 +246,7 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -176px;
+      left: -181px;
       top: -18px;
     }
   }
@@ -287,6 +287,7 @@
     }
     @include for-size(xsphone) {
       font-size: 11.5px;
+      word-spacing: -1px;
     }
   }
   & .img-modal {
@@ -330,7 +331,7 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -176px;
+      left: -181px;
       top: -18px;
     }
   }
@@ -403,9 +404,9 @@
     }
     @include for-size(phone) {
       bottom: 73px;
-      right: 153px;
+      right: 155px;
     }
-    @include for-size(phone) {
+    @include for-size(xsphone) {
       bottom: 73px;
       right: 130px;
     }
@@ -424,7 +425,7 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -127px;
+      left: -131px;
     }
   }
   & .colormodalprojects {
@@ -513,7 +514,7 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -127px;
+      left: -131px;
     }
   }
   & .colormodalprojects {
@@ -598,7 +599,7 @@
       z-index: 3;
     }
     @include for-size(xsphone) {
-      left: -127px;
+      left: -131px;
     }
   }
   & .colormodalprojects {
