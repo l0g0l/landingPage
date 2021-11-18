@@ -11,6 +11,9 @@
     <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/landingpage/badge" alt="Codefactor Grade">
 </p>
+    <p align="center">
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_landingPage&metric=alert_status" alt="SonarCoud Grade">
+</p>
 
 <p align="center">
 <img src="/public/accesibilidadlanding.png" alt="Accesibility Rate" width="400"></p>
