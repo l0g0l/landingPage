@@ -69,9 +69,9 @@ const Layout = () => {
                     
              
 
-                <section className="container-tooltip-language ">
+                <section aria-label="Change Language" className="container-tooltip-language ">
                     <button className="changelanguage" onClick={() => onChangeLanguage()}>
-                        <img className="img-changelanguage" src={idioma1} alt="icono cambio de idioma" />
+                        <img className="img-changelanguage" src={idioma1} alt="icon change language" />
                         {language === 'en'
                             ?
 

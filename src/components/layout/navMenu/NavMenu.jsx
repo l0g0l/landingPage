@@ -49,20 +49,20 @@ const NavMenu = () => {
                         {t('navmenu.about') === 'Sobre mi'
                             ?
                             <>
-                                <div className="aboutword">
+                                <div className="aboutword" role="button" tabindex="0">
                                     <p onClick={() => setIsOpenAbout(true)} style={{ marginLeft: '80px' }} >{t('navmenu.about')}</p>
                                 </div>
                                 <div className="abouticon">
-                                    <img src={woman} alt="icono about me" className="woman" title="Sobre mi" onClick={() => setIsOpenAbout(true)} />
+                                    <img src={woman} alt="icon about me" className="woman" title="Sobre mi" onClick={() => setIsOpenAbout(true)} />
                                 </div>
                             </>
                             :
                             <>
-                                <div className="aboutword">
+                                <div className="aboutword" role="button" tabindex="0">
                                     <p onClick={() => setIsOpenAbout(true)} >{t('navmenu.about')}</p>
                                 </div>
                                 <div className="abouticon">
-                                    <img src={woman} alt="icono about me" className="woman" title="About" onClick={() => setIsOpenAbout(true)} />
+                                    <img src={woman} alt="icon about me" className="woman" title="About" onClick={() => setIsOpenAbout(true)} />
                                 </div>
                             </>
                         }
@@ -80,20 +80,20 @@ const NavMenu = () => {
                         {t('navmenu.skills') === 'Habilidades'
                             ?
                             <>
-                                <div className="skillsword">
+                                <div className="skillsword" role="button" tabindex="0">
                                     <p onClick={() => setIsOpenSkills(true)} style={{ marginLeft: '80px' }} >{t('navmenu.skills')}</p>
                                 </div>
                                 <div className="skillsicon">
-                                    <img src={skills} alt="icono skills" className="skills" onClick={() => setIsOpenSkills(true)} />
+                                    <img src={skills} alt="icon skills" className="skills" onClick={() => setIsOpenSkills(true)} />
                                 </div>
                             </>
                             :
                             <>
-                                <div className="skillsword">
+                                <div className="skillsword" role="button" tabindex="0">
                                     <p onClick={() => setIsOpenSkills(true)} >{t('navmenu.skills')}</p>
                                 </div>
                                 <div className="skillsicon">
-                                    <img src={skills} alt="icono skills" className="skills" onClick={() => setIsOpenSkills(true)} />
+                                    <img src={skills} alt="icon skills" className="skills" onClick={() => setIsOpenSkills(true)} />
                                 </div>
                             </>
                         }

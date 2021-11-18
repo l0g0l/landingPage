@@ -16,7 +16,7 @@ const Branch2 = ({ project, modales, setmodales, css }) => {
         <div className={` ${css}`}>
             <div className=' branch2'>
                 <button
-                    onClick={() => {
+                   aria-label="Click" onClick={() => {
                         if (modales === project) {
                             setmodales("")
                         } else {

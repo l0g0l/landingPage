@@ -22,7 +22,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {branch3
                 ?
-                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch3.funcbranch3}>
+                <div aria-label="Click" role="button" tabindex="0" className={` ${css}`}><div className="commitmain-sx " onClick={branch3.funcbranch3}>
                     <div className="tooltip-container">
                         <div className="text"  >
                             <span >{branch3.tooltip4}</span>
@@ -43,7 +43,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {branch2
                 ?
-                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch2.funcbranch2}>
+                <div aria-label="Click" role="button" tabindex="0" className={` ${css}`}><div className="commitmain-sx " onClick={branch2.funcbranch2}>
                     <div className="tooltip-container">
                         <div className="text" >
                             <span >{branch2.tooltip3}</span>
@@ -64,7 +64,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {branch1
                 ?
-                <div className={` ${css}`}><div className="commitmain-sx " onClick={branch1.funcbranch}>
+                <div aria-label="Click" role="button" tabindex="0" className={` ${css}`}><div className="commitmain-sx " onClick={branch1.funcbranch}>
                     <div className="tooltip-container">
                         <div className="text" >
                             <span >{branch1.tooltip2}</span>
@@ -78,7 +78,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {/* Empieza Primer proyecto */}
 
-            {quiz && <div className={` ${css}`}> <div className="commitmain-sx " onClick={() => {
+            {quiz && <div aria-label="Click" role="button" tabindex="0" className={` ${css}`}> <div className="commitmain-sx " onClick={() => {
                 console.log(`${quiz.modales} - ${quiz.project}`)
                 if (quiz.modales === quiz.project) {
                     quiz.setmodales("")

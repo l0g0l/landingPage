@@ -15,7 +15,7 @@ function Modal({ content, css }) {
           <div className="modalcontainer"  >
             <div className="colormodalprojects">
               <div className="titleclosebtn">
-                <button onClick={() => { content.closeModal("") }}>
+                <button aria-label="Close" onClick={() => { content.closeModal("") }}>
                   X
                 </button>
               </div>
@@ -48,7 +48,7 @@ function Modal({ content, css }) {
             </div>
             <div className="container-icon-btn">
               <div>
-                <img src={girar} alt="icono para girar la imagen" className="roundicon" />
+                <img src={girar} alt="icon to round card" className="roundicon" />
               </div>
               <div>
                 <button className="footer" >

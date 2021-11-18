@@ -36,10 +36,10 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="container-arrow">
+    <div aria-label="Click" className="container-arrow">
       {
         isVisible &&
-        <button onClick={scrollToTop} id="btnarrowtotop">
+        <button aria-label="Up to Top" onClick={scrollToTop} id="btnarrowtotop">
           <div className="arrow" ></div>
         </button>
       }

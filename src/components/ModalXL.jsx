@@ -1,6 +1,5 @@
 import React from "react"
 import ReactModal from "react-modal"
-// import cvimg from "../assets/img/cvimg.png"
 import logos from "../assets/img/logos.png"
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
@@ -45,7 +44,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
               <div className="container-img-txt">
                 <div className="backgroundimg">
 
-                  <img src={textsabout.img} alt="mi foto" className="img-modalXL" />
+                  <img src={textsabout.img} alt="my photo" className="img-modalXL" />
                 </div>
                 <div>
 
@@ -66,7 +65,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
                 </div>
 
                 <div className="logos">
-                  <img src={logos} alt="logos todas la tecnologías que conozco" className="logos-img" />
+                  <img src={logos} alt="logos icons of all tecnologies that I know" className="logos-img" />
                 </div>
               </div>
 
@@ -75,7 +74,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
           }
     
 
-        <button onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
+        <button aria-label="Close" onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
 
       </ReactModal>
     </div>
