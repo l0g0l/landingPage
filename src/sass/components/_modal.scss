@@ -714,7 +714,7 @@
     margin-left: unset;
     @include for-size(desktop-only) {
       margin-top: 10px;
-      height: 500%;
+      height: 746%;
     }
     @include for-size(phone) {
       margin-top: 10px;
@@ -897,7 +897,7 @@
     margin-left: unset;
     @include for-size(desktop-only) {
       margin-top: 10px;
-      height: 412%;
+      height: 276%;
     }
     @include for-size(phone) {
       margin-top: 10px;
@@ -912,7 +912,10 @@
     display: unset;
     word-spacing: 4px;
     @include for-size(desktop-only) {
-      font-size: 16px;
+      font-size: 17px;
+      word-spacing: 7
+  px
+  ;
     }
     @include for-size(phone) {
       font-size: 12px;
