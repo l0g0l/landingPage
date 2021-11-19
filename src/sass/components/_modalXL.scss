@@ -178,8 +178,10 @@
       margin-left: 6px;
     }
     @include for-size(xsphone) {
-      width: 105%;
-      margin-left: -7px;
+      width: 95%;
+   align-items: center;
+   justify-content: center;
+   padding-left: 17px;
     }
   }
   .logos-img {
