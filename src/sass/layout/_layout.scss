@@ -181,6 +181,8 @@
     margin-top: -62px;
     @include for-size(desktop-only) {
       font-size: 15px;
+      position: relative;
+      left: -160px;
     }
     @include for-size(phone) {
       width: 230px;
