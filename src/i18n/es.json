@@ -17,7 +17,7 @@
  "commit.ball.descrp":"Creación de un Quiz. Constará de 5 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta. 3 niveles de dificultad.SPA. Almacenar la puntuación de cada partida en LocalStorage. Responsive.",
  "branch1.txtcoela":"Aplicación Web (Mobile First) que permite desde, hacer donaciones instantáneas, hasta integrar la aplicación con una entidad bancaria."
  ,"branch1.txtdontw":"Creación de una aplicación web de recetas (Mobile First) cuyo motor de búsqueda proporciona recetas según el ingrediente o ingredientes que se seleccionen, pudiendo filtrar también por el tipo de alimento que se desea así como por los alérgenos.",
- "branch2.txtbgit":"Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), almacenamiento de datos en LocalStorage.",
+ "branch2.txtbgit":"Buscador de repositorios en GitHub. FrontEnd app. SPA (single page application), datos en LocalStorage.",
  "branch2.txtnpm":"Clon de una landing page utilizando únicamente HTML y CSS. Responsive.",
  "branch2.txthack":"Clon de una pasarela de registro, flujo de navegación sin persistencia de datos, Responsive.",
  "branch3.txtgestor":"Creación de un gestor de citas. Se puede registrar una cita, mostrar y eliminar. Responsive.",
