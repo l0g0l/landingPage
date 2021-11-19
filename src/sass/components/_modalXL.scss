@@ -136,6 +136,9 @@
   @include for-size(phone) {
     display: unset;
   }
+  @include for-size(xsphone) {
+    margin-top: 0 !important;
+  }
   .container-txt-cv {
     display: flex;
     flex-direction: column;
@@ -181,7 +184,7 @@
       width: 95%;
    align-items: center;
    justify-content: center;
-   padding-left: 17px;
+   padding-left: 7px;
     }
   }
   .logos-img {
@@ -205,8 +208,8 @@
       right: 114px;
     }
     @include for-size(xsphone) {
-      bottom: 35px;
-      right: 85px;
+      bottom: 25px;
+      right: 75px;
     }
   }
 }
