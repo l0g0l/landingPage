@@ -4,7 +4,9 @@
   justify-content: space-between;
   margin: 30px 30px 60px 140px;
   @include for-size(phone) {
-    margin: -10px 20px 60px 0;
+    margin: unset;
+    align-items: center;
+    justify-content: center;
   }
 }
 //=========== Contacto ==============
@@ -35,9 +37,12 @@
 .email-icon {
   display: none;
   @include for-size(phone) {
-    display: block;
-    margin-left: 300px;
-    margin-top: 30px;
+   flex-direction: column;
+   display: block;
+    position: absolute;
+    top: 86px;
+    left: 183px;
+   
   }
   @include for-size(xsphone) {
     margin-left: 225px;
@@ -45,6 +50,10 @@
   }
   .email-img {
     width: 27px;
+    @include for-size(phone) {
+      width: 25px;
+      
+     }
   }
 }
 
@@ -63,8 +72,9 @@
       font-size: 70px;
     }
     @include for-size(phone) {
-      font-size: 39px;
+      font-size: 29px;
       text-align: center;
+      margin-top: 35px;
     }
     @include for-size(xsphone) {
       font-size: 32px;
@@ -72,11 +82,12 @@
   }
   @include for-size(desktop-only) {
     font-size: 35px;
+   
   }
   @include for-size(phone) {
-    font-size: 19px;
+    font-size: 12px;
     text-align: center;
-    margin-right: 16px;
+    margin-right: unset;
   }
   @include for-size(xsphone) {
     font-size: 16px;

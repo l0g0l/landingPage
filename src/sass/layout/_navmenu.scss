@@ -86,6 +86,7 @@
 //=========== Toggle palabras por Iconos ==============
 .aboutword {
   display: block;
+  margin-bottom: 8px;
   @include for-size(phone) {
     display: none;
   }
