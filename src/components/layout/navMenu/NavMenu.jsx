@@ -7,6 +7,8 @@ import yo3 from '../../../assets/img/yo3.jpg'
 import cv from '../../../assets/img/cv.pdf'
 import woman from '../../../assets/img/woman.png'
 import skills from '../../../assets/img/skills.png'
+import idioma1 from '../../../assets/img/idioma1.png'
+
 
 
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
@@ -16,10 +18,23 @@ const NavMenu = () => {
 
     const [modalIsOpenAbout, setIsOpenAbout] = useState(false);
     const [modalIsOpenSkills, setIsOpenSkills] = useState(false)
+    const [language, setLanguage] = useState('en')
+    const { t, i18n } = useTranslation()     //hook para utilizar la libreria i18n para traducir la web
 
-    //hook para utilizar la libreria i18n para traducir la web
-    const { t } = useTranslation()
-    console.log(t)
+
+    const onChangeLanguage = () => {
+        //creo una variable fuera del if  para almacenar cual es el lenguaje al que quiero traducir, ya que no puedo utilizar el state que acabo de actualizar
+        let tmplenguaje
+        if (language === 'en') { //si está en inglés
+            tmplenguaje = 'es'
+            setLanguage('es') //cambia a español
+        } else {
+            tmplenguaje = 'en'
+            setLanguage('en') //sino déjalo en inglés
+        }
+        i18n.changeLanguage(tmplenguaje)
+    }
+
 
     return (
         <div className="container-nav">
@@ -41,12 +56,28 @@ const NavMenu = () => {
                             <img src={blog} alt="logo blog" className="logo-img" />
                         </a>
                     </li>
+                    <li  aria-label="Change Language" className="container-tooltip-language ">
+                    <button className="changelanguage" onClick={() => onChangeLanguage()}>
+                        <img className="img-changelanguage" src={idioma1} alt="icon change language" />
+                        {language === 'en'
+                            ?
+
+                            <div  >
+                                <span className="textlanguage" >Español</span>
+                            </div>
+                            :
+                            <div >
+                                <span className="textlanguage" >English</span>
+                            </div>
+                        }
+                    </button>
+                    </li>
                 </ul>
 
                 <ul className="menu">
                     <li>
                         {/*Para pintar los textos, se lo paso al componente como una prop siendo un array */}
-                        {t('navmenu.about') === 'Sobre mi'
+                        {t('navmenu.about') === 'Sobre mí'
                             ?
                             <>
                                 <div className="aboutword" role="button" tabindex="0">

@@ -6,6 +6,7 @@ import ScrollToTop from '../ScrollToTop'
 import Branch1 from '../Branch1'
 import Branch2 from '../Branch2'
 import Branch3 from '../Branch3'
+import idioma1 from '../../assets/img/idioma1.png'
 import email1 from '../../assets/img/email1.png'
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
@@ -18,7 +19,21 @@ const Layout = () => {
     // const [style, setStyle] = useState({ display: 'none' });
 
     //hook para utilizar la libreria i18n para traducir la web
-    const { t } = useTranslation()
+    const [language, setLanguage] = useState('en')
+    const { t, i18n } = useTranslation()
+
+    const onChangeLanguage = () => {
+        //creo una variable fuera del if  para almacenar cual es el lenguaje al que quiero traducir, ya que no puedo utilizar el state que acabo de actualizar
+        let tmplenguaje
+        if (language === 'en') { //si está en inglés
+            tmplenguaje = 'es'
+            setLanguage('es') //cambia a español
+        } else {
+            tmplenguaje = 'en'
+            setLanguage('en') //sino déjalo en inglés
+        }
+        i18n.changeLanguage(tmplenguaje)
+    }
 
 
     //muestra o esconde los componentes branch
@@ -38,34 +53,40 @@ const Layout = () => {
         {/*botón para cambiar el lenguaje, tooltip que según hayas seleccionado el idioma, te mostrará el otro */}
         <main>
             <header className="container-contact-btnchangel">
+               
+                    <section className="contact">
+                        <p >class <strong>Contact</strong> &#123;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor ( public <strong>name: </strong>string,&nbsp;&nbsp;public <strong>email: </strong>string ) &#123;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&#125; <br />&#125;;</p>
+                        <p>let Lucia_Contact: string;</p>
+                        <p>Lucia_Contact = new Contact (<strong> 'Lucía González'</strong>,&nbsp; <strong><a href="mailto:luciag.lara@gmail.com" className="email">'luciag.lara@gmail.com' </a></strong>);</p>
+                    </section>
 
-                <section className="email-icon">
+                    <section className="email-icon">
                     <a href="mailto:luciag.lara@gmail.com" className="email"><img src={email1} alt="icono email" className="email-img" /></a>
-                </section>
+                    </section>
+                    
+                    
+             
 
-                <section className="contact">
-                    <p>const <strong>{t('home.contact')}</strong> = &#123;</p>
-                    <article>
-                        {t('home.name') === 'nombre'
+                <section aria-label="Change Language" className="container-tooltip-language ">
+                    <button className="changelanguage" onClick={() => onChangeLanguage()}>
+                        <img className="img-changelanguage" src={idioma1} alt="icon change language" />
+                        {language === 'en'
                             ?
-                            <>
-                                <p>{t('home.name')}: &nbsp;"Lucía González",</p>
-                                <p>{t('home.email')}:  &nbsp;<a href="mailto:luciag.lara@gmail.com" className="email">"luciag.lara@gmail.com" </a>,</p>
-                                <p>{t('home.city')}: &nbsp;"Madrid (Spain)",</p>
-                                <p>github: <a href="https://github.com/l0g0l" className="email" target="_blank" rel="noopener noreferrer">&nbsp;"l0g0l"</a></p>
-                            </>
+
+                            <div  >
+                                <span className="textlanguage" >Español</span>
+                            </div>
                             :
-                            <>
-                                <p>{t('home.name')}: &nbsp;"Lucía González",</p>
-                                <p>{t('home.email')}:  &nbsp;<a href="mailto:luciag.lara@gmail.com" className="email">"luciag.lara@gmail.com" </a>,</p>
-                                <p>{t('home.city')}: &nbsp;&nbsp;&nbsp;"Madrid (Spain)",</p>
-                                <p>blog: <a href="https://desecreadeveloperblog.herokuapp.com/" className="email" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;"Blog De Secre a Developer"</a></p>
-                            </>
+                            <div >
+                                <span className="textlanguage" >English</span>
+                            </div>
                         }
-                    </article>
-                    <p>&#125;</p>
+                    </button>
                 </section>
 
+            </header>
+            <div className="container-myname-txt">
 
                 <section>
                     <div className="myname">
@@ -79,11 +100,10 @@ const Layout = () => {
                     </div>
                 </section>
 
-
-            </header>
-            <section className="text-home" >
-                <p>{t('home.click.ball')}</p>
-            </section>
+                <section className="text-home" >
+                    <p>{t('home.click.ball')}</p>
+                </section>
+            </div>
 
             <ScrollToTop />
 
@@ -130,7 +150,7 @@ const Layout = () => {
                     </>
                     :
                     null}
-
+                    
                 {showBranch2
                     ?
                     <>

@@ -1,5 +1,9 @@
 {
 "home.button.traduction": "Change Language",
+"home.contact":"Contact",
+"home.name":"name",
+"home.email":"email",
+"home.city":"city",
 "home.web":"Web ",
 "home.developer":"Developer",
 "navmenu.about":"About",

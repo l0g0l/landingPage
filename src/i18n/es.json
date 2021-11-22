@@ -1,5 +1,9 @@
 {
  "home.button.traduction": "Cambiar Idioma",
+ "home.contact":"Contacto",
+ "home.name":"nombre",
+"home.email":"correoElectronico",
+"home.city":"ciudad",
  "home.web":"Desarrolladora ",
 "home.developer":"Web",
  "navmenu.about":"Sobre mí",
