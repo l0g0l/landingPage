@@ -33,6 +33,9 @@
   @include for-size(phone) {
     width: 30px;
   }
+  @include for-size(xsphone) {
+    width: 26px;
+  }
 }
 .social li:last-child {
   margin-bottom: 60px;
@@ -112,9 +115,15 @@
 }
 .woman {
   width: 78%;
+  @include for-size(xsphone) {
+    width: 36px;
+  }
 }
 .skills {
   width: 75%;
+  @include for-size(xsphone) {
+    width: 36px;
+  }
 }
 
 //=========== Efecto hover RRSS ==============

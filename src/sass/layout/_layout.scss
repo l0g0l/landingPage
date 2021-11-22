@@ -77,7 +77,7 @@
       margin-top: 35px;
     }
     @include for-size(xsphone) {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
   @include for-size(desktop-only) {
@@ -91,7 +91,8 @@
   }
   @include for-size(xsphone) {
     font-size: 14px;
-   ;
+    margin-left: 90px;
+   
   }
 }
 //=========== Animación web developer ==============
