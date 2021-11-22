@@ -50,7 +50,7 @@
   cursor: pointer;
   
   @include for-size(desktop-only) {
-    font-size: 35px;
+    font-size: 33px;
     letter-spacing: 1px;  
   }
   @include for-size(phone) {
@@ -72,8 +72,11 @@
   background-color: transparent !important;
   cursor: pointer;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 11px;
   margin-left: 8px;
+  @include for-size(desktop-only) {
+    margin-top: 13px;
+  }
  }
 .img-changelanguage {
   width: 30px;

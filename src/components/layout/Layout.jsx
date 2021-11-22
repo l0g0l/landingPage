@@ -51,8 +51,8 @@ const Layout = () => {
                             <>
                                 <p>{t('home.name')}: &nbsp;"Lucía González",</p>
                                 <p>{t('home.email')}:  &nbsp;<a href="mailto:luciag.lara@gmail.com" className="email">"luciag.lara@gmail.com" </a>,</p>
-                                <p>{t('home.city')}: &nbsp;"Madrid (Spain)",</p>
-                                <p>github: <a href="https://github.com/l0g0l" className="email" target="_blank" rel="noopener noreferrer">&nbsp;"l0g0l"</a></p>
+                                <p>{t('home.city')}: &nbsp;"Madrid ({t('home.country')})",</p>
+                                <p>blog: <a href="https://desecreadeveloperblog.herokuapp.com/" className="email" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;"Blog De Secre a Developer"</a></p>
                             </>
                             :
                             <>

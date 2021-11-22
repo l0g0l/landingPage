@@ -60,7 +60,7 @@
   span:first-child {
     font-size: $fontnamefirst;
     @include for-size(desktop-only) {
-      font-size: 85px;
+      font-size: 70px;
     }
     @include for-size(phone) {
       font-size: 39px;
@@ -71,7 +71,7 @@
     }
   }
   @include for-size(desktop-only) {
-    font-size: 48px;
+    font-size: 35px;
   }
   @include for-size(phone) {
     font-size: 19px;
@@ -127,19 +127,19 @@
     }
   }
 }
-.container-myname-txt {
-  display: flex;
-  flex-direction: column;
-  margin-left: 261px;
-  @include for-size(desktop-only) {
-    margin-left: 602px;
-  }
-  @include for-size(phone) {
-    margin-left: 75px;
-  }
+// .container-myname-txt {
+//   display: flex;
+//   flex-direction: column;
+//   margin-left: 261px;
+//   @include for-size(desktop-only) {
+//     // margin-left: 602px;
+//   }
+//   @include for-size(phone) {
+//     margin-left: 75px;
+//   }
 
  
-}
+// }
  //=========== Texto cómo navegar ==============
  .text-home {
   width: 250px;
@@ -158,8 +158,8 @@
   margin-left: 320px;
   @include for-size(desktop-only) {
     font-size: 15px;
-    position: relative;
-    left: -160px;
+    margin-top: 207px;
+    margin-left: 586px;
   }
   @include for-size(phone) {
     width: 230px;
