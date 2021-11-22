@@ -40,13 +40,13 @@
    flex-direction: column;
    display: block;
     position: absolute;
-    top: 86px;
-    left: 183px;
+    top: 16%;
+    left: 54%
    
   }
   @include for-size(xsphone) {
-    margin-left: 225px;
-    margin-right: 20px;
+    // margin-left: 225px;
+    // margin-right: 20px;
   }
   .email-img {
     width: 27px;
@@ -72,12 +72,12 @@
       font-size: 70px;
     }
     @include for-size(phone) {
-      font-size: 29px;
+      font-size: 40px;
       text-align: center;
       margin-top: 35px;
     }
     @include for-size(xsphone) {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
   @include for-size(desktop-only) {
@@ -85,13 +85,13 @@
    
   }
   @include for-size(phone) {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
-    margin-right: unset;
+    margin-left: 105px;
   }
   @include for-size(xsphone) {
-    font-size: 16px;
-    margin-right: 18px;
+    font-size: 14px;
+   ;
   }
 }
 //=========== Animación web developer ==============
