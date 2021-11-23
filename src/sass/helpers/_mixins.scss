@@ -65,6 +65,8 @@ box-shadow:
 @mixin for-size($size) {
   @if $size == xsphone {                                              // phone-xs
     @media (max-width: 320px) { @content; }
+  } @else if $size == phone6 {                                         // phone6
+    @media (min-width: 321px) and (max-width: 375px) { @content; }
   } @else if $size == phone {                                         // phone-only
     @media (max-width: 690px) { @content; }
   } @else if $size == no-phone {                                      // tablet-portrait-up

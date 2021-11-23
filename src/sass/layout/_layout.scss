@@ -43,6 +43,9 @@
     top: 18%;
     left: 54%;
   }
+  @include for-size(phone6) {
+    top: 21%;
+  }
   @include for-size(xsphone) {
     top: 24%;
   }
@@ -71,6 +74,9 @@
       font-size: 38px;
       text-align: center;
       margin-top: 60px;
+    }
+    @include for-size(phone6) {
+      font-size: 36px;
     }
     @include for-size(xsphone) {
       font-size: 28px;
@@ -155,12 +161,16 @@
     margin-left: 436px;
     padding-bottom: 22px;
   }
+  @include for-size(phone6) {
+    margin-left: 88px !important;
+    margin-top: 145px !important;
+  }
   @include for-size(phone) {
     width: 230px;
     height: 71px;
     font-size: 12px;
     margin-left: 100px;
-    margin-top: 145px;
+    margin-top: 125px;
     padding: 14px 18px 20px 18px;
   }
   @include for-size(xsphone) {
