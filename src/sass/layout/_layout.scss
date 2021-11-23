@@ -39,14 +39,13 @@
   @include for-size(phone) {
    flex-direction: column;
    display: block;
-    position: absolute;
-    top: 18%;
-    left: 54%;
+   position: absolute;
+   top: 18%;
+   left: 54%;
   }
   @include for-size(xsphone) {
-    // margin-left: 225px;
-    // margin-right: 20px;
-  }
+    top: 20%;
+   }
   .email-img {
     width: 27px;
     @include for-size(phone) {
@@ -164,7 +163,7 @@
     width: 230px;
     height: 71px;
     font-size: 12px;
-    margin-left: 104px;
+    margin-left: 100px;
     margin-top: 145px;
     padding: 14px 18px 20px 18px;
   }
@@ -172,7 +171,8 @@
     width: 175px;
     height: 84px;
     font-size: 11px;
-    margin-left: 9px;
+    margin-left: 84px;
+    margin-top: 65px;
     padding: 8px 18px 23px 18px;
   }
 }
@@ -311,7 +311,7 @@
     left: 60px;
     top: 0;
     @include for-size(phone) {
-      width: 135px;
+      width: 140px;
       left: -58px;
       top: -308px;
       color: #fff;
