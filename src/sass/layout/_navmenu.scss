@@ -31,7 +31,7 @@
 .logo-img {
   width: 32px;
   @include for-size(phone) {
-    width: 30px;
+    width: 28px;
   }
   @include for-size(xsphone) {
     width: 26px;
