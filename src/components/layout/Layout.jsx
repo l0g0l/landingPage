@@ -15,7 +15,6 @@ const Layout = () => {
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
     const [modales, setModales] = useState(true)
-    // const [style, setStyle] = useState({ display: 'none' });
 
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
@@ -35,7 +34,6 @@ const Layout = () => {
     return <>
 
         <NavMenu />
-        {/*botón para cambiar el lenguaje, tooltip que según hayas seleccionado el idioma, te mostrará el otro */}
         <main>
             <header className="container-contact-btnchangel">
 
@@ -65,7 +63,6 @@ const Layout = () => {
                     </article>
                     <p>&#125;</p>
                 </section>
-
 
                 <section>
                     <div className="myname">

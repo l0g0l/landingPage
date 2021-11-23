@@ -7,10 +7,8 @@ import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 const Branch2 = ({ project, modales, setmodales, css }) => {
 
-
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
-
 
     return (
         <div className={` ${css}`}>

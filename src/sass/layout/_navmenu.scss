@@ -28,6 +28,21 @@
     }
   }
 }
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: $blacksecondary;
+  border-radius: 150px;
+  transition: 0.5s;
+  line-height: 75px;
+}
+
 .logo-img {
   width: 32px;
   @include for-size(phone) {
@@ -51,10 +66,10 @@
   font-size: $fontmenunav;
   letter-spacing: 1px;
   cursor: pointer;
-  
+
   @include for-size(desktop-only) {
     font-size: 33px;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
   }
   @include for-size(phone) {
     font-size: 13px;
@@ -80,11 +95,10 @@
   @include for-size(desktop-only) {
     margin-top: 13px;
   }
- }
+}
 .img-changelanguage {
   width: 30px;
 }
-
 
 //=========== Toggle palabras por Iconos ==============
 .aboutword {
@@ -126,18 +140,3 @@
   }
 }
 
-//=========== Efecto hover RRSS ==============
-ul li {
-  list-style: none;
-}
-ul li a {
-  position: relative;
-  display: block;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  background: $blacksecondary;
-  border-radius: 150px;
-  transition: 0.5s;
-  line-height: 75px;
-}

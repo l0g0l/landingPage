@@ -8,9 +8,6 @@ import cv from '../../../assets/img/cv.pdf'
 import woman from '../../../assets/img/woman.png'
 import skills from '../../../assets/img/skills.png'
 import idioma1 from '../../../assets/img/idioma1.png'
-
-
-
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -34,12 +31,9 @@ const NavMenu = () => {
         }
         i18n.changeLanguage(tmplenguaje)
     }
-
-
     return (
         <div className="container-nav">
             <nav>
-
                 <ul className="social">
                     <li>
                         <a href="https://github.com/l0g0l" target="_blank" rel="noreferrer noopener">
@@ -56,21 +50,21 @@ const NavMenu = () => {
                             <img src={blog} alt="logo blog" className="logo-img" />
                         </a>
                     </li>
-                    <li  aria-label="Change Language" className="container-tooltip-language ">
-                    <button className="changelanguage" onClick={() => onChangeLanguage()}>
-                        <img className="img-changelanguage" src={idioma1} alt="icon change language" />
-                        {language === 'en'
-                            ?
+                    <li aria-label="Change Language" className="container-tooltip-language ">
+                        <button className="changelanguage" onClick={() => onChangeLanguage()}>
+                            <img className="img-changelanguage" src={idioma1} alt="icon change language" />
+                            {language === 'en'
+                                ?
 
-                            <div  >
-                                <span className="textlanguage" >Español</span>
-                            </div>
-                            :
-                            <div >
-                                <span className="textlanguage" >English</span>
-                            </div>
-                        }
-                    </button>
+                                <div  >
+                                    <span className="textlanguage" >Español</span>
+                                </div>
+                                :
+                                <div >
+                                    <span className="textlanguage" >English</span>
+                                </div>
+                            }
+                        </button>
                     </li>
                 </ul>
 

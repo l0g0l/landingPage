@@ -54,7 +54,6 @@ const Branch1 = ({ project, modales, setmodales, css }) => {
                                 tecnolog: 'HTML/CSS, JavaScript, React js, Node js (Framework Express), BBDD Mongodb (Mongoose), JWT. Deploy(Heroku)',
                                 img: dontwaste,
                                 url: 'https://dontwasteapp.herokuapp.com/',
-
                             }}
                             css={'branch1propscssdw'}
                         />

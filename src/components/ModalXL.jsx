@@ -43,11 +43,9 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
 
               <div className="container-img-txt">
                 <div className="backgroundimg">
-
-                  <img src={textsabout.img} alt="my photo" className="img-modalXL" />
+                  <img src={textsabout.img} alt="Me" className="img-modalXL" />
                 </div>
                 <div>
-
                   <p className="text-modal-about">{textsabout.text}</p>
                 </div>
 
@@ -73,9 +71,7 @@ const ModalXL = ({ modalisopen, setisopen, textsabout, textsskills, aboutmenunam
 
           }
     
-
         <button aria-label="Close" onClick={() => setisopen(false)} className="titleCloseBtnModalX">X</button>
-
       </ReactModal>
     </div>
   );

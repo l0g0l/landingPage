@@ -1,6 +1,5 @@
 import Modal from './Modal'
 import quizfirebase from '../assets/img/modals/quizfirebase.gif'
-
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -8,8 +7,8 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
 
-      // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el siguiente ternario y el state hago que se muestre el modal o no
-  
+    // con el primer ternario selecciono que haga un onClick u otro, en base a la posición del componente MainMiniBall y con el siguiente ternario y el state hago que se muestre el modal o no
+
     return (
         <>
             {/*Empieza Branch3- 4 proyectos */}
@@ -42,7 +41,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {branch2
                 ?
-                <div  className={` ${css}`} ><div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={branch2.funcbranch2}>
+                <div className={` ${css}`} ><div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={branch2.funcbranch2}>
                     <div className="tooltip-container">
                         <div className="text" >
                             <span >{branch2.tooltip3}</span>
@@ -63,7 +62,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {branch1
                 ?
-                <div className={` ${css}`}><div className="commitmain-sx " aria-label="Click" role="button" tabindex="0"  onClick={branch1.funcbranch}>
+                <div className={` ${css}`}><div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={branch1.funcbranch}>
                     <div className="tooltip-container">
                         <div className="text" >
                             <span >{branch1.tooltip2}</span>
@@ -77,7 +76,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {/* Empieza Primer proyecto */}
 
-            {quiz && <div  className={` ${css}`}> <div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={() => {
+            {quiz && <div className={` ${css}`}> <div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={() => {
                 console.log(`${quiz.modales} - ${quiz.project}`)
                 if (quiz.modales === quiz.project) {
                     quiz.setmodales("")

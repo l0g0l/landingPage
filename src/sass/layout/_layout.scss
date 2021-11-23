@@ -17,8 +17,8 @@
   letter-spacing: 1.5px;
   padding-top: 12px;
   display: block;
-  & article{
-        margin-left: 20px;
+  & article {
+    margin-left: 20px;
   }
   @include for-size(desktop-only) {
     font-size: 19px;
@@ -37,24 +37,22 @@
 .email-icon {
   display: none;
   @include for-size(phone) {
-   flex-direction: column;
-   display: block;
-   position: absolute;
-   top: 18%;
-   left: 54%;
+    flex-direction: column;
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 54%;
   }
   @include for-size(xsphone) {
     top: 24%;
-   }
+  }
   .email-img {
     width: 27px;
     @include for-size(phone) {
       width: 25px;
-      
-     }
+    }
   }
 }
-
 
 //=========== Mi nombre ==============
 .myname {
@@ -80,7 +78,6 @@
   }
   @include for-size(desktop-only) {
     font-size: 35px;
-   
   }
   @include for-size(phone) {
     font-size: 19px;
@@ -90,7 +87,6 @@
   @include for-size(xsphone) {
     font-size: 14px;
     margin-left: 90px;
-   
   }
 }
 //=========== Animación web developer ==============
@@ -100,7 +96,6 @@
   justify-content: end;
   @include for-size(phone) {
     justify-content: center;
-
   }
   @include for-size(xsphone) {
     justify-content: center;
@@ -138,8 +133,8 @@
     }
   }
 }
- //=========== Texto cómo navegar ==============
- .text-home {
+//=========== Texto cómo navegar ==============
+.text-home {
   width: 250px;
   height: 84px;
   color: $white;
@@ -239,7 +234,7 @@
     letter-spacing: 1px;
     top: -8px;
     right: 42px;
-    display:none;
+    display: none;
     color: $white;
     @include for-size(phone) {
       font-size: 13px;

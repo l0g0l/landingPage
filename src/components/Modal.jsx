@@ -1,6 +1,5 @@
 import React from "react";
 import girar from "../assets/img/girar.png"
-
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
@@ -58,9 +57,7 @@ function Modal({ content, css }) {
             </div>
           </div>
         </div>
-
       </div>
-
     </>
   )
 }
