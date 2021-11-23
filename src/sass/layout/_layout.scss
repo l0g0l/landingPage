@@ -44,7 +44,7 @@
    left: 54%;
   }
   @include for-size(xsphone) {
-    top: 23%;
+    top: 24%;
    }
   .email-img {
     width: 27px;
@@ -157,7 +157,8 @@
   @include for-size(desktop-only) {
     font-size: 15px;
     margin-top: 207px;
-    margin-left: 456px;
+    margin-left: 436px;
+    padding-bottom: 22px;
   }
   @include for-size(phone) {
     width: 230px;
