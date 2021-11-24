@@ -85,10 +85,10 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
                         quiz.setmodales(quiz.project)
                     }
                 }}>
-                </div>
-                <div className="tooltip-container">
-                    <div className="text">
-                        <span >{quiz.tooltip1}</span>
+                    <div className="tooltip-container">
+                        <div className="text">
+                            <span >{quiz.tooltip1}</span>
+                        </div>
                     </div>
                 </div>
                 {quiz.modales === quiz.project && quiz.project === 'quiz'

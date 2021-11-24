@@ -316,20 +316,25 @@
   & .text {
     left: 60px;
     top: 0;
+    @include for-size(desktop-only) {
+      left: 64px;
+      top: 2px;
+    }
     @include for-size(phone) {
-      left: -58px;
-      top: -120px;
+      left: -89px;
+      top: -321px;
       color: #fff;
       word-spacing: 3px;
       letter-spacing: 1px;
     }
     @include for-size(phone6) {
-      left: -82px !important;
-      top: -99px !important;
+      left: -87px !important;
+      top: -311px !important;
     }
     @include for-size(xsphone) {
       width: 127px;
-      left: -43px;
+      left: -53px;
+      top: -326px;
     }
   }
 }
