@@ -165,21 +165,23 @@
 .quizpropscss {
   & .modalbackground {
     left: -480px;
+    top: 128px;
     @include for-size(desktop-only) {
-      top: -57px;
+      top: 130px;
       left: -533px;
     }  
-    @include for-size(phone6) {
-      left: -191px !important;
-      top: -270px;
-    }
     @include for-size(phone) {
-      left: -148px;
-      top: -270px;
+      left: -139px;
+      top: -76px;
+      z-index: 3;
+    }
+    @include for-size(phone6) {
+      left: -184px !important;
+      top: -57px;
     }
     @include for-size(xsphone) {
-      left: -162px;
-      top: -279px;
+      left: -154px;
+      top: -83px;
     }
   }
   & .colormodalprojects {

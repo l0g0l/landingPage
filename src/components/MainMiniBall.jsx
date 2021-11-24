@@ -76,14 +76,16 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
             {/* Empieza Primer proyecto */}
 
-            {quiz && <div className={` ${css}`}> <div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={() => {
-                console.log(`${quiz.modales} - ${quiz.project}`)
-                if (quiz.modales === quiz.project) {
-                    quiz.setmodales("")
-                } else {
-                    quiz.setmodales(quiz.project)
-                }
-            }}>
+            {quiz && <div className={` ${css}`}>
+                <div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={() => {
+                    // console.log(`${quiz.modales} - ${quiz.project}`)
+                    if (quiz.modales === quiz.project) {
+                        quiz.setmodales("")
+                    } else {
+                        quiz.setmodales(quiz.project)
+                    }
+                }}>
+                </div>
                 <div className="tooltip-container">
                     <div className="text">
                         <span >{quiz.tooltip1}</span>
@@ -109,7 +111,6 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
                     null}
                 {/* Termina Primer proyecto */}
 
-            </div>
             </div>
             }
         </>

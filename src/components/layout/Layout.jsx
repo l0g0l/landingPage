@@ -14,7 +14,7 @@ const Layout = () => {
     const [showBranch1, setShowBranch1] = useState(false)
     const [showBranch2, setShowBranch2] = useState(false)
     const [showBranch3, setShowBranch3] = useState(false)
-    const [modales, setModales] = useState(true)
+    const [modales, setModales] = useState("")
 
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
@@ -96,9 +96,7 @@ const Layout = () => {
                 </div> */}
 
                 <div className="commit-main ">
-
                     <div className="main-branch">
-
                         <div className="commitmain-end"></div>
                     </div>
                 </div>

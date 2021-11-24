@@ -317,15 +317,19 @@
     left: 60px;
     top: 0;
     @include for-size(phone) {
-      width: 140px;
       left: -58px;
-      top: -308px;
+      top: -120px;
       color: #fff;
       word-spacing: 3px;
       letter-spacing: 1px;
     }
+    @include for-size(phone6) {
+      left: -82px !important;
+      top: -99px !important;
+    }
     @include for-size(xsphone) {
       width: 127px;
+      left: -43px;
     }
   }
 }
