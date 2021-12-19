@@ -5,6 +5,7 @@ import linkedin from '../../../assets/img/linkedin.png'
 import blog from '../../../assets/img/blog.png'
 import yo3 from '../../../assets/img/yo3.jpg'
 import cv from '../../../assets/img/cv.pdf'
+import cv_English from '../../../assets/img/cv_English.pdf'
 import woman from '../../../assets/img/woman.png'
 import skills from '../../../assets/img/skills.png'
 import idioma1 from '../../../assets/img/idioma1.png'
@@ -127,7 +128,8 @@ const NavMenu = () => {
                             setisopen={setIsOpenSkills}
                             textsskills={{
                                 text: t('navmenu.modalxl.txt2'),
-                                cv: cv
+                                cv: cv,
+                                cv_English:cv_English
                             }}
                             skillsmenuname={'Skills'}
                         />
