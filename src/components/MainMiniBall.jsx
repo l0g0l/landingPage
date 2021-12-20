@@ -1,6 +1,6 @@
 import Modal from './Modal'
 import quizfirebase from '../assets/img/modals/quizfirebase.gif'
-import typescript from '../assets/img/modals/typescript.gif'
+import ts from '../assets/img/modals/ts.gif'
 
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
@@ -39,7 +39,7 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
                                 title: 'TypeScript',
                                 text: t('commit2.ball.descrp'),
                                 tecnolog: 'React js, Redux, TypeScript, SASS. Deploy (GitHubPages)',
-                                img: typescript,
+                                img: ts,
                                 url: 'https://l0g0l.github.io/cleverpytest_typescript'
                             }}
                             css={'typescriptpropscss'}

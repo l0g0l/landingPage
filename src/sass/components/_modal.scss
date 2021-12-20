@@ -1010,12 +1010,12 @@
     left: -480px;
     top: 1026px;
     @include for-size(desktop-only) {
-      top: 130px;
+      top: 1025px;
       left: -533px;
     }  
     @include for-size(phone) {
       left: -139px;
-      top: -76px;
+      top: 1108px;
       z-index: 3;
     }
     @include for-size(phone6) {
@@ -1028,7 +1028,7 @@
     }
   }
   & .colormodalprojects {
-    background-color: rgb(252, 175, 203);
+    background-color: #b2b3bd;
   }
   & .title {
     font-size: 30px;
@@ -1040,9 +1040,9 @@
     }
   }
   & .card {
-    height: 180%;
+    height: 164%;
     @include for-size(desktop-only) {
-      height: 200%;
+      height: 186%;
     }
     @include for-size(phone) {
       height: 125%;
@@ -1073,7 +1073,7 @@
     }
   }
   & .footer {
-    background-color: rgb(252, 175, 203);
+    background-color: #b2b3bd;
     right: 129px;
     @include for-size(desktop-only) {
       right: 155px;

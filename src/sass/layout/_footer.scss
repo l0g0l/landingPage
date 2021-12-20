@@ -32,6 +32,8 @@
   @include for-size(phone) {
     width: 81.8%;
     left: 68px;
+    bottom: -1500px;
+    
  }
  @include for-size(xsphone) {
   width: 76.1%;

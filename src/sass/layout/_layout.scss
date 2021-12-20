@@ -244,7 +244,7 @@
     letter-spacing: 1px;
     top: -8px;
     right: 42px;
-    // display: none;
+    display: none;
     color: $white;
     @include for-size(phone) {
       font-size: 13px;
@@ -426,12 +426,12 @@
     left: 42px;
     top: 0;
     @include for-size(desktop-only) {
-      left: 64px;
+      left: 40px;
       top: 2px;
     }
     @include for-size(phone) {
-      left: -89px;
-      top: -321px;
+      left: 20px;
+      top: 0;
       color: #fff;
       word-spacing: 3px;
       letter-spacing: 1px;
