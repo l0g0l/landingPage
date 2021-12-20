@@ -1005,3 +1005,84 @@
     }
   }
 }
+.typescriptpropscss {
+  & .modalbackground {
+    left: -480px;
+    top: 1026px;
+    @include for-size(desktop-only) {
+      top: 130px;
+      left: -533px;
+    }  
+    @include for-size(phone) {
+      left: -139px;
+      top: -76px;
+      z-index: 3;
+    }
+    @include for-size(phone6) {
+      left: -184px !important;
+      top: -57px;
+    }
+    @include for-size(xsphone) {
+      left: -154px;
+      top: -83px;
+    }
+  }
+  & .colormodalprojects {
+    background-color: rgb(252, 175, 203);
+  }
+  & .title {
+    font-size: 30px;
+    word-spacing: -1px;
+    @include for-size(phone) {
+      font-size: 25px;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+  }
+  & .card {
+    height: 180%;
+    @include for-size(desktop-only) {
+      height: 200%;
+    }
+    @include for-size(phone) {
+      height: 125%;
+    }
+    @include for-size(xsphone) {
+      height: 95%;
+    }
+  }
+  & .body {
+    word-spacing: 4px;
+    @include for-size(desktop-only) {
+      font-size: 16px;
+    }
+    @include for-size(phone) {
+      font-size: 12px;
+    }
+    @include for-size(xsphone) {
+      font-size: 11.5px;
+      word-spacing: -1px;
+    }
+  }
+  & .roundicon {
+    bottom: 39px;
+    right: 18px;
+    @include for-size(phone) {
+      bottom: 22px;
+      right: 20px;
+    }
+  }
+  & .footer {
+    background-color: rgb(252, 175, 203);
+    right: 129px;
+    @include for-size(desktop-only) {
+      right: 155px;
+    }
+    @include for-size(phone) {
+      right: 90px;
+    }
+    @include for-size(xsphone) {
+      right: 85px;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import Modal from './Modal'
 import quizfirebase from '../assets/img/modals/quizfirebase.gif'
+import typescript from '../assets/img/modals/typescript.gif'
+
 import { useTranslation } from 'react-i18next' //traducir a otros idiomas
 
 
-const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3 }) => {
+const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branch3, branch3_3, typescript }) => {
     //hook para utilizar la libreria i18n para traducir la web
     const { t } = useTranslation()
 
@@ -11,6 +13,47 @@ const MainMiniBall = ({ quiz, css, branch1, branch1_1, branch2, branch2_2, branc
 
     return (
         <>
+
+            {/* Empieza proyecto typescript */}
+
+            {typescript && <div className={` ${css}`}>
+                <div className="commitmain-sx " aria-label="Click" role="button" tabindex="0" onClick={() => {
+                    if (typescript.modales === typescript.project) {
+                        typescript.setmodales("")
+                    } else {
+                        typescript.setmodales(typescript.project)
+                    }
+                }}>
+                    <div className="tooltip-container">
+                        <div className="text">
+                            <span >{typescript.tooltip1}</span>
+                        </div>
+                    </div>
+                </div>
+                {typescript.modales === typescript.project && typescript.project === 'typescript'
+                    ?
+                    <div  >
+                        <Modal
+                            content={{
+                                closeModal: typescript.setmodales,
+                                title: 'TypeScript',
+                                text: t('commit2.ball.descrp'),
+                                tecnolog: 'React js, Redux, TypeScript, SASS. Deploy (GitHubPages)',
+                                img: typescript,
+                                url: 'https://l0g0l.github.io/cleverpytest_typescript'
+                            }}
+                            css={'typescriptpropscss'}
+
+                        />
+                    </div>
+                    :
+                    null}
+            </div>
+
+            }
+            {/* Termina proyecto typescript */}
+
+
             {/*Empieza Branch3- 4 proyectos */}
             {branch3_3
                 ?

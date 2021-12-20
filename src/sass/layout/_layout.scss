@@ -197,7 +197,7 @@
 //=========== Rama main ==============
 .main-branch {
   width: 11px;
-  height: 970px;
+  height: 1140px;
   position: absolute;
   top: 32px;
   left: 34%;
@@ -244,7 +244,7 @@
     letter-spacing: 1px;
     top: -8px;
     right: 42px;
-    display: none;
+    // display: none;
     color: $white;
     @include for-size(phone) {
       font-size: 13px;
@@ -266,7 +266,7 @@
   height: 30px;
   display: block;
   position: absolute;
-  top: 967px;
+  top: 1130px;
   left: -10px;
   @include neon;
   cursor: auto;
@@ -415,6 +415,36 @@
   & .commitmain-sx {
     top: 1017px;
     cursor: auto;
+  }
+}
+.miniballpropstypescript {
+  & .commitmain-sx {
+    top: 1112px;
+    background-color: #e9afb8;
+  }
+  & .text {
+    left: 42px;
+    top: 0;
+    @include for-size(desktop-only) {
+      left: 64px;
+      top: 2px;
+    }
+    @include for-size(phone) {
+      left: -89px;
+      top: -321px;
+      color: #fff;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+    }
+    @include for-size(phone6) {
+      left: -87px !important;
+      top: -311px !important;
+    }
+    @include for-size(xsphone) {
+      width: 127px;
+      left: -53px;
+      top: -326px;
+    }
   }
 }
 

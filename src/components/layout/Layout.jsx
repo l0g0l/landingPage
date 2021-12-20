@@ -170,6 +170,15 @@ const Layout = () => {
                     </>
                     :
                     null}
+                <MainMiniBall
+                    typescript={{
+                        modales: modales,
+                        setmodales: setModales,
+                        tooltip1: t('home.commit2.txt1'),
+                        project: 'typescript',
+                    }}
+                    css={'miniballpropstypescript'}
+                />
 
                 <MainMiniBall
                     branch3_3={true}
