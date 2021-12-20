@@ -374,7 +374,8 @@
     width: 100px;
     right: 75px;
     top: 3px;
-    @include for-size(phone) {
+ 
+    @include for-size(phone6) {
       right: 66px;
       top: -8px;
     }
@@ -431,19 +432,18 @@
     }
     @include for-size(phone) {
       left: 20px;
-      top: 0;
+      top: -34px;
       color: #fff;
       word-spacing: 3px;
       letter-spacing: 1px;
     }
     @include for-size(phone6) {
-      left: -87px !important;
-      top: -311px !important;
+      left: -9px !important;
+      top: -38px !important;
     }
     @include for-size(xsphone) {
-      width: 127px;
-      left: -53px;
-      top: -326px;
+      left: -13px;
+      top: -32px;
     }
   }
 }
